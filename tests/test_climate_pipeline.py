@@ -19,6 +19,8 @@ def read_json(name: str):
 
 
 class ClimatePipelineV11Tests(unittest.TestCase):
+    """Full-data integration tests; require the local raw climate raster archive."""
+
     @classmethod
     def setUpClass(cls):
         cls.boundary = gpd.read_file(PROC / "district_boundaries_piura.geojson")
@@ -99,7 +101,11 @@ class ClimatePipelineV11Tests(unittest.TestCase):
     def test_15_raw_climate_hashes_and_files_exist(self):
         manifest = pd.read_csv(QA / "climate_data_manifest.csv")
         self.assertTrue(manifest["SHA256"].astype(str).str.fullmatch(r"[0-9a-f]{64}").all())
-        self.assertTrue(all((ROOT / p).exists() for p in manifest["LOCAL_FILE"]))
+        self.assertTrue(
+            all((ROOT / p).exists() for p in manifest["LOCAL_FILE"]),
+            "Full-data climate integration tests require the local raw climate raster archive; "
+            "use tests/test_repository_offline.py for clean-clone verification.",
+        )
 
     def test_16_all_sources_row_count(self):
         self.assertEqual(len(self.all_sources), 73920)

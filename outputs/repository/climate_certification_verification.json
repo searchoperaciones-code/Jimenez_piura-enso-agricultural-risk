@@ -1,0 +1,210 @@
+{
+  "blocking_issues": [],
+  "certified_climate_master": "CLIMATE_MASTER_v1.1",
+  "checks": [
+    {
+      "expected": true,
+      "name": "climate_execution_report_exists",
+      "observed": "outputs\\qa\\climate\\climate_execution_report.json",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "climate_gate_report_exists",
+      "observed": "outputs\\qa\\climate\\climate_gate_report.json",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "independent_extraction_audit_exists",
+      "observed": "outputs\\qa\\climate\\independent_extraction_audit.json",
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "climate_reproducibility_report_exists",
+      "observed": "outputs\\qa\\climate\\climate_reproducibility_report.json",
+      "pass": true
+    },
+    {
+      "expected": "PASS",
+      "name": "execution_status_pass",
+      "observed": "PASS",
+      "pass": true
+    },
+    {
+      "expected": "PASS",
+      "name": "overall_gate_pass",
+      "observed": "PASS",
+      "pass": true
+    },
+    {
+      "expected": "GO_TO_PHENOLOGY_PHASE",
+      "name": "q1_recommendation",
+      "observed": "GO_TO_PHENOLOGY_PHASE",
+      "pass": true
+    },
+    {
+      "expected": "55 / 55",
+      "name": "districts_matched",
+      "observed": "55 / 55",
+      "pass": true
+    },
+    {
+      "expected": 5280,
+      "name": "main_rows_5280",
+      "observed": 5280,
+      "pass": true
+    },
+    {
+      "expected": 6215,
+      "name": "overlap_rows_6215",
+      "observed": 6215,
+      "pass": true
+    },
+    {
+      "expected": 1.0,
+      "name": "panel_linkage_1",
+      "observed": 1.0,
+      "pass": true
+    },
+    {
+      "expected": "36/36",
+      "name": "independent_36_of_36",
+      "observed": {
+        "checks_passed": 36,
+        "checks_run": 36,
+        "districts_sampled": 14,
+        "max_absolute_difference": 3.410605131648481e-13,
+        "max_relative_difference": 1.7097805929074536e-15,
+        "status": "PASS",
+        "variables_sampled": [
+          "RAIN",
+          "TMAX",
+          "TMIN"
+        ],
+        "years_sampled": [
+          2017,
+          2023
+        ]
+      },
+      "pass": true
+    },
+    {
+      "expected": "PASS",
+      "name": "normal_completeness_pass",
+      "observed": "PASS",
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "temporal_leakage_false",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": false,
+      "name": "unauthorized_modelling_false",
+      "observed": false,
+      "pass": true
+    },
+    {
+      "expected": true,
+      "name": "deterministic_outputs_identical",
+      "observed": true,
+      "pass": true
+    },
+    {
+      "expected": {
+        "matched": 8,
+        "total": 8
+      },
+      "name": "committed_deterministic_output_hashes_match_run1",
+      "observed": {
+        "matched": 8,
+        "total": 8
+      },
+      "pass": true
+    }
+  ],
+  "deterministic_output_hashes": [
+    {
+      "actual_sha256": "de5142d3b446bc08343aec3f257823b43b89714d7d1f7bb33a5793b74aa440d3",
+      "exists": true,
+      "expected_sha256": "de5142d3b446bc08343aec3f257823b43b89714d7d1f7bb33a5793b74aa440d3",
+      "normalized_path": "data\\processed\\climate\\climate_annual_district.csv",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_annual_district.csv"
+    },
+    {
+      "actual_sha256": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+      "exists": true,
+      "expected_sha256": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+      "normalized_path": "data\\processed\\climate\\climate_anomalies.parquet",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_anomalies.parquet"
+    },
+    {
+      "actual_sha256": "7ce9af98dc17384d0f1ebd88f55921e9a6d3e4ccdd68b9630c35274fc1f79f9e",
+      "exists": true,
+      "expected_sha256": "7ce9af98dc17384d0f1ebd88f55921e9a6d3e4ccdd68b9630c35274fc1f79f9e",
+      "normalized_path": "data\\processed\\climate\\climate_main_period_2016_2023.parquet",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_main_period_2016_2023.parquet"
+    },
+    {
+      "actual_sha256": "90d9a7e7f5a3bd29d2fb18c1ecafe3474a3152a4aae35ae96e884c9a4a7587c8",
+      "exists": true,
+      "expected_sha256": "90d9a7e7f5a3bd29d2fb18c1ecafe3474a3152a4aae35ae96e884c9a4a7587c8",
+      "normalized_path": "data\\processed\\climate\\climate_monthly_all_sources.parquet",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_monthly_all_sources.parquet"
+    },
+    {
+      "actual_sha256": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+      "exists": true,
+      "expected_sha256": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+      "normalized_path": "data\\processed\\climate\\climate_monthly_primary.parquet",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_monthly_primary.parquet"
+    },
+    {
+      "actual_sha256": "b9dfb3bb1c51229b68f06c49c2b815c086f931896f39ad70f9a96852a9a07717",
+      "exists": true,
+      "expected_sha256": "b9dfb3bb1c51229b68f06c49c2b815c086f931896f39ad70f9a96852a9a07717",
+      "normalized_path": "data\\processed\\climate\\climate_normals_1991_2020.parquet",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_normals_1991_2020.parquet"
+    },
+    {
+      "actual_sha256": "1657cdd8154b02b0e1dc8fcea1826cc2cde0ad2a619cfecc44a7b327e5851ab9",
+      "exists": true,
+      "expected_sha256": "1657cdd8154b02b0e1dc8fcea1826cc2cde0ad2a619cfecc44a7b327e5851ab9",
+      "normalized_path": "data\\processed\\climate\\climate_overlap_2015_2024.parquet",
+      "pass": true,
+      "path": "data\\processed\\climate\\climate_overlap_2015_2024.parquet"
+    },
+    {
+      "actual_sha256": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+      "exists": true,
+      "expected_sha256": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+      "normalized_path": "data\\processed\\climate\\district_boundaries_piura.geojson",
+      "pass": true,
+      "path": "data\\processed\\climate\\district_boundaries_piura.geojson"
+    }
+  ],
+  "distinction": {
+    "CERTIFIED_ARTIFACT_VERIFICATION": "Checks committed processed/QA artifacts and certified output hashes.",
+    "RAW_RASTER_INDEPENDENT_REEXTRACTION": "Requires local raw rasters and is not run by default."
+  },
+  "raw_raster_independent_reextraction": {
+    "automatic_redownload": false,
+    "manifest_exists": true,
+    "mode": "RAW_RASTER_INDEPENDENT_REEXTRACTION",
+    "raw_climate_root_exists": true,
+    "reason": "This certification verifier is artifact-level by default and never redownloads the raw climate archive.",
+    "status": "OPTIONAL_NOT_RUN"
+  },
+  "status": "PASS",
+  "verification_type": "CERTIFIED_ARTIFACT_VERIFICATION"
+}

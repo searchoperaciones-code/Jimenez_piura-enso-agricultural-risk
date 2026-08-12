@@ -1,5 +1,19 @@
 # CLIMATE MASTER v1 RULES
 
+# PROJECT FREEZE STATE
+
+DATASET MASTER v1 - FROZEN
+CLIMATE MASTER v1.1 - FROZEN
+PHENOLOGY MASTER v1 - NOT STARTED
+
+No agent may modify frozen scientific outputs without explicit instruction to reopen a phase.
+
+No p-value-driven phenological-window selection.
+No outcome-driven window search.
+No causal claim unless identification is separately established.
+No automatic outlier deletion.
+No assumed YIELD_RAW physical unit.
+
 1. Official sources only.
 2. Final climate products preferred over preliminary products.
 3. No silent substitution between datasets.

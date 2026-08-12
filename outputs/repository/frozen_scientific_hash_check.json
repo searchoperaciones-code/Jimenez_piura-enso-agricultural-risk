@@ -1,0 +1,22 @@
+﻿{
+    "repository_hardening_version":  "v0.2",
+    "scientific_freeze_commit":  "38e957e3c01fbffef242c386099b0a219d83ca70",
+    "scopes":  [
+                   "data/processed",
+                   "outputs/qa",
+                   "outputs/figures/climate_qa"
+               ],
+    "files_before":  113,
+    "files_after":  113,
+    "all_hashes_identical":  true,
+    "changed_files":  [
+
+                      ],
+    "missing_files":  [
+
+                      ],
+    "added_files":  [
+
+                    ],
+    "status":  "PASS"
+}

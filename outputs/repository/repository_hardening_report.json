@@ -1,0 +1,33 @@
+﻿{
+  "repository_hardening_version": "v0.2",
+  "scientific_freeze_commit": "38e957e3c01fbffef242c386099b0a219d83ca70",
+  "dataset_master": "FROZEN_PASS",
+  "climate_master": "FROZEN_PASS",
+  "scientific_outputs_modified": false,
+  "readme_publication_grade": true,
+  "data_availability_documented": true,
+  "reproducibility_documented": true,
+  "stale_climate_auditor_fixed": true,
+  "offline_tests_available": true,
+  "full_data_tests_preserved": true,
+  "offline_ci_available": true,
+  "freeze_policy_documented": true,
+  "raw_data_committed": false,
+  "large_climate_rasters_committed": false,
+  "freeze_tag_pushed": true,
+  "compileall": "PASS",
+  "offline_tests": {
+    "tests_run": 10,
+    "tests_passed": 10,
+    "status": "PASS"
+  },
+  "full_data_tests": {
+    "tests_run": 37,
+    "tests_passed": 37,
+    "status": "RUN_READ_ONLY_PASS"
+  },
+  "climate_certification_verifier": "PASS",
+  "status": "PASS",
+  "blocking_issues": [],
+  "warnings": []
+}
