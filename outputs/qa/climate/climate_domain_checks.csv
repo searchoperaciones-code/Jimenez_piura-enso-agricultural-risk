@@ -1,0 +1,6 @@
+check,pass,fail_count
+RAIN_MM >= 0,True,0
+TMIN_C <= TMAX_C,True,0
+finite required climate,True,0
+no duplicate UBIGEO-DATE,True,0
+valid monthly dates,True,0

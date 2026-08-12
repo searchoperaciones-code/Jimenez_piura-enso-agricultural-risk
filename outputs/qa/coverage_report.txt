@@ -1,0 +1,48 @@
+DATASET MASTER v1 — COVERAGE & GATE REPORT
+=======================================================
+Generated UTC: 2026-08-12T04:44:43+00:00
+
+RAW DATA
+- Raw agricultural rows: 124,514
+- Raw unique crops: 96
+- Raw unique districts: 55
+- Raw monthly range: 2015-08 to 2024-12
+- Unique months: 113
+- ANO/MES mismatches: 0
+- Negative-value QA rows: 0
+
+TARGET CROPS / PANEL
+- Five-target-crop raw rows: 23,540
+- Main yield period: 2016–2023
+- Main non-balanced panel N: 1,701 -> PASA (gate N>300)
+- Balanced districts: 12
+- Balanced panel N: 480 -> PASA (gate N>300)
+
+CROP COVERAGE
+- ARROZ [14010020000]: N=340, districts=46, years=8, range=2016-2023
+- MANGO [13010210000]: N=255, districts=36, years=8, range=2016-2023
+- LIMON SUTIL [13010170102]: N=311, districts=44, years=8, range=2016-2023
+- PLATANOS Y BANANAS [15010040000]: N=390, districts=54, years=8, range=2016-2023
+- MAIZ AMARILLO DURO [14010070000]: N=405, districts=55, years=8, range=2016-2023
+
+LAND COVERAGE
+- Panel district match rate: 100.0000% -> PASA (>99%)
+- Physical agricultural area represented: 99.4904% -> PASA (>99%)
+- Piura physical agricultural area in MIDAGRI file: 706,379.29 ha
+- Area represented by panel districts: 702,779.60 ha
+
+ICEN
+- Range: 1950-01 to 2026-05
+- Covers every month 2016–2023: PASA
+
+SOURCE DICTIONARY
+- Documented inconsistencies/limitations: 3
+- YIELD_RAW unit: UNRESOLVED because PRODUCCION unit is not explicitly stated in the official dictionary.
+
+AUDIT BENCHMARKS (not hard-coded outputs)
+- Raw rows benchmark 124,514: MATCH
+- Target raw rows benchmark 23,540: MATCH
+- Main panel benchmark 1,701: MATCH
+- Balanced panel benchmark 480: MATCH
+
+FINAL DATASET GATE: PASA

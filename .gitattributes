@@ -1,0 +1,21 @@
+# Source code / documentation
+*.py      text eol=lf
+*.md      text eol=lf
+*.sh      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+
+# Scientific generated outputs: preserve exact bytes
+data/processed/** -text
+outputs/qa/**     -text
+outputs/tables/** -text
+
+# Explicit binary formats
+*.parquet binary
+*.xlsx    binary
+*.xls     binary
+*.docx    binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gpkg    binary

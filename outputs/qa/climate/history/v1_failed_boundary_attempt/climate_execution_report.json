@@ -1,0 +1,134 @@
+{
+  "supervision_report": {
+    "climate_master_version": "CLIMATE_MASTER_v1",
+    "execution_status": "FAIL",
+    "upstream_dataset": {
+      "status": "PASS",
+      "integrity_pass": true
+    },
+    "sources": {
+      "precip_primary": "CHIRPS_V3_FINAL",
+      "precip_secondary": "NONE",
+      "pisco_status": "NOT_REPRODUCIBLY_ACCESSIBLE",
+      "temperature": "CHIRTS-ERA5",
+      "boundaries": "IDEP"
+    },
+    "coverage": {
+      "panel_districts": 55,
+      "boundary_match_rate": 0.0,
+      "months_2015_08_2024_12": 113,
+      "months_2016_2023": 96,
+      "primary_district_month_rows": 0,
+      "panel_linkage_rate": 0.0
+    },
+    "climatology": {
+      "normal_period": "1991-2020",
+      "normal_complete": false,
+      "anomaly_zero_check": false
+    },
+    "spatial_method": {
+      "method": "NOT_EXECUTED_BOUNDARY_ACCESS_BLOCKER",
+      "area_weighted": false,
+      "geodesic_cell_area": false
+    },
+    "validation": {
+      "independent_checks_run": 0,
+      "independent_checks_passed": 0,
+      "pisco_chirps_comparison_available": false,
+      "agricultural_mask_sensitivity_available": false
+    },
+    "reproducibility": {
+      "pipeline_runs": 0,
+      "deterministic_outputs_identical": false
+    },
+    "scientific_integrity": {
+      "missing_as_zero": false,
+      "temporal_leakage": false,
+      "preliminary_chirps_used": false,
+      "unauthorized_scope_expansion": false
+    },
+    "q1_readiness": {
+      "status": "HOLD_FOR_CORRECTION",
+      "blocking_issues": [
+        "IDEP_OFFICIAL_BOUNDARY_ACCESS_FAILURE"
+      ],
+      "nonblocking_limitations": [
+        "PISCO precipitation was not reproducibly accessible from an official stable raster endpoint.",
+        "SENAMHI station validation was not reproducibly available from a stable official no-credential endpoint."
+      ]
+    },
+    "warnings": [
+      "CHIRPS v3 and CHIRTS-ERA5 official CHC directory listings were accessible and frozen, but no raster download/extraction was started because official district boundaries are a hard prerequisite.",
+      "No unofficial boundary substitute was used."
+    ],
+    "deviations": [
+      "CLIMATE MASTER v1 extraction, normals, anomalies, linkage audit, and reproducibility could not be completed without official district geometries."
+    ],
+    "recommendations": [
+      "Retry the IDEP official FeatureServer layer 5 query when www.idep.gob.pe is reachable from the execution environment.",
+      "After acquiring the official boundary snapshot, run the CLIMATE MASTER v1 pipeline from scripts/climate_run_pipeline.py."
+    ],
+    "source_availability_counts": {
+      "chirps_file_count": 546,
+      "tmax_file_count": 559,
+      "tmin_file_count": 559
+    },
+    "boundary_access_audit": {
+      "timestamp_utc": "2026-08-12T05:20:42Z",
+      "service": "IDEP district boundary layer",
+      "required_for_climate_master": true,
+      "http_attempts": [
+        {
+          "url": "https://www.idep.gob.pe/geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5?f=pjson",
+          "status": "ERROR",
+          "content_type": "",
+          "bytes": 0,
+          "error": "ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='www.idep.gob.pe', port=443): Max retries exceeded with url: /geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5?f=pjson (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.idep.gob.pe', port=443) at 0x160cdf46ad0>, 'Connection to www.idep.gob.pe timed out. (connect timeout=60)'))\"))"
+        },
+        {
+          "url": "https://www.idep.gob.pe/geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5/query?f=geojson&where=NOMBDEP%3D%27PIURA%27&outFields=UBIGEO,NOMBDEP,NOMBPROV,NOMBDIST,FUENTE&returnGeometry=true&outSR=4326",
+          "status": "ERROR",
+          "content_type": "",
+          "bytes": 0,
+          "error": "ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='www.idep.gob.pe', port=443): Max retries exceeded with url: /geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5/query?f=geojson&where=NOMBDEP%3D%27PIURA%27&outFields=UBIGEO,NOMBDEP,NOMBPROV,NOMBDIST,FUENTE&returnGeometry=true&outSR=4326 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.idep.gob.pe', port=443) at 0x160cdd3ce50>, 'Connection to www.idep.gob.pe timed out. (connect timeout=60)'))\"))"
+        },
+        {
+          "url": "https://www.idep.gob.pe/geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/MapServer/5?f=pjson",
+          "status": "ERROR",
+          "content_type": "",
+          "bytes": 0,
+          "error": "ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='www.idep.gob.pe', port=443): Max retries exceeded with url: /geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/MapServer/5?f=pjson (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.idep.gob.pe', port=443) at 0x160cdf83b50>, 'Connection to www.idep.gob.pe timed out. (connect timeout=60)'))\"))"
+        }
+      ],
+      "socket_attempts": [
+        {
+          "host": "www.idep.gob.pe",
+          "port": 443,
+          "status": "ERROR",
+          "error": "TimeoutError('timed out')"
+        },
+        {
+          "host": "www.idep.gob.pe",
+          "port": 80,
+          "status": "ERROR",
+          "error": "TimeoutError('timed out')"
+        },
+        {
+          "host": "209.45.65.244",
+          "port": 443,
+          "status": "ERROR",
+          "error": "TimeoutError('timed out')"
+        },
+        {
+          "host": "209.45.65.244",
+          "port": 80,
+          "status": "ERROR",
+          "error": "TimeoutError('timed out')"
+        }
+      ],
+      "boundary_accessible": false,
+      "blocker": true,
+      "blocker_reason": "Official IDEP district boundary service timed out from this environment; no official boundary snapshot could be acquired."
+    }
+  }
+}

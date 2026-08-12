@@ -1,0 +1,26 @@
+{
+  "flagged_rows": 210,
+  "affected_crops": 5,
+  "affected_districts": 31,
+  "variables_flagged": [
+    "HARVEST_AREA",
+    "PRECIO",
+    "PRODUCCION",
+    "SOWN_AREA",
+    "VERDE_ACTUAL",
+    "YIELD_RAW"
+  ],
+  "years_represented": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "sampled_keys_checked": 20,
+  "sampled_keys_present": 20,
+  "outliers_retained": "PASS"
+}

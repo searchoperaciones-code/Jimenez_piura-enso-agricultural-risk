@@ -1,0 +1,10 @@
+{
+  "panel_unique_districts": 55,
+  "matched_districts": 55,
+  "unmatched_districts": [],
+  "district_match_rate": 1.0,
+  "physical_area_coverage_rate": 0.994904018398089,
+  "raw_land_rows_piura": 61,
+  "land_physical_key_unique": true,
+  "raw_land_key_unique": true
+}

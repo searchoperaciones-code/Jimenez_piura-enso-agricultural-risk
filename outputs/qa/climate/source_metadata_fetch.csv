@@ -1,0 +1,8 @@
+url,status,content_type,local_file,bytes,sha256,error
+https://www.chc.ucsb.edu/data/chirps3,LOCAL,,data\raw\climate\source_metadata\chirps3_doc.html,33971,2903bd1bb8fb06321c6b6c38d56f30f0a2f7bc61a3842cd5d82b714e26b7ba2c,
+https://www.chc.ucsb.edu/data/chirts-era5,LOCAL,,data\raw\climate\source_metadata\chirts_era5_doc.html,34723,4c74a9a12ba3dca6b98b3f9707032414f3885e944afa2e2b150f7efcc9c3b797,
+https://data.chc.ucsb.edu/products/CHIRPS/v3.0/monthly/latam/tifs/,LOCAL,,data\raw\climate\source_metadata\chirps_latam_index.html,107192,9fc1783c294d7c105c9d6b4341f1e6b6198583479b13683fb3502d599a330433,
+https://data.chc.ucsb.edu/experimental/CHIRTS-ERA5/tmax/tifs/monthly/,LOCAL,,data\raw\climate\source_metadata\chirts_tmax_monthly_index.html,132210,c707cd08cbf9bf950d231f8a29aa10f93e6c0751666a13f8290fd2c9512d2e0b,
+https://data.chc.ucsb.edu/experimental/CHIRTS-ERA5/tmin/tifs/monthly/,LOCAL,,data\raw\climate\source_metadata\chirts_tmin_monthly_index.html,132080,58ba6681a3825e72d5beb4d90b310f0b33e9da40cab9c220eba9a4886e1507e1,
+https://ide.inei.gob.pe/,LOCAL,,data\raw\climate\source_metadata\inei_ide_page.html,39469,4dabc408b9dad264d431bf567738122e69826776185fd02c5378f99a9d5ab25c,
+https://sdmr.inei.gob.pe/layers/geonode%3Adistrito,LOCAL,,data\raw\climate\source_metadata\inei_sdmr_catalog.html,56276,0b4f61a8f61897e756fa3ea85688fa52271cd8799cf9f673f34b2800524180de,

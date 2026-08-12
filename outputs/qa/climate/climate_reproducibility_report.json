@@ -1,0 +1,23 @@
+{
+  "deterministic_outputs_identical": true,
+  "run1_hashes": {
+    "data\\processed\\climate\\climate_annual_district.csv": "de5142d3b446bc08343aec3f257823b43b89714d7d1f7bb33a5793b74aa440d3",
+    "data\\processed\\climate\\climate_anomalies.parquet": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+    "data\\processed\\climate\\climate_main_period_2016_2023.parquet": "7ce9af98dc17384d0f1ebd88f55921e9a6d3e4ccdd68b9630c35274fc1f79f9e",
+    "data\\processed\\climate\\climate_monthly_all_sources.parquet": "90d9a7e7f5a3bd29d2fb18c1ecafe3474a3152a4aae35ae96e884c9a4a7587c8",
+    "data\\processed\\climate\\climate_monthly_primary.parquet": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+    "data\\processed\\climate\\climate_normals_1991_2020.parquet": "b9dfb3bb1c51229b68f06c49c2b815c086f931896f39ad70f9a96852a9a07717",
+    "data\\processed\\climate\\climate_overlap_2015_2024.parquet": "1657cdd8154b02b0e1dc8fcea1826cc2cde0ad2a619cfecc44a7b327e5851ab9",
+    "data\\processed\\climate\\district_boundaries_piura.geojson": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b"
+  },
+  "run2_hashes": {
+    "data\\processed\\climate\\climate_annual_district.csv": "de5142d3b446bc08343aec3f257823b43b89714d7d1f7bb33a5793b74aa440d3",
+    "data\\processed\\climate\\climate_anomalies.parquet": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+    "data\\processed\\climate\\climate_main_period_2016_2023.parquet": "7ce9af98dc17384d0f1ebd88f55921e9a6d3e4ccdd68b9630c35274fc1f79f9e",
+    "data\\processed\\climate\\climate_monthly_all_sources.parquet": "90d9a7e7f5a3bd29d2fb18c1ecafe3474a3152a4aae35ae96e884c9a4a7587c8",
+    "data\\processed\\climate\\climate_monthly_primary.parquet": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+    "data\\processed\\climate\\climate_normals_1991_2020.parquet": "b9dfb3bb1c51229b68f06c49c2b815c086f931896f39ad70f9a96852a9a07717",
+    "data\\processed\\climate\\climate_overlap_2015_2024.parquet": "1657cdd8154b02b0e1dc8fcea1826cc2cde0ad2a619cfecc44a7b327e5851ab9",
+    "data\\processed\\climate\\district_boundaries_piura.geojson": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b"
+  }
+}

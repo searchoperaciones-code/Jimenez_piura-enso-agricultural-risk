@@ -1,0 +1,481 @@
+{
+  "timestamp": "2026-08-12T04:46:39Z",
+  "dataset_version": "DATASET_MASTER_v1",
+  "project_state": {
+    "inspected_files": [
+      {
+        "name": "build_dataset_master.py",
+        "at_project_root": true,
+        "at_data_raw": false,
+        "root_size": 43853,
+        "raw_size": null
+      },
+      {
+        "name": "scientific_annotations.md",
+        "at_project_root": true,
+        "at_data_raw": false,
+        "root_size": 16450,
+        "raw_size": null
+      },
+      {
+        "name": "Formato_dataset_productos_dra__ (2).csv",
+        "at_project_root": true,
+        "at_data_raw": true,
+        "root_size": 12578609,
+        "raw_size": 12578609
+      },
+      {
+        "name": "Formato_dataset_productos_dra__ (2)(1).csv",
+        "at_project_root": false,
+        "at_data_raw": false,
+        "root_size": null,
+        "raw_size": null
+      },
+      {
+        "name": "Formato_DiccionarioDatos_productos_dra_.xlsx",
+        "at_project_root": true,
+        "at_data_raw": true,
+        "root_size": 76211,
+        "raw_size": 76211
+      },
+      {
+        "name": "Formato_Metadatos_productos_dra_.docx",
+        "at_project_root": true,
+        "at_data_raw": true,
+        "root_size": 16701,
+        "raw_size": 16701
+      },
+      {
+        "name": "superficie_agricola_nacional_2024.xlsx",
+        "at_project_root": true,
+        "at_data_raw": true,
+        "root_size": 139347,
+        "raw_size": 139347
+      },
+      {
+        "name": "ICEN.txt",
+        "at_project_root": true,
+        "at_data_raw": true,
+        "root_size": 16722,
+        "raw_size": 16722
+      }
+    ]
+  },
+  "environment": {
+    "timestamp_utc": "2026-08-12T04:35:52Z",
+    "python": "3.11.7",
+    "python_full": "3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "pandas": "3.0.2",
+      "numpy": "2.3.5",
+      "openpyxl": "3.1.5"
+    }
+  },
+  "script_exit_code": 0,
+  "script_exit_code_run2": 0,
+  "integrity": {
+    "required_raw_files": "5/5",
+    "required_raw_files_present": true,
+    "prespecified_hashes_pass": true,
+    "raw_hashes": {
+      "Formato_dataset_productos_dra__ (2).csv": {
+        "exists": true,
+        "sha256_actual": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489",
+        "sha256_expected": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489",
+        "hash_pass": true
+      },
+      "Formato_DiccionarioDatos_productos_dra_.xlsx": {
+        "exists": true,
+        "sha256_actual": "9df8aedf987a7a882d265ffc629d105f8058a5208738d5dcd1b213b30d347ce0",
+        "sha256_expected": "9df8aedf987a7a882d265ffc629d105f8058a5208738d5dcd1b213b30d347ce0",
+        "hash_pass": true
+      },
+      "Formato_Metadatos_productos_dra_.docx": {
+        "exists": true,
+        "sha256_actual": "a66ede624b8d2f502df65620c84233dd04a9ebcc29ae9969c38e2272ec812ea7",
+        "sha256_expected": "a66ede624b8d2f502df65620c84233dd04a9ebcc29ae9969c38e2272ec812ea7",
+        "hash_pass": true
+      },
+      "superficie_agricola_nacional_2024.xlsx": {
+        "exists": true,
+        "sha256_actual": "36f9f5d41489df4c4e19b8108c339088dd6ee2f240669d47683163077e1d9b7c",
+        "sha256_expected": "NOT_PROVIDED",
+        "hash_pass": "RECORDED_NO_EXPECTED_HASH"
+      },
+      "ICEN.txt": {
+        "exists": true,
+        "sha256_actual": "53e82d90ad26335b081ddebf67f9293477cf6f80e3d7d9de17ddfe33fab8c03f",
+        "sha256_expected": "NOT_PROVIDED",
+        "hash_pass": "RECORDED_NO_EXPECTED_HASH"
+      }
+    }
+  },
+  "outputs": {
+    "required_outputs_present": true,
+    "missing_outputs": [],
+    "outputs": [
+      {
+        "path": "data/processed/panel_master.csv",
+        "exists": true,
+        "size_bytes": 236153
+      },
+      {
+        "path": "data/processed/panel_balanceado.csv",
+        "exists": true,
+        "size_bytes": 67200
+      },
+      {
+        "path": "data/processed/icen_clean.csv",
+        "exists": true,
+        "size_bytes": 22709
+      },
+      {
+        "path": "data/processed/land_physical.csv",
+        "exists": true,
+        "size_bytes": 6937
+      },
+      {
+        "path": "outputs/qa/data_manifest.csv",
+        "exists": true,
+        "size_bytes": 1507
+      },
+      {
+        "path": "outputs/qa/data_sources.csv",
+        "exists": true,
+        "size_bytes": 2636
+      },
+      {
+        "path": "outputs/qa/source_dictionary_inconsistencies.csv",
+        "exists": true,
+        "size_bytes": 699
+      },
+      {
+        "path": "outputs/qa/outliers_flag.csv",
+        "exists": true,
+        "size_bytes": 20683
+      },
+      {
+        "path": "outputs/qa/missingness_by_year.csv",
+        "exists": true,
+        "size_bytes": 1504
+      },
+      {
+        "path": "outputs/qa/coverage_by_crop.csv",
+        "exists": true,
+        "size_bytes": 291
+      },
+      {
+        "path": "outputs/qa/crop_year_counts.csv",
+        "exists": true,
+        "size_bytes": 96
+      },
+      {
+        "path": "outputs/qa/balanced_districts.csv",
+        "exists": true,
+        "size_bytes": 104
+      },
+      {
+        "path": "outputs/qa/raw_agricultural_audit.json",
+        "exists": true,
+        "size_bytes": 340
+      },
+      {
+        "path": "outputs/qa/icen_audit.json",
+        "exists": true,
+        "size_bytes": 137
+      },
+      {
+        "path": "outputs/qa/gate_report.json",
+        "exists": true,
+        "size_bytes": 990
+      },
+      {
+        "path": "outputs/qa/coverage_report.txt",
+        "exists": true,
+        "size_bytes": 1722
+      }
+    ]
+  },
+  "raw_data": {
+    "raw_rows": 124514,
+    "raw_columns": 15,
+    "unique_crops": 96,
+    "unique_districts": 55,
+    "first_month": "2015-08",
+    "last_month": "2024-12",
+    "unique_months": 113,
+    "monthly_key_unique": true,
+    "monthly_key_duplicate_rows": 0
+  },
+  "target_crop_raw_rows": 23540,
+  "target_crop_main_period_monthly_rows": 19942,
+  "panel_master": {
+    "required_columns_present": true,
+    "missing_columns": [],
+    "main_panel_n": 1701,
+    "main_panel_n_gt_300": true,
+    "main_panel_n_ge_1700": true,
+    "benchmark_main_panel_match": true,
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "period_exact_2016_2023": true,
+    "key_unique": true,
+    "duplicate_key_rows": 0,
+    "positive_production": true,
+    "positive_harvest_area": true,
+    "positive_price": true,
+    "positive_yield_raw": true,
+    "yield_unit_values": [
+      "UNRESOLVED"
+    ],
+    "yield_unit_unresolved": true
+  },
+  "balanced_panel": {
+    "rows": 480,
+    "districts": 12,
+    "crops": 5,
+    "years": 8,
+    "year_values": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "all_districts_40_rows": true,
+    "complete_structure": true
+  },
+  "independent_checks": {
+    "yield_independent_checks": 20,
+    "yield_checks_passed": 20,
+    "yield_max_abs_difference": 3.552713678800501e-15,
+    "yield_sample_crops": 5,
+    "yield_sample_has_2017": true,
+    "yield_sample_has_2023": true,
+    "price_independent_checks": 20,
+    "price_checks_passed": 20,
+    "price_max_abs_difference": 2.220446049250313e-16
+  },
+  "missing_zero": {
+    "missing_zero_semantics": "PASS",
+    "missing_count_total": 8181,
+    "zero_count_total": 389984,
+    "blank_representative_rows_checked": 10,
+    "no_global_fill_zero_detected": true,
+    "annual_sum_preserves_all_missing": true
+  },
+  "year_coverage": {
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "year_2015_absent": true,
+    "year_2024_absent": true,
+    "year_2017_retained": true,
+    "year_2023_retained": true,
+    "extreme_years_retained": true
+  },
+  "icen": {
+    "required_period_unique_months": 96,
+    "required_period_expected_months": 96,
+    "required_period_complete": true,
+    "duplicate_dates_2016_2023": 0,
+    "missing_months_2016_2023": [],
+    "value_checks_run": 20,
+    "value_checks_passed": 20,
+    "first_icen_month": "1950-01",
+    "last_icen_month": "2026-05",
+    "icen_observations": 917,
+    "min_icen": -2.23,
+    "max_icen": 4.32
+  },
+  "land": {
+    "panel_unique_districts": 55,
+    "matched_districts": 55,
+    "unmatched_districts": [],
+    "district_match_rate": 1.0,
+    "physical_area_coverage_rate": 0.994904018398089,
+    "raw_land_rows_piura": 61,
+    "land_physical_key_unique": true,
+    "raw_land_key_unique": true
+  },
+  "dictionary": {
+    "cod_cultivo_declared_type": "Numérico",
+    "cod_cultivo_declared_size": 8,
+    "cod_cultivo_observed_max_length": 11,
+    "cod_cultivo_conflict_confirmed": true,
+    "cultivo_declared_type": "Numérico",
+    "cultivo_contains_text": true,
+    "cultivo_type_conflict_confirmed": true,
+    "produccion_unit_explicitly_certified": false,
+    "yield_unit_reason": "PRODUCCION physical unit not explicitly certified in supplied dictionary.",
+    "source_issue_rows": 3,
+    "source_issue_variables": [
+      "COD_CULTIVO",
+      "CULTIVO",
+      "PRODUCCION"
+    ]
+  },
+  "outliers": {
+    "flagged_rows": 210,
+    "affected_crops": 5,
+    "affected_districts": 31,
+    "variables_flagged": [
+      "HARVEST_AREA",
+      "PRECIO",
+      "PRODUCCION",
+      "SOWN_AREA",
+      "VERDE_ACTUAL",
+      "YIELD_RAW"
+    ],
+    "years_represented": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "sampled_keys_checked": 20,
+    "sampled_keys_present": 20,
+    "outliers_retained": "PASS"
+  },
+  "domain_checks": {
+    "negative_production": 0,
+    "negative_harvest_area": 0,
+    "negative_sown_area": 0,
+    "negative_green_area": 0,
+    "negative_price": 0,
+    "area_ha_nonpositive": 0,
+    "malformed_raw_ubigeo_lengths": 0,
+    "malformed_panel_ubigeo_lengths": 0,
+    "monthly_key_unique": true,
+    "panel_key_unique": true,
+    "icen_key_unique": true,
+    "land_key_unique": true
+  },
+  "schema_file": "outputs/qa/dataset_schema.json",
+  "scope": {
+    "unauthorized_scope_expansion": false,
+    "forbidden_import_hits": [],
+    "forbidden_call_hits": [],
+    "suspicious_panel_columns": [],
+    "temporal_leakage": {
+      "agricultural_2024_in_panel": false,
+      "agricultural_2015_in_panel": false,
+      "icen_merged_into_panel": false,
+      "future_2026_climate_in_panel": false,
+      "temporal_leakage_detected": false
+    }
+  },
+  "documentation": {
+    "checks": {
+      "district_crop_year_panel": true,
+      "monthly_aggregated_before_yield": true,
+      "blank_not_zero": true,
+      "zero_no_activity": true,
+      "excludes_2015_august": true,
+      "excludes_2024_harvest_area": true,
+      "extreme_years_retained": true,
+      "yield_unresolved": true,
+      "price_not_biological_control": true,
+      "no_econometric_modelling": true
+    },
+    "all_required_principles_present": true,
+    "references_checked": [
+      {
+        "reference": "Schauberger et al. (2017)",
+        "role": "district/county climate-yield panel foundation",
+        "conclusion": "consistent foundation for later fixed-effects phase; no fixed effects estimated"
+      },
+      {
+        "reference": "Funk et al. (2015) / CHIRPS documentation",
+        "role": "future precipitation data source",
+        "conclusion": "consistent; no CHIRPS raster join is implemented in DATASET MASTER v1"
+      },
+      {
+        "reference": "Nguyen-Huy et al. (2018); Rosa et al. (2019); Czettritz et al. (2026)",
+        "role": "later scenario, portfolio, and Mean-CVaR phases",
+        "conclusion": "consistent; current script does not implement these models"
+      }
+    ],
+    "contradictions": []
+  },
+  "gate_report": {
+    "dataset_version": "DATASET_MASTER_v1",
+    "generated_at_utc": "2026-08-12T04:44:43+00:00",
+    "raw_rows": 124514,
+    "target_crop_raw_rows": 23540,
+    "main_panel_n": 1701,
+    "main_panel_n_gt_300": true,
+    "balanced_districts": 12,
+    "balanced_panel_n": 480,
+    "balanced_panel_n_gt_300": true,
+    "district_land_match_rate": 1.0,
+    "physical_area_coverage_rate": 0.994904018398089,
+    "district_land_match_gt_99pct": true,
+    "physical_area_coverage_gt_99pct": true,
+    "icen_covers_2016_2023": true,
+    "all_five_target_crops_present": true,
+    "expected_hashes_pass": true,
+    "dictionary_issue_count": 3,
+    "yield_unit": "UNRESOLVED",
+    "overall_gate": "PASA",
+    "benchmark_main_panel_n": 1701,
+    "benchmark_main_panel_match": true,
+    "benchmark_balanced_n": 480,
+    "benchmark_balanced_match": true,
+    "benchmark_balanced_districts": 12,
+    "benchmark_balanced_districts_match": true,
+    "benchmark_target_raw_rows": 23540,
+    "benchmark_target_raw_rows_match": true
+  },
+  "reproducibility": {
+    "runs": 2,
+    "raw_hashes_identical": true,
+    "environment_identical": true,
+    "deterministic_outputs_checked": 8,
+    "deterministic_outputs_identical": true,
+    "differences": []
+  },
+  "execution_status": "PASS",
+  "q1_readiness": {
+    "status": "GO_TO_CLIMATE_PHASE",
+    "blocking_issues": [],
+    "nonblocking_warnings": [
+      "openpyxl 3.1.5 used; first pipeline run emitted a workbook header/footer parse warning that did not stop execution.",
+      "data_sources.csv was generated by the independent audit provenance routine; build_dataset_master.py itself did not emit this file in the observed runs.",
+      "YIELD_RAW remains UNRESOLVED because PRODUCCION physical unit is not officially certified in supplied documentation."
+    ]
+  },
+  "warnings": [
+    "openpyxl 3.1.5 used; first pipeline run emitted a workbook header/footer parse warning that did not stop execution.",
+    "data_sources.csv was generated by the independent audit provenance routine; build_dataset_master.py itself did not emit this file in the observed runs.",
+    "YIELD_RAW remains UNRESOLVED because PRODUCCION physical unit is not officially certified in supplied documentation."
+  ],
+  "deviations": [],
+  "recommendations": [
+    "Proceed to climate extraction phase only after preserving raw hashes and the generated QA artifacts.",
+    "Resolve PRODUCCION physical unit with official documentation before final physical yield interpretation or GVP conversion."
+  ]
+}

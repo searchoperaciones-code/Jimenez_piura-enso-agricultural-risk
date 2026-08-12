@@ -1,0 +1,8 @@
+{
+  "runs": 2,
+  "raw_hashes_identical": true,
+  "environment_identical": true,
+  "deterministic_outputs_checked": 8,
+  "deterministic_outputs_identical": true,
+  "differences": []
+}

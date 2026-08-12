@@ -1,0 +1,89 @@
+{
+  "supervision_report": {
+    "automated_tests": {
+      "status": "PASS",
+      "tests_failed": 0,
+      "tests_passed": 37,
+      "tests_run": 37
+    },
+    "blocking_issues": [],
+    "boundary_recovery_strategy": "IDEP -> INEI SDMR -> INEI IDE official fallback",
+    "climate_master_version": "CLIMATE_MASTER_v1.1",
+    "climate_rows": {
+      "all_sources": 73920,
+      "main": 5280,
+      "overlap": 6215,
+      "primary": 22440
+    },
+    "cross_source_climate_sensitivity": "NOT_AVAILABLE",
+    "cross_source_geometry_comparison": "NOT_AVAILABLE",
+    "districts_matched": "55 / 55",
+    "execution_status": "PASS",
+    "independent_checks": {
+      "checks_passed": 36,
+      "checks_run": 36,
+      "districts_sampled": 14,
+      "max_absolute_difference": 3.410605131648481e-13,
+      "max_relative_difference": 1.7097805929074536e-15,
+      "status": "PASS",
+      "variables_sampled": [
+        "RAIN",
+        "TMAX",
+        "TMIN"
+      ],
+      "years_sampled": [
+        2017,
+        2023
+      ]
+    },
+    "months_processed": {
+      "main": 96,
+      "overlap": 113,
+      "primary": 408,
+      "rain": 528,
+      "tmax": 408,
+      "tmin": 408
+    },
+    "nonblocking_limitations": [
+      "PISCO official stable no-credential raster endpoint was not verified.",
+      "SENAMHI station validation remains unresolved.",
+      "Only one accepted official boundary source was available for Piura 55/55 panel coverage.",
+      "Low raster-pixel support is documented for small districts and should be considered in modelling sensitivity."
+    ],
+    "normal_completeness": "PASS",
+    "panel_linkage_rate": 1.0,
+    "precipitation_source": "CHIRPS_V3_FINAL",
+    "previous_failure_preserved": true,
+    "q1_readiness": {
+      "status": "GO_TO_PHENOLOGY_PHASE"
+    },
+    "reproducibility": {
+      "deterministic_outputs_identical": true,
+      "run1_hashes": {
+        "data\\processed\\climate\\climate_annual_district.csv": "de5142d3b446bc08343aec3f257823b43b89714d7d1f7bb33a5793b74aa440d3",
+        "data\\processed\\climate\\climate_anomalies.parquet": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+        "data\\processed\\climate\\climate_main_period_2016_2023.parquet": "7ce9af98dc17384d0f1ebd88f55921e9a6d3e4ccdd68b9630c35274fc1f79f9e",
+        "data\\processed\\climate\\climate_monthly_all_sources.parquet": "90d9a7e7f5a3bd29d2fb18c1ecafe3474a3152a4aae35ae96e884c9a4a7587c8",
+        "data\\processed\\climate\\climate_monthly_primary.parquet": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+        "data\\processed\\climate\\climate_normals_1991_2020.parquet": "b9dfb3bb1c51229b68f06c49c2b815c086f931896f39ad70f9a96852a9a07717",
+        "data\\processed\\climate\\climate_overlap_2015_2024.parquet": "1657cdd8154b02b0e1dc8fcea1826cc2cde0ad2a619cfecc44a7b327e5851ab9",
+        "data\\processed\\climate\\district_boundaries_piura.geojson": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b"
+      },
+      "run2_hashes": {
+        "data\\processed\\climate\\climate_annual_district.csv": "de5142d3b446bc08343aec3f257823b43b89714d7d1f7bb33a5793b74aa440d3",
+        "data\\processed\\climate\\climate_anomalies.parquet": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+        "data\\processed\\climate\\climate_main_period_2016_2023.parquet": "7ce9af98dc17384d0f1ebd88f55921e9a6d3e4ccdd68b9630c35274fc1f79f9e",
+        "data\\processed\\climate\\climate_monthly_all_sources.parquet": "90d9a7e7f5a3bd29d2fb18c1ecafe3474a3152a4aae35ae96e884c9a4a7587c8",
+        "data\\processed\\climate\\climate_monthly_primary.parquet": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+        "data\\processed\\climate\\climate_normals_1991_2020.parquet": "b9dfb3bb1c51229b68f06c49c2b815c086f931896f39ad70f9a96852a9a07717",
+        "data\\processed\\climate\\climate_overlap_2015_2024.parquet": "1657cdd8154b02b0e1dc8fcea1826cc2cde0ad2a619cfecc44a7b327e5851ab9",
+        "data\\processed\\climate\\district_boundaries_piura.geojson": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b"
+      }
+    },
+    "secondary_official_boundary_source": "NOT_AVAILABLE",
+    "selected_boundary_institution": "INEI",
+    "selected_boundary_source": "INEI_IDE_DISTRITO_2023",
+    "selected_boundary_vintage": "2023",
+    "temperature_source": "CHIRTS-ERA5"
+  }
+}

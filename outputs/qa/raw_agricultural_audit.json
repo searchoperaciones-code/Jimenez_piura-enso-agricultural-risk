@@ -1,0 +1,14 @@
+{
+  "raw_rows": 124514,
+  "raw_columns": 16,
+  "unique_crops": 96,
+  "unique_districts": 55,
+  "first_month": "2015-08",
+  "last_month": "2024-12",
+  "unique_months": 113,
+  "ano_mes_mismatches": 0,
+  "negative_value_rows": 0,
+  "extra_columns": [],
+  "benchmark_raw_rows_expected": 124514,
+  "benchmark_raw_rows_match": true
+}

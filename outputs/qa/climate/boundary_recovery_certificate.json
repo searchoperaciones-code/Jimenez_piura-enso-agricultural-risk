@@ -1,0 +1,27 @@
+{
+  "boundary_recovery": {
+    "access_interface": "OFFICIAL_RAR_GPKG_DOWNLOAD",
+    "cross_source_comparison_completed": false,
+    "duplicate_ubigeo": 0,
+    "invalid_geometry_after_repair": 0,
+    "invalid_geometry_before_repair": 0,
+    "match_rate": 1.0,
+    "original_crs": "EPSG:4326",
+    "panel_districts_matched": 55,
+    "panel_districts_required": 55,
+    "piura_features_downloaded": 65,
+    "processed_crs": "EPSG:4326",
+    "processed_sha256": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+    "raw_sha256": "ae22428029000d801b3d68afd0914ba94ca40a789a9b56231f6131a75abb9654",
+    "secondary_official_source_available": false,
+    "selected_institution": "INEI",
+    "selected_source": "INEI_IDE_DISTRITO_2023",
+    "source_vintage": "2023",
+    "status": "PASS",
+    "warnings": [
+      "IDEP FeatureServer, MapServer, and LIMITESTT interfaces were not reachable from this environment.",
+      "INEI SDMR Shapefile ZIP downloaded but did not include Piura districts in the retrieved archive.",
+      "Only one accepted official Piura boundary source was available, so cross-source geometry comparison is not available."
+    ]
+  }
+}

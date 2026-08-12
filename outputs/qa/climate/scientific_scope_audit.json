@@ -1,0 +1,12 @@
+{
+  "allocation_models": false,
+  "copulas": false,
+  "crop_yield_scenarios": false,
+  "cvar": false,
+  "fixed_effects_regressions": false,
+  "machine_learning": false,
+  "phenological_window_search": false,
+  "status": "NO",
+  "unauthorized_modelling": false,
+  "yield_response_estimation": false
+}

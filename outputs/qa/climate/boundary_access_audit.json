@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-08-12T05:20:42Z",
+  "service": "IDEP district boundary layer",
+  "required_for_climate_master": true,
+  "http_attempts": [
+    {
+      "url": "https://www.idep.gob.pe/geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5?f=pjson",
+      "status": "ERROR",
+      "content_type": "",
+      "bytes": 0,
+      "error": "ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='www.idep.gob.pe', port=443): Max retries exceeded with url: /geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5?f=pjson (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.idep.gob.pe', port=443) at 0x160cdf46ad0>, 'Connection to www.idep.gob.pe timed out. (connect timeout=60)'))\"))"
+    },
+    {
+      "url": "https://www.idep.gob.pe/geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5/query?f=geojson&where=NOMBDEP%3D%27PIURA%27&outFields=UBIGEO,NOMBDEP,NOMBPROV,NOMBDIST,FUENTE&returnGeometry=true&outSR=4326",
+      "status": "ERROR",
+      "content_type": "",
+      "bytes": 0,
+      "error": "ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='www.idep.gob.pe', port=443): Max retries exceeded with url: /geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/FeatureServer/5/query?f=geojson&where=NOMBDEP%3D%27PIURA%27&outFields=UBIGEO,NOMBDEP,NOMBPROV,NOMBDIST,FUENTE&returnGeometry=true&outSR=4326 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.idep.gob.pe', port=443) at 0x160cdd3ce50>, 'Connection to www.idep.gob.pe timed out. (connect timeout=60)'))\"))"
+    },
+    {
+      "url": "https://www.idep.gob.pe/geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/MapServer/5?f=pjson",
+      "status": "ERROR",
+      "content_type": "",
+      "bytes": 0,
+      "error": "ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='www.idep.gob.pe', port=443): Max retries exceeded with url: /geoportal/rest/services/DATOS_GEOESPACIALES/L%C3%8DMITES/MapServer/5?f=pjson (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.idep.gob.pe', port=443) at 0x160cdf83b50>, 'Connection to www.idep.gob.pe timed out. (connect timeout=60)'))\"))"
+    }
+  ],
+  "socket_attempts": [
+    {
+      "host": "www.idep.gob.pe",
+      "port": 443,
+      "status": "ERROR",
+      "error": "TimeoutError('timed out')"
+    },
+    {
+      "host": "www.idep.gob.pe",
+      "port": 80,
+      "status": "ERROR",
+      "error": "TimeoutError('timed out')"
+    },
+    {
+      "host": "209.45.65.244",
+      "port": 443,
+      "status": "ERROR",
+      "error": "TimeoutError('timed out')"
+    },
+    {
+      "host": "209.45.65.244",
+      "port": 80,
+      "status": "ERROR",
+      "error": "TimeoutError('timed out')"
+    }
+  ],
+  "boundary_accessible": false,
+  "blocker": true,
+  "blocker_reason": "Official IDEP district boundary service timed out from this environment; no official boundary snapshot could be acquired."
+}

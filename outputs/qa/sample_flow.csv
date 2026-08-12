@@ -1,0 +1,11 @@
+stage,n,change_from_previous,percent_retained,reason
+raw agricultural rows,124514,,,All monthly agricultural source rows.
+five target crop rows,23540,-100974,0.18905504601892156,Exact COD_CULTIVO filter for five analytical crops.
+rows in 2016-2023,19942,-3598,0.8471537807986406,Main yield-panel period; 2015 and 2024 excluded.
+annual UBIGEO x crop x year groups,1808,-18134,0.09066292247517801,Monthly rows aggregated before annual yield construction.
+positive production groups,1701,-107,0.9408185840707964,Require annual production > 0.
+positive harvest area groups,1701,0,1.0,Require annual harvested area > 0.
+positive price groups,1701,0,1.0,Require production-weighted annual price > 0.
+valid land-join groups,1701,0,1.0,Require UBIGEO match to MIDAGRI land table and final crop support.
+final panel_master rows,1701,0,1.0,Approved main analytical panel.
+balanced panel rows,480,-1221,0.2821869488536155,Districts complete for five crops across eight years.

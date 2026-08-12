@@ -1,0 +1,406 @@
+{
+  "panel_master.csv": [
+    {
+      "name": "UBIGEO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 55,
+      "minimum": 200101.0,
+      "maximum": 200806.0,
+      "description": "District geographic identifier.",
+      "unit": ""
+    },
+    {
+      "name": "COD_CULTIVO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 5,
+      "minimum": 13010170102.0,
+      "maximum": 15010040000.0,
+      "description": "Official crop identifier preserved as text.",
+      "unit": ""
+    },
+    {
+      "name": "CROP_STD",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 5,
+      "minimum": null,
+      "maximum": null,
+      "description": "Standardized target crop label.",
+      "unit": ""
+    },
+    {
+      "name": "CULTIVO_SOURCE",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 5,
+      "minimum": null,
+      "maximum": null,
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name": "ANO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 8,
+      "minimum": 2016.0,
+      "maximum": 2023.0,
+      "description": "Calendar year used in the 2016-2023 main panel.",
+      "unit": ""
+    },
+    {
+      "name": "PRODUCCION",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 1025,
+      "minimum": 1.0,
+      "maximum": 326762.0,
+      "description": "Annual production sum; physical unit not certified in supplied dictionary.",
+      "unit": ""
+    },
+    {
+      "name": "HARVEST_AREA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 496,
+      "minimum": 1.0,
+      "maximum": 20512.0,
+      "description": "Annual harvested-area sum from COSECHA.",
+      "unit": ""
+    },
+    {
+      "name": "SOWN_AREA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 437,
+      "minimum": 0.0,
+      "maximum": 9500.0,
+      "description": "Annual sown-area sum from SIEMBRA.",
+      "unit": ""
+    },
+    {
+      "name": "PRECIO",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 1312,
+      "minimum": 0.1,
+      "maximum": 4.066867469879519,
+      "description": "Production-weighted annual farm-gate price.",
+      "unit": ""
+    },
+    {
+      "name": "VERDE_ACTUAL",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 267,
+      "minimum": 0.0,
+      "maximum": 21050.0,
+      "description": "Last non-null annual green/current area snapshot.",
+      "unit": ""
+    },
+    {
+      "name": "YIELD_RAW",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 1114,
+      "minimum": 0.0869565217391304,
+      "maximum": 85.0,
+      "description": "Annual production divided by annual harvested area.",
+      "unit": "UNRESOLVED"
+    },
+    {
+      "name": "YIELD_UNIT",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 1,
+      "minimum": null,
+      "maximum": null,
+      "description": "Unresolved unit marker.",
+      "unit": "UNRESOLVED"
+    },
+    {
+      "name": "AREA_HA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 55,
+      "minimum": 71.81786312866718,
+      "maximum": 82408.95968305676,
+      "description": "Physical agricultural area from MIDAGRI land table.",
+      "unit": "ha"
+    },
+    {
+      "name": "MONTHS_PRESENT",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 12,
+      "minimum": 1.0,
+      "maximum": 12.0,
+      "description": "Count of monthly source records represented in the annual group.",
+      "unit": ""
+    }
+  ],
+  "panel_balanceado.csv": [
+    {
+      "name": "UBIGEO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 12,
+      "minimum": 200107.0,
+      "maximum": 200601.0,
+      "description": "District geographic identifier.",
+      "unit": ""
+    },
+    {
+      "name": "COD_CULTIVO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 5,
+      "minimum": 13010170102.0,
+      "maximum": 15010040000.0,
+      "description": "Official crop identifier preserved as text.",
+      "unit": ""
+    },
+    {
+      "name": "CROP_STD",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 5,
+      "minimum": null,
+      "maximum": null,
+      "description": "Standardized target crop label.",
+      "unit": ""
+    },
+    {
+      "name": "CULTIVO_SOURCE",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 5,
+      "minimum": null,
+      "maximum": null,
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name": "ANO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 8,
+      "minimum": 2016.0,
+      "maximum": 2023.0,
+      "description": "Calendar year used in the 2016-2023 main panel.",
+      "unit": ""
+    },
+    {
+      "name": "PRODUCCION",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 419,
+      "minimum": 2.0,
+      "maximum": 326762.0,
+      "description": "Annual production sum; physical unit not certified in supplied dictionary.",
+      "unit": ""
+    },
+    {
+      "name": "HARVEST_AREA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 210,
+      "minimum": 1.0,
+      "maximum": 20512.0,
+      "description": "Annual harvested-area sum from COSECHA.",
+      "unit": ""
+    },
+    {
+      "name": "SOWN_AREA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 170,
+      "minimum": 0.0,
+      "maximum": 6940.0,
+      "description": "Annual sown-area sum from SIEMBRA.",
+      "unit": ""
+    },
+    {
+      "name": "PRECIO",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 419,
+      "minimum": 0.1,
+      "maximum": 2.897058823529412,
+      "description": "Production-weighted annual farm-gate price.",
+      "unit": ""
+    },
+    {
+      "name": "VERDE_ACTUAL",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 118,
+      "minimum": 0.0,
+      "maximum": 21050.0,
+      "description": "Last non-null annual green/current area snapshot.",
+      "unit": ""
+    },
+    {
+      "name": "YIELD_RAW",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 386,
+      "minimum": 0.8235294117647058,
+      "maximum": 47.44871794871795,
+      "description": "Annual production divided by annual harvested area.",
+      "unit": "UNRESOLVED"
+    },
+    {
+      "name": "YIELD_UNIT",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 1,
+      "minimum": null,
+      "maximum": null,
+      "description": "Unresolved unit marker.",
+      "unit": "UNRESOLVED"
+    },
+    {
+      "name": "AREA_HA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 12,
+      "minimum": 3977.04111461619,
+      "maximum": 82408.95968305676,
+      "description": "Physical agricultural area from MIDAGRI land table.",
+      "unit": "ha"
+    },
+    {
+      "name": "MONTHS_PRESENT",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 8,
+      "minimum": 5.0,
+      "maximum": 12.0,
+      "description": "Count of monthly source records represented in the annual group.",
+      "unit": ""
+    }
+  ],
+  "icen_clean.csv": [
+    {
+      "name": "year",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 77,
+      "minimum": 1950.0,
+      "maximum": 2026.0,
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name": "month",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 12,
+      "minimum": 1.0,
+      "maximum": 12.0,
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name": "DATE",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 917,
+      "minimum": "1950-01-01",
+      "maximum": "2026-05-01",
+      "description": "Monthly date.",
+      "unit": ""
+    },
+    {
+      "name": "ICEN",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 334,
+      "minimum": -2.23,
+      "maximum": 4.32,
+      "description": "Monthly coastal El Nino index value.",
+      "unit": ""
+    }
+  ],
+  "land_physical.csv": [
+    {
+      "name": "UBIGEO",
+      "dtype": "int64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 61,
+      "minimum": 200101.0,
+      "maximum": 200806.0,
+      "description": "District geographic identifier.",
+      "unit": ""
+    },
+    {
+      "name": "DISTRITO",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 60,
+      "minimum": null,
+      "maximum": null,
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name": "AREA_HA",
+      "dtype": "float64",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 61,
+      "minimum": 2.0350135214579974,
+      "maximum": 82408.95968305676,
+      "description": "Physical agricultural area from MIDAGRI land table.",
+      "unit": "ha"
+    },
+    {
+      "name": "FUENTE",
+      "dtype": "str",
+      "nullable": false,
+      "missing_count": 0,
+      "unique_count": 1,
+      "minimum": null,
+      "maximum": null,
+      "description": "",
+      "unit": ""
+    }
+  ]
+}

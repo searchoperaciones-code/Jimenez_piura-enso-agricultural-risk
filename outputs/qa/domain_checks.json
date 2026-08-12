@@ -1,0 +1,14 @@
+{
+  "negative_production": 0,
+  "negative_harvest_area": 0,
+  "negative_sown_area": 0,
+  "negative_green_area": 0,
+  "negative_price": 0,
+  "area_ha_nonpositive": 0,
+  "malformed_raw_ubigeo_lengths": 0,
+  "malformed_panel_ubigeo_lengths": 0,
+  "monthly_key_unique": true,
+  "panel_key_unique": true,
+  "icen_key_unique": true,
+  "land_key_unique": true
+}

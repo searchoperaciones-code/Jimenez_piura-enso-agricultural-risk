@@ -1,0 +1,36 @@
+{
+  "analytical_feature_count": 55,
+  "catalog_url": "https://ide.inei.gob.pe/",
+  "derived_format": "GeoJSON",
+  "download_timestamp_utc": "2026-08-12T08:02:13Z",
+  "geometry_repairs": 0,
+  "institution": "INEI",
+  "piura_feature_count": 65,
+  "processed_crs": "EPSG:4326",
+  "product": "Distrito",
+  "sdmr_attempt": {
+    "accepted": false,
+    "available": true,
+    "crs": "EPSG:4326",
+    "file": "data\\raw\\climate\\boundaries\\inei_sdmr_distrito_shapefile.zip",
+    "panel_ubigeo_matches": 0,
+    "piura_rows": 0,
+    "reason_not_accepted": "Retrieved official SDMR archive did not contain Piura districts.",
+    "rows": 152,
+    "sha256": "cd287177045dbca6c8fa43fb07faa8d1c0525207daf4874d2e32e55174dd021b"
+  },
+  "service": "INEI IDE descarga de capas cartograficas",
+  "sha256_processed": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+  "sha256_raw": "ae22428029000d801b3d68afd0914ba94ca40a789a9b56231f6131a75abb9654",
+  "sha256_source_gpkg": "b4b6485e4161ce4413bf118f39411071f7627d979a4c271acb35103f1d3e2756",
+  "source_crs": "EPSG:4326",
+  "source_feature_count": 1890,
+  "source_format": "RAR containing GeoPackage",
+  "source_url": "https://ide.inei.gob.pe/files/Distrito.rar",
+  "ubigeo_match": {
+    "match_rate": 1.0,
+    "matched": 55,
+    "missing": [],
+    "required": 55
+  }
+}

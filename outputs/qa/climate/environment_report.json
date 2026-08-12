@@ -1,0 +1,18 @@
+{
+  "climate_version": "CLIMATE_MASTER_v1.1",
+  "packages": {
+    "exactextract": "0.3.0",
+    "geopandas": "1.1.3",
+    "matplotlib": "3.10.7",
+    "numpy": "2.3.5",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "pyproj": "3.7.2",
+    "rasterio": "1.4.4",
+    "requests": "2.33.1",
+    "shapely": "2.1.2"
+  },
+  "platform": "win32",
+  "python": "3.11.7",
+  "timestamp_utc": "2026-08-12T08:56:59Z"
+}

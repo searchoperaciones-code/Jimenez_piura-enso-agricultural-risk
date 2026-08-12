@@ -1,0 +1,17 @@
+{
+  "cod_cultivo_declared_type": "Numérico",
+  "cod_cultivo_declared_size": 8,
+  "cod_cultivo_observed_max_length": 11,
+  "cod_cultivo_conflict_confirmed": true,
+  "cultivo_declared_type": "Numérico",
+  "cultivo_contains_text": true,
+  "cultivo_type_conflict_confirmed": true,
+  "produccion_unit_explicitly_certified": false,
+  "yield_unit_reason": "PRODUCCION physical unit not explicitly certified in supplied dictionary.",
+  "source_issue_rows": 3,
+  "source_issue_variables": [
+    "COD_CULTIVO",
+    "CULTIVO",
+    "PRODUCCION"
+  ]
+}

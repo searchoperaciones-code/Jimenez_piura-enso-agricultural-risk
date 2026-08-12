@@ -1,0 +1,4 @@
+VARIABLE,records,min_valid_area_fraction,median_valid_area_fraction,review_lt_095,fail_lt_080,min_valid_pixels,median_valid_pixels,PASS
+RAIN,29040,0.9999949137691546,0.9999999999940196,0,0,2,17.0,True
+TMAX,22440,0.9999949137987655,0.9999999999931539,0,0,2,17.0,True
+TMIN,22440,0.9999949137987655,0.9999999999931539,0,0,2,17.0,True

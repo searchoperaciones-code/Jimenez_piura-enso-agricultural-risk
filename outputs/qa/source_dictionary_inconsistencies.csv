@@ -1,0 +1,4 @@
+VARIABLE,DICTIONARY_TYPE,DICTIONARY_SIZE,OBSERVED_PROPERTY,ISSUE,SEVERITY,PIPELINE_ACTION
+COD_CULTIVO,Numérico,8,identifier stored as text; max length=11,Dictionary type/length is inconsistent with the observed identifier structure.,HIGH,Preserve COD_CULTIVO as string; never coerce to integer.
+CULTIVO,Numérico,8,textual crop names observed,Dictionary declares CULTIVO as numeric although the source field contains text.,HIGH,Preserve CULTIVO as string.
+PRODUCCION,Numérico,8,numeric production volume,Official dictionary does not explicitly state the physical unit of PRODUCCION.,MEDIUM,Compute YIELD_RAW ratio but keep its unit as UNRESOLVED; do not compute unit-dependent GVP conversion.

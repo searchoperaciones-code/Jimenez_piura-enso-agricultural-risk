@@ -1,0 +1,17 @@
+{
+  "checks_passed": 36,
+  "checks_run": 36,
+  "districts_sampled": 14,
+  "max_absolute_difference": 3.410605131648481e-13,
+  "max_relative_difference": 1.7097805929074536e-15,
+  "status": "PASS",
+  "variables_sampled": [
+    "RAIN",
+    "TMAX",
+    "TMIN"
+  ],
+  "years_sampled": [
+    2017,
+    2023
+  ]
+}

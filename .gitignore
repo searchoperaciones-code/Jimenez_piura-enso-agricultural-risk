@@ -1,0 +1,82 @@
+# ============================================================
+# PIURA ENSO AGRICULTURAL RISK
+# Reproducible scientific repository
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# ============================================================
+# RAW SCIENTIFIC DATA
+# Preserved locally; provenance + URL + SHA-256 are versioned.
+# ============================================================
+data/raw/
+data/interim/
+
+# Root copies of raw institutional inputs
+/Formato_DiccionarioDatos_productos_dra_.xlsx
+/Formato_Metadatos_productos_dra_.docx
+/Formato_dataset_productos_dra__ (2).csv
+/ICEN.txt
+/superficie_agricola_nacional_2024.xlsx
+
+# Large raster / gridded formats
+*.tif
+*.tiff
+*.nc
+*.nc4
+*.grib
+*.grib2
+*.grb
+*.bil
+*.img
+*.hdf
+*.h5
+
+# Large archives / downloaded containers
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Caches / temporary files
+**/cache/
+**/.cache/
+downloads/
+tmp/
+temp/
+*.tmp
+*.temp
+*.part
+
+# Local backup folders
+backup/
+backups/
+archive/
+archives/
+
+# Execution artifacts that are reproducible and not scientific data
+*.log
+*.pid
+
+# Redundant first-run backup copies
+outputs/qa/repro_run1_backup/

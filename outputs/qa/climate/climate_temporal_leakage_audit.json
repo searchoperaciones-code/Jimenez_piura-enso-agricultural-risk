@@ -1,0 +1,10 @@
+{
+  "agricultural_mask_2024_used_primary": false,
+  "climate_2025_2026_merged_into_2016_2023_outcomes": false,
+  "enfen_2026_2027_used": false,
+  "future_price_information_introduced": false,
+  "phenology_windows_fitted_using_yield_outcomes": false,
+  "primary_exposure_geography": "whole district polygon",
+  "status": "NONE",
+  "temporal_leakage": false
+}
