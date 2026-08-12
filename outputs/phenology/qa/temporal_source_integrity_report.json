@@ -1,0 +1,36 @@
+{
+  "authorized_columns_used": [
+    "UBIGEO",
+    "ANO",
+    "MES",
+    "COD_CULTIVO",
+    "CULTIVO",
+    "SIEMBRA",
+    "COSECHA",
+    "PRODUCCION"
+  ],
+  "blank_zero_semantics": {
+    "missing_filled_with_zero": false,
+    "numeric_missing_cells": {
+      "COSECHA": 8179,
+      "PRODUCCION": 0,
+      "SIEMBRA": 0
+    },
+    "numeric_zero_cells": {
+      "COSECHA": 101942,
+      "PRODUCCION": 85870,
+      "SIEMBRA": 112711
+    }
+  },
+  "duplicate_source_keys": 0,
+  "observed_raw_month_max": 202412,
+  "observed_raw_month_min": 201508,
+  "raw_rows": 124514,
+  "status": "PASS",
+  "target_crop_raw_rows": 23540,
+  "temporal_roles": {
+    "2015_08_2015_12": "AUG_DEC_ANTECEDENT_SUPPORT_ONLY",
+    "2016_2023": "MAIN_TEMPORAL_STRUCTURE",
+    "2024": "CONTEXTUAL_ONLY_NOT_FOR_SELECTION"
+  }
+}

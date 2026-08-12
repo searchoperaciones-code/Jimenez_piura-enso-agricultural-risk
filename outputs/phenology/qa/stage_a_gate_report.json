@@ -1,0 +1,25 @@
+{
+  "forbidden_stage_b_outputs": [],
+  "gates": {
+    "G0_UPSTREAM_FREEZE_INTEGRITY": "PASS",
+    "G1_EVIDENCE_REGISTRY_PROVENANCE": "PASS",
+    "G2_NO_OUTCOME_DRIVEN_SELECTION": "PASS",
+    "G3_TEMPORAL_SOURCE_INTEGRITY": "PASS",
+    "G4_LEFT_TRUNCATION_AUDIT_COMPLETENESS": "PASS",
+    "G5_YEAR_CROSSING_AUDIT_COMPLETENESS": "PASS",
+    "G6_STAGE_SCOPE_FIREWALL": "PASS",
+    "G7_DETERMINISTIC_STAGE_A_CORE_OUTPUTS": "PASS"
+  },
+  "protected_diff_vs_base": [],
+  "protected_working_tree_status": [],
+  "row_counts": {
+    "evidence_registry": 16,
+    "left_truncation": 1164,
+    "temporal_monthly": 23540,
+    "temporal_summary": 5809,
+    "transient_lag": 9204,
+    "year_crossing": 10245
+  },
+  "stage": "PHENOLOGY_MASTER_v1_STAGE_A",
+  "status": "PASS"
+}

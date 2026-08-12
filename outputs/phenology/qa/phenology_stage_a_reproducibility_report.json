@@ -1,0 +1,32 @@
+{
+  "core_outputs": [
+    "processed/phenology_evidence_registry.csv",
+    "processed/temporal_structure_monthly.csv",
+    "processed/temporal_structure_summary.csv",
+    "qa/transient_lag_compatibility.csv",
+    "qa/year_crossing_audit.csv",
+    "qa/left_truncation_2016.csv",
+    "qa/stage_a_schema.json"
+  ],
+  "deterministic_core_outputs_identical": true,
+  "run1_hashes": {
+    "processed/phenology_evidence_registry.csv": "79ff3cc159895c06b6a9b3fc7d52dfb8d12121bb6135b60b6d2164e45ec141e7",
+    "processed/temporal_structure_monthly.csv": "c7c6303f78928e73e30c36f57ca8ee0a16afc1054793e94691f50db87caa780d",
+    "processed/temporal_structure_summary.csv": "6b18736e8eab691b0c361e9914f994fc5ec65a797fd6d12c66ce68f39798394c",
+    "qa/left_truncation_2016.csv": "b2fa71f3d423c74c7ddb99346ebc12fe103b7c16660c953696794bbd4329e2e3",
+    "qa/stage_a_schema.json": "17297fb191d9366284e142d494d27307ab5b4ec136c64fb261f8889c30310385",
+    "qa/transient_lag_compatibility.csv": "c9a6be47bdff93d114699e26f8f6fbe2ca265764fc3dc6d5a683c9aeb7c4e7c4",
+    "qa/year_crossing_audit.csv": "1b6edc8649369240b89a0b677cda3156dd8648aadde1807908a561bb293abc6e"
+  },
+  "run2_hashes": {
+    "processed/phenology_evidence_registry.csv": "79ff3cc159895c06b6a9b3fc7d52dfb8d12121bb6135b60b6d2164e45ec141e7",
+    "processed/temporal_structure_monthly.csv": "c7c6303f78928e73e30c36f57ca8ee0a16afc1054793e94691f50db87caa780d",
+    "processed/temporal_structure_summary.csv": "6b18736e8eab691b0c361e9914f994fc5ec65a797fd6d12c66ce68f39798394c",
+    "qa/left_truncation_2016.csv": "b2fa71f3d423c74c7ddb99346ebc12fe103b7c16660c953696794bbd4329e2e3",
+    "qa/stage_a_schema.json": "17297fb191d9366284e142d494d27307ab5b4ec136c64fb261f8889c30310385",
+    "qa/transient_lag_compatibility.csv": "c9a6be47bdff93d114699e26f8f6fbe2ca265764fc3dc6d5a683c9aeb7c4e7c4",
+    "qa/year_crossing_audit.csv": "1b6edc8649369240b89a0b677cda3156dd8648aadde1807908a561bb293abc6e"
+  },
+  "stage": "PHENOLOGY_MASTER_v1_STAGE_A",
+  "status": "PASS"
+}

@@ -1,0 +1,95 @@
+{
+  "base_is_ancestor": true,
+  "base_sha": "e4710b1429ed54c557e6c0a88212a24a6fdd7d47",
+  "branch": "phase/phenology-master-v1",
+  "head_sha": "fc6e0ae31f50b6ab4cd28663fc5285758b709feb",
+  "input_hashes": [
+    {
+      "actual_sha256": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489",
+      "exists": true,
+      "expected_sha256": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489",
+      "file_size": 12578609,
+      "match": true,
+      "path": "data/raw/Formato_dataset_productos_dra__ (2).csv"
+    },
+    {
+      "actual_sha256": "9df8aedf987a7a882d265ffc629d105f8058a5208738d5dcd1b213b30d347ce0",
+      "exists": true,
+      "expected_sha256": "9df8aedf987a7a882d265ffc629d105f8058a5208738d5dcd1b213b30d347ce0",
+      "file_size": 76211,
+      "match": true,
+      "path": "data/raw/Formato_DiccionarioDatos_productos_dra_.xlsx"
+    },
+    {
+      "actual_sha256": "a66ede624b8d2f502df65620c84233dd04a9ebcc29ae9969c38e2272ec812ea7",
+      "exists": true,
+      "expected_sha256": "a66ede624b8d2f502df65620c84233dd04a9ebcc29ae9969c38e2272ec812ea7",
+      "file_size": 16701,
+      "match": true,
+      "path": "data/raw/Formato_Metadatos_productos_dra_.docx"
+    },
+    {
+      "actual_sha256": "36f9f5d41489df4c4e19b8108c339088dd6ee2f240669d47683163077e1d9b7c",
+      "exists": true,
+      "expected_sha256": "36f9f5d41489df4c4e19b8108c339088dd6ee2f240669d47683163077e1d9b7c",
+      "file_size": 139347,
+      "match": true,
+      "path": "data/raw/superficie_agricola_nacional_2024.xlsx"
+    },
+    {
+      "actual_sha256": "53e82d90ad26335b081ddebf67f9293477cf6f80e3d7d9de17ddfe33fab8c03f",
+      "exists": true,
+      "expected_sha256": "53e82d90ad26335b081ddebf67f9293477cf6f80e3d7d9de17ddfe33fab8c03f",
+      "file_size": 16722,
+      "match": true,
+      "path": "data/raw/ICEN.txt"
+    },
+    {
+      "actual_sha256": "ab9b4ce53c008a1bc3ceb7d3e4c5d617d2544ad48632b747079c33e8b95d1214",
+      "exists": true,
+      "expected_sha256": "ab9b4ce53c008a1bc3ceb7d3e4c5d617d2544ad48632b747079c33e8b95d1214",
+      "file_size": 236153,
+      "match": true,
+      "path": "data/processed/panel_master.csv"
+    },
+    {
+      "actual_sha256": "3b406d0bdec12414c58a14bd5f4e71ec708bc87910e9c06b182dfd2e043122a1",
+      "exists": true,
+      "expected_sha256": "3b406d0bdec12414c58a14bd5f4e71ec708bc87910e9c06b182dfd2e043122a1",
+      "file_size": 67200,
+      "match": true,
+      "path": "data/processed/panel_balanceado.csv"
+    },
+    {
+      "actual_sha256": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+      "exists": true,
+      "expected_sha256": "23c3232e69a6b4786e544d875575e6f3a98dc16f6048d3bd0a794e4420b04fd3",
+      "file_size": 631245,
+      "match": true,
+      "path": "data/processed/climate/climate_monthly_primary.parquet"
+    },
+    {
+      "actual_sha256": "12e5653ce99e97eff85bd5246a61cb9b105f1fab51ab72c33c59d8c1fab0f885",
+      "exists": true,
+      "expected_sha256": "12e5653ce99e97eff85bd5246a61cb9b105f1fab51ab72c33c59d8c1fab0f885",
+      "file_size": 7587,
+      "match": true,
+      "path": "config/phenology/PHENOLOGY_EVIDENCE_REGISTRY_SEED.csv"
+    }
+  ],
+  "protection_status": {
+    "diff_vs_base": [],
+    "protected_paths": [
+      "data/processed/panel_master.csv",
+      "data/processed/panel_balanceado.csv",
+      "data/processed/climate",
+      "outputs/qa",
+      "outputs/figures/climate_qa",
+      "outputs/repository"
+    ],
+    "protected_paths_modified": false,
+    "working_tree_status": []
+  },
+  "stage": "PHENOLOGY_MASTER_v1_STAGE_A",
+  "status": "PASS"
+}

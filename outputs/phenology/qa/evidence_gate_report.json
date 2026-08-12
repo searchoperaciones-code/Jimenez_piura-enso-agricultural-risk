@@ -1,0 +1,37 @@
+{
+  "candidate_roles_preserved_not_promoted": true,
+  "context_all_rows": 1,
+  "evidence_id_unique_nonblank": true,
+  "fulltext_verified_preserved": true,
+  "invalid_crop_codes": [],
+  "live_url_accessibility_gate": "NOT_USED_STAGE_A",
+  "missing_required_columns": [],
+  "page_table_figure_section_preserved": true,
+  "required_metadata_nonblank": {
+    "citation": true,
+    "crop_code": true,
+    "decision_role": true,
+    "doi_or_url": true,
+    "evidence_id": true,
+    "institution_or_journal": true,
+    "source_authority": true,
+    "transferability": true
+  },
+  "rows": 16,
+  "seed_hash_match": true,
+  "seed_path": "config\\phenology\\PHENOLOGY_EVIDENCE_REGISTRY_SEED.csv",
+  "seed_sha256": "12e5653ce99e97eff85bd5246a61cb9b105f1fab51ab72c33c59d8c1fab0f885",
+  "stage": "PHENOLOGY_MASTER_v1_STAGE_A",
+  "status": "PASS",
+  "target_crop_codes_represented": [
+    "13010170102",
+    "13010210000",
+    "14010020000",
+    "14010070000",
+    "15010040000"
+  ],
+  "target_crop_count": 5,
+  "unknown_role_tokens": [],
+  "unknown_source_authorities": [],
+  "vocabulary_review_required": false
+}

@@ -1,0 +1,12 @@
+{
+  "audit": "NO_OUTCOME_SNOOPING_STAGE_A",
+  "climate_parsed_for_analysis": false,
+  "finding_count": 0,
+  "findings": [],
+  "forbidden_stage_b_outputs": [],
+  "panel_outcome_data_parsed": false,
+  "scanned_files": [
+    "scripts\\phenology_stage_a.py"
+  ],
+  "status": "PASS"
+}
