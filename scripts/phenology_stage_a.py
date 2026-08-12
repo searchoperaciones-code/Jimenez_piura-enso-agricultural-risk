@@ -412,15 +412,24 @@ def temporal_structure_audit(raw: pd.DataFrame, dirs: dict[str, Path]) -> tuple[
         ubigeo, crop_code, year = keys
         year_int = int(year)
         source_months = int(group["MONTH"].nunique(dropna=True))
-        stats: dict[str, tuple[float | None, int, int, str, bool]] = {}
+        ordered = group.sort_values("MONTH", kind="mergesort")
+        records = ordered.to_dict("records")
+        month_values_by_variable = {
+            var: {
+                int(record["MONTH"]): None if pd.isna(record[var]) else float(record[var])
+                for record in records
+            }
+            for var in ["SIEMBRA", "COSECHA", "PRODUCCION"]
+        }
+        stats: dict[str, tuple[float | None, int | None, int | None, str, bool | None]] = {}
         for var in ["SIEMBRA", "COSECHA"]:
             stats[var] = denominator_status(group[var], source_months)
         if crop_code in PERMANENT_CROPS:
             stats["PRODUCCION"] = denominator_status(group["PRODUCCION"], source_months)
         else:
-            stats["PRODUCCION"] = (None, int(group["PRODUCCION"].isna().sum()), int((group["PRODUCCION"] > 0).sum(skipna=True)), "NOT_COMPUTED_TRANSIENT", source_months == 12)
+            stats["PRODUCCION"] = (None, None, None, "NOT_COMPUTED_TRANSIENT", None)
 
-        for _, record in group.iterrows():
+        for record in records:
             out = {
                 "UBIGEO": str(ubigeo),
                 "COD_CULTIVO": str(crop_code),
@@ -433,7 +442,7 @@ def temporal_structure_audit(raw: pd.DataFrame, dirs: dict[str, Path]) -> tuple[
                 "SOURCE_12_MONTHS_PRESENT": source_months == 12,
                 "SIEMBRA": record["SIEMBRA"],
                 "COSECHA": record["COSECHA"],
-                "PRODUCCION": record["PRODUCCION"],
+                "PRODUCCION": record["PRODUCCION"] if crop_code in PERMANENT_CROPS else np.nan,
             }
             for var, prefix in [("SIEMBRA", "SOWN"), ("COSECHA", "HARVEST"), ("PRODUCCION", "PRODUCTION")]:
                 denom, missing, positive, status, has_12 = stats[var]
@@ -452,12 +461,11 @@ def temporal_structure_audit(raw: pd.DataFrame, dirs: dict[str, Path]) -> tuple[
         for var, prefix in [("SIEMBRA", "SOWN"), ("COSECHA", "HARVEST"), ("PRODUCCION", "PRODUCTION")]:
             if var == "PRODUCCION" and crop_code not in PERMANENT_CROPS:
                 continue
-            ordered = group.sort_values("MONTH", kind="mergesort")
             share_col = []
             denom, _, _, status, _ = stats[var]
+            values_by_month = month_values_by_variable[var]
             for month in range(1, 13):
-                month_values = ordered.loc[ordered["MONTH"] == month, var]
-                value = None if month_values.empty or pd.isna(month_values.iloc[0]) else float(month_values.iloc[0])
+                value = values_by_month.get(month)
                 share_col.append(np.nan if status != "POSITIVE" or not denom or value is None else value / denom)
             valid = not np.isnan(np.asarray(share_col, dtype=float)).any()
             entropy = normalized_entropy(share_col) if valid else None
@@ -501,6 +509,13 @@ def temporal_structure_audit(raw: pd.DataFrame, dirs: dict[str, Path]) -> tuple[
             )
 
     monthly = pd.DataFrame(rows)
+    count_columns = [
+        column
+        for column in monthly.columns
+        if column.endswith("_MISSING_MONTH_COUNT") or column.endswith("_POSITIVE_MONTH_COUNT")
+    ]
+    for column in count_columns:
+        monthly[column] = monthly[column].astype("Int64")
     summary = pd.DataFrame(summaries)
     write_csv(monthly, dirs["processed"] / "temporal_structure_monthly.csv")
     write_csv(summary, dirs["processed"] / "temporal_structure_summary.csv")

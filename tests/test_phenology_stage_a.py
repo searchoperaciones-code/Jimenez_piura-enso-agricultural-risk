@@ -4,6 +4,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -15,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import phenology_stage_a as stage_a  # noqa: E402
+import audit_phenology_stage_a as stage_a_audit  # noqa: E402
 
 
 QA = ROOT / "outputs" / "phenology" / "qa"
@@ -140,6 +142,34 @@ class PhenologyStageATests(unittest.TestCase):
         self.assertTrue((permanent_summary["DESCRIPTIVE_ONLY"].astype(str).str.upper().isin(["TRUE", "1"])).all())
         self.assertTrue((permanent_summary["SELECTION_STATUS"] == "NOT_SELECTED_STAGE_A").all())
 
+    def test_15a_transient_monthly_produccion_is_null(self):
+        monthly = pd.read_csv(PROC / "temporal_structure_monthly.csv", dtype={"COD_CULTIVO": "string"})
+        transient = monthly[monthly["COD_CULTIVO"].isin(stage_a.TRANSIENT_CROPS)]
+        self.assertEqual(int(transient["PRODUCCION"].notna().sum()), 0)
+
+    def test_15b_transient_production_metadata_is_null_except_status(self):
+        monthly = pd.read_csv(PROC / "temporal_structure_monthly.csv", dtype={"COD_CULTIVO": "string"})
+        transient = monthly[monthly["COD_CULTIVO"].isin(stage_a.TRANSIENT_CROPS)]
+        metadata_cols = [
+            "PRODUCTION_ANNUAL_DENOMINATOR",
+            "PRODUCTION_MISSING_MONTH_COUNT",
+            "PRODUCTION_POSITIVE_MONTH_COUNT",
+            "PRODUCTION_SHARE",
+        ]
+        self.assertEqual(int(transient[metadata_cols].notna().sum().sum()), 0)
+        self.assertTrue((transient["PRODUCTION_DENOMINATOR_STATUS"] == "NOT_COMPUTED_TRANSIENT").all())
+
+    def test_15c_no_transient_production_summary_rows(self):
+        summary = pd.read_csv(PROC / "temporal_structure_summary.csv", dtype={"COD_CULTIVO": "string"})
+        transient_production = summary[(summary["COD_CULTIVO"].isin(stage_a.TRANSIENT_CROPS)) & (summary["VARIABLE"] == "PRODUCCION")]
+        self.assertEqual(len(transient_production), 0)
+
+    def test_15d_transient_year_crossing_production_values_are_null(self):
+        crossing = pd.read_csv(QA / "year_crossing_audit.csv", dtype={"COD_CULTIVO": "string"})
+        transient = crossing[crossing["COD_CULTIVO"].isin(stage_a.TRANSIENT_CROPS)]
+        production_cols = [col for col in transient.columns if "PRODUCTION" in col.upper()]
+        self.assertEqual(int(transient[production_cols].notna().sum().sum()) if production_cols else 0, 0)
+
     def test_16_no_forbidden_outcome_fields_in_stage_a_outputs(self):
         forbidden = {"YIELD_RAW", "YIELD_UNIT", "PRECIO", "PRECIO_CHACRA"}
         for path in list(PROC.glob("*.csv")) + list(QA.glob("*.csv")):
@@ -165,6 +195,55 @@ class PhenologyStageATests(unittest.TestCase):
         self.assertEqual(audit["finding_count"], 0)
         self.assertFalse(audit["climate_parsed_for_analysis"])
         self.assertFalse(audit["panel_outcome_data_parsed"])
+        self.assertEqual(audit["transient_production_firewall"]["status"], "PASS")
+        self.assertEqual(audit["transient_production_firewall"]["transient_produccion_nonnull_cells"], 0)
+        self.assertEqual(audit["transient_production_firewall"]["transient_production_metadata_nonnull_cells"], 0)
+        self.assertEqual(audit["transient_production_firewall"]["transient_production_summary_rows"], 0)
+        self.assertEqual(audit["transient_production_firewall"]["transient_year_crossing_production_values"], 0)
+        self.assertTrue(audit["transient_production_firewall"]["permanent_production_seasonality_preserved"])
+
+    def test_19a_independent_auditor_detects_synthetic_crop_scope_violation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_root = Path(tmp)
+            processed = tmp_root / "processed"
+            qa = tmp_root / "qa"
+            processed.mkdir()
+            qa.mkdir()
+            pd.DataFrame(
+                [
+                    {
+                        "COD_CULTIVO": "14010020000",
+                        "PRODUCCION": 10.0,
+                        "PRODUCTION_ANNUAL_DENOMINATOR": 10.0,
+                        "PRODUCTION_MISSING_MONTH_COUNT": 0,
+                        "PRODUCTION_POSITIVE_MONTH_COUNT": 1,
+                        "PRODUCTION_SHARE": 1.0,
+                        "PRODUCTION_DENOMINATOR_STATUS": "POSITIVE",
+                    },
+                    {
+                        "COD_CULTIVO": "13010210000",
+                        "PRODUCCION": 20.0,
+                        "PRODUCTION_ANNUAL_DENOMINATOR": 20.0,
+                        "PRODUCTION_MISSING_MONTH_COUNT": 0,
+                        "PRODUCTION_POSITIVE_MONTH_COUNT": 1,
+                        "PRODUCTION_SHARE": 1.0,
+                        "PRODUCTION_DENOMINATOR_STATUS": "POSITIVE",
+                    },
+                ]
+            ).to_csv(processed / "temporal_structure_monthly.csv", index=False)
+            pd.DataFrame([{"COD_CULTIVO": "14010070000", "VARIABLE": "PRODUCCION"}]).to_csv(
+                processed / "temporal_structure_summary.csv", index=False
+            )
+            pd.DataFrame([{"COD_CULTIVO": "14010020000", "PRODUCTION_DENOMINATOR": 1.0}]).to_csv(
+                qa / "year_crossing_audit.csv", index=False
+            )
+            result = stage_a_audit.evaluate_transient_production_firewall(processed, qa)
+            finding_names = {finding["finding"] for finding in result["findings"]}
+            self.assertEqual(result["status"], "FAIL")
+            self.assertIn("TRANSIENT_PRODUCCION_VALUE_EXPOSED", finding_names)
+            self.assertIn("TRANSIENT_PRODUCTION_METADATA_EXPOSED", finding_names)
+            self.assertIn("TRANSIENT_PRODUCTION_SUMMARY_ROW", finding_names)
+            self.assertIn("TRANSIENT_YEAR_CROSSING_PRODUCTION_VALUE", finding_names)
 
     def test_20_two_run_deterministic_core_hashes_identical(self):
         report = read_json(QA / "phenology_stage_a_reproducibility_report.json")

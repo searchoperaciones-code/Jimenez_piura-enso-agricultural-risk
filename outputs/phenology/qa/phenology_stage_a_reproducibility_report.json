@@ -11,7 +11,7 @@
   "deterministic_core_outputs_identical": true,
   "run1_hashes": {
     "processed/phenology_evidence_registry.csv": "79ff3cc159895c06b6a9b3fc7d52dfb8d12121bb6135b60b6d2164e45ec141e7",
-    "processed/temporal_structure_monthly.csv": "c7c6303f78928e73e30c36f57ca8ee0a16afc1054793e94691f50db87caa780d",
+    "processed/temporal_structure_monthly.csv": "acb174d3120f29f1a76dbef53b949e056f7f590c978d63f6bb33f85b1c4deb2e",
     "processed/temporal_structure_summary.csv": "6b18736e8eab691b0c361e9914f994fc5ec65a797fd6d12c66ce68f39798394c",
     "qa/left_truncation_2016.csv": "b2fa71f3d423c74c7ddb99346ebc12fe103b7c16660c953696794bbd4329e2e3",
     "qa/stage_a_schema.json": "17297fb191d9366284e142d494d27307ab5b4ec136c64fb261f8889c30310385",
@@ -20,7 +20,7 @@
   },
   "run2_hashes": {
     "processed/phenology_evidence_registry.csv": "79ff3cc159895c06b6a9b3fc7d52dfb8d12121bb6135b60b6d2164e45ec141e7",
-    "processed/temporal_structure_monthly.csv": "c7c6303f78928e73e30c36f57ca8ee0a16afc1054793e94691f50db87caa780d",
+    "processed/temporal_structure_monthly.csv": "acb174d3120f29f1a76dbef53b949e056f7f590c978d63f6bb33f85b1c4deb2e",
     "processed/temporal_structure_summary.csv": "6b18736e8eab691b0c361e9914f994fc5ec65a797fd6d12c66ce68f39798394c",
     "qa/left_truncation_2016.csv": "b2fa71f3d423c74c7ddb99346ebc12fe103b7c16660c953696794bbd4329e2e3",
     "qa/stage_a_schema.json": "17297fb191d9366284e142d494d27307ab5b4ec136c64fb261f8889c30310385",

@@ -8,5 +8,14 @@
   "scanned_files": [
     "scripts\\phenology_stage_a.py"
   ],
-  "status": "PASS"
+  "status": "PASS",
+  "transient_production_firewall": {
+    "permanent_production_seasonality_preserved": true,
+    "status": "PASS",
+    "transient_bad_status_cells": 0,
+    "transient_produccion_nonnull_cells": 0,
+    "transient_production_metadata_nonnull_cells": 0,
+    "transient_production_summary_rows": 0,
+    "transient_year_crossing_production_values": 0
+  }
 }

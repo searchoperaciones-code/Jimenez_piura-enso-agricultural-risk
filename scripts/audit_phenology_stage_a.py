@@ -14,6 +14,7 @@ QA = ROOT / "outputs" / "phenology" / "qa"
 READINESS = ROOT / "outputs" / "phenology" / "PHENOLOGY_STAGE_A_READINESS.md"
 
 PROCESSING_FILES = [ROOT / "scripts" / "phenology_stage_a.py"]
+TRANSIENT_CROPS = {"14010020000", "14010070000"}
 FORBIDDEN_COLUMNS = {"YIELD_RAW", "YIELD_UNIT", "PRECIO", "PRECIO_CHACRA"}
 FORBIDDEN_IMPORTS = {"statsmodels", "sklearn", "linearmodels", "pymc", "cvxpy", "pyomo"}
 FORBIDDEN_IDENTIFIERS = {"regression", "pvalue", "pvalues", "rsquared", "aic", "bic", "predict", "fit"}
@@ -23,6 +24,13 @@ FORBIDDEN_OUTPUT_NAMES = {
     "phenology_exposures_panel.parquet",
     "phenology_exposures_long.parquet",
 }
+TRANSIENT_PRODUCTION_METADATA_COLUMNS = [
+    "PRODUCTION_ANNUAL_DENOMINATOR",
+    "PRODUCTION_MISSING_MONTH_COUNT",
+    "PRODUCTION_POSITIVE_MONTH_COUNT",
+    "PRODUCTION_SHARE",
+]
+TRANSIENT_PRODUCTION_ALLOWED_STATUS = "NOT_COMPUTED_TRANSIENT"
 PROTECTED_PATHS = [
     "data/processed/panel_master.csv",
     "data/processed/panel_balanceado.csv",
@@ -36,6 +44,13 @@ PROTECTED_PATHS = [
 def write_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def display_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -148,6 +163,127 @@ def processing_files() -> list[Path]:
     return sorted(files)
 
 
+def nonnull_count(frame, columns: list[str]) -> int:
+    present = [column for column in columns if column in frame.columns]
+    if not present:
+        return 0
+    return int(frame[present].notna().sum().sum())
+
+
+def evaluate_transient_production_firewall(processed_root: Path, qa_root: Path) -> dict[str, Any]:
+    import pandas as pd
+
+    findings: list[dict[str, Any]] = []
+    monthly_path = processed_root / "temporal_structure_monthly.csv"
+    summary_path = processed_root / "temporal_structure_summary.csv"
+    crossing_path = qa_root / "year_crossing_audit.csv"
+
+    monthly_counts = {
+        "transient_produccion_nonnull_cells": None,
+        "transient_production_metadata_nonnull_cells": None,
+        "transient_bad_status_cells": None,
+    }
+    summary_rows = None
+    crossing_values = None
+    permanent_preserved = None
+
+    if monthly_path.exists():
+        monthly = pd.read_csv(monthly_path, dtype={"COD_CULTIVO": "string"})
+        transient_monthly = monthly[monthly["COD_CULTIVO"].astype(str).isin(TRANSIENT_CROPS)]
+        monthly_counts["transient_produccion_nonnull_cells"] = int(transient_monthly["PRODUCCION"].notna().sum()) if "PRODUCCION" in transient_monthly.columns else 0
+        monthly_counts["transient_production_metadata_nonnull_cells"] = nonnull_count(
+            transient_monthly, TRANSIENT_PRODUCTION_METADATA_COLUMNS
+        )
+        if "PRODUCTION_DENOMINATOR_STATUS" in transient_monthly.columns:
+            bad_status = transient_monthly["PRODUCTION_DENOMINATOR_STATUS"].fillna("") != TRANSIENT_PRODUCTION_ALLOWED_STATUS
+            monthly_counts["transient_bad_status_cells"] = int(bad_status.sum())
+        else:
+            monthly_counts["transient_bad_status_cells"] = len(transient_monthly)
+        permanent = monthly[~monthly["COD_CULTIVO"].astype(str).isin(TRANSIENT_CROPS)]
+        permanent_preserved = bool("PRODUCTION_SHARE" in permanent.columns and permanent["PRODUCTION_SHARE"].notna().sum() > 0)
+    else:
+        findings.append({"file": display_path(monthly_path), "line": None, "finding": "MISSING_TEMPORAL_MONTHLY", "detail": "temporal_structure_monthly.csv"})
+
+    if monthly_counts["transient_produccion_nonnull_cells"]:
+        findings.append(
+            {
+                "file": display_path(monthly_path),
+                "line": None,
+                "finding": "TRANSIENT_PRODUCCION_VALUE_EXPOSED",
+                "detail": monthly_counts["transient_produccion_nonnull_cells"],
+            }
+        )
+    if monthly_counts["transient_production_metadata_nonnull_cells"]:
+        findings.append(
+            {
+                "file": display_path(monthly_path),
+                "line": None,
+                "finding": "TRANSIENT_PRODUCTION_METADATA_EXPOSED",
+                "detail": monthly_counts["transient_production_metadata_nonnull_cells"],
+            }
+        )
+    if monthly_counts["transient_bad_status_cells"]:
+        findings.append(
+            {
+                "file": display_path(monthly_path),
+                "line": None,
+                "finding": "TRANSIENT_PRODUCTION_STATUS_INVALID",
+                "detail": monthly_counts["transient_bad_status_cells"],
+            }
+        )
+
+    if summary_path.exists():
+        summary = pd.read_csv(summary_path, dtype={"COD_CULTIVO": "string"})
+        summary_rows = int(((summary["COD_CULTIVO"].astype(str).isin(TRANSIENT_CROPS)) & (summary["VARIABLE"].astype(str) == "PRODUCCION")).sum())
+    else:
+        findings.append({"file": display_path(summary_path), "line": None, "finding": "MISSING_TEMPORAL_SUMMARY", "detail": "temporal_structure_summary.csv"})
+    if summary_rows:
+        findings.append(
+            {
+                "file": display_path(summary_path),
+                "line": None,
+                "finding": "TRANSIENT_PRODUCTION_SUMMARY_ROW",
+                "detail": summary_rows,
+            }
+        )
+
+    if crossing_path.exists():
+        crossing = pd.read_csv(crossing_path, dtype={"COD_CULTIVO": "string"})
+        transient_crossing = crossing[crossing["COD_CULTIVO"].astype(str).isin(TRANSIENT_CROPS)]
+        production_columns = [column for column in transient_crossing.columns if "PRODUCTION" in column.upper()]
+        crossing_values = nonnull_count(transient_crossing, production_columns)
+    else:
+        findings.append({"file": display_path(crossing_path), "line": None, "finding": "MISSING_YEAR_CROSSING", "detail": "year_crossing_audit.csv"})
+    if crossing_values:
+        findings.append(
+            {
+                "file": display_path(crossing_path),
+                "line": None,
+                "finding": "TRANSIENT_YEAR_CROSSING_PRODUCTION_VALUE",
+                "detail": crossing_values,
+            }
+        )
+
+    if permanent_preserved is False:
+        findings.append(
+            {
+                "file": display_path(monthly_path),
+                "line": None,
+                "finding": "PERMANENT_PRODUCTION_SEASONALITY_NOT_PRESERVED",
+                "detail": "No non-null permanent production shares found.",
+            }
+        )
+
+    return {
+        **monthly_counts,
+        "transient_production_summary_rows": summary_rows,
+        "transient_year_crossing_production_values": crossing_values,
+        "permanent_production_seasonality_preserved": permanent_preserved,
+        "findings": findings,
+        "status": "PASS" if not findings else "FAIL",
+    }
+
+
 def scan_processing_code() -> dict[str, Any]:
     findings: list[dict[str, Any]] = []
     scanned = []
@@ -167,14 +303,21 @@ def scan_processing_code() -> dict[str, Any]:
                     forbidden_outputs.append(str(path.relative_to(ROOT)))
     for path in forbidden_outputs:
         findings.append({"file": path, "line": None, "finding": "FORBIDDEN_STAGE_B_OUTPUT", "detail": path})
+    production_firewall = evaluate_transient_production_firewall(
+        ROOT / "data" / "processed" / "phenology", ROOT / "outputs" / "phenology" / "qa"
+    )
+    findings.extend(production_firewall["findings"])
+    climate_parsed_for_analysis = any(item["finding"] in {"FORBIDDEN_PARQUET_READ", "FORBIDDEN_CLIMATE_TABLE_READ"} for item in findings)
+    panel_outcome_data_parsed = any(item["finding"] in {"FORBIDDEN_PANEL_TABLE_READ", "FORBIDDEN_COLUMN_LITERAL"} for item in findings)
     report = {
         "audit": "NO_OUTCOME_SNOOPING_STAGE_A",
         "scanned_files": scanned,
         "findings": findings,
         "finding_count": len(findings),
         "forbidden_stage_b_outputs": forbidden_outputs,
-        "climate_parsed_for_analysis": False,
-        "panel_outcome_data_parsed": False,
+        "transient_production_firewall": {key: value for key, value in production_firewall.items() if key != "findings"},
+        "climate_parsed_for_analysis": climate_parsed_for_analysis,
+        "panel_outcome_data_parsed": panel_outcome_data_parsed,
         "status": "PASS" if not findings else "FAIL",
     }
     write_json(QA / "no_outcome_snooping_audit.json", report)
