@@ -19,3 +19,6 @@ outputs/tables/** -text
 *.jpg     binary
 *.jpeg    binary
 *.gpkg    binary
+
+# Frozen phenology evidence inputs: preserve exact bytes
+config/phenology/*.csv -text
