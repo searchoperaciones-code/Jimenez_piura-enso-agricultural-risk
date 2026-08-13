@@ -105,8 +105,10 @@ class RepositoryOfflineTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("GO_TO_PHENOLOGY_PHASE", readiness)
         self.assertIn("does not yet", readme)
+        self.assertIn("construct climate exposure variables", readme)
         self.assertIn("estimate climate-yield causal effects", readme)
-        self.assertIn("PHENOLOGY MASTER v1 | NOT STARTED", readme)
+        self.assertIn("PHENOLOGY MASTER v1 - Evidence/Architecture Freeze | PASS - FROZEN", readme)
+        self.assertIn("PHENOLOGY MASTER v1 - Climate Exposure Build | READY", readme)
 
     def test_freeze_docs_and_root_requirements_exist(self):
         for path in [

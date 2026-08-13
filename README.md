@@ -2,7 +2,7 @@
 
 Working research title.
 
-This repository contains the frozen research-software and evidence artifacts for the completed DATASET MASTER v1 and CLIMATE MASTER v1.1 phases of a district-level agricultural risk study for Piura, Peru. Later phenology, econometrics, ENSO-scenario and optimization phases have not started in this repository state.
+This repository contains the frozen research-software and evidence artifacts for the completed DATASET MASTER v1, CLIMATE MASTER v1.1 and PHENOLOGY MASTER v1 evidence/architecture phases of a district-level agricultural risk study for Piura, Peru. Climate Exposure Build is ready to begin from the frozen phenology windows; econometrics, ENSO-scenario and optimization phases remain blocked.
 
 ## Scientific status
 
@@ -10,10 +10,14 @@ This repository contains the frozen research-software and evidence artifacts for
 | --- | --- |
 | DATASET MASTER v1 | PASS - FROZEN |
 | CLIMATE MASTER v1.1 | PASS - FROZEN |
-| PHENOLOGY MASTER v1 | NOT STARTED |
-| ECONOMETRICS | NOT STARTED |
-| ENSO SCENARIOS | NOT STARTED |
-| MEAN-CVaR OPTIMIZATION | NOT STARTED |
+| REPOSITORY HARDENING v0.2 | PASS - CLOSED |
+| PHENOLOGY MASTER v1 - Stage A | PASS - CLOSED |
+| PHENOLOGY MASTER v1 - Evidence Adjudication | PASS |
+| PHENOLOGY MASTER v1 - Evidence/Architecture Freeze | PASS - FROZEN |
+| PHENOLOGY MASTER v1 - Climate Exposure Build | READY |
+| ECONOMETRICS | BLOCKED |
+| ENSO SCENARIOS | BLOCKED |
+| MEAN-CVaR | BLOCKED |
 
 ## Current empirical foundation
 
@@ -33,6 +37,7 @@ The certified repository state contains:
 - 36 / 36 independent climate extraction checks.
 - 37 / 37 full-data climate tests in the certified local execution.
 - Deterministic two-run reproducibility for committed deterministic climate outputs.
+- 7 frozen PHENOLOGY MASTER v1 logical exposure-window architecture rows across 5 crop codes.
 
 ## Important unresolved issue
 
@@ -44,6 +49,7 @@ Do not call `YIELD_RAW` t/ha. Do not construct final gross value of production i
 
 The current repository does not yet:
 
+- construct climate exposure variables;
 - estimate climate-yield causal effects;
 - claim causal identification;
 - estimate final fixed-effects models;
@@ -58,11 +64,12 @@ The current repository does not yet:
 - `build_dataset_master.py`: DATASET MASTER v1 construction script.
 - `audit_dataset_master.py`: DATASET MASTER artifact audit.
 - `audit_climate_master.py`: read-only CLIMATE MASTER v1.1 certification verifier for committed artifacts.
-- `scripts/`: climate acquisition, boundary recovery and extraction scripts, including the v1.1 pipeline.
+- `scripts/`: climate acquisition, boundary recovery, phenology and extraction scripts, including the v1.1 climate pipeline and phenology freeze auditor.
 - `tests/`: repository/offline tests and full-data integration tests.
 - `data/processed/`: certified processed DATASET and CLIMATE artifacts retained in Git.
 - `data/raw/`: local-only raw institutional and climate inputs; intentionally ignored by Git.
 - `outputs/qa/`: frozen scientific QA evidence for DATASET MASTER v1 and CLIMATE MASTER v1.1.
+- `outputs/phenology/`: PHENOLOGY MASTER v1 Stage A evidence, freeze certificate and QA reports.
 - `outputs/figures/climate_qa/`: frozen CLIMATE MASTER v1.1 QA figures.
 - `outputs/repository/`: repository-hardening QA artifacts generated after the scientific freeze.
 - `docs/`: reproducibility, freeze, licensing and citation-status documentation.
@@ -90,20 +97,30 @@ Full scientific reproduction requires:
 2. Run DATASET MASTER v1 construction and audit.
 3. Obtain and freeze the required climate inputs listed in `outputs/qa/climate/climate_data_manifest.csv`.
 4. Run CLIMATE MASTER v1.1.
-5. Run audits, including the climate certification verifier.
-6. Run tests appropriate to the available data: offline repository tests for a clean clone, and full-data integration tests only when the raw climate archive is locally available.
+5. Run PHENOLOGY MASTER v1 Stage A and the phenology evidence/architecture freeze auditor.
+6. Run audits, including the climate certification verifier and phenology freeze verifier.
+7. Run tests appropriate to the available data: offline repository tests for a clean clone, and full-data integration tests only when the raw climate archive is locally available.
 
 Cloning this repository alone does not reproduce the approximately 23 GB local climate raster archive.
 
 ## Certified freeze
 
-The scientific reference state is:
+The DATASET MASTER v1 and CLIMATE MASTER v1.1 scientific reference state is:
 
 - Commit: `38e957e3c01fbffef242c386099b0a219d83ca70`
 - Tag: `v0.2.0-data-climate-freeze`
 - Tag message: `Certified DATASET MASTER v1 and CLIMATE MASTER v1.1 scientific freeze`
 
-Repository-hardening changes after this commit must not modify the frozen scientific contents under `data/processed/`, `outputs/qa/` or `outputs/figures/climate_qa/`.
+Repository-hardening changes after this commit did not alter the frozen DATASET MASTER v1 or CLIMATE MASTER v1.1 scientific contents under `data/processed/`, `outputs/qa/` or `outputs/figures/climate_qa/`.
+
+The PHENOLOGY MASTER v1 evidence/architecture freeze is represented by:
+
+- `data/processed/phenology/phenology_windows_frozen.csv`
+- `outputs/phenology/PHENOLOGY_MASTER_V1_FREEZE.md`
+- `outputs/phenology/qa/phenology_freeze_gate_report.json`
+- `outputs/phenology/qa/phenology_freeze_manifest.csv`
+
+The PHENOLOGY freeze commit hash is intentionally not embedded here before Director commit.
 
 ## Limitations
 

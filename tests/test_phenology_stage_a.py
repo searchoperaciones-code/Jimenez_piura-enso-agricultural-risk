@@ -183,11 +183,10 @@ class PhenologyStageATests(unittest.TestCase):
             self.assertTrue(columns.isdisjoint(forbidden), str(path))
 
     def test_18_forbidden_stage_b_outputs_absent(self):
+        forbidden_stage_b_outputs = {"crop_exposure_architecture.csv", "phenology_exposures_panel.parquet", "phenology_exposures_long.parquet"}
         for root in [ROOT / "data" / "processed" / "phenology", ROOT / "outputs" / "phenology"]:
-            for forbidden_name in stage_a.CORE_RELATIVE_OUTPUTS:
-                self.assertNotEqual(Path(forbidden_name).name, "phenology_windows_frozen.csv")
             for path in root.rglob("*"):
-                self.assertNotIn(path.name, {"crop_exposure_architecture.csv", "phenology_windows_frozen.csv", "phenology_exposures_panel.parquet", "phenology_exposures_long.parquet"})
+                self.assertNotIn(path.name, forbidden_stage_b_outputs)
 
     def test_19_no_outcome_snooping_audit_pass(self):
         audit = read_json(QA / "no_outcome_snooping_audit.json")

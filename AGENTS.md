@@ -4,9 +4,11 @@
 
 DATASET MASTER v1 - FROZEN
 CLIMATE MASTER v1.1 - FROZEN
-PHENOLOGY MASTER v1 - NOT STARTED
+PHENOLOGY MASTER v1 EVIDENCE/ARCHITECTURE - FROZEN
+CLIMATE EXPOSURE BUILD - READY
 
 No agent may modify frozen scientific outputs without explicit instruction to reopen a phase.
+`data/processed/phenology/phenology_windows_frozen.csv` is immutable unless PHENOLOGY MASTER is formally reopened and versioned.
 
 No p-value-driven phenological-window selection.
 No outcome-driven window search.
@@ -28,7 +30,7 @@ No assumed YIELD_RAW physical unit.
 12. Whole-district climate is the primary historical exposure geography.
 13. A 2024 agricultural-area mask may only be used as a sensitivity analysis, not as the primary historical exposure for 2016-2023.
 14. PISCO versus CHIRPS is product-sensitivity/concordance, not fully independent validation.
-15. Final phenological windows are NOT selected during this phase.
+15. Final PHENOLOGY MASTER v1 evidence/architecture windows are frozen; Climate Exposure Build may use them but must not alter them.
 16. WMO 1991-2020 is the primary climatological-normal period.
 17. No later econometric or optimization method is allowed in CLIMATE MASTER v1.
 18. Deterministic outputs must reproduce byte-for-byte when inputs and environment are unchanged.

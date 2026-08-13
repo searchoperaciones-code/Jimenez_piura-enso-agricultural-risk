@@ -1,0 +1,339 @@
+{
+  "artifact": "data/processed/phenology/phenology_windows_frozen.csv",
+  "checks": [
+    {
+      "check": "WINDOWS_FILE_EXISTS",
+      "detail": "data/processed/phenology/phenology_windows_frozen.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "FREEZE_CERTIFICATE_EXISTS",
+      "detail": "outputs/phenology/PHENOLOGY_MASTER_V1_FREEZE.md",
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_SCHEMA",
+      "detail": {
+        "actual": [
+          "COD_CULTIVO",
+          "CROP_STD",
+          "ARCHITECTURE",
+          "WINDOW_ID",
+          "ANCHOR_VARIABLE",
+          "ANCHOR_SEMANTICS",
+          "WINDOW_RULE",
+          "START_OFFSET_MONTH",
+          "END_OFFSET_MONTH",
+          "START_DAS",
+          "END_DAS",
+          "CALENDAR_MONTH_START",
+          "CALENDAR_MONTH_END",
+          "YEAR_RELATION",
+          "YEAR_OFFSET",
+          "COHORT_WEIGHTING",
+          "FREEZE_STATUS",
+          "FREEZE_VERSION",
+          "NOTES"
+        ],
+        "expected": [
+          "COD_CULTIVO",
+          "CROP_STD",
+          "ARCHITECTURE",
+          "WINDOW_ID",
+          "ANCHOR_VARIABLE",
+          "ANCHOR_SEMANTICS",
+          "WINDOW_RULE",
+          "START_OFFSET_MONTH",
+          "END_OFFSET_MONTH",
+          "START_DAS",
+          "END_DAS",
+          "CALENDAR_MONTH_START",
+          "CALENDAR_MONTH_END",
+          "YEAR_RELATION",
+          "YEAR_OFFSET",
+          "COHORT_WEIGHTING",
+          "FREEZE_STATUS",
+          "FREEZE_VERSION",
+          "NOTES"
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_ROW_COUNT",
+      "detail": 7,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_UNIQUE_CROP_COUNT",
+      "detail": [
+        "13010170102",
+        "13010210000",
+        "14010020000",
+        "14010070000",
+        "15010040000"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_CROP_CODES",
+      "detail": [
+        "13010170102",
+        "13010210000",
+        "14010020000",
+        "14010070000",
+        "15010040000"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "NO_DUPLICATE_WINDOW_ID",
+      "detail": [
+        "RICE_FLOWERING_95_110_DAS",
+        "MAD_MPLUS1_MPLUS3",
+        "MANGO_MAY_JUN_CURRENT_YEAR",
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1",
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "FREEZE_STATUS_PASS_FROZEN",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "FREEZE_VERSION_V1",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "NO_YIELD_OR_PRICE_TEXT",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "NO_MODEL_FIT_OR_PVALUE_SELECTION_TEXT",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_ROW_EXISTS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_COD_CULTIVO",
+      "detail": {
+        "actual": "14010020000",
+        "expected": "14010020000"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_ARCHITECTURE",
+      "detail": {
+        "actual": "SOWING_COHORT_WEIGHTED",
+        "expected": "SOWING_COHORT_WEIGHTED"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_ANCHOR_VARIABLE",
+      "detail": {
+        "actual": "SIEMBRA",
+        "expected": "SIEMBRA"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_ANCHOR_SEMANTICS",
+      "detail": {
+        "actual": "TRANSPLANT_ESTABLISHMENT_PROXY",
+        "expected": "TRANSPLANT_ESTABLISHMENT_PROXY"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_START_DAS",
+      "detail": {
+        "actual": "95",
+        "expected": "95"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_END_DAS",
+      "detail": {
+        "actual": "110",
+        "expected": "110"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_START_OFFSET_MONTH",
+      "detail": {
+        "actual": "3",
+        "expected": "3"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_END_OFFSET_MONTH",
+      "detail": {
+        "actual": "4",
+        "expected": "4"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_WINDOW_RULE",
+      "detail": {
+        "actual": "DAS_95_110",
+        "expected": "DAS_95_110"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_COHORT_WEIGHTING",
+      "detail": {
+        "actual": "SIEMBRA_SHARE",
+        "expected": "SIEMBRA_SHARE"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_ROW_EXISTS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_COD_CULTIVO",
+      "detail": {
+        "actual": "14010070000",
+        "expected": "14010070000"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_ARCHITECTURE",
+      "detail": {
+        "actual": "SOWING_COHORT_WEIGHTED",
+        "expected": "SOWING_COHORT_WEIGHTED"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_ANCHOR_VARIABLE",
+      "detail": {
+        "actual": "SIEMBRA",
+        "expected": "SIEMBRA"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_START_OFFSET_MONTH",
+      "detail": {
+        "actual": "1",
+        "expected": "1"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_END_OFFSET_MONTH",
+      "detail": {
+        "actual": "3",
+        "expected": "3"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_WINDOW_RULE",
+      "detail": {
+        "actual": "MONTH_OFFSET",
+        "expected": "MONTH_OFFSET"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_COHORT_WEIGHTING",
+      "detail": {
+        "actual": "SIEMBRA_SHARE",
+        "expected": "SIEMBRA_SHARE"
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "MANGO_SINGLE_WINDOW",
+      "detail": 1,
+      "status": "PASS"
+    },
+    {
+      "check": "MANGO_ARCHITECTURE",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MANGO_MAY_JUNE",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MANGO_CURRENT_YEAR",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MANGO_NO_PREVIOUS_YEAR_WINDOW",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "LEMON_EXACTLY_TWO_WINDOWS",
+      "detail": 2,
+      "status": "PASS"
+    },
+    {
+      "check": "LEMON_ARCHITECTURE",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "LEMON_FULL_YEAR",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "LEMON_YEAR_OFFSETS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "BANANA_EXACTLY_TWO_WINDOWS",
+      "detail": 2,
+      "status": "PASS"
+    },
+    {
+      "check": "BANANA_ARCHITECTURE",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "BANANA_FULL_YEAR",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "BANANA_YEAR_OFFSETS",
+      "detail": null,
+      "status": "PASS"
+    }
+  ],
+  "failed_checks": [],
+  "row_count": 7,
+  "stage": "PHENOLOGY_MASTER_v1_EVIDENCE_ARCHITECTURE_FREEZE",
+  "status": "PASS",
+  "unique_crop_count": 5
+}

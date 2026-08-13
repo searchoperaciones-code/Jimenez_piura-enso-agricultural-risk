@@ -22,3 +22,6 @@ outputs/tables/** -text
 
 # Frozen phenology evidence inputs: preserve exact bytes
 config/phenology/*.csv -text
+
+# PHENOLOGY MASTER generated scientific outputs: preserve exact bytes
+outputs/phenology/** -text
