@@ -1,0 +1,331 @@
+{
+  "artifact": "config/climate_exposure/climate_exposure_spec_v1.json",
+  "checks": [
+    {
+      "check": "SPEC_EXISTS",
+      "detail": "config/climate_exposure/climate_exposure_spec_v1.json",
+      "status": "PASS"
+    },
+    {
+      "check": "CERTIFICATE_EXISTS",
+      "detail": "outputs/phenology/CLIMATE_EXPOSURE_SPEC_V1_FREEZE.md",
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_SPEC_TOP_LEVEL_SCHEMA",
+      "detail": [
+        "CLIMATE_CANONICAL_PATH",
+        "CLIMATE_CANONICAL_SHA256",
+        "CLIMATE_EXPOSURE_BUILD_CONFORMANCE",
+        "DIRECTOR_FREEZE_DECISION",
+        "EXPOSURE_DATA_BUILD",
+        "PHENOLOGY_CERTIFICATE_SHA256",
+        "PHENOLOGY_FREEZE_SHA",
+        "PHENOLOGY_FREEZE_TAG",
+        "PHENOLOGY_WINDOWS_SHA256",
+        "SPEC_ID",
+        "SPEC_STATUS",
+        "SPEC_VERSION",
+        "UPSTREAM_BASE_SHA",
+        "boundary_contract",
+        "climate_family_contract",
+        "econometric_status",
+        "evidence_rationale",
+        "frozen_phenology_windows",
+        "future_transient_outcome_contract",
+        "outcome_firewall",
+        "perennial_exposure_contract",
+        "stage_b_artifacts",
+        "strict_campaign_identification",
+        "time_basis_contract",
+        "transient_campaign_mappings",
+        "unified_exposure_long_format",
+        "within_month_uncertainty"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check": "SPEC_ID",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "SPEC_VERSION",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "SPEC_STATUS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "DIRECTOR_FREEZE_DECISION",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXPOSURE_DATA_BUILD",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CLIMATE_EXPOSURE_BUILD_CONFORMANCE",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CERTIFICATE_SPECIFICATION_STATUS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CERTIFICATE_DIRECTOR_FREEZE_DECISION",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CERTIFICATE_EXPOSURE_DATA_BUILD",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "UPSTREAM_BASE_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "PHENOLOGY_FREEZE_TAG",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "PHENOLOGY_FREEZE_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "PHENOLOGY_FREEZE_TAG_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "SPEC_PHENOLOGY_WINDOWS_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "SPEC_PHENOLOGY_CERTIFICATE_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CLIMATE_CANONICAL_PATH",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "SPEC_CLIMATE_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "ACTUAL_PHENOLOGY_WINDOWS_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "ACTUAL_PHENOLOGY_CERTIFICATE_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "ACTUAL_CLIMATE_SHA",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_SEVEN_FROZEN_PHENOLOGY_WINDOWS",
+      "detail": 7,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_FIVE_CROP_CODES_IN_WINDOWS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_WINDOW_IDS_IN_WINDOWS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_SEVEN_SPEC_WINDOWS",
+      "detail": 7,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_FIVE_CROP_CODES_IN_SPEC",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_WINDOW_IDS_IN_SPEC",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "TRANSIENT_TIME_BASIS_ASSIGNMENTS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "PERENNIAL_TIME_BASIS_ASSIGNMENTS",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CAMPAIGN_START_MONTH",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CAMPAIGN_END_MONTH",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "DO_NOT_SILENTLY_USE_ANO",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_TRANSIENT_L_MIN_L_MAX",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_TRANSIENT_L_MIN_L_MAX",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_CLIMATE_WINDOW",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_CLIMATE_WINDOW",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_CLIMATE_FAMILY_NAMES",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "EXACT_CLIMATE_AGGREGATION",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "NO_ECONOMETRIC_ROLE_SELECTION",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "14010070000_STRICT_U_DOMAIN",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "14010070000_STRICT_A_DOMAIN",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "14010020000_STRICT_U_DOMAIN",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "14010020000_STRICT_A_DOMAIN",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_MARCH_AMBIGUOUS_MAPPING",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "RICE_MAY_CAMPAIGN_MAPPING",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_FEBRUARY_AMBIGUOUS_MAPPING",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "MAD_MAY_CAMPAIGN_MAPPING",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "NO_FORBIDDEN_OUTCOME_FIELDS_IN_EXPOSURE_SCHEMAS",
+      "detail": [],
+      "status": "PASS"
+    },
+    {
+      "check": "COHORT_LEDGER_PRIMARY_STAGE_B",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "STRICT_LAYER_NOT_PRIMARY_ECONOMETRIC",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "STRICT_LAYER_ROLE_NOT_PRIMARY",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CAMPAIGN_OUTCOME_DEFINED_NOT_BUILT",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "CAMPAIGN_OUTCOME_SEPARATE_MASTER",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "ECONOMETRICS_BLOCKED",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_NOT_SELECTED",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "WEIGHT_TOLERANCE",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check": "FEASIBILITY_N_DID_NOT_SELECT_TIME_BASIS",
+      "detail": null,
+      "status": "PASS"
+    }
+  ],
+  "failed_checks": [],
+  "stage": "CLIMATE_EXPOSURE_SPEC_V1",
+  "status": "PASS"
+}

@@ -1,0 +1,599 @@
+{
+  "CLIMATE_CANONICAL_PATH": "data/processed/climate/climate_anomalies.parquet",
+  "CLIMATE_CANONICAL_SHA256": "11a1fc61cab062faf70e3f12d2a06f050a2ccf094273807192943ad130deb6df",
+  "CLIMATE_EXPOSURE_BUILD_CONFORMANCE": "MUST_CONFORM_EXACTLY_TO_THIS_FROZEN_CONTRACT",
+  "DIRECTOR_FREEZE_DECISION": "PASS",
+  "EXPOSURE_DATA_BUILD": "READY_FROM_FROZEN_SPEC",
+  "PHENOLOGY_CERTIFICATE_SHA256": "f9447e10918547011512d629b902dc71ec15b8d2ad74d28901f40f4afffa0ee9",
+  "PHENOLOGY_FREEZE_SHA": "ba2eab1e5ab04da88b86cc1b7b36594e9ab9e17c",
+  "PHENOLOGY_FREEZE_TAG": "v0.3.0-phenology-freeze",
+  "PHENOLOGY_WINDOWS_SHA256": "ea25d949be9834a9e35352d970bb1b2172cac7d49db7eabb101ddfde9cfb657d",
+  "SPEC_ID": "CLIMATE_EXPOSURE_MASTER_V1",
+  "SPEC_STATUS": "PASS_FROZEN",
+  "SPEC_VERSION": "v1",
+  "UPSTREAM_BASE_SHA": "ba2eab1e5ab04da88b86cc1b7b36594e9ab9e17c",
+  "boundary_contract": {
+    "canonical_historical_campaign_candidates": [
+      "2015/2016",
+      "2016/2017",
+      "2017/2018",
+      "2018/2019",
+      "2019/2020",
+      "2020/2021",
+      "2021/2022",
+      "2022/2023"
+    ],
+    "campaigns_without_structural_source_boundary_problem": [
+      "2016/2017",
+      "2017/2018",
+      "2018/2019",
+      "2019/2020",
+      "2020/2021",
+      "2021/2022",
+      "2022/2023"
+    ],
+    "monthly_source_end_yyyymm": 202412,
+    "monthly_source_start_yyyymm": 201508,
+    "structural_left_truncation_campaigns": [
+      "2015/2016"
+    ],
+    "structural_left_truncation_status": "STRUCTURAL_LEFT_TRUNCATION"
+  },
+  "climate_family_contract": {
+    "aggregation": {
+      "RAIN_ANOM_MM": "SUM",
+      "RAIN_MM": "SUM",
+      "RAIN_Z": "ARITHMETIC_MEAN",
+      "TMAX_ANOM_C": "ARITHMETIC_MEAN",
+      "TMAX_C": "ARITHMETIC_MEAN",
+      "TMAX_Z": "ARITHMETIC_MEAN",
+      "TMIN_ANOM_C": "ARITHMETIC_MEAN",
+      "TMIN_C": "ARITHMETIC_MEAN",
+      "TMIN_Z": "ARITHMETIC_MEAN"
+    },
+    "families": {
+      "LEVEL": [
+        "RAIN_MM",
+        "TMAX_C",
+        "TMIN_C"
+      ],
+      "PHYSICAL_ANOMALY": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "STANDARDIZED_ANOMALY": [
+        "RAIN_Z",
+        "TMAX_Z",
+        "TMIN_Z"
+      ]
+    },
+    "no_new_transformations": [
+      "GDD",
+      "DEGREE_DAYS",
+      "HEAT_THRESHOLDS",
+      "NONLINEAR_TRANSFORMATIONS",
+      "PRECIPITATION_THRESHOLDS",
+      "EVENT_CLASSIFICATIONS"
+    ],
+    "primary_secondary_robustness_roles": "BLOCKED_UNTIL_ECONOMETRIC_DESIGN_MASTER"
+  },
+  "econometric_status": {
+    "ECONOMETRICS": "BLOCKED",
+    "ENSO_SCENARIOS": "BLOCKED",
+    "MEAN_CVAR": "BLOCKED",
+    "PERENNIAL_EXPOSURE_BUILD": "AUTHORIZED_AFTER_SPEC_FREEZE",
+    "PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE": "NOT_YET_SELECTED",
+    "STRICT_CAMPAIGN_AGGREGATION": "AUDIT_STRICT_IDENTIFICATION_LAYER",
+    "TRANSIENT_COHORT_LEDGER": "PRIMARY_STAGE_B_DATA_PRODUCT"
+  },
+  "evidence_rationale": {
+    "campaign_time_basis_selection": "Evidence-based from GORE Piura and MIDAGRI/SIEA agricultural campaign definitions before feasibility counts.",
+    "calendar_strict_diagnostic": {
+      "fraction": 0.0309,
+      "valid_keys": 23,
+      "total_keys": 745
+    },
+    "campaign_strict_diagnostic": {
+      "fraction": 0.051,
+      "mad_valid_keys": 7,
+      "mad_total_keys": 405,
+      "rice_valid_keys": 31,
+      "rice_total_keys": 340,
+      "valid_keys": 38,
+      "total_keys": 745
+    },
+    "diagnostics_selected_time_basis": false
+  },
+  "frozen_phenology_windows": [
+    {
+      "ANCHOR_SEMANTICS": "TRANSPLANT_ESTABLISHMENT_PROXY",
+      "ANCHOR_VARIABLE": "SIEMBRA",
+      "ARCHITECTURE": "SOWING_COHORT_WEIGHTED",
+      "ATTRIBUTION_ENDPOINT": "HARVEST_MATURITY",
+      "ATTRIBUTION_L_MAX_DAYS": 138,
+      "ATTRIBUTION_L_MIN_DAYS": 110,
+      "BIOLOGICAL_WINDOW": "95-110 DAS",
+      "CLIMATE_WINDOW": "m+3:m+4",
+      "COD_CULTIVO": "14010020000",
+      "CROP_STD": "ARROZ",
+      "WINDOW_ID": "RICE_FLOWERING_95_110_DAS"
+    },
+    {
+      "ANCHOR_SEMANTICS": "SOWING_MONTH",
+      "ANCHOR_VARIABLE": "SIEMBRA",
+      "ARCHITECTURE": "SOWING_COHORT_WEIGHTED",
+      "ATTRIBUTION_ENDPOINT": "PHYSIOLOGICAL_MATURITY_TECHNICAL_HARVEST_READINESS_PROXY",
+      "ATTRIBUTION_L_MAX_DAYS": 170,
+      "ATTRIBUTION_L_MIN_DAYS": 120,
+      "CLIMATE_WINDOW": "m+1:m+3",
+      "COD_CULTIVO": "14010070000",
+      "CROP_STD": "MAIZ AMARILLO DURO",
+      "WINDOW_ID": "MAD_MPLUS1_MPLUS3"
+    },
+    {
+      "CLIMATE_WINDOW": "May-Jun(t)",
+      "COD_CULTIVO": "13010210000",
+      "CROP_STD": "MANGO",
+      "TIME_BASIS": "CALENDAR_YEAR",
+      "WINDOW_ID": "MANGO_MAY_JUN_CURRENT_YEAR"
+    },
+    {
+      "CLIMATE_WINDOW": "FULL_YEAR_T",
+      "COD_CULTIVO": "13010170102",
+      "CROP_STD": "LIMON SUTIL",
+      "TIME_BASIS": "CALENDAR_YEAR",
+      "WINDOW_ID": "LEMON_FULL_YEAR_T"
+    },
+    {
+      "CLIMATE_WINDOW": "FULL_YEAR_T_MINUS_1",
+      "COD_CULTIVO": "13010170102",
+      "CROP_STD": "LIMON SUTIL",
+      "TIME_BASIS": "CALENDAR_YEAR",
+      "WINDOW_ID": "LEMON_FULL_YEAR_T_MINUS_1"
+    },
+    {
+      "CLIMATE_WINDOW": "FULL_YEAR_T",
+      "COD_CULTIVO": "15010040000",
+      "CROP_STD": "PLATANOS Y BANANAS",
+      "TIME_BASIS": "CALENDAR_YEAR",
+      "WINDOW_ID": "BANANA_FULL_YEAR_T"
+    },
+    {
+      "CLIMATE_WINDOW": "FULL_YEAR_T_MINUS_1",
+      "COD_CULTIVO": "15010040000",
+      "CROP_STD": "PLATANOS Y BANANAS",
+      "TIME_BASIS": "CALENDAR_YEAR",
+      "WINDOW_ID": "BANANA_FULL_YEAR_T_MINUS_1"
+    }
+  ],
+  "future_transient_outcome_contract": {
+    "belongs_to": "TRANSIENT_OUTCOME_MASTER",
+    "status": "DEFINED_NOT_BUILT",
+    "variable": "TRANSIENT_CAMPAIGN_YIELD_RAW",
+    "formula": "SUM(PRODUCCION within Aug-Jul campaign) / SUM(COSECHA within Aug-Jul campaign)",
+    "validity_logic": "Same positive validity logic used in DATASET MASTER.",
+    "YIELD_UNIT": "UNRESOLVED",
+    "do_not_calculate_in_climate_exposure_master": true,
+    "do_not_read_component_values_in_climate_exposure_master": true
+  },
+  "outcome_firewall": {
+    "blocked_tokens": [
+      "YIELD_RAW",
+      "PRODUCCION_VALUES",
+      "PRECIO",
+      "PRECIO_CHACRA",
+      "REGRESSION_COEFFICIENTS",
+      "P_VALUES",
+      "R_SQUARED",
+      "AIC",
+      "BIC",
+      "ENSO_RESPONSE",
+      "OPTIMIZATION_OUTPUTS"
+    ],
+    "outcome_may_determine_time_basis": false,
+    "outcome_may_determine_phenology": false,
+    "outcome_may_determine_attribution": false,
+    "outcome_may_determine_support_rules": false,
+    "outcome_may_determine_climate_variables": false,
+    "outcome_may_determine_sample_retention": false
+  },
+  "perennial_exposure_contract": {
+    "future_primary_perennial_artifact": {
+      "path": "data/processed/phenology/perennial_exposures_long.parquet",
+      "status": "DEFINED_NOT_BUILT"
+    },
+    "perennial_schema": [
+      "UBIGEO",
+      "COD_CULTIVO",
+      "CROP_STD",
+      "TIME_BASIS",
+      "REFERENCE_PERIOD_ID",
+      "REFERENCE_CALENDAR_YEAR",
+      "WINDOW_ID",
+      "RAIN_MM",
+      "TMAX_C",
+      "TMIN_C",
+      "RAIN_ANOM_MM",
+      "TMAX_ANOM_C",
+      "TMIN_ANOM_C",
+      "RAIN_Z",
+      "TMAX_Z",
+      "TMIN_Z",
+      "EXPOSURE_VALID",
+      "FAILURE_REASON"
+    ],
+    "windows": {
+      "13010170102": [
+        "FULL_YEAR_T",
+        "FULL_YEAR_T_MINUS_1"
+      ],
+      "13010210000": [
+        "May-Jun(t)"
+      ],
+      "15010040000": [
+        "FULL_YEAR_T",
+        "FULL_YEAR_T_MINUS_1"
+      ]
+    }
+  },
+  "stage_b_artifacts": {
+    "transient_campaign_exposures_strict": {
+      "artifact_role": [
+        "AUDIT",
+        "STRICT_IDENTIFICATION",
+        "PRESPECIFIED_SENSITIVITY_CANDIDATE"
+      ],
+      "is_primary_econometric_exposure": false,
+      "path": "data/processed/phenology/transient_campaign_exposures_strict.parquet",
+      "schema": [
+        "UBIGEO",
+        "COD_CULTIVO",
+        "CROP_STD",
+        "CAMPAIGN_ID",
+        "CAMPAIGN_START_YEAR",
+        "CAMPAIGN_END_YEAR",
+        "WINDOW_ID",
+        "UNAMBIGUOUS_COHORT_COUNT",
+        "AMBIGUOUS_COHORT_COUNT",
+        "CAMPAIGN_SIEMBRA_DENOMINATOR",
+        "COHORT_WEIGHT_SUM",
+        "EXPECTED_WEIGHT",
+        "SUPPORTED_WEIGHT",
+        "MISSING_WEIGHT",
+        "RAIN_MM",
+        "TMAX_C",
+        "TMIN_C",
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C",
+        "RAIN_Z",
+        "TMAX_Z",
+        "TMIN_Z",
+        "CAMPAIGN_WEIGHTED_EXPOSURE_VALID",
+        "FAILURE_REASON"
+      ],
+      "status": "DEFINED_NOT_BUILT"
+    },
+    "transient_cohort_exposures": {
+      "artifact_role": "PRIMARY_STAGE_B_DATA_PRODUCT",
+      "is_primary_econometric_exposure": false,
+      "path": "data/processed/phenology/transient_cohort_exposures.parquet",
+      "schema": [
+        "UBIGEO",
+        "COD_CULTIVO",
+        "CROP_STD",
+        "ANCHOR_YEAR",
+        "ANCHOR_MONTH",
+        "ANCHOR_YYYYMM",
+        "WINDOW_ID",
+        "ARCHITECTURE",
+        "SIEMBRA",
+        "SIEMBRA_OBSERVED",
+        "CLIMATE_WINDOW_START_YYYYMM",
+        "CLIMATE_WINDOW_END_YYYYMM",
+        "EXPECTED_CLIMATE_MONTHS",
+        "SUPPORTED_CLIMATE_MONTHS",
+        "CLIMATE_WINDOW_COMPLETE",
+        "RAIN_MM",
+        "TMAX_C",
+        "TMIN_C",
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C",
+        "RAIN_Z",
+        "TMAX_Z",
+        "TMIN_Z",
+        "ANCHOR_DATE_MIN",
+        "ANCHOR_DATE_MAX",
+        "ATTRIBUTION_L_MIN_DAYS",
+        "ATTRIBUTION_L_MAX_DAYS",
+        "HARVEST_DATE_MIN",
+        "HARVEST_DATE_MAX",
+        "CAMPAIGN_MIN",
+        "CAMPAIGN_MAX",
+        "CAMPAIGN_ATTRIBUTION_STATUS",
+        "ASSIGNED_CAMPAIGN_ID",
+        "COHORT_EXPOSURE_VALID",
+        "FAILURE_REASON"
+      ],
+      "status": "DEFINED_NOT_BUILT"
+    }
+  },
+  "strict_campaign_identification": {
+    "diagnostic_counts": {
+      "combined": {
+        "fraction": 0.051,
+        "total_keys": 745,
+        "valid_keys": 38
+      },
+      "mad": {
+        "fraction": 0.0173,
+        "total_keys": 405,
+        "valid_keys": 7
+      },
+      "rice": {
+        "fraction": 0.0912,
+        "total_keys": 340,
+        "valid_keys": 31
+      }
+    },
+    "diagnostic_counts_may_alter_rules": false,
+    "forbidden_methods": [
+      "IMPUTATION",
+      "INTERPOLATION",
+      "UNIFORM_WEIGHTS",
+      "SILENT_RENORMALIZATION",
+      "PROBABILITY_ALLOCATION",
+      "OUTCOME_BASED_ASSIGNMENT",
+      "SAMPLE_SIZE_BASED_THRESHOLDING"
+    ],
+    "strict_domains": {
+      "14010020000": {
+        "A": [
+          {
+            "months": [
+              3,
+              4
+            ],
+            "year_offset_from_campaign_start": 0
+          },
+          {
+            "months": [
+              3,
+              4
+            ],
+            "year_offset_from_campaign_start": 1
+          }
+        ],
+        "U": [
+          {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "year_offset_from_campaign_start": 0
+          },
+          {
+            "months": [
+              1,
+              2
+            ],
+            "year_offset_from_campaign_start": 1
+          }
+        ]
+      },
+      "14010070000": {
+        "A": [
+          {
+            "months": [
+              2,
+              3,
+              4
+            ],
+            "year_offset_from_campaign_start": 0
+          },
+          {
+            "months": [
+              2,
+              3,
+              4
+            ],
+            "year_offset_from_campaign_start": 1
+          }
+        ],
+        "U": [
+          {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "year_offset_from_campaign_start": 0
+          },
+          {
+            "months": [
+              1
+            ],
+            "year_offset_from_campaign_start": 1
+          }
+        ]
+      }
+    },
+    "validity_rules": [
+      "EVERY_REQUIRED_SIEMBRA_IN_U_OBSERVED",
+      "EVERY_REQUIRED_SIEMBRA_IN_A_OBSERVED",
+      "EVERY_SIEMBRA_IN_A_EQUALS_ZERO",
+      "SUM_SIEMBRA_OVER_U_STRICTLY_POSITIVE",
+      "ALL_POSITIVE_WEIGHT_U_COHORT_CLIMATE_WINDOWS_COMPLETE"
+    ],
+    "weight_sum_tolerance_abs": 1e-12
+  },
+  "time_basis_contract": {
+    "perennial_crops": {
+      "13010170102": {
+        "CROP_STD": "LIMON SUTIL",
+        "TIME_BASIS": "CALENDAR_YEAR"
+      },
+      "13010210000": {
+        "CROP_STD": "MANGO",
+        "TIME_BASIS": "CALENDAR_YEAR"
+      },
+      "15010040000": {
+        "CROP_STD": "PLATANOS Y BANANAS",
+        "TIME_BASIS": "CALENDAR_YEAR"
+      }
+    },
+    "transient_campaign": {
+      "CAMPAIGN_END_MONTH": 7,
+      "CAMPAIGN_ID_FORMAT": "YYYY/YYYY",
+      "CAMPAIGN_START_MONTH": 8,
+      "REFERENCE_END_YEAR_FIELD": "CAMPAIGN_END_YEAR",
+      "TIME_BASIS": "AGRICULTURAL_CAMPAIGN_AUG_JUL",
+      "do_not_silently_use_ANO": true
+    },
+    "transient_crops": {
+      "14010020000": {
+        "CROP_STD": "ARROZ",
+        "TIME_BASIS": "AGRICULTURAL_CAMPAIGN_AUG_JUL"
+      },
+      "14010070000": {
+        "CROP_STD": "MAIZ AMARILLO DURO",
+        "TIME_BASIS": "AGRICULTURAL_CAMPAIGN_AUG_JUL"
+      }
+    }
+  },
+  "transient_campaign_mappings": {
+    "14010020000": {
+      "anchor_year_symbol": "k",
+      "rules": [
+        {
+          "anchor_months": [
+            1,
+            2
+          ],
+          "assignment": "campaign (k-1)/k",
+          "campaign_end_year_offset": 0,
+          "campaign_start_year_offset": -1,
+          "status": "UNAMBIGUOUS_AGRONOMIC_CAMPAIGN"
+        },
+        {
+          "anchor_months": [
+            3,
+            4
+          ],
+          "assignment": null,
+          "status": "AMBIGUOUS_CROSS_CAMPAIGN"
+        },
+        {
+          "anchor_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "assignment": "campaign k/(k+1)",
+          "campaign_end_year_offset": 1,
+          "campaign_start_year_offset": 0,
+          "status": "UNAMBIGUOUS_AGRONOMIC_CAMPAIGN"
+        }
+      ]
+    },
+    "14010070000": {
+      "anchor_year_symbol": "k",
+      "rules": [
+        {
+          "anchor_months": [
+            1
+          ],
+          "assignment": "campaign (k-1)/k",
+          "campaign_end_year_offset": 0,
+          "campaign_start_year_offset": -1,
+          "status": "UNAMBIGUOUS_AGRONOMIC_CAMPAIGN"
+        },
+        {
+          "anchor_months": [
+            2,
+            3,
+            4
+          ],
+          "assignment": null,
+          "status": "AMBIGUOUS_CROSS_CAMPAIGN"
+        },
+        {
+          "anchor_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "assignment": "campaign k/(k+1)",
+          "campaign_end_year_offset": 1,
+          "campaign_start_year_offset": 0,
+          "status": "UNAMBIGUOUS_AGRONOMIC_CAMPAIGN"
+        }
+      ]
+    }
+  },
+  "unified_exposure_long_format": {
+    "future_artifact": {
+      "path": "data/processed/phenology/phenology_exposures_long.parquet",
+      "status": "MAY_EXIST_DEFINED_NOT_BUILT"
+    },
+    "must_not_force_common_time_key": true,
+    "schema": [
+      "UBIGEO",
+      "COD_CULTIVO",
+      "CROP_STD",
+      "TIME_BASIS",
+      "REFERENCE_PERIOD_ID",
+      "REFERENCE_START_YEAR",
+      "REFERENCE_END_YEAR",
+      "REFERENCE_CALENDAR_YEAR",
+      "WINDOW_ID",
+      "RAIN_MM",
+      "TMAX_C",
+      "TMIN_C",
+      "RAIN_ANOM_MM",
+      "TMAX_ANOM_C",
+      "TMIN_ANOM_C",
+      "RAIN_Z",
+      "TMAX_Z",
+      "TMIN_Z",
+      "EXPOSURE_VALID",
+      "FAILURE_REASON"
+    ],
+    "transient_reference_calendar_year": "NOT_APPLICABLE",
+    "transient_time_basis": "AGRICULTURAL_CAMPAIGN_AUG_JUL",
+    "perennial_time_basis": "CALENDAR_YEAR"
+  },
+  "within_month_uncertainty": {
+    "ANCHOR_DATE_MAX": "last calendar day of anchor month",
+    "ANCHOR_DATE_MIN": "first calendar day of anchor month",
+    "CAMPAIGN_ATTRIBUTION_STATUS_AMBIGUOUS": "AMBIGUOUS_CROSS_CAMPAIGN",
+    "CAMPAIGN_ATTRIBUTION_STATUS_UNAMBIGUOUS": "UNAMBIGUOUS_AGRONOMIC_CAMPAIGN",
+    "HARVEST_DATE_MAX": "ANCHOR_DATE_MAX + L_MAX",
+    "HARVEST_DATE_MIN": "ANCHOR_DATE_MIN + L_MIN",
+    "calendar_arithmetic": "true calendar arithmetic with leap years",
+    "probabilistic_allocation_of_ambiguous_cohorts": false
+  }
+}
