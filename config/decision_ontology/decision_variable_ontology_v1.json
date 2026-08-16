@@ -1,0 +1,367 @@
+{
+  "ontology_version": "C0B1_DECISION_VARIABLE_ONTOLOGY_V1",
+  "repository_checkpoint": {
+    "branch": "phase/c0b-decision-feasibility-v1",
+    "head_commit": "77526c9cb41b20062a5fa61a95167af5859295f2",
+    "parent_commit": "144cb679186b8fdfe5b821aad635a7f805b7de28",
+    "checkpoint_commit_message": "Checkpoint C0B decision feasibility reconnaissance"
+  },
+  "planning_interpretation": "NORMATIVE_REGIONAL_DECISION_SUPPORT_RECOMMENDED_PLANNED_STRATEGIC_AREA_NOT_COMMAND",
+  "planning_horizon_interpretation": "NEAR_TERM_ENSO_PLANNING_TRANSIENT_CAMPAIGN_DECISIONS_CAN_CHANGE_PERENNIAL_STOCKS_PERSIST_UNLESS_C0B3_SUPPORTS_MARGIN",
+  "target_crops": {
+    "14010020000": {
+      "crop_std": "ARROZ",
+      "crop_class": "TRANSIENT",
+      "decision_variable_role": "CAMPAIGN_AREA_FLOW",
+      "primary_resolution": "T3_CAMPAIGN_TOTAL_DECISION_WITH_FUTURE_PRESPECIFIED_EXOGENOUS_WITHIN_CAMPAIGN_SHARES",
+      "phenology_window_id": "RICE_FLOWERING_95_110_DAS",
+      "frozen_phenology_architecture": "SOWING_COHORT_WEIGHTED",
+      "anchor_variable": "SIEMBRA",
+      "endogeneity_role_primary": "FULLY_ENDOGENOUS_TRANSIENT_CAMPAIGN_AREA"
+    },
+    "14010070000": {
+      "crop_std": "MAIZ AMARILLO DURO",
+      "crop_class": "TRANSIENT",
+      "decision_variable_role": "CAMPAIGN_AREA_FLOW",
+      "primary_resolution": "T3_CAMPAIGN_TOTAL_DECISION_WITH_FUTURE_PRESPECIFIED_EXOGENOUS_WITHIN_CAMPAIGN_SHARES",
+      "phenology_window_id": "MAD_MPLUS1_MPLUS3",
+      "frozen_phenology_architecture": "SOWING_COHORT_WEIGHTED",
+      "anchor_variable": "SIEMBRA",
+      "endogeneity_role_primary": "FULLY_ENDOGENOUS_TRANSIENT_CAMPAIGN_AREA"
+    },
+    "13010210000": {
+      "crop_std": "MANGO",
+      "crop_class": "PERENNIAL",
+      "decision_variable_role": "INSTALLED_AREA_STOCK_WITH_POSSIBLE_MARGINAL_ADJUSTMENT",
+      "primary_resolution": "P2_INSTALLED_STOCK_PLUS_ANNUAL_ESTABLISHMENT_REMOVAL_FLOWS_CONDITIONAL_ON_C0B3",
+      "phenology_window_id": "MANGO_MAY_JUN_CURRENT_YEAR",
+      "frozen_phenology_architecture": "SEASONAL_PERENNIAL",
+      "anchor_variable": "CALENDAR",
+      "endogeneity_role_primary": "MARGINALLY_ENDOGENOUS_PERENNIAL_STOCK_ONLY_IF_C0B3_SUPPORTS"
+    },
+    "13010170102": {
+      "crop_std": "LIMON SUTIL",
+      "crop_class": "PERENNIAL",
+      "decision_variable_role": "INSTALLED_AREA_STOCK_WITH_POSSIBLE_MARGINAL_ADJUSTMENT",
+      "primary_resolution": "P2_INSTALLED_STOCK_PLUS_ANNUAL_ESTABLISHMENT_REMOVAL_FLOWS_CONDITIONAL_ON_C0B3",
+      "phenology_window_id": "LEMON_FULL_YEAR_T_AND_T_MINUS_1",
+      "frozen_phenology_architecture": "RECURRENT_PERENNIAL_BROAD",
+      "anchor_variable": "CALENDAR",
+      "endogeneity_role_primary": "MARGINALLY_ENDOGENOUS_PERENNIAL_STOCK_ONLY_IF_C0B3_SUPPORTS"
+    },
+    "15010040000": {
+      "crop_std": "PLATANOS Y BANANAS",
+      "crop_class": "SEMIPERMANENT_CONTINUOUS",
+      "decision_variable_role": "INSTALLED_AREA_STOCK_WITH_POSSIBLE_MARGINAL_ADJUSTMENT",
+      "primary_resolution": "P2_INSTALLED_STOCK_PLUS_ANNUAL_ESTABLISHMENT_REMOVAL_FLOWS_CONDITIONAL_ON_C0B3",
+      "phenology_window_id": "BANANA_FULL_YEAR_T_AND_T_MINUS_1",
+      "frozen_phenology_architecture": "MULTISTAGE_CONTINUOUS",
+      "anchor_variable": "CALENDAR",
+      "endogeneity_role_primary": "MARGINALLY_ENDOGENOUS_SEMIPERMANENT_STOCK_ONLY_IF_C0B3_SUPPORTS"
+    }
+  },
+  "primary_architecture": "ARCH_E_MIXED_STOCK_FLOW_PLUS_MARGINAL_ADJUSTMENT",
+  "fallback_architectures": [
+    "ARCH_F_TRANSIENT_ENDOGENOUS_PERENNIAL_EXOGENOUS"
+  ],
+  "rejected_architectures": [
+    "ARCH_A_HOMOGENEOUS_STATIC_AREA",
+    "ARCH_B_CAMPAIGN_FLOW_FOR_ALL",
+    "ARCH_C_PHYSICAL_STOCK_FOR_ALL"
+  ],
+  "transient_crops": [
+    "14010020000",
+    "14010070000"
+  ],
+  "perennial_or_semipermanent_crops": [
+    "13010210000",
+    "13010170102",
+    "15010040000"
+  ],
+  "architecture_verdicts": {
+    "ARCH_A_HOMOGENEOUS_STATIC_AREA": "REJECT",
+    "ARCH_B_CAMPAIGN_FLOW_FOR_ALL": "REJECT",
+    "ARCH_C_PHYSICAL_STOCK_FOR_ALL": "REJECT",
+    "ARCH_D_MIXED_STOCK_FLOW": "CONDITIONAL_CANDIDATE",
+    "ARCH_E_MIXED_STOCK_FLOW_PLUS_MARGINAL_ADJUSTMENT": "PRIMARY_CANDIDATE",
+    "ARCH_F_TRANSIENT_ENDOGENOUS_PERENNIAL_EXOGENOUS": "FALLBACK_CANDIDATE"
+  },
+  "primary_architecture_operational_authorization": "BLOCKED_PENDING_C0B2_C0B3_AND_PARAMETER_GATES",
+  "transient_decision_resolutions": {
+    "T1_CAMPAIGN_TOTAL_PLANTED_AREA_FLOW": "CONDITIONAL_CANDIDATE",
+    "T2_MONTHLY_OR_COHORT_PLANTED_AREA_FLOWS": "FALLBACK_CANDIDATE",
+    "T3_CAMPAIGN_TOTAL_DECISION_WITH_FUTURE_PRESPECIFIED_EXOGENOUS_WITHIN_CAMPAIGN_SHARES": "PRIMARY_CANDIDATE"
+  },
+  "primary_transient_decision_resolution": "T3_CAMPAIGN_TOTAL_DECISION_WITH_FUTURE_PRESPECIFIED_EXOGENOUS_WITHIN_CAMPAIGN_SHARES",
+  "fallback_transient_decision_resolution": "T2_MONTHLY_OR_COHORT_PLANTED_AREA_FLOWS",
+  "primary_transient_resolution": "T3_CAMPAIGN_TOTAL_DECISION_WITH_FUTURE_PRESPECIFIED_EXOGENOUS_WITHIN_CAMPAIGN_SHARES",
+  "fallback_transient_resolution": "T2_MONTHLY_OR_COHORT_PLANTED_AREA_FLOWS",
+  "primary_transient_resolution_status": "CONDITIONAL_PRIMARY",
+  "t3_numeric_shares_defined": false,
+  "t3_share_parameterization_status": "NOT_YET_DEFINED",
+  "t3_share_provenance_rule_status": "REQUIRED_BEFORE_NUMERICAL_IMPLEMENTATION",
+  "t3_endogenous_decision_scope": "CAMPAIGN_TOTAL_CROP_AREA_ONLY",
+  "t3_within_campaign_distribution_scope": "FUTURE_PRESPECIFIED_EXOGENOUS_RULE_NOT_ENDOGENOUS_IN_PRIMARY_ONTOLOGY",
+  "t3_forbidden_share_selection_inputs": [
+    "OUTCOME_VARIABLES",
+    "CLIMATE_RESPONSE_ESTIMATES",
+    "WEATHER_YIELD_RESPONSE_ESTIMATES",
+    "ECONOMETRIC_SIGNIFICANCE",
+    "ENSO_SCENARIO_OUTCOMES",
+    "ECONOMIC_OPTIMIZATION_RESULTS",
+    "YIELD_IMPROVEMENT",
+    "ROBUSTNESS_IMPROVEMENT",
+    "CVAR_IMPROVEMENT",
+    "PROFIT_IMPROVEMENT",
+    "GVP_IMPROVEMENT",
+    "MODEL_FIT_IMPROVEMENT"
+  ],
+  "t3_admissible_future_share_evidence_classes_not_selected_in_c0b1": [
+    "SOURCE_OBSERVED_HISTORICAL_SIEMBRA_TIMING",
+    "FROZEN_STAGE_B_COHORT_STRUCTURE",
+    "OFFICIAL_AGRICULTURAL_CALENDAR_RULES"
+  ],
+  "t3_future_share_rule_requirements": [
+    "PRESPECIFIED_BEFORE_DOWNSTREAM_OUTCOME_ANALYSIS",
+    "INDEPENDENT_OF_WEATHER_YIELD_RESPONSE_ESTIMATES",
+    "INDEPENDENT_OF_ECONOMETRIC_SIGNIFICANCE",
+    "INDEPENDENT_OF_ENSO_SCENARIO_OUTCOMES",
+    "INDEPENDENT_OF_ECONOMIC_OPTIMIZATION_RESULTS",
+    "DOCUMENTED_PROVENANCE_BEFORE_NUMERICAL_IMPLEMENTATION"
+  ],
+  "planting_timing_adaptation_status": "SENSITIVITY_CANDIDATE_OR_FUTURE_EXTENSION",
+  "perennial_resolutions": {
+    "P1_ANNUAL_INSTALLED_STOCK_STATE": "CONDITIONAL_CANDIDATE",
+    "P2_INSTALLED_STOCK_PLUS_ANNUAL_ESTABLISHMENT_REMOVAL_FLOWS": "PRIMARY_CANDIDATE_CONDITIONAL_ON_C0B3",
+    "P3_FIXED_STOCK_NEAR_TERM_HORIZON": "FALLBACK_CANDIDATE"
+  },
+  "primary_perennial_resolution": "P2_INSTALLED_STOCK_PLUS_ANNUAL_ESTABLISHMENT_REMOVAL_FLOWS_CONDITIONAL_ON_C0B3",
+  "p2_status": "CONDITIONAL_ON_C0B3",
+  "p3_fallback_status": "EXPLICIT_FALLBACK_IF_C0B3_FAILS",
+  "perennial_stock_state_definitions": {
+    "INSTALLED_PERENNIAL_STOCK": "PHYSICAL_AREA_OCCUPIED_BY_AN_ESTABLISHED_PERENNIAL_OR_SEMIPERMANENT_CROP",
+    "PRODUCTIVE_OR_BEARING_PERENNIAL_STOCK": "SUBSET_OR_STATE_OF_PERENNIAL_AREA_RELEVANT_TO_CONTEMPORANEOUS_PRODUCTIVE_OUTPUT_IF_REQUIRED_BY_CROP_BIOLOGY_AND_SOURCE_EVIDENCE",
+    "NEW_ESTABLISHMENT_FLOW": "NEW_AREA_ENTERING_THE_INSTALLED_STOCK_SYSTEM",
+    "REMOVAL_OR_REPLACEMENT_FLOW": "AREA_LEAVING_OR_BEING_REPLACED_WITHIN_THE_INSTALLED_STOCK_SYSTEM"
+  },
+  "perennial_installed_stock_status": "REQUIRES_C0B3_NUMERIC_EVIDENCE",
+  "perennial_productive_stock_distinction_status": "REQUIRES_C0B3_ADJUDICATION",
+  "new_establishment_immediate_productivity_assumption": "NOT_AUTHORIZED",
+  "immediate_productivity_assumption": "NOT_AUTHORIZED_WITHOUT_C0B3_EVIDENCE",
+  "establishment_to_productivity_lag_status": "UNRESOLVED_REQUIRES_C0B3",
+  "perennial_removal_replacement_timing_status": "UNRESOLVED_REQUIRES_C0B3",
+  "numeric_maturity_parameters_created": false,
+  "productive_age_distribution_status": "NOT_CREATED_IN_C0B1",
+  "yield_age_relationship_status": "NOT_CREATED_IN_C0B1",
+  "arch_e_to_arch_f_fallback_if_c0b3_fails": "AUTHORIZED_SCOPE_REDUCTION_PATH",
+  "c0b3_perennial_productivity_adjudication": {
+    "MANGO": [
+      "INSTALLED_STOCK_ONLY",
+      "INSTALLED_VERSUS_PRODUCTIVE_OR_BEARING_STOCK_DISTINCTION",
+      "ESTABLISHMENT_TO_PRODUCTIVITY_LAG",
+      "REMOVAL_OR_REPLACEMENT_TIMING",
+      "PRODUCTIVE_AGE_OR_LIFECYCLE_INFORMATION"
+    ],
+    "LEMON": [
+      "INSTALLED_STOCK_ONLY",
+      "INSTALLED_VERSUS_PRODUCTIVE_OR_BEARING_STOCK_DISTINCTION",
+      "ESTABLISHMENT_TO_PRODUCTIVITY_LAG",
+      "REMOVAL_OR_REPLACEMENT_TIMING",
+      "PRODUCTIVE_AGE_OR_LIFECYCLE_INFORMATION"
+    ],
+    "BANANA": [
+      "INSTALLED_STOCK_ONLY",
+      "INSTALLED_VERSUS_PRODUCTIVE_OR_BEARING_STOCK_DISTINCTION",
+      "ESTABLISHMENT_TO_PRODUCTIVITY_LAG",
+      "REMOVAL_OR_REPLACEMENT_TIMING",
+      "PRODUCTIVE_AGE_OR_LIFECYCLE_INFORMATION"
+    ],
+    "c0b1d_prespecifies_answers": false
+  },
+  "physical_land_interpretation": "AREA_HA_IS_PHYSICAL_AGRICULTURAL_FOOTPRINT_NOT_CURRENT_CULTIVATED_REALLOCABLE_CAMPAIGN_PLANTED_HARVESTED_OR_SIMULTANEOUS_OCCUPANCY_AREA",
+  "AREA_HA_future_role": "HARD_CAP_COMPATIBLE_AFTER_OCCUPANCY_MAPPING",
+  "climate_response_window_role": "EMPIRICAL_CLIMATE_EXPOSURE_ONLY",
+  "climate_response_window_definition": "PRESPECIFIED_PHENOLOGICAL_PERIOD_USED_TO_CONSTRUCT_CLIMATE_EXPOSURES_RELEVANT_TO_EMPIRICAL_WEATHER_YIELD_RESPONSE",
+  "physical_land_occupancy_window_definition": "PERIOD_DURING_WHICH_A_PHYSICAL_HECTARE_IS_OCCUPIED_BY_A_CROP_FOR_FUTURE_LAND_CAPACITY_ACCOUNTING",
+  "climate_response_window_is_physical_occupancy_window": false,
+  "physical_land_occupancy_mapping_status": "REQUIRED_BEFORE_LAND_HARD_CAP",
+  "physical_land_occupancy_evidence_status": "NOT_YET_ADJUDICATED",
+  "occupancy_mapping_may_reuse_climate_windows_without_independent_support": false,
+  "occupancy_numeric_parameters_created": false,
+  "occupancy_coefficient_status": "NOT_CREATED_IN_C0B1",
+  "land_hard_constraint_currently_authorized": false,
+  "land_ontology": {
+    "AREA_HA_future_role": "HARD_CAP_COMPATIBLE_AFTER_OCCUPANCY_MAPPING",
+    "direct_campaign_hectare_cap_authorized": false,
+    "forbidden_direct_cap_expression": "SUM_CAMPAIGN_HECTARES_LESS_THAN_OR_EQUAL_AREA_HA",
+    "required_mapping_before_hard_cap": "SIMULTANEOUS_LAND_OCCUPANCY_MAPPING",
+    "area_terms_kept_distinct": [
+      "PHYSICAL_AGRICULTURAL_FOOTPRINT",
+      "CURRENTLY_CULTIVATED_AREA",
+      "REALLOCABLE_AREA",
+      "CAMPAIGN_SOWN_AREA",
+      "HARVESTED_AREA",
+      "SIMULTANEOUS_LAND_OCCUPANCY"
+    ]
+  },
+  "sequential_cropping_assumption": "NOT_ASSUMED_ABSENT_AGGREGATE_DATA_CANNOT_PROVE_PARCEL_SEQUENCE",
+  "stock_flow_distinction": {
+    "transient_crops": "CAMPAIGN_AREA_FLOW",
+    "perennial_and_semipermanent_crops": "INSTALLED_AREA_STOCK_WITH_POSSIBLE_MARGINAL_ADJUSTMENT",
+    "same_unit_label_not_same_decision_object": true
+  },
+  "phenology_compatibility": {
+    "status": "COMPATIBLE_WITH_FROZEN_STAGE_B_NO_REOPEN",
+    "frozen_windows_path": "data/processed/phenology/phenology_windows_frozen.csv",
+    "transient_mapping": "T3 campaign totals require a future prespecified exogenous within-campaign share rule before numerical exposure implementation",
+    "perennial_mapping": "P2 installed stocks preserve frozen calendar perennial windows"
+  },
+  "multiscale_water_compatibility": {
+    "status": "COMPATIBLE_IN_PRINCIPLE_AFTER_CROSSWALKS_AND_TEMPORAL_MAPPING",
+    "district_hard_water_cap_authorized": false,
+    "water_coefficient_authorized": false,
+    "required_future_gate": "C0B2_SPATIAL_HYDRAULIC_AND_AGENCY_CROSSWALK_GATE"
+  },
+  "governance_interpretation": "NORMATIVE_REGIONAL_DECISION_SUPPORT_RECOMMENDED_PLANNED_STRATEGIC_AREA_NOT_COMMAND",
+  "parcel_level_interpretation": "FORBIDDEN_NO_PARCEL_LEVEL_DOUBLE_CROPPING_INFERENCE_FROM_AGGREGATE_DATA",
+  "endogeneity_sets": {
+    "SET_1_ALL_FIVE_ENDOGENOUS": {
+      "verdict": "CONDITIONAL_ON_C0B3",
+      "reason": "All five cannot be treated symmetrically until perennial installed-stock units and feasible adjustment evidence are certified"
+    },
+    "SET_2_RICE_MAIZE_FULLY_ENDOGENOUS_PERENNIALS_MARGINALLY_ENDOGENOUS": {
+      "verdict": "SUPPORTED_IN_PRINCIPLE",
+      "reason": "Transient crops are campaign flows while perennial and semipermanent crops are stocks with only potential annual establishment or removal margins"
+    },
+    "SET_3_RICE_MAIZE_ENDOGENOUS_PERENNIAL_STOCKS_EXOGENOUS": {
+      "verdict": "FALLBACK_ONLY",
+      "reason": "Use if C0B3 does not certify installed stock and adjustment evidence for perennial or semipermanent crops"
+    }
+  },
+  "primary_endogeneity_set": "SET_2_RICE_MAIZE_FULLY_ENDOGENOUS_PERENNIALS_MARGINALLY_ENDOGENOUS",
+  "fallback_endogeneity_set": "SET_3_RICE_MAIZE_ENDOGENOUS_PERENNIAL_STOCKS_EXOGENOUS",
+  "endogeneity_set_primary": "SET_2_RICE_MAIZE_FULLY_ENDOGENOUS_PERENNIALS_MARGINALLY_ENDOGENOUS",
+  "endogeneity_set_fallback": "SET_3_RICE_MAIZE_ENDOGENOUS_PERENNIAL_STOCKS_EXOGENOUS",
+  "decision_spatial_scale": "DISTRICT_RECOMMENDED_OR_PLANNED_STRATEGIC_AREA",
+  "constraint_multiscale_allowed": true,
+  "future_evidence_requirements": {
+    "ontology_required_future_evidence": [
+      "C0B2 district-to-hydraulic-system and agency crosswalk evidence",
+      "C0B3 installed perennial and semipermanent stock unit certification",
+      "C0B3 establishment and removal feasibility evidence for annual marginal adjustment",
+      "Independent physical land occupancy evidence before AREA_HA hard-cap parameterization",
+      "C0B3 productive or bearing perennial stock and establishment-to-productivity adjudication"
+    ],
+    "numeric_parameter_required_future_evidence": [
+      "No land occupancy conversion is numeric until simultaneous occupancy mapping is certified",
+      "No water use coefficient is authorized until source scale and crop-time mappings are adjudicated",
+      "No perennial adjustment bound is authorized until establishment and removal evidence is certified",
+      "No climate response window may be reused as a physical occupancy coefficient without independent support",
+      "No maturity or establishment-to-productivity value is authorized until C0B3 adjudication"
+    ]
+  },
+  "required_future_evidence": {
+    "ONTOLOGY_REQUIRED": [
+      "District target-crop baseline flow or stock identification",
+      "Hydraulic-system and agency crosswalks",
+      "Perennial and semipermanent installed-stock unit certification"
+    ],
+    "NUMERIC_PARAMETER_REQUIRED": [
+      "Simultaneous occupancy mapping before a physical-footprint hard cap",
+      "Water-use evidence after crop-time and source-scale adjudication",
+      "Establishment and removal evidence before any perennial adjustment bound",
+      "Physical land occupancy evidence independent of frozen climate response windows",
+      "Productive-stock and establishment-to-productivity evidence for perennial and semipermanent crops"
+    ],
+    "OPTIONAL_REFINEMENT": [
+      "Higher-resolution within-campaign planting-share updates",
+      "Additional governance evidence for monthly decision granularity"
+    ]
+  },
+  "numeric_parameter_policy": "NO_NUMERIC_OPTIMIZATION_PARAMETERS_AUTHORIZED_IN_C0B1",
+  "forbidden_interpretations": [
+    "No optimizer",
+    "No objective function",
+    "No CVaR",
+    "No regression",
+    "No p-value driven decision",
+    "No economic outcome",
+    "No direct SUM campaign hectares <= AREA_HA cap",
+    "No reuse of climate response windows as physical occupancy coefficients",
+    "No immediate productivity assumption for new perennial establishment",
+    "No maturity lag or productive age distribution without C0B3 evidence",
+    "No parcel-level double-cropping inference",
+    "No command-and-control farmer allocation interpretation"
+  ],
+  "climate_stage_b_preservation": "PRESERVE_FROZEN_PHENOLOGY_AND_EXPOSURE_ARCHITECTURE_WITHOUT_MODIFICATION",
+  "fatal_gaps": [],
+  "critical_gaps": [
+    "C0B2_SPATIAL_HYDRAULIC_AND_AGENCY_CROSSWALK_REQUIRED",
+    "C0B3_PERENNIAL_STOCK_UNIT_AND_ADJUSTMENT_EVIDENCE_REQUIRED",
+    "T3_WITHIN_CAMPAIGN_SHARE_PROVENANCE_RULE_REQUIRED_BEFORE_NUMERICAL_IMPLEMENTATION",
+    "PHYSICAL_LAND_OCCUPANCY_MAPPING_REQUIRES_INDEPENDENT_EVIDENCE_NOT_CLIMATE_RESPONSE_WINDOWS",
+    "C0B3_PRODUCTIVE_OR_BEARING_PERENNIAL_STOCK_ADJUDICATION_REQUIRED",
+    "SIMULTANEOUS_LAND_OCCUPANCY_MAPPING_REQUIRED_BEFORE_AREA_HA_HARD_CAP"
+  ],
+  "known_lifecycle_failure_ledger": {
+    "checkpoint_descendant": "77526c9cb41b20062a5fa61a95167af5859295f2",
+    "ledger_scope": "DESCENDANTS_OF_C0B0_CHECKPOINT_ONLY",
+    "stage_b_known_state_failures": [
+      {
+        "test": "tests/test_climate_exposure_b0_preflight.py::test_02_base_commit_and_tag",
+        "classification": "KNOWN_STAGE_B_HISTORICAL_STATE_FAILURE"
+      },
+      {
+        "test": "tests/test_climate_exposure_b0_preflight.py::test_03_no_forbidden_exposure_output_exists",
+        "classification": "KNOWN_STAGE_B_HISTORICAL_STATE_FAILURE"
+      },
+      {
+        "test": "tests/test_climate_exposure_b0_preflight.py::test_16_no_stage_b_parquet_output_has_been_built",
+        "classification": "KNOWN_STAGE_B_HISTORICAL_STATE_FAILURE"
+      },
+      {
+        "test": "tests/test_perennial_exposures.py::test_12_forbidden_artifacts_absent",
+        "classification": "KNOWN_STAGE_B_HISTORICAL_STATE_FAILURE"
+      },
+      {
+        "test": "tests/test_transient_cohort_exposures.py::test_16_forbidden_artifacts_absent",
+        "classification": "KNOWN_STAGE_B_HISTORICAL_STATE_FAILURE"
+      }
+    ],
+    "c0b0_expected_post_checkpoint_failures": [
+      {
+        "test": "tests/test_c0b_decision_feasibility_preflight.py::test_02_exact_frozen_base",
+        "classification": "EXPECTED_POST_CHECKPOINT_STATE_FAILURE",
+        "cause": "The frozen C0B.0 test certifies the pre-checkpoint state where HEAD=144cb679186b8fdfe5b821aad635a7f805b7de28; after the authorized checkpoint HEAD=77526c9cb41b20062a5fa61a95167af5859295f2."
+      },
+      {
+        "test": "tests/test_c0b_decision_feasibility_preflight.py::test_03_exact_five_file_scope",
+        "classification": "EXPECTED_POST_CHECKPOINT_STATE_FAILURE",
+        "cause": "The frozen C0B.0 test certifies the pre-commit state where exactly five C0B.0 files are untracked; after the checkpoint those files are tracked and exactly five C0B.1 files are untracked."
+      },
+      {
+        "test": "tests/test_c0b_decision_feasibility_preflight.py::test_21_preflight_script_passes",
+        "classification": "EXPECTED_POST_CHECKPOINT_STATE_FAILURE",
+        "cause": "The frozen C0B.0 preflight correctly rejects the descendant lifecycle because repository-identity and persistent-scope gates certify the earlier pre-checkpoint state; upstream immutability, no-C0A, and no-optimization properties remain satisfied."
+      }
+    ],
+    "total_known_state_failures": 8,
+    "stage_b_known_state_failure_count": 5,
+    "c0b0_expected_post_checkpoint_failure_count": 3,
+    "genuine_regression_count": 0,
+    "unknown_failure_count": 0,
+    "unknown_failure_policy": "ANY_DIFFERENT_OR_NINTH_FAILURE_IS_UNEXPECTED_FAILURE_AND_BLOCKS_FUTURE_GATES",
+    "tolerance_conditions": [
+      "C0B0_CHECKPOINT_FILES_BYTE_IDENTICAL",
+      "CHECKPOINT_77526C9CB41B20062A5FA61A95167AF5859295F2_REMAINS_ANCESTOR",
+      "NO_GENUINE_SCIENTIFIC_REGRESSION",
+      "NO_UNKNOWN_FAILURES"
+    ]
+  },
+  "raw_full_suite_status": "FAIL_WITH_8_KNOWN_STATE_FAILURES",
+  "adjudicated_validation_status": "PASS_WITH_ZERO_GENUINE_REGRESSIONS",
+  "phase_aware_validator_future_need": "RECOMMENDED_BEFORE_FINAL_REPRODUCIBILITY_FREEZE",
+  "c0b1b_status": "PASS_FOR_FINAL_C0B1_READ_ONLY_AUDIT",
+  "next_gate_recommendation": "C0B2_SPATIAL_HYDRAULIC_AND_AGENCY_CROSSWALK_GATE",
+  "C0B1_status": "PASS_ONTOLOGY_MASTER"
+}
