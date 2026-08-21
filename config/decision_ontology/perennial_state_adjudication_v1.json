@@ -1,0 +1,416 @@
+{
+  "schema_version": "1.0",
+  "phase": "C0B3_PERENNIAL_STOCK_PRODUCTIVITY_AND_ADJUSTMENT_MASTER",
+  "repository_identity": {
+    "required_branch": "phase/c0b3-perennial-feasibility-v1",
+    "c0b2_freeze_commit": "eee4cfae0556135dd7f26e553b29a8437498b6ea",
+    "c0b2_freeze_subject": "Freeze C0B2 spatial hydraulic crosswalk"
+  },
+  "frozen_upstream": {
+    "c0b1_primary_architecture": "ARCH_E_MIXED_STOCK_FLOW_PLUS_MARGINAL_ADJUSTMENT",
+    "c0b1_fallback_architecture": "ARCH_F_TRANSIENT_ENDOGENOUS_PERENNIAL_EXOGENOUS",
+    "p2_prior_status": "CONDITIONAL_ON_C0B3",
+    "p3_prior_status": "EXPLICIT_FALLBACK_IF_C0B3_FAILS",
+    "installed_stock_not_productive_stock": true,
+    "new_establishment_not_immediate_productive_stock": true,
+    "water_hard_constraint_authorized": false
+  },
+  "official_source_provenance": {
+    "data_dictionary": {
+      "publisher": "GOBIERNO_REGIONAL_DE_PIURA_DIRECCION_REGIONAL_DE_AGRICULTURA",
+      "title": "Diccionario de datos Campaña agrícola de los principales cultivos de la región Piura [Gobierno Regional Piura - GRP]",
+      "source_date": "2025-05-27",
+      "resource_url": "https://www.datosabiertos.gob.pe/sites/default/files/Formato_DiccionarioDatos_productos_dra_.xlsx",
+      "sha256": "9df8aedf987a7a882d265ffc629d105f8058a5208738d5dcd1b213b30d347ce0"
+    },
+    "metadata": {
+      "publisher": "GOBIERNO_REGIONAL_DE_PIURA_DIRECCION_REGIONAL_DE_AGRICULTURA",
+      "title": "Metadato Campaña agrícola de los principales cultivos de la región Piura [Gobierno Regional Piura - GRP]",
+      "source_date": "2025-05-27",
+      "resource_url": "https://www.datosabiertos.gob.pe/sites/default/files/Formato_Metadatos_productos_dra_.docx",
+      "sha256": "a66ede624b8d2f502df65620c84233dd04a9ebcc29ae9969c38e2272ec812ea7"
+    },
+    "siea_methodology": {
+      "primary_source_authority": "MIDAGRI_SIEA",
+      "primary_source_title": "Lineamientos Metodológicos de la Actividad Estadística del Sistema Integrado de Estadística Agraria - SIEA",
+      "edition_date": "2012-12",
+      "official_discovery_page_url": "https://siea.midagri.gob.pe/index.php/nosotros/instrumentos-de-gestion",
+      "primary_requested_url": "https://siea.midagri.gob.pe/media/documentos/Lineamientos_Metodologicos_SIEA.pdf",
+      "primary_final_resolved_url": "https://siea.midagri.gob.pe/media/documentos/Lineamientos_Metodologicos_SIEA.pdf",
+      "primary_http_status": "HTTP_200_APPLICATION_PDF",
+      "primary_pdf_sha256": "8fe81dcf74acc74803f9fa0c19ace73d54024133a527854e9f95e7d846df2230",
+      "primary_pdf_pages": 491,
+      "historical_official_locator": {
+        "requested_url": "https://siea.midagri.gob.pe/portal/media/attachments/nosotros/gestion/Lineamientos_Metodologicos_SIEA.pdf",
+        "final_resolved_url": "https://siea.midagri.gob.pe/",
+        "http_status": "HTTP_200_TEXT_HTML_AFTER_301",
+        "status": "OBSOLETE_REDIRECTS_TO_OFFICIAL_SIEA_HOME_HTML_NOT_PDF",
+        "canonical_primary_source": false
+      },
+      "methodological_definition_source": {
+        "document_role": "METHODOLOGICAL_DEFINITION_SOURCE",
+        "document": "PRIMARY_OFFICIAL_SIEA_METHODOLOGICAL_PDF",
+        "pages": "61-65",
+        "verde_actual_pages": "61-62_AND_65",
+        "siembra_page": "63",
+        "cosecha_page": "64",
+        "definitions_verified_in_primary_pdf": true
+      },
+      "legal_approval_source": {
+        "document_role": "LEGAL_APPROVAL_SOURCE",
+        "source_authority": "MIDAGRI_SIEA",
+        "requested_url": "https://siea.midagri.gob.pe/media/documentos/RM_035-2013-AG.pdf",
+        "final_resolved_url": "https://siea.midagri.gob.pe/media/documentos/RM_035-2013-AG.pdf",
+        "http_status": "HTTP_200_APPLICATION_PDF",
+        "pdf_sha256": "70d173d9a407e0fb205f1cbefa1e149f9a3a9f7167b9834e97c8d0846abca2de",
+        "pages": "1-2",
+        "approving_norm": "RESOLUCION_MINISTERIAL_N_0035-2013-AG",
+        "approving_norm_date": "2013-02-01",
+        "approving_norm_role": "APPROVES_SIEA_METHODOLOGICAL_GUIDELINES"
+      },
+      "rm_0194_2016": {
+        "role": "INCORPORATES_COMPLETE_AGRICULTURAL_STATISTICAL_SECTOR_REGISTER_INTO_F1",
+        "is_original_guidelines_approving_norm": false,
+        "is_primary_methodological_source": false,
+        "authentication_source_authority": "CONGRESO_DE_LA_REPUBLICA_DIARIO_OFICIAL_EL_PERUANO_ARCHIVE",
+        "authentication_source_url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20171213.pdf",
+        "authentication_source_sha256": "44b51dfc528a6352c9aa0189601c3c3e7f04c7d17afecab17aa8d5076fb15fb0",
+        "authentication_source_page": "5"
+      },
+      "auxiliary_private_mirror": {
+        "status": "AUXILIARY_RETRIEVAL_COPY_NOT_CANONICAL_NOT_REQUIRED_FOR_SCIENTIFIC_CLAIMS",
+        "url": "https://www.normaslegalesonline.pe/imagenes/13/12/2017/1513177801890_RM_194_2016_MINAGRI_2.pdf",
+        "sha256": "e7c92b838a3afe593011122cc6f29ab4efa15a8eb2180ed4a2ec527e2dde812a",
+        "not_primary_source": true,
+        "no_scientific_claim_depends_solely_on_copy": true
+      },
+      "legal_vs_methodological_source_firewall": "PASS_DISTINCT_SOURCE_ROLES_RECORDED",
+      "evidence_domain": "VARIABLE_AND_STATE_SEMANTICS_ONLY_NOT_BIOLOGICAL_PARAMETER"
+    }
+  },
+  "variable_adjudication": {
+    "VERDE_ACTUAL": {
+      "source_semantics": "NUMERIC_MONTHLY_TOTAL_AREA_OF_INSTALLED_CROPS",
+      "transient_interpretation": "FROM_INSTALLATION_UNTIL_HARVEST",
+      "permanent_interpretation": "FROM_INSTALLATION_THROUGH_PRODUCTION",
+      "unit": "ha",
+      "status": "INSTALLED_STOCK_CERTIFIED",
+      "may_be_used_as_numeric_installed_hectares": true,
+      "evidence_ids": [
+        "C0B3-E001",
+        "C0B3-E002",
+        "C0B3-E003",
+        "C0B3-E026"
+      ]
+    },
+    "COSECHA": {
+      "source_semantics": "HARVEST_FLOW_AREA",
+      "unit": "ha",
+      "permanent_semantics": "AREA_WITH_FRUIT_COLLECTED_MAY_INCLUDE_REPEATED_COLLECTION_AND_YEAR_END_REPORTING",
+      "may_equal_installed_stock_automatically": false,
+      "may_equal_productive_stock_automatically": false,
+      "evidence_ids": [
+        "C0B3-E007",
+        "C0B3-E008",
+        "C0B3-E009",
+        "C0B3-E028"
+      ]
+    },
+    "SIEMBRA": {
+      "source_semantics": "MONTHLY_GROSS_AREA_INSTALLED_BY_SOWING_OR_TRANSPLANTING",
+      "unit": "ha",
+      "gross_establishment_observed": true,
+      "is_total_stock": false,
+      "is_campaign_cumulative_stock": false,
+      "is_net_stock_expansion": false,
+      "banana_internal_sucker_succession_observed": false,
+      "evidence_ids": [
+        "C0B3-E004",
+        "C0B3-E005",
+        "C0B3-E006",
+        "C0B3-E027"
+      ]
+    },
+    "stock_difference": {
+      "status": "APPROXIMATE_ONLY",
+      "accounting_residual_diagnostic_only": true,
+      "may_equal_observed_removal": false,
+      "model_authorized": false,
+      "omitted_components": [
+        "LOSS",
+        "SUBSTITUTION",
+        "GROWTH_TO_PRODUCTION_STATE_CHANGE",
+        "REVISION_OR_RECTIFICATION",
+        "OTHER_EXIT_OR_CORRECTION"
+      ]
+    }
+  },
+  "crop_adjudications": [
+    {
+      "CROP_CODE": "13010210000",
+      "CROP_STD": "MANGO",
+      "CROP_CLASS": "WOODY_PERENNIAL_ORCHARD",
+      "INSTALLED_STOCK_CANDIDATE": "VERDE_ACTUAL",
+      "INSTALLED_STOCK_STATUS": "OBSERVED_AND_UNIT_CERTIFIED",
+      "INSTALLED_STOCK_STATE": "INSTALLED_PERENNIAL_STOCK_AREA",
+      "INSTALLED_STOCK_UNIT": "ha",
+      "PRODUCTIVE_STOCK_CANDIDATE": "COSECHA/HARVEST_AREA",
+      "PRODUCTIVE_STOCK_STATUS": "HARVESTED_AREA_PROXY_ONLY",
+      "ESTABLISHMENT_FLOW_CANDIDATE": "SIEMBRA/SOWN_AREA",
+      "ESTABLISHMENT_FLOW_STATUS": "DIRECTLY_OBSERVED",
+      "ESTABLISHMENT_FLOW_QUALIFICATION": "MONTHLY_GROSS_AREA_INSTALLED_NOT_NET_EXPANSION",
+      "STOCK_FLOW_IDENTITY_STATUS": "APPROXIMATE_ONLY",
+      "REMOVAL_FLOW_CANDIDATE": "NONE_IN_PUBLISHED_EXTRACT",
+      "REMOVAL_FLOW_STATUS": "NOT_OBSERVED",
+      "REMOVAL_DERIVABILITY": "NOT_DERIVABLE_WITHOUT_ASSUMPTION",
+      "LAG_STATUS": "CONTEXT_ONLY",
+      "LAG_REQUIRED_CONCEPT": "INSTALLATION_TO_ECONOMICALLY_PRODUCTIVE_OR_BEARING_STOCK",
+      "NEAR_TERM_ESTABLISHMENT_OUTPUT_RELEVANCE": "UNRESOLVED",
+      "P2_OPERATIONAL_STATUS": "NOT_SUPPORTED_USE_P3",
+      "P3_FALLBACK_REQUIRED": true,
+      "EVIDENCE_IDS": [
+        "C0B3-E001",
+        "C0B3-E004",
+        "C0B3-E007",
+        "C0B3-E011",
+        "C0B3-E014",
+        "C0B3-E015",
+        "C0B3-E016",
+        "C0B3-E017",
+        "C0B3-E026",
+        "C0B3-E027",
+        "C0B3-E028",
+        "C0B3-E029"
+      ]
+    },
+    {
+      "CROP_CODE": "13010170102",
+      "CROP_STD": "LIMON SUTIL",
+      "CROP_CLASS": "WOODY_PERENNIAL_ORCHARD",
+      "INSTALLED_STOCK_CANDIDATE": "VERDE_ACTUAL",
+      "INSTALLED_STOCK_STATUS": "OBSERVED_AND_UNIT_CERTIFIED",
+      "INSTALLED_STOCK_STATE": "INSTALLED_PERENNIAL_STOCK_AREA",
+      "INSTALLED_STOCK_UNIT": "ha",
+      "PRODUCTIVE_STOCK_CANDIDATE": "COSECHA/HARVEST_AREA",
+      "PRODUCTIVE_STOCK_STATUS": "HARVESTED_AREA_PROXY_ONLY",
+      "ESTABLISHMENT_FLOW_CANDIDATE": "SIEMBRA/SOWN_AREA",
+      "ESTABLISHMENT_FLOW_STATUS": "DIRECTLY_OBSERVED",
+      "ESTABLISHMENT_FLOW_QUALIFICATION": "MONTHLY_GROSS_AREA_INSTALLED_NOT_NET_EXPANSION",
+      "STOCK_FLOW_IDENTITY_STATUS": "APPROXIMATE_ONLY",
+      "REMOVAL_FLOW_CANDIDATE": "NONE_IN_PUBLISHED_EXTRACT",
+      "REMOVAL_FLOW_STATUS": "NOT_OBSERVED",
+      "REMOVAL_DERIVABILITY": "NOT_DERIVABLE_WITHOUT_ASSUMPTION",
+      "LAG_STATUS": "CONTEXT_ONLY",
+      "LAG_REQUIRED_CONCEPT": "INSTALLATION_TO_ECONOMICALLY_PRODUCTIVE_OR_BEARING_STOCK",
+      "NEAR_TERM_ESTABLISHMENT_OUTPUT_RELEVANCE": "UNRESOLVED",
+      "P2_OPERATIONAL_STATUS": "NOT_SUPPORTED_USE_P3",
+      "P3_FALLBACK_REQUIRED": true,
+      "EVIDENCE_IDS": [
+        "C0B3-E002",
+        "C0B3-E005",
+        "C0B3-E008",
+        "C0B3-E012",
+        "C0B3-E018",
+        "C0B3-E019",
+        "C0B3-E020",
+        "C0B3-E026",
+        "C0B3-E027",
+        "C0B3-E028",
+        "C0B3-E029"
+      ]
+    },
+    {
+      "CROP_CODE": "15010040000",
+      "CROP_STD": "PLATANOS Y BANANAS",
+      "CROP_CLASS": "SEMIPERMANENT_CONTINUOUS_STAND_WITH_MOTHER_SUCKER_SUCCESSION",
+      "INSTALLED_STOCK_CANDIDATE": "VERDE_ACTUAL",
+      "INSTALLED_STOCK_STATUS": "OBSERVED_AND_UNIT_CERTIFIED",
+      "INSTALLED_STOCK_STATE": "CONTINUOUS_SEMIPERMANENT_INSTALLED_STAND_AREA",
+      "INSTALLED_STOCK_UNIT": "ha",
+      "PRODUCTIVE_STOCK_CANDIDATE": "COSECHA/HARVEST_AREA",
+      "PRODUCTIVE_STOCK_STATUS": "HARVESTED_AREA_PROXY_ONLY",
+      "ESTABLISHMENT_FLOW_CANDIDATE": "SIEMBRA/SOWN_AREA",
+      "ESTABLISHMENT_FLOW_STATUS": "DIRECTLY_OBSERVED",
+      "ESTABLISHMENT_FLOW_QUALIFICATION": "GROSS_STAND_INSTALLATION_OR_REPLANT_ESTABLISHMENT_NOT_INTERNAL_SUCKER_SUCCESSION",
+      "STOCK_FLOW_IDENTITY_STATUS": "APPROXIMATE_ONLY",
+      "REMOVAL_FLOW_CANDIDATE": "NONE_IN_PUBLISHED_EXTRACT",
+      "REMOVAL_FLOW_STATUS": "NOT_OBSERVED",
+      "REMOVAL_DERIVABILITY": "NOT_DERIVABLE_WITHOUT_ASSUMPTION",
+      "LAG_STATUS": "CONTEXT_ONLY",
+      "LAG_REQUIRED_CONCEPT": "INITIAL_STAND_ESTABLISHMENT_AND_RATOON_SUCCESSION_SEPARATE",
+      "NEAR_TERM_ESTABLISHMENT_OUTPUT_RELEVANCE": "UNRESOLVED",
+      "P2_OPERATIONAL_STATUS": "NOT_SUPPORTED_USE_P3",
+      "P3_FALLBACK_REQUIRED": true,
+      "EVIDENCE_IDS": [
+        "C0B3-E003",
+        "C0B3-E006",
+        "C0B3-E009",
+        "C0B3-E013",
+        "C0B3-E021",
+        "C0B3-E022",
+        "C0B3-E023",
+        "C0B3-E024",
+        "C0B3-E025",
+        "C0B3-E026",
+        "C0B3-E027",
+        "C0B3-E028",
+        "C0B3-E029"
+      ]
+    }
+  ],
+  "empirical_identity_diagnostics": {
+    "formula": "VERDE_ACTUAL_t_MINUS_VERDE_ACTUAL_t_MINUS_1_MINUS_SIEMBRA_t",
+    "admissibility": "ACCOUNTING_RESIDUAL_DIAGNOSTIC_ONLY_NOT_MODEL_AUTHORIZED",
+    "interpretation": "HIGH_CONCORDANCE_SUPPORTS_INTERNAL_COHERENCE_BUT_DOES_NOT_CERTIFY_OMITTED_TRANSITION_COMPONENTS",
+    "MANGO": {
+      "total_candidate_pairs": 4111,
+      "nonmissing_analyzable_pairs": 4111,
+      "missing_pairs": 0,
+      "exact_identity_pairs": 4076,
+      "positive": 3,
+      "negative": 32,
+      "minimum": -100,
+      "maximum": 40,
+      "mean": -0.155254
+    },
+    "LIMON SUTIL": {
+      "total_candidate_pairs": 4730,
+      "nonmissing_analyzable_pairs": 4730,
+      "missing_pairs": 0,
+      "exact_identity_pairs": 4699,
+      "positive": 0,
+      "negative": 31,
+      "minimum": -683,
+      "maximum": 0,
+      "mean": -0.274841
+    },
+    "PLATANOS Y BANANAS": {
+      "total_candidate_pairs": 5576,
+      "nonmissing_analyzable_pairs": 5574,
+      "missing_pairs": 2,
+      "exact_identity_pairs": 5481,
+      "positive": 2,
+      "negative": 91,
+      "minimum": -470,
+      "maximum": 50,
+      "mean": -0.751525
+    }
+  },
+  "removal_adjudication": {
+    "c0b1_requires_freely_endogenous_removal": false,
+    "observed_or_externally_fixed_removal_could_qualify": true,
+    "published_extract_status": "NOT_OBSERVED_IN_PUBLISHED_EXTRACT",
+    "derivability": "NOT_DERIVABLE_WITHOUT_ASSUMPTION",
+    "zero_removal_allowed": false
+  },
+  "banana_state_ontology": {
+    "status": "CONTINUOUS_MOTHER_DAUGHTER_GRANDDAUGHTER_STAND",
+    "installed_stock_object": "CONTINUOUS_SEMIPERMANENT_INSTALLED_STAND_AREA",
+    "siembra_interpretation": "GROSS_STAND_INSTALLATION_OR_REPLANT_ESTABLISHMENT",
+    "internal_sucker_succession_is_new_district_area_establishment": false,
+    "woody_perennial_ontology": "REJECTED"
+  },
+  "decision_horizon": {
+    "status": "QUALITATIVELY_NEAR_TERM_ONLY",
+    "numeric_horizon_frozen": false,
+    "lag_comparison_authorized": false
+  },
+  "p2_necessary_condition_matrix": {
+    "MANGO": {
+      "installed_stock": "PASS",
+      "unit": "PASS",
+      "gross_establishment": "PASS",
+      "productive_stock": "FAIL_PROXY_ONLY",
+      "removal_replacement": "FAIL_NOT_OBSERVED",
+      "model_admissible_productivity_lag": "FAIL_CONTEXT_ONLY",
+      "numeric_horizon_compatibility": "UNRESOLVED",
+      "p2": "NOT_SUPPORTED_USE_P3"
+    },
+    "LIMON SUTIL": {
+      "installed_stock": "PASS",
+      "unit": "PASS",
+      "gross_establishment": "PASS",
+      "productive_stock": "FAIL_PROXY_ONLY",
+      "removal_replacement": "FAIL_NOT_OBSERVED",
+      "model_admissible_productivity_lag": "FAIL_CONTEXT_ONLY",
+      "numeric_horizon_compatibility": "UNRESOLVED",
+      "p2": "NOT_SUPPORTED_USE_P3"
+    },
+    "PLATANOS Y BANANAS": {
+      "installed_stock": "PASS",
+      "unit": "PASS",
+      "gross_establishment": "PASS_WITH_BIOLOGICAL_QUALIFICATION",
+      "productive_stock": "FAIL_PROXY_ONLY",
+      "removal_replacement": "FAIL_NOT_OBSERVED",
+      "model_admissible_productivity_lag": "FAIL_CONTEXT_ONLY",
+      "numeric_horizon_compatibility": "UNRESOLVED",
+      "p2": "NOT_SUPPORTED_USE_P3"
+    }
+  },
+  "biological_parameter_policy": {
+    "evidence_rows": 9,
+    "model_authorized_values": 0,
+    "midpoint_inference_allowed": false,
+    "cultivar_or_system_generalization_allowed": false,
+    "first_harvest_equals_economically_productive_stock": false
+  },
+  "architecture_adjudication": "ARCH_F_SET3_REQUIRED_ALL_PERENNIALS",
+  "architecture_status": {
+    "ARCH_E_SET2_STATUS": "NOT_SUPPORTED",
+    "ARCH_F_SET3_STATUS": "REQUIRED"
+  },
+  "architecture_rationale": "INSTALLED_STOCK_AND_GROSS_ESTABLISHMENT_ARE_OBSERVED_BUT_PRODUCTIVE_STATE_REMOVAL_REPLACEMENT_MODEL_ADMISSIBLE_LAG_AND_NUMERIC_HORIZON_COMPATIBILITY_DO_NOT_IDENTIFY_A_COMPLETE_DEFENSIBLE_ENDOGENOUS_STOCK_TRANSITION_ARCHITECTURE",
+  "p2_failure_independent_of_current_horizon": true,
+  "p3_required_crops": [
+    "MANGO",
+    "LIMON SUTIL",
+    "PLATANOS Y BANANAS"
+  ],
+  "p3_interpretation": {
+    "resolution": "P3_FIXED_STOCK_NEAR_TERM_HORIZON",
+    "perennial_decision_endogeneity": "EXOGENOUS_FIXED_WITHIN_CURRENT_NEAR_TERM_ARCHITECTURE",
+    "future_time_varying_exogenous_perennial_path_status": "NOT_YET_AUTHORIZED",
+    "perennial_installed_stocks": "OBSERVED_BUT_EXOGENOUS_TO_NEAR_TERM_OPTIMIZER",
+    "historical_characterization_authorized": true,
+    "district_crop_baseline_measurement_authorized": true,
+    "baseline_initialization_authorized": true,
+    "descriptive_historical_stock_trajectories_authorized": true,
+    "historical_observed_variation_authorizes_future_modeled_variation": false,
+    "scenario_specific_perennial_area_reallocation_authorized": false,
+    "optimizer_chosen_perennial_adjustment_authorized": false,
+    "endogenous_perennial_establishment_authorized": false,
+    "endogenous_perennial_removal_authorized": false,
+    "arbitrary_optimizer_area_adjustment_authorized": false,
+    "exogenous_means_unobserved": false
+  },
+  "critical_gaps": [
+    "PRODUCTIVE_STOCK_NOT_DIRECTLY_OBSERVED",
+    "REMOVAL_REPLACEMENT_NOT_OBSERVED",
+    "NO_MODEL_ADMISSIBLE_CROP_SYSTEM_SPECIFIC_PRODUCTIVITY_LAG",
+    "NEAR_TERM_HORIZON_NOT_NUMERICALLY_MAPPED"
+  ],
+  "firewalls": {
+    "transient_crop_ontology_modified": false,
+    "outcome_conditioned_ontology_used": false,
+    "verde_actual_unit_inferred": false,
+    "verde_actual_unit_certified_by_official_methodology": true,
+    "cosecha_equals_installed_stock_assumed": false,
+    "cosecha_equals_productive_stock_assumed": false,
+    "siembra_equals_establishment_assumed": false,
+    "siembra_equals_net_stock_expansion_assumed": false,
+    "stock_residual_equals_observed_removal_assumed": false,
+    "removal_set_to_zero": false,
+    "establishment_equals_immediate_productivity_assumed": false,
+    "banana_forced_to_woody_orchard_ontology": false,
+    "numeric_near_term_horizon_invented": false,
+    "p2_supported_from_installed_stock_and_establishment_only": false,
+    "p3_described_as_unobserved_stock": false
+  },
+  "authorizations": {
+    "optimizer": false,
+    "water_model": false,
+    "water_hard_constraint": false,
+    "numeric_perennial_stock_flow_model": false
+  },
+  "final_status": "PASS_FOR_FINAL_NOTARIAL_C0B3_FREEZE_AUDIT"
+}
