@@ -1,0 +1,390 @@
+{
+  "schema_version": "C0B4_TRANSIENT_LAND_ADJUSTMENT_V1",
+  "phase": "C0B4_TRANSIENT_LAND_OCCUPANCY_AND_ADJUSTMENT_FEASIBILITY_MASTER",
+  "repository_identity": {
+    "branch": "phase/c0b4-land-adjustment-feasibility-v1",
+    "head_commit": "ed5543da18ce3a1a5e72a2ab2519b8e2f2363893",
+    "head_subject": "Freeze C0B3 perennial feasibility and architecture"
+  },
+  "frozen_upstream": {
+    "c0b3_freeze": "ed5543da18ce3a1a5e72a2ab2519b8e2f2363893",
+    "decision_architecture": "ARCH_F_TRANSIENT_ENDOGENOUS_PERENNIAL_EXOGENOUS",
+    "endogeneity_set": "SET_3",
+    "transient_crops": [
+      "ARROZ",
+      "MAIZ AMARILLO DURO"
+    ],
+    "perennial_resolution": "P3_FIXED_STOCK_NEAR_TERM_HORIZON",
+    "future_time_varying_exogenous_perennial_stock_path_status": "NOT_YET_AUTHORIZED",
+    "perennial_stocks_fixed_exogenous_in_current_near_term_architecture": true,
+    "water_hard_constraint_currently_authorized": false
+  },
+  "source_provenance": {
+    "raw_agricultural_data": {
+      "path": "data/raw/Formato_dataset_productos_dra__ (2).csv",
+      "sha256": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489",
+      "rows": 124514,
+      "crop_codes": 96,
+      "first_month": 201508,
+      "last_month": 202412
+    },
+    "land_physical": {
+      "path": "data/processed/land_physical.csv",
+      "sha256": "dba3d5263a14daddf0f5c1d33dfae2c209f9d531fdec983f193fb8c9d83ef517",
+      "role": "PHYSICAL_AGRICULTURAL_FOOTPRINT_ONLY"
+    },
+    "official_pdf_sha256": {
+      "SIEA_METHODOLOGY": "8fe81dcf74acc74803f9fa0c19ace73d54024133a527854e9f95e7d846df2230",
+      "INIA_RICE_508": "17b7959a68e81dc53561e187d632f2fd09d7b122b9968d814534ce61d07abbc5",
+      "INIA_RICE_502": "2335129ff8e43dc79c9bd52a7e2ebb7531d994a45705c308c917d41d517c4b93",
+      "INIA_MAD_619": "ca20da761daedb97ec4b0ea52e1b956e3a791d5cf6729f4ab3cad0a72301a5e4",
+      "MIDAGRI_RICE_OBSERVATORY": "21032cbca52b0ee7785e2c3f80494afccf5c745f960ba86444fcf82c0e17467e",
+      "SENAMHI_PIURA_RICE_BULLETIN": "39632b2f4c16637f793e457893bb2b359dc5cf8a044ccc5f202bd5ab6876a511"
+    }
+  },
+  "campaign_time_base": {
+    "status": "OFFICIAL_AUGUST_TO_JULY_CAMPAIGN",
+    "start_month": 8,
+    "end_month": 7,
+    "source_evidence_id": "C0B4-E008",
+    "historical_complete_campaigns_audited": [
+      "2015/2016",
+      "2016/2017",
+      "2017/2018",
+      "2018/2019",
+      "2019/2020",
+      "2020/2021",
+      "2021/2022",
+      "2022/2023",
+      "2023/2024"
+    ],
+    "partial_2024_2025_campaign_excluded": true
+  },
+  "land_ontology": {
+    "AREA_HA_status": "PHYSICAL_AGRICULTURAL_FOOTPRINT_ONLY",
+    "distinct_concepts": [
+      "PHYSICAL_AGRICULTURAL_FOOTPRINT",
+      "CURRENTLY_CULTIVATED_AREA",
+      "PERENNIAL_INSTALLED_STOCK",
+      "TRANSIENT_CAMPAIGN_SOWN_AREA",
+      "TRANSIENT_MONTHLY_SOWN_FLOW",
+      "HARVESTED_AREA",
+      "SIMULTANEOUS_TRANSIENT_OCCUPANCY",
+      "OTHER_CROP_OCCUPANCY",
+      "UNUSED_OR_FALLOW_AGRICULTURAL_AREA",
+      "REALLOCABLE_TRANSIENT_AREA",
+      "SEQUENTIAL_REUSE"
+    ],
+    "direct_campaign_hectare_hard_cap_authorized": false,
+    "perennial_subtraction_yields_reallocable_transient_land": false,
+    "other_crop_occupancy_relevant": true,
+    "all_remaining_physical_land_reallocable": false,
+    "siembra_month_equals_occupancy_month": false,
+    "climate_response_window_is_physical_occupancy_window": false,
+    "parcel_sequential_cropping_inferred_from_district_aggregates": false
+  },
+  "other_crop_universe_audit": {
+    "raw_crop_codes": 96,
+    "target_crop_codes": 5,
+    "other_crop_codes": 91,
+    "model_district_years_2016_2023": 440,
+    "model_district_years_with_positive_other_crop_sowing": 429,
+    "median_positive_other_crop_codes_per_relevant_district_year": 7,
+    "rice_mad_campaign_totals_exceeding_area_ha": 18
+  },
+  "decision_domain_adjudication": {
+    "physical_land_capacity_model_feasibility": "NOT_FEASIBLE",
+    "strategic_transient_decision_domain_feasibility": "POTENTIALLY_RECOVERABLE_BUT_NOT_CURRENTLY_MODEL_ADMISSIBLE",
+    "land_hard_cap_necessary_for_any_valid_decision_model": false,
+    "physical_hard_cap_required_for_current_architecture": false,
+    "alternative_decision_domain_currently_authorized": false,
+    "interpretation": "A_FUTURE_INDEPENDENTLY_DEFENSIBLE_POLICY_OR_EMPIRICAL_DOMAIN_COULD_REPLACE_PHYSICAL_CAPACITY_BUT_NONE_IS_AUTHORIZED_IN_C0B4"
+  },
+  "occupancy_adjudication": {
+    "ARROZ": {
+      "crop_code": "14010020000",
+      "duration_status": "SENSITIVITY_ONLY_RANGE",
+      "duration_value": null,
+      "duration_lower": 142,
+      "duration_upper": 155,
+      "duration_unit": "DAY",
+      "range_role": "CULTIVAR_AND_NORTHERN_COAST_SENSITIVITY_ENVELOPE_NOT_FIELD_RELEASE_RULE",
+      "model_parameter_authorized": false,
+      "evidence_ids": [
+        "C0B4-E009",
+        "C0B4-E010",
+        "C0B4-E011",
+        "C0B4-E012",
+        "C0B4-E013"
+      ]
+    },
+    "MAIZ AMARILLO DURO": {
+      "crop_code": "14010070000",
+      "duration_status": "SENSITIVITY_ONLY_RANGE",
+      "duration_value": null,
+      "duration_lower": 140,
+      "duration_upper": 170,
+      "duration_unit": "DAY",
+      "range_role": "ONE_OFFICIAL_HYBRID_ACROSS_SUMMER_AND_WINTER_NOT_CROP_GENERAL_FIELD_RELEASE_RULE",
+      "model_parameter_authorized": false,
+      "evidence_ids": [
+        "C0B4-E014",
+        "C0B4-E015"
+      ]
+    }
+  },
+  "simultaneous_occupancy_mapping": {
+    "conceptual_formula": "OCCUPANCY_D_C_TAU_EQUALS_SUM_OVER_PLANTING_COHORTS_SIEMBRA_D_C_M_TIMES_OCCUPANCY_KERNEL_C_TAU_MINUS_M",
+    "status": "SENSITIVITY_ONLY_NOT_MODEL_AUTHORIZED",
+    "aggregate_convolution_without_parcel_identity_is_conceptually_possible": true,
+    "crop_general_kernel_certified": false,
+    "field_release_endpoint_certified": false,
+    "model_kernel_parameters_authorized": 0,
+    "climate_windows_used": false
+  },
+  "reallocable_land": {
+    "status": "NOT_OBSERVED",
+    "certified_identity_available": false,
+    "area_ha_minus_fixed_perennials_authorized": false,
+    "historical_maximum_is_capacity": false,
+    "official_district_crop_planning_bound_available": false
+  },
+  "land_hard_cap": {
+    "status": "NOT_AUTHORIZED",
+    "defensible_simultaneous_occupancy_available": false,
+    "defensible_available_physical_capacity_available": false,
+    "direct_rice_plus_mad_campaign_area_le_area_ha": false,
+    "direct_area_ha_minus_perennial_stock_capacity": false
+  },
+  "adjustment_envelope": {
+    "historical_diagnostic_status": "PASS_DESCRIPTIVE_ONLY",
+    "campaign_definition": "AUGUST_TO_JULY",
+    "complete_campaign_required": true,
+    "partial_campaigns_excluded": true,
+    "ARROZ": {
+      "status": "SENSITIVITY_ONLY",
+      "district_crop_rows": 55,
+      "sensitivity_only_rows": 34,
+      "unresolved_rows": 21,
+      "complete_historical_periods_total": 181,
+      "zero_entry_rows": 1,
+      "zero_exit_rows": 1,
+      "model_bounds_authorized": 0
+    },
+    "MAIZ AMARILLO DURO": {
+      "status": "SENSITIVITY_ONLY",
+      "district_crop_rows": 55,
+      "sensitivity_only_rows": 44,
+      "unresolved_rows": 11,
+      "complete_historical_periods_total": 229,
+      "zero_entry_rows": 1,
+      "zero_exit_rows": 2,
+      "model_bounds_authorized": 0
+    },
+    "historical_minimum_or_maximum_is_hard_bound": false,
+    "arbitrary_percentage_bound_authorized": false
+  },
+  "baseline": {
+    "status": "NOT_YET_FROZEN",
+    "year": null,
+    "outcome_tuning_allowed": false,
+    "latest_complete_period_status": "NOT_AVAILABLE_AS_COMMON_DISTRICT_CROP_BASELINE",
+    "latest_complete_period_diagnostics": {
+      "latest_complete_campaign_candidate": "2023/2024",
+      "rice_complete_districts": 19,
+      "mad_complete_districts": 26,
+      "model_districts": 55,
+      "partial_2024_2025_campaign_complete_district_crop_rows": 0,
+      "source_last_month": 202412
+    },
+    "multiyear_reference_status": "METHOD_DEFINED_BUT_NOT_SOURCE_MANDATED",
+    "district_official_planning_baseline_available": false,
+    "pcr_agency_hectares_as_district_baseline_authorized": false,
+    "candidate_principle": "SEPARATE_PROSPECTIVE_GATE_USING_ONLY_PREDECISION_INFORMATION_AND_COVERAGE_ADEQUACY",
+    "silently_forbidden_choices": [
+      "2023",
+      "LATEST_OBSERVATION",
+      "HISTORICAL_MEDIAN",
+      "RECENT_MEDIAN",
+      "PCR_AGENCY_HECTARES"
+    ]
+  },
+  "historical_support_decision_domain": {
+    "status": "EMPIRICAL_CONTEXT_ONLY",
+    "historical_convex_hull_authorized": false,
+    "historically_observed_equals_future_feasible": false,
+    "authorized_roles": [
+      "DESCRIPTION",
+      "CANDIDATE_GENERATION_FOR_LATER_FORMAL_GATE",
+      "DIAGNOSTIC_SENSITIVITY"
+    ],
+    "current_feasible_set_authorized": false
+  },
+  "fixed_total_rice_mad_composition_domain": {
+    "status": "NOT_SUPPORTED",
+    "joint_complete_district_campaign_observations": 106,
+    "adjacent_joint_campaign_changes": 40,
+    "reciprocal_direction_changes": 19,
+    "same_direction_changes": 18,
+    "one_or_both_unchanged": 3,
+    "exact_fixed_total_changes": 0,
+    "within_district_level_correlation": -0.041963,
+    "crop_substitutability_established": false,
+    "negative_correlation_proves_substitutability": false
+  },
+  "crop_specific_baseline_relative_domain": {
+    "status": "SENSITIVITY_ONLY_NOT_MODEL_AUTHORIZED",
+    "rice_status": "SENSITIVITY_ONLY_NOT_MODEL_AUTHORIZED",
+    "mad_status": "SENSITIVITY_ONLY_NOT_MODEL_AUTHORIZED",
+    "historical_variation_is_authorized_bound": false
+  },
+  "soft_policy_adjustment_bound": {
+    "ontology_allowed_by_c0b1": "YES_CONDITIONAL_ON_PROSPECTIVE_PRESPECIFIED_EVIDENCE_RULE",
+    "actual_bound_exists": false,
+    "model_authorized": false,
+    "arbitrary_percentage_allowed": false
+  },
+  "t3_share_rule": {
+    "ARROZ": {
+      "status": "CANDIDATE_NOT_YET_AUTHORIZED",
+      "provenance": "SOURCE_OBSERVED_HISTORICAL_SIEMBRA_TIMING_WITH_OFFICIAL_AUGUST_JULY_CAMPAIGN",
+      "future_fixed_rule_defined": false,
+      "pooling_rule_defined": false,
+      "model_share_parameters_authorized": 0
+    },
+    "MAIZ AMARILLO DURO": {
+      "status": "CANDIDATE_NOT_YET_AUTHORIZED",
+      "provenance": "SOURCE_OBSERVED_HISTORICAL_SIEMBRA_TIMING_WITH_OFFICIAL_AUGUST_JULY_CAMPAIGN",
+      "future_fixed_rule_defined": false,
+      "pooling_rule_defined": false,
+      "model_share_parameters_authorized": 0
+    },
+    "selection_may_use_outcomes_or_climate_response": false,
+    "selection_may_use_optimizer_results": false
+  },
+  "t3_share_diagnostics": {
+    "ARROZ": {
+      "complete_positive_district_campaign_profiles": 175,
+      "districts_with_positive_complete_profile": 36,
+      "districts_requiring_pooling_or_external_rule": 19,
+      "nonzero_months_min": 1,
+      "nonzero_months_median": 4,
+      "nonzero_months_max": 8,
+      "median_l1_distance_from_district_mean": 0.517333,
+      "dominant_campaign_month_counts": {
+        "APR": 2,
+        "AUG": 48,
+        "FEB": 68,
+        "JAN": 19,
+        "JUL": 3,
+        "JUN": 5,
+        "MAR": 25,
+        "MAY": 1,
+        "SEP": 4
+      },
+      "status": "CANDIDATE_NOT_YET_AUTHORIZED",
+      "model_share_parameters_authorized": 0
+    },
+    "MAIZ AMARILLO DURO": {
+      "complete_positive_district_campaign_profiles": 224,
+      "districts_with_positive_complete_profile": 48,
+      "districts_requiring_pooling_or_external_rule": 7,
+      "nonzero_months_min": 1,
+      "nonzero_months_median": 5.0,
+      "nonzero_months_max": 10,
+      "median_l1_distance_from_district_mean": 0.738429,
+      "dominant_campaign_month_counts": {
+        "APR": 3,
+        "AUG": 53,
+        "DEC": 6,
+        "FEB": 51,
+        "JAN": 27,
+        "JUL": 2,
+        "JUN": 13,
+        "MAR": 19,
+        "MAY": 1,
+        "NOV": 5,
+        "OCT": 16,
+        "SEP": 28
+      },
+      "status": "CANDIDATE_NOT_YET_AUTHORIZED",
+      "model_share_parameters_authorized": 0
+    }
+  },
+  "input_firewall": {
+    "allowed_computational_fields": [
+      "UBIGEO",
+      "DISTRICT_NAME",
+      "COD_CULTIVO",
+      "CULTIVO",
+      "ANO",
+      "MES",
+      "SIEMBRA",
+      "VERDE_ACTUAL",
+      "AREA_HA"
+    ],
+    "forbidden_selection_inputs": [
+      "YIELD",
+      "PRODUCCION",
+      "YIELD_RAW",
+      "CLIMATE_RESPONSE_COEFFICIENT",
+      "ECONOMETRIC_P_VALUE",
+      "ENSO_SCENARIO_PERFORMANCE",
+      "PROFIT",
+      "GVP",
+      "CVAR",
+      "OPTIMIZER_OBJECTIVE_VALUE"
+    ]
+  },
+  "forbidden_interpretations": [
+    "RICE_CAMPAIGN_HA_PLUS_MAD_CAMPAIGN_HA_LE_AREA_HA",
+    "AREA_HA_MINUS_FIXED_PERENNIAL_STOCK_EQUALS_REALLOCABLE_TRANSIENT_LAND",
+    "ALL_REMAINING_PHYSICAL_LAND_IS_REALLOCABLE",
+    "SIEMBRA_MONTH_EQUALS_OCCUPANCY_MONTH",
+    "CLIMATE_RESPONSE_WINDOW_EQUALS_PHYSICAL_LAND_OCCUPANCY_WINDOW",
+    "PARCEL_DOUBLE_CROPPING_INFERRED_FROM_DISTRICT_AGGREGATES",
+    "HISTORICAL_MAXIMUM_EQUALS_PHYSICAL_CAPACITY",
+    "HISTORICAL_CONVEX_HULL_EQUALS_FUTURE_FEASIBLE_SET",
+    "FIXED_RICE_MAD_TOTAL_IMPLIES_CROP_SUBSTITUTABILITY",
+    "ARBITRARY_PERCENTAGE_ADJUSTMENT_BOUND",
+    "INVENTED_BASELINE_YEAR",
+    "PCR_AGENCY_HECTARES_AS_DISTRICT_BASELINE",
+    "OUTCOME_SELECTED_T3_SHARE_RULE",
+    "T3_SHARE_RECOVERY_ALONE_RESCUES_OPTIMIZATION",
+    "FINITE_SCENARIO_EVALUATION_EQUALS_CONTINUOUS_CROP_ALLOCATION_OPTIMIZATION"
+  ],
+  "future_decision_domain_gate": {
+    "required": true,
+    "minimum_defensible_decision_scope_candidate": "FINITE_PRESPECIFIED_OBSERVED_PORTFOLIOS_FOR_SUPPORTED_DISTRICTS_REQUIRES_FORMAL_SCOPE_ADJUDICATION",
+    "finite_prespecified_decision_alternatives_status": "POTENTIALLY_FEASIBLE_AS_SCENARIO_EVALUATION_REQUIRES_FORMAL_REFRAMING",
+    "finite_portfolio_candidate_currently_authorized": false,
+    "historical_portfolios_selected": false,
+    "finite_scenario_evaluation_is_continuous_optimization": false,
+    "candidate_questions": [
+      "PRESPECIFIED_FINITE_OBSERVED_OR_PLANNING_PORTFOLIOS",
+      "PROSPECTIVE_OFFICIAL_BASELINE_AND_ADJUSTMENT_EVIDENCE",
+      "FORMAL_SCOPE_REDUCTION"
+    ]
+  },
+  "model_authorized_land_parameters_n": 0,
+  "model_authorized_adjustment_bounds_n": 0,
+  "decision_feasibility_endstate": "DECISION_MODEL_NOT_YET_FEASIBLE",
+  "decision_feasibility_endstate_definition": "NO_MODEL_ADMISSIBLE_CONTINUOUS_NUMERICAL_RICE_MAD_ALLOCATION_DOMAIN_IS_CURRENTLY_IDENTIFIED",
+  "numerical_optimization_feasibility": "NOT_AUTHORIZED",
+  "possible_future_decision_analysis": "NOT_RULED_OUT_REQUIRES_FORMAL_GATE",
+  "weaker_formulation_status": "DESCRIPTIVE_HISTORICAL_SUPPORT_AND_SENSITIVITY_ENVELOPES_REMAIN_SCIENTIFICALLY_AVAILABLE_BUT_NOT_MODEL_BOUNDS",
+  "authorizations": {
+    "land_hard_cap": false,
+    "reallocable_transient_land": false,
+    "occupancy_kernel": false,
+    "adjustment_bound": false,
+    "t3_share_rule": false,
+    "continuous_decision_domain": false,
+    "finite_portfolio_decision_set": false,
+    "finite_scenario_evaluation": false,
+    "water_model": false,
+    "water_hard_constraint": false,
+    "optimizer": false
+  },
+  "final_status": "PASS_FOR_FINAL_INDEPENDENT_C0B4_FREEZE_AUDIT"
+}
