@@ -1,0 +1,441 @@
+{
+  "schema_version": "C0B5_DECISION_DOMAIN_ADJUDICATION_V1",
+  "phase": "C0B5_DECISION_DOMAIN_RESCUE_AND_SCOPE_ADJUDICATION",
+  "repository_identity": {
+    "branch": "phase/c0b5-decision-domain-adjudication-v1",
+    "head_commit": "c7ac7b870cf76d6ed2d199d5619e07f6bb32f6cb",
+    "head_subject": "Freeze C0B4 land adjustment feasibility"
+  },
+  "frozen_parent": {
+    "c0b4_freeze": "c7ac7b870cf76d6ed2d199d5619e07f6bb32f6cb",
+    "physical_land_capacity_model_feasibility": "NOT_FEASIBLE",
+    "area_ha_status": "PHYSICAL_AGRICULTURAL_FOOTPRINT_ONLY",
+    "reallocable_transient_land_status": "NOT_OBSERVED",
+    "land_hard_cap_status": "NOT_AUTHORIZED",
+    "baseline_year_status": "NOT_YET_FROZEN",
+    "historical_support_status": "EMPIRICAL_CONTEXT_ONLY",
+    "historical_convex_hull_authorized": false,
+    "fixed_total_rice_mad_status": "NOT_SUPPORTED",
+    "continuous_numerical_optimization": "NOT_AUTHORIZED",
+    "model_authorized_land_parameters_n": 0,
+    "model_authorized_adjustment_bounds_n": 0
+  },
+  "targeted_official_evidence_search": {
+    "as_of_date": "2026-08-21",
+    "scope": "MIDAGRI_SIEA_GORE_PIURA_DRAP_AND_COMPETENT_PERUVIAN_PUBLIC_AGRICULTURAL_SOURCES_ONLY",
+    "broad_evidence_recovery_performed": false,
+    "enis_2026_2027_exists": true,
+    "enis_crops_include_rice": true,
+    "enis_crops_include_mad": true,
+    "public_results_report_survey_district_coverage": true,
+    "public_numeric_piura_district_rice_table_identified": false,
+    "public_numeric_piura_district_mad_table_identified": false,
+    "public_piura_district_crop_adjustment_envelope_identified": false,
+    "public_multiple_piura_district_programming_alternatives_identified": false,
+    "regional_or_national_values_disaggregated_to_districts": false,
+    "evidence_ids": [
+      "C0B5-E002",
+      "C0B5-E003",
+      "C0B5-E004",
+      "C0B5-E005"
+    ]
+  },
+  "official_planning_evidence_firewall": {
+    "planting_intention_is_physical_capacity": false,
+    "planting_intention_is_hard_upper_bound": false,
+    "planting_intention_is_minimum_commitment": false,
+    "planting_intention_is_reallocable_area": false,
+    "planting_intention_is_permitted_adjustment_range": false,
+    "regional_value_is_district_value": false,
+    "agency_value_is_district_value": false,
+    "hydraulic_system_value_is_district_value": false
+  },
+  "route_hierarchy": {
+    "test_order": [
+      "ROUTE_A",
+      "ROUTE_B",
+      "ROUTE_C"
+    ],
+    "preference_scoring_used": false,
+    "ad_hoc_hybrid_used": false,
+    "selected_routes_n": 1
+  },
+  "route_a": {
+    "status": "NOT_SUPPORTED",
+    "baseline_status": "OFFICIAL_NON_DISTRICT_BASELINE_NOT_USABLE",
+    "adjustment_rule_status": "NOT_AVAILABLE",
+    "spatial_coverage": "INSUFFICIENT_FOR_INTENDED_55_DISTRICT_CONTINUOUS_DOMAIN",
+    "district_crop_numerical_baseline_available": false,
+    "model_admissible_numerical_adjustment_rule_available": false,
+    "permissible_near_term_flexibility_evidence_available": false,
+    "hidden_rice_mad_substitutability_used": false,
+    "historical_extrema_used_as_bounds": false,
+    "arbitrary_percentage_rule_used": false,
+    "outcome_or_climate_response_tuning_used": false,
+    "operationally_numerical_before_optimization": false,
+    "blocker": "NO_PUBLIC_DISTRICT_CROP_NUMERIC_BASELINE_AND_NO_MODEL_ADMISSIBLE_NUMERICAL_ADJUSTMENT_RULE",
+    "interpretation": "PROSPECTIVE_ENIS_EVIDENCE_EXISTS_BUT_DOES_NOT_IDENTIFY_A_CONTINUOUS_PIURA_DISTRICT_RICE_MAD_DECISION_REGION"
+  },
+  "finite_portfolio_selection": {
+    "status": "SUPPORTED",
+    "alternative_semantics": "EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATIONS",
+    "candidate_rule": "ALL_COMPLETE_AUGUST_JULY_SOURCE_CAMPAIGNS_ARE_TESTED_WITHOUT_OUTCOME_SCREENING",
+    "primary_scope_selection_principle": "MAXIMIZE_COMMON_DISTRICT_COVERAGE_SUBJECT_TO_AT_LEAST_TWO_SOURCE_COMPLETE_CONFIGURATIONS",
+    "maximize_spatial_coverage_first_status": "PROSPECTIVELY_RESEARCHER_DEFINED_BUT_OUTCOME_INDEPENDENT",
+    "secondary_priority": "MAXIMIZE_CONFIGURATION_COUNT_AT_MAXIMUM_COMMON_SUPPORT",
+    "final_technical_tiebreak": "LEXICOGRAPHIC_ONLY_IF_NEEDED",
+    "lexicographic_tiebreak_actually_invoked": false,
+    "why_exactly_two": "ONLY_TWO_CONFIGURATIONS_SATISFY_THE_UNIQUE_MAXIMUM_13_DISTRICT_COMMON_SUPPORT",
+    "campaign_candidate_start_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "candidate_configurations_n": 9,
+    "admissible_configurations_n": 2,
+    "primary_reference_configurations_n": 2,
+    "primary_reference_configurations": [
+      {
+        "alternative_id": "C0B5-A2020-2021",
+        "source_campaign": "2020/2021"
+      },
+      {
+        "alternative_id": "C0B5-A2023-2024",
+        "source_campaign": "2023/2024"
+      }
+    ],
+    "admitted_campaigns": [
+      "2020/2021",
+      "2023/2024"
+    ],
+    "spatial_scope_status": "COVERAGE_BASED_SCOPE_REDUCTION_REQUIRED",
+    "spatial_scope_semantics": "COVERAGE_QUALIFIED_COMMON_SUPPORT_SUBREGIONAL_SCOPE",
+    "representativeness_status": "NOT_ESTABLISHED",
+    "full_55_district_scope_supported": false,
+    "authorized_districts_n": 13,
+    "authorized_districts": [
+      {
+        "ubigeo": "200101",
+        "district_name": "PIURA"
+      },
+      {
+        "ubigeo": "200105",
+        "district_name": "CATACAOS"
+      },
+      {
+        "ubigeo": "200108",
+        "district_name": "EL TALLAN"
+      },
+      {
+        "ubigeo": "200111",
+        "district_name": "LAS LOMAS"
+      },
+      {
+        "ubigeo": "200114",
+        "district_name": "TAMBO GRANDE"
+      },
+      {
+        "ubigeo": "200201",
+        "district_name": "AYABACA"
+      },
+      {
+        "ubigeo": "200205",
+        "district_name": "MONTERO"
+      },
+      {
+        "ubigeo": "200304",
+        "district_name": "HUARMACA"
+      },
+      {
+        "ubigeo": "200802",
+        "district_name": "BELLAVISTA DE LA UNION"
+      },
+      {
+        "ubigeo": "200803",
+        "district_name": "BERNAL"
+      },
+      {
+        "ubigeo": "200804",
+        "district_name": "CRISTO NOS VALGA"
+      },
+      {
+        "ubigeo": "200805",
+        "district_name": "VICE"
+      },
+      {
+        "ubigeo": "200806",
+        "district_name": "RINCONADA LLICUAR"
+      }
+    ],
+    "whole_regional_configuration_status": "NOT_SUPPORTED_NO_COMPLETE_55_DISTRICT_CAMPAIGN",
+    "whole_supported_scope_configuration_status": "SUPPORTED_TWO_COMPLETE_CONFIGURATIONS",
+    "district_mix_and_match_status": "NOT_AUTHORIZED",
+    "district_mix_and_match_detected": false,
+    "crop_year_mixing_detected": false,
+    "timing_profile_mixing_detected": false,
+    "convex_interpolation_authorized": false,
+    "expected_numeric_cells": 52,
+    "observed_complete_numeric_cells": 52,
+    "missing_numeric_cells": 0,
+    "silent_missing_to_zero_used": false,
+    "alternative_timing_profiles_complete": {
+      "C0B5-A2020-2021": "26/26",
+      "C0B5-A2023-2024": "26/26"
+    },
+    "observed_alternative_timing_profile_status": "SUPPORTED_ALTERNATIVE_SPECIFIC_ONLY_NO_GENERIC_T3_RULE",
+    "generic_future_t3_rule_authorized": false,
+    "missing_as_zero_used": false,
+    "future_physical_feasibility_claim_allowed": false,
+    "water_feasibility_claim_allowed": false,
+    "ranking_executed": false,
+    "coverage_frontier": [
+      {
+        "configurations_n": 2,
+        "max_common_districts_n": 13,
+        "maximum_subsets_n": 1,
+        "maximum_subsets": [["2020/2021", "2023/2024"]]
+      },
+      {
+        "configurations_n": 3,
+        "max_common_districts_n": 9,
+        "maximum_subsets_n": 2,
+        "maximum_subsets": [
+          ["2017/2018", "2019/2020", "2020/2021"],
+          ["2019/2020", "2020/2021", "2023/2024"]
+        ]
+      },
+      {
+        "configurations_n": 4,
+        "max_common_districts_n": 7,
+        "maximum_subsets_n": 1,
+        "maximum_subsets": [["2017/2018", "2019/2020", "2020/2021", "2023/2024"]]
+      },
+      {
+        "configurations_n": 5,
+        "max_common_districts_n": 5,
+        "maximum_subsets_n": 1,
+        "maximum_subsets": [["2016/2017", "2017/2018", "2019/2020", "2020/2021", "2023/2024"]]
+      },
+      {
+        "configurations_n": 6,
+        "max_common_districts_n": 3,
+        "maximum_subsets_n": 2,
+        "maximum_subsets": [
+          ["2015/2016", "2016/2017", "2017/2018", "2019/2020", "2020/2021", "2023/2024"],
+          ["2016/2017", "2017/2018", "2019/2020", "2020/2021", "2021/2022", "2023/2024"]
+        ]
+      },
+      {
+        "configurations_n": 7,
+        "max_common_districts_n": 2,
+        "maximum_subsets_n": 1,
+        "maximum_subsets": [["2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2023/2024"]]
+      },
+      {
+        "configurations_n": 8,
+        "max_common_districts_n": 0,
+        "maximum_subsets_n": 9,
+        "maximum_subsets": [
+          ["2015/2016", "2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2022/2023"],
+          ["2015/2016", "2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2023/2024"],
+          ["2015/2016", "2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2022/2023", "2023/2024"],
+          ["2015/2016", "2016/2017", "2017/2018", "2018/2019", "2019/2020", "2021/2022", "2022/2023", "2023/2024"],
+          ["2015/2016", "2016/2017", "2017/2018", "2018/2019", "2020/2021", "2021/2022", "2022/2023", "2023/2024"],
+          ["2015/2016", "2016/2017", "2017/2018", "2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024"],
+          ["2015/2016", "2016/2017", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024"],
+          ["2015/2016", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024"],
+          ["2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024"]
+        ]
+      },
+      {
+        "configurations_n": 9,
+        "max_common_districts_n": 0,
+        "maximum_subsets_n": 1,
+        "maximum_subsets": [["2015/2016", "2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024"]]
+      }
+    ],
+    "alternative_numeric_diagnostics": {
+      "alternative_1_rice_ha": 15213,
+      "alternative_1_mad_ha": 5704,
+      "alternative_2_rice_ha": 22592,
+      "alternative_2_mad_ha": 5937,
+      "alternative_l1_distance_ha": 12100,
+      "alternative_different_cells_n": 26,
+      "alternative_equal_cells_n": 0,
+      "alternative_numeric_distinctness_status": "MATERIALLY_DISTINCT",
+      "alternative_timing_distinctness_status": "BOTH_AREA_AND_TIMING_CONFIGURATIONS_DIFFER"
+    },
+    "route_b_information_depth": "THIN_BUT_USABLE",
+    "configuration_fingerprints": {
+      "2020/2021": {
+        "values_n": 312,
+        "rice_campaign_total_ha": 15213,
+        "mad_campaign_total_ha": 5704,
+        "sha256": "d9d1481588d73535716b71de732586d0acf9f12e7316358aafb996de9845bc93"
+      },
+      "2023/2024": {
+        "values_n": 312,
+        "rice_campaign_total_ha": 22592,
+        "mad_campaign_total_ha": 5937,
+        "sha256": "9750808bed2848863a5a739ce1d9209f6f46df9b6375485a749a1930eb97144e"
+      }
+    },
+    "authorization_conditions": {
+      "B1_outcome_independent_inclusion_rule": true,
+      "B2_at_least_two_distinct_alternatives": true,
+      "B3_numerically_fully_specified_for_authorized_scope": true,
+      "B4_no_missing_to_zero": true,
+      "B5_no_convex_interpolation": true,
+      "B6_no_district_mix_and_match": true,
+      "B7_reference_not_guaranteed_future_feasible": true,
+      "B8_fixed_perennials_remain_fixed": true,
+      "B9_no_water_feasibility_claim": true,
+      "B10_alternatives_fixed_before_downstream_evaluation": true
+    },
+    "blocker": "NONE_AT_ARCHITECTURE_GATE"
+  },
+  "perennial_firewall": {
+    "resolution": "P3_FIXED_STOCK_NEAR_TERM_HORIZON",
+    "mango_altered_by_transient_alternatives": false,
+    "limon_altered_by_transient_alternatives": false,
+    "banana_altered_by_transient_alternatives": false,
+    "historical_perennial_stock_imported_into_alternatives": false,
+    "baseline_numeric_status": "NOT_YET_NUMERICALLY_FROZEN_SEPARATE_INITIALIZATION_GATE",
+    "baseline_initialization_authorized_by_c0b3": true,
+    "perennial_initialization_blocks_c0b5_architecture_freeze": false,
+    "perennial_initialization_blocks_full_reference_configuration_scenario_evaluation": true
+  },
+  "route_b": {
+    "status": "SUPPORTED",
+    "short_analytical_label": "RISK_AWARE_FINITE_REFERENCE_CONFIGURATION_ANALYSIS",
+    "historical_realization_status": "CERTIFIED_BY_SOURCE_OBSERVATION",
+    "prospective_physical_feasibility_status": "NOT_CERTIFIED",
+    "prospective_institutional_feasibility_status": "NOT_CERTIFIED",
+    "reference_configuration_role": "EMPIRICALLY_REALIZED_COMPARATOR_FOR_PROSPECTIVE_RISK_STRESS_TESTING",
+    "future_analytical_object": "TWO_FIXED_PRESPECIFIED_EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATIONS",
+    "shared_future_components": [
+      "CLIMATE_RESPONSE_MODEL",
+      "PROSPECTIVE_ENSO_SCENARIO_GENERATOR",
+      "ECONOMIC_TRANSLATION",
+      "RISK_METRICS"
+    ],
+    "alternative_identities_may_change_after_downstream_results": false,
+    "alternative_interpolation_authorized": false,
+    "comparison_or_ranking_rule_status": "REQUIRES_SEPARATE_PRESPECIFICATION",
+    "continuous_crop_allocation_optimization": false,
+    "finite_alternative_ranking_executed_in_c0b5": false,
+    "selected_alternative": null,
+    "future_risk_criteria_defined": false,
+    "interpretation": "TWO_PRESPECIFIED_EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATIONS_MAY_LATER_RECEIVE_THE_SAME_PROSPECTIVELY_SPECIFIED_SCENARIO_EVALUATION",
+    "route_b_architecture_status": "SUPPORTED",
+    "exact_2_configuration_13_district_scope_status": "SUPPORTED"
+  },
+  "route_c": {
+    "status": "NOT_REQUIRED_ROUTE_B_SUPPORTED",
+    "fallback_remains_valid": true,
+    "allocation_recommendation_if_route_b_later_invalidated": "REMOVE_OR_FORMALLY_REFRAME"
+  },
+  "selected_decision_architecture": "ROUTE_B_FINITE_PRESPECIFIED_EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATION_ANALYSIS",
+  "continuous_numerical_optimization_status": "NOT_AUTHORIZED",
+  "water_model": "NOT_AUTHORIZED",
+  "finite_risk_aware_reference_configuration_analysis_status": "SUPPORTED_ARCHITECTURE_PENDING_DOWNSTREAM_GATES",
+  "research_question_compatibility": {
+    "status": "CURRENT_RQ_REQUIRES_MATERIAL_REFRAMING",
+    "current_working_title_compatible": false,
+    "required_action": "REPLACE_CONTINUOUS_CROP_AREA_ALLOCATION_AND_MEAN_CVAR_OPTIMIZATION_WITH_PROSPECTIVE_RISK_STRESS_TEST_OF_TWO_PRESPECIFIED_EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATIONS_ON_13_COVERAGE_QUALIFIED_DISTRICTS",
+    "rq_rewording_status": "REQUIRED_BEFORE_MANUSCRIPT_FREEZE",
+    "upstream_file_edited": false
+  },
+  "model_authorized_land_parameters_n": 0,
+  "model_authorized_adjustment_bounds_n": 0,
+  "input_firewall": {
+    "allowed_rule_inputs": [
+      "UBIGEO",
+      "DISTRICT_NAME",
+      "COD_CULTIVO",
+      "CULTIVO",
+      "MES",
+      "SIEMBRA",
+      "ROW_PRESENCE",
+      "BLANK_STATUS",
+      "CAMPAIGN_COMPLETENESS"
+    ],
+    "forbidden_route_selection_inputs": [
+      "YIELD",
+      "YIELD_RAW",
+      "PRODUCCION",
+      "PRECIO",
+      "CLIMATE_RESPONSE_COEFFICIENT",
+      "ECONOMETRIC_SIGNIFICANCE",
+      "ENSO_SCENARIO_IMPACT",
+      "PROFIT",
+      "GVP",
+      "CVAR",
+      "RISK_ADJUSTED_RETURN",
+      "OPTIMIZER_RESULT"
+    ]
+  },
+  "firewalls": {
+    "c0b4_immutable": true,
+    "area_ha_used_as_rescued_capacity": false,
+    "arbitrary_percentage_bound_used": false,
+    "historical_extrema_used_as_model_bounds": false,
+    "historical_convex_hull_used_as_continuous_domain": false,
+    "rice_mad_fixed_total_substitution_assumed": false,
+    "outcome_tuned_baseline_or_alternative": false,
+    "enso_year_selection_used": false,
+    "missing_treated_as_zero": false,
+    "district_mix_and_match_used": false,
+    "historical_realization_labeled_guaranteed_future_feasibility": false,
+    "historical_perennial_stocks_imported": false,
+    "water_feasibility_claimed": false,
+    "continuous_optimization_executed": false,
+    "finite_ranking_executed": false,
+    "objective_function_constructed": false
+  },
+  "forbidden_interpretations": [
+    "AREA_HA_EQUALS_RESCUED_CAPACITY",
+    "HISTORICAL_MIN_OR_MAX_EQUALS_MODEL_BOUND",
+    "HISTORICAL_CONVEX_HULL_EQUALS_CONTINUOUS_FEASIBLE_DOMAIN",
+    "RICE_MAD_FIXED_TOTAL_PROVES_SUBSTITUTABILITY",
+    "PLANTING_INTENTION_EQUALS_PHYSICAL_CAPACITY",
+    "EMPIRICALLY_REALIZED_EQUALS_GUARANTEED_FUTURE_FEASIBLE",
+    "DISTRICT_MIX_AND_MATCH_EQUALS_OBSERVED_CONFIGURATION",
+    "FINITE_SCENARIO_EVALUATION_EQUALS_CONTINUOUS_OPTIMIZATION",
+    "ROUTE_B_AUTHORIZATION_EQUALS_ALTERNATIVE_RANKING",
+    "SUPPORTED_13_DISTRICT_SCOPE_EQUALS_ALL_PIURA"
+  ],
+  "authorizations": {
+    "route_a_continuous_domain": false,
+    "route_b_finite_reference_set": true,
+    "route_c_required": false,
+    "continuous_optimizer": false,
+    "finite_optimizer_or_ranking": false,
+    "economic_objective": false,
+    "water_model": false,
+    "water_hard_constraint": false,
+    "future_physical_feasibility_claim": false,
+    "generic_future_t3_rule": false,
+    "district_mix_and_match": false,
+    "convex_interpolation": false
+  },
+  "required_next_gate": {
+    "required": true,
+    "items": [
+      "FORMAL_RESEARCH_QUESTION_AND_MANUSCRIPT_REFRAMING",
+      "NUMERIC_PERENNIAL_BASELINE_INITIALIZATION_IF_REQUIRED",
+      "PROSPECTIVE_SCENARIO_AND_RISK_CRITERIA_SPECIFICATION",
+      "DOWNSTREAM_CLIMATE_YIELD_AND_ECONOMIC_EVIDENCE_GATES"
+    ],
+    "may_change_frozen_alternative_membership_retroactively": false
+  },
+  "next_required_gate_after_c0b5": "ALTERNATIVE_DATA_MASTER_AND_REFERENCE_CONFIGURATION_FREEZE_WITH_EXACT_IDS_13_DISTRICT_SCOPE_OBSERVED_TIMING_AND_NUMERIC_FIXED_PERENNIAL_INITIALIZATION_BEFORE_ECONOMIC_OR_RISK_COMPARISON",
+  "final_architecture_verdict": "ROUTE_B_FINITE_PRESPECIFIED_EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATION_ANALYSIS",
+  "final_status": "PASS_FOR_FINAL_C0B5_NOTARIAL_FREEZE_AUDIT"
+}
