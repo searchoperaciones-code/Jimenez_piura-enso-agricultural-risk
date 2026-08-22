@@ -1,0 +1,471 @@
+{
+  "aggregation_and_risk": {
+    "a1_a2_risk_metric_scope": "TRANSIENT_BLOCK_ONLY",
+    "a1_a2_transient_economic_aggregation_structure_status": "STRUCTURAL_SCOPE_COHERENT_NUMERICAL_AGGREGATION_PENDING_YIELD_AREA_PRICE_TIME_GATES",
+    "common_perennial_random_component_can_be_assumed_to_cancel_in_cvar": false,
+    "five_crop_a1_a2_aggregation_status": "NOT_AUTHORIZED",
+    "layer1_five_crop_aggregation_status": "NOT_YET_AUTHORIZED"
+  },
+  "alternative_timing_to_climate_mapping": {
+    "future_unit": "DISTRICT_CROP_ALTERNATIVE_SCENARIO",
+    "generic_t3_rule_authorized": false,
+    "pooled_timing_profile_authorized": false,
+    "status": "STRUCTURALLY_COMPATIBLE_REQUIRES_SCENARIO_EXPOSURE_BUILD",
+    "use_frozen_alternative_specific_timing_weights": true
+  },
+  "artifact_sha256": {
+    "outputs/joint_c0/C0_JOINT_AUTHORIZATION_MATRIX.csv": "d33a24497625a5a2e9abd4991f5a67a3428fac5a7d269c849dc636a6b0d9abe3",
+    "outputs/joint_c0/C0_JOINT_COMPATIBILITY_MATRIX.csv": "7bde825794ee80c111e45cc40715a3118295c09cdd876b34fc36c4c3afa98e4b",
+    "outputs/joint_c0/C0_JOINT_EVIDENCE_REGISTRY.csv": "ea9694aee2ac65f70b168b0893e091623b5b6bdb76cf4087f41ba44374d8a4a0"
+  },
+  "authorization_matrix": [
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "Rice climate-yield model",
+      "CURRENT_STATUS": "DESIGN_AUTHORIZED_ESTIMATION_BLOCKED",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Campaign outcome is defined but not built; primary exposure is not selected.",
+      "REQUIRES_FUTURE_GATE": "TRANSIENT_OUTCOME_MASTER;PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_SELECTION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "MAD climate-yield model",
+      "CURRENT_STATUS": "DESIGN_AUTHORIZED_ESTIMATION_BLOCKED",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Campaign outcome is defined but not built; primary exposure is not selected.",
+      "REQUIRES_FUTURE_GATE": "TRANSIENT_OUTCOME_MASTER;PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_SELECTION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "Mango climate-yield model",
+      "CURRENT_STATUS": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Annual yield and current-year May-Jun exposure keys match.",
+      "REQUIRES_FUTURE_GATE": "ECONOMETRIC_DESIGN_FREEZE_BEFORE_ESTIMATION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "Lemon climate-yield model",
+      "CURRENT_STATUS": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Annual yield and t/t-1 full-year exposure keys match.",
+      "REQUIRES_FUTURE_GATE": "ECONOMETRIC_DESIGN_FREEZE_BEFORE_ESTIMATION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "Banana climate-yield model",
+      "CURRENT_STATUS": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Annual yield and t/t-1 full-year exposure keys match.",
+      "REQUIRES_FUTURE_GATE": "ECONOMETRIC_DESIGN_FREEZE_BEFORE_ESTIMATION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "A1/A2 transient area master",
+      "CURRENT_STATUS": "FROZEN_READY_SOWN_AREA",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Reference areas are empirically realized SIEMBRA hectares.",
+      "REQUIRES_FUTURE_GATE": "SOWN_TO_HARVESTED_AREA_MAPPING_BEFORE_PRODUCTION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "TRUE",
+      "COMPONENT": "alternative-specific timing",
+      "CURRENT_STATUS": "FROZEN_READY",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Use frozen A1/A2 timing; generic T3 and pooling remain forbidden.",
+      "REQUIRES_FUTURE_GATE": "DISTRICT_CROP_ALTERNATIVE_SCENARIO_EXPOSURE_BUILD"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "five-crop combined portfolio",
+      "CURRENT_STATUS": "NOT_YET_AUTHORIZED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "Layer 1 crop characterization is not a portfolio definition.",
+      "REQUIRES_FUTURE_GATE": "FORMALLY_VERSIONED_AGGREGATION_ARCHITECTURE"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "A1/A2 five-crop aggregation",
+      "CURRENT_STATUS": "NOT_AUTHORIZED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "A1/A2 contain Rice and MAD only.",
+      "REQUIRES_FUTURE_GATE": "FORMAL_C0B6_SCOPE_REOPEN"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "A1/A2 transient economic aggregation",
+      "CURRENT_STATUS": "STRUCTURAL_SCOPE_COHERENT_NUMERICAL_BLOCKED",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Aggregation structure exists but numeric inputs are not authorized.",
+      "REQUIRES_FUTURE_GATE": "YIELD_AREA_MAPPING;PRICE_MAPPING;COMMON_SCENARIO_AND_HORIZON"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "price mapping",
+      "CURRENT_STATUS": "REQUIRES_PRICE_MAPPING_GATE",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "No annual, harvest-month, campaign, deflation, or future-price rule is frozen.",
+      "REQUIRES_FUTURE_GATE": "TEMPORAL_AND_MONETARY_PRICE_SPECIFICATION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "GVP construction",
+      "CURRENT_STATUS": "DIMENSIONALLY_AUTHORIZED_NOT_BUILT",
+      "FORBIDDEN": "FALSE",
+      "RATIONALE": "Quantity times price is structural only.",
+      "REQUIRES_FUTURE_GATE": "QUANTITY_AND_PRICE_MAPPING"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "VaR",
+      "CURRENT_STATUS": "NOT_AUTHORIZED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "No loss distribution or risk horizon is defined.",
+      "REQUIRES_FUTURE_GATE": "POST_ESTIMATION_RISK_SPECIFICATION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "CVaR",
+      "CURRENT_STATUS": "NOT_AUTHORIZED_TRANSIENT_BLOCK_ONLY_IF_LATER_OPENED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "Common perennial cancellation is explicitly false.",
+      "REQUIRES_FUTURE_GATE": "POST_ESTIMATION_RISK_SPECIFICATION"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "ENSO scenario prediction",
+      "CURRENT_STATUS": "NOT_AUTHORIZED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "Scenario tuning cannot influence econometric specification.",
+      "REQUIRES_FUTURE_GATE": "MODEL_FREEZE;DIAGNOSTICS;EMPIRICAL_SUPPORT_ENVELOPE;SCENARIO_FREEZE"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "continuous optimization",
+      "CURRENT_STATUS": "NOT_AUTHORIZED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "No objective, bounds, or continuous decision domain is authorized.",
+      "REQUIRES_FUTURE_GATE": "FORMAL_ARCHITECTURE_REOPEN"
+    },
+    {
+      "AUTHORIZED_NEXT_PHASE": "FALSE",
+      "COMPONENT": "water-constrained model",
+      "CURRENT_STATUS": "NOT_AUTHORIZED",
+      "FORBIDDEN": "TRUE",
+      "RATIONALE": "No water capacity, entitlement, or service fraction is identified.",
+      "REQUIRES_FUTURE_GATE": "FORMAL_HYDRAULIC_EVIDENCE_AND_ARCHITECTURE"
+    }
+  ],
+  "downstream_mapping_gates": [
+    "SOWN_TO_HARVESTED_AREA_MAPPING_BEFORE_PHYSICAL_PRODUCTION",
+    "PRICE_TEMPORAL_AND_MONETARY_TREATMENT_BEFORE_NUMERICAL_ECONOMIC_TRANSLATION",
+    "EMPIRICAL_SUPPORT_ENVELOPE_BEFORE_SCENARIO_PREDICTION"
+  ],
+  "dual_analytical_layers": {
+    "dual_layer_outcome_compatibility": "PASS",
+    "layer_1": {
+      "combined_portfolio_authorized": false,
+      "crop_codes": [
+        "14010020000",
+        "14010070000",
+        "13010210000",
+        "13010170102",
+        "15010040000"
+      ],
+      "name": "FIVE_CROP_CLIMATE_ECONOMIC_RISK_CHARACTERIZATION"
+    },
+    "layer_2": {
+      "alternative_ids": [
+        "C0B5-A2020-2021",
+        "C0B5-A2023-2024"
+      ],
+      "crop_codes": [
+        "14010020000",
+        "14010070000"
+      ],
+      "districts_n": 13,
+      "name": "RICE_MAD_FINITE_REFERENCE_CONFIGURATION_STRESS_TEST",
+      "perennials_included": false
+    },
+    "status": "SUPPORTED_WITH_STRICT_NONAGGREGATION_FIREWALL"
+  },
+  "econometric_design_phase_status": "AUTHORIZED_WITH_TARGETED_PRE_ESTIMATION_GATES",
+  "economic_translation": {
+    "gvp_built": false,
+    "invented_price_rules": [],
+    "monetary_dimensional_identity": "PASS_TM_PER_HA_X_HA_X_1000_KG_PER_TM_X_S_PER_KG_EQUALS_S",
+    "nominal_price_comparability_status": "REQUIRES_EXPLICIT_MONETARY_TREATMENT_GATE",
+    "numerical_status": "NUMERICAL_MAPPING_PENDING",
+    "price_temporal_mapping_status": "REQUIRES_PRICE_MAPPING_GATE",
+    "structural_form_status": "STRUCTURAL_FORM_AUTHORIZED"
+  },
+  "extreme_year_influence_diagnostic_required": true,
+  "final_status": "PASS_WITH_TARGETED_PRE_ESTIMATION_GATES",
+  "firewalls": {
+    "continuous_optimization_status": "NOT_AUTHORIZED",
+    "land_capacity_inference_used": false,
+    "no_alternative_ranking": true,
+    "no_causal_claim": true,
+    "no_economic_result": true,
+    "no_enso_scenario": true,
+    "no_model_fitting": true,
+    "no_outcome_driven_architecture_selection": true,
+    "no_var_cvar": true,
+    "water_model_status": "NOT_AUTHORIZED"
+  },
+  "immutable_inputs": {
+    "c0a_files_sha256": {
+      "outputs/outcome/C0A_EVIDENCE_REGISTRY.csv": "82a01d6762050c43ace0726be40227f9d5e21d714f7ba7cf40fca2ccd7fca7c1",
+      "outputs/outcome/C0A_OUTCOME_EVIDENCE_REPORT.md": "2d1d261a74ba21145797de14d846d53e7383fed77789cc259931c295ee2d40dd",
+      "scripts/c0a_outcome_evidence_preflight.py": "21ce349cf96aa9d70a393bf067f1a03c9386de1c8a334304a058a36ccdedd994",
+      "tests/test_c0a_outcome_evidence_preflight.py": "c56522f299f140c14bebd26c02cdb64d4a7373ac06a9d116d8ac44b3f4092220"
+    },
+    "c0a_freeze": "5e2b32edba2e4b3eee471c669f427ef9a70fe4b6",
+    "c0a_relationship": "SIBLING_NOT_MERGED_READ_VIA_GIT_OBJECTS",
+    "c0b6_files_sha256": {
+      "config/decision_ontology/reference_configuration_data_master_v1.json": "a63ba28bcfb2c6548055bbd385169b149405232b6f65927f4511e0a5198a9aef",
+      "data/processed/decision/reference_configurations_transient_long.csv": "749dae0e8d5d84fee0a09e1661a91097ef1a2feea7f52bd70fbc8cf36fa36a16",
+      "outputs/decision_feasibility/C0B6_ALTERNATIVE_DATA_AUDIT.csv": "0df2353ff65f917f2fe1c30332d9260e97ff3a10939dba8e58ecd6be3e41cb32",
+      "outputs/decision_feasibility/C0B6_ALTERNATIVE_DATA_REPORT.md": "a42fca0ec258ab83e7021ed409e5ea92be6ed01a0817893df0162baaa6755b0b",
+      "outputs/decision_feasibility/C0B6_SCOPE_ADJUDICATION.csv": "303a76b21bc32f33fb1a08e8103f3fb5f8050ec2d2c491fa06972ac2114c1cc3",
+      "scripts/c0b6_alternative_data_master.py": "b29819dd9b6363dad3d9576a6f7114e2a7b76ff58bde8e0492aae785ddc5b4d3",
+      "tests/test_c0b6_alternative_data_master.py": "34a09cceceae6cd78f4df8ddfc9c92806a85caf1805ea18565b12ddebca4332e"
+    },
+    "c0b6_freeze": "cf99e30f2f6cfe686f760b2dd608d933e3918bc0",
+    "c0b6_relationship": "CURRENT_FROZEN_BASE",
+    "frozen_upstream_sha256": {
+      "config/climate_exposure/climate_exposure_spec_v1.json": "e2e1eabbf8530cb0dfe8538d12f12d73a6a8e77c0e773351b593a14cbe1e268a",
+      "data/processed/panel_master.csv": "ab9b4ce53c008a1bc3ceb7d3e4c5d617d2544ad48632b747079c33e8b95d1214",
+      "data/processed/phenology/perennial_exposures_long.parquet": "3fde5c7fc7a00f4c6600a18f60935bad213408ffa2ba3bac5828603e46984714",
+      "data/processed/phenology/phenology_windows_frozen.csv": "ea25d949be9834a9e35352d970bb1b2172cac7d49db7eabb101ddfde9cfb657d",
+      "data/processed/phenology/transient_campaign_exposures_strict.parquet": "349413312568d0d423675bf58320ade41d2d9e700f138e7fbec55fc580bc1fb5",
+      "data/processed/phenology/transient_cohort_exposures.parquet": "e4ce7922f00a516643a5de832cc38377e20b3755ac46152cfb79900441564b39"
+    }
+  },
+  "joint_rq_architecture_status": "SUPPORTED_AS_TWO_LINKED_NONMERGED_ANALYTICAL_QUESTIONS",
+  "maximum_econometric_claim_status": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+  "out_of_support_control_required": true,
+  "outcome_semantics": {
+    "COSECHA": {
+      "semantics": "MONTHLY_HARVESTED_AREA_FLOW",
+      "unit": "ha"
+    },
+    "PRECIO_CHACRA": {
+      "semantics": "FARM_GATE_PRICE_RECEIVED_BY_PRODUCER_EXCLUDING_IGV",
+      "unit": "S_PER_KG"
+    },
+    "PRODUCCION": {
+      "status": "CERTIFIED_INSTITUTIONAL_CONVERGENCE",
+      "unit": "METRIC_TONNE"
+    },
+    "SIEMBRA": {
+      "semantics": "MONTHLY_SOWN_AREA_FLOW",
+      "unit": "ha"
+    },
+    "VERDE_ACTUAL": {
+      "productive_stock_inference_authorized": false,
+      "semantics": "CURRENT_INSTALLED_CROP_AREA_STOCK_SNAPSHOT"
+    },
+    "YIELD_RAW": {
+      "denominator_semantics": "HARVESTED_AREA_HA",
+      "unit": "TM_PER_HA"
+    },
+    "gvp_built": false,
+    "monetary_translation_status": "DIMENSIONALLY_AUTHORIZED_NOT_BUILT"
+  },
+  "perennial_outcome_contracts": {
+    "BANANA": {
+      "cosecha_used_as_installed_stock": false,
+      "formula": "SUM(PRODUCCION within calendar year) / SUM(COSECHA within calendar year)",
+      "observation_unit": "DISTRICT_CROP_CALENDAR_YEAR",
+      "status": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "unit": "TM_PER_HA",
+      "verde_actual_used_as_productive_stock": false
+    },
+    "LEMON": {
+      "cosecha_used_as_installed_stock": false,
+      "formula": "SUM(PRODUCCION within calendar year) / SUM(COSECHA within calendar year)",
+      "observation_unit": "DISTRICT_CROP_CALENDAR_YEAR",
+      "status": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "unit": "TM_PER_HA",
+      "verde_actual_used_as_productive_stock": false
+    },
+    "MANGO": {
+      "cosecha_used_as_installed_stock": false,
+      "formula": "SUM(PRODUCCION within calendar year) / SUM(COSECHA within calendar year)",
+      "observation_unit": "DISTRICT_CROP_CALENDAR_YEAR",
+      "status": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "unit": "TM_PER_HA",
+      "verde_actual_used_as_productive_stock": false
+    }
+  },
+  "phase": "JOINT_C0_OUTCOME_AND_DECISION_ARCHITECTURE_INTEGRATION",
+  "sample_contracts": {
+    "BANANA": {
+      "available_periods": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "climate_exposure_unit": "DISTRICT_CROP_CALENDAR_YEAR_WINDOW",
+      "crop_code": "15010040000",
+      "crop_std": "PLATANOS Y BANANAS",
+      "districts_n": 54,
+      "expected_linkage_key": "UBIGEO|COD_CULTIVO|REFERENCE_CALENDAR_YEAR",
+      "expected_observations_if_complete": 432,
+      "exposure_windows": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "outcome_contract_status": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "outcome_observation_unit": "DISTRICT_CROP_CALENDAR_YEAR",
+      "time_periods_n": 8,
+      "usable_outcome_observations": 390
+    },
+    "LEMON": {
+      "available_periods": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "climate_exposure_unit": "DISTRICT_CROP_CALENDAR_YEAR_WINDOW",
+      "crop_code": "13010170102",
+      "crop_std": "LIMON SUTIL",
+      "districts_n": 44,
+      "expected_linkage_key": "UBIGEO|COD_CULTIVO|REFERENCE_CALENDAR_YEAR",
+      "expected_observations_if_complete": 352,
+      "exposure_windows": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "outcome_contract_status": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "outcome_observation_unit": "DISTRICT_CROP_CALENDAR_YEAR",
+      "time_periods_n": 8,
+      "usable_outcome_observations": 311
+    },
+    "MAD": {
+      "available_periods": [
+        "2016/2017",
+        "2017/2018",
+        "2018/2019",
+        "2019/2020",
+        "2020/2021",
+        "2021/2022",
+        "2022/2023"
+      ],
+      "c0b6_support_expected_if_complete": 91,
+      "c0b6_support_usable_observations": 91,
+      "climate_exposure_unit": "DISTRICT_CROP_AGRICULTURAL_CAMPAIGN_PHENOLOGY_WEIGHTED",
+      "crop_code": "14010070000",
+      "crop_std": "MAIZ AMARILLO DURO",
+      "districts_n": 55,
+      "expected_linkage_key": "UBIGEO|COD_CULTIVO|CAMPAIGN_ID",
+      "expected_observations_if_complete": 385,
+      "outcome_contract_status": "COHERENT_DEFINED_NOT_BUILT_REQUIRES_TRANSIENT_OUTCOME_MASTER",
+      "outcome_observation_unit": "DISTRICT_CROP_AGRICULTURAL_CAMPAIGN_AUG_JUL",
+      "time_periods_n": 7,
+      "usable_outcome_observations": 352
+    },
+    "MANGO": {
+      "available_periods": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "climate_exposure_unit": "DISTRICT_CROP_CALENDAR_YEAR_WINDOW",
+      "crop_code": "13010210000",
+      "crop_std": "MANGO",
+      "districts_n": 36,
+      "expected_linkage_key": "UBIGEO|COD_CULTIVO|REFERENCE_CALENDAR_YEAR",
+      "expected_observations_if_complete": 288,
+      "exposure_windows": [
+        "MANGO_MAY_JUN_CURRENT_YEAR"
+      ],
+      "outcome_contract_status": "AUTHORIZED_FOR_ECONOMETRIC_DESIGN",
+      "outcome_observation_unit": "DISTRICT_CROP_CALENDAR_YEAR",
+      "time_periods_n": 8,
+      "usable_outcome_observations": 255
+    },
+    "RICE": {
+      "available_periods": [
+        "2016/2017",
+        "2017/2018",
+        "2018/2019",
+        "2019/2020",
+        "2020/2021",
+        "2021/2022",
+        "2022/2023"
+      ],
+      "c0b6_support_expected_if_complete": 91,
+      "c0b6_support_usable_observations": 90,
+      "climate_exposure_unit": "DISTRICT_CROP_AGRICULTURAL_CAMPAIGN_PHENOLOGY_WEIGHTED",
+      "crop_code": "14010020000",
+      "crop_std": "ARROZ",
+      "districts_n": 46,
+      "expected_linkage_key": "UBIGEO|COD_CULTIVO|CAMPAIGN_ID",
+      "expected_observations_if_complete": 322,
+      "outcome_contract_status": "COHERENT_DEFINED_NOT_BUILT_REQUIRES_TRANSIENT_OUTCOME_MASTER",
+      "outcome_observation_unit": "DISTRICT_CROP_AGRICULTURAL_CAMPAIGN_AUG_JUL",
+      "time_periods_n": 7,
+      "usable_outcome_observations": 294
+    }
+  },
+  "scenario_model_separation": {
+    "required_order": [
+      "OUTCOME_CONTRACT",
+      "ECONOMETRIC_DESIGN",
+      "MODEL_ESTIMATION",
+      "MODEL_DIAGNOSTICS",
+      "EMPIRICAL_SUPPORT_CHARACTERIZATION",
+      "PROSPECTIVE_ENSO_SCENARIO_CONSTRUCTION",
+      "PREDICTION_STRESS_TESTING",
+      "ECONOMIC_TRANSLATION",
+      "RISK_METRICS"
+    ],
+    "scenario_tuning_may_influence_econometric_specification": false,
+    "status": "PASS"
+  },
+  "schema_version": "JOINT_C0_OUTCOME_DECISION_INTEGRATION_V1",
+  "targeted_pre_estimation_gates": [
+    "TRANSIENT_CAMPAIGN_OUTCOME_MASTER_BUILD_AND_AUDIT",
+    "PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_SELECTION",
+    "ECONOMETRIC_DESIGN_FREEZE_BEFORE_MODEL_ESTIMATION"
+  ],
+  "temporal_depth_status": "SHORT_T_UNBALANCED_7_CAMPAIGN_TRANSIENT_8_YEAR_PERENNIAL_NO_LONG_PANEL_CLAIM",
+  "transient_outcome_contract": {
+    "forbidden_replacements": [
+      "MEAN_MONTHLY_YIELD",
+      "SUM_MONTHLY_YIELD",
+      "MAX_MONTHLY_YIELD",
+      "CALENDAR_YEAR_YIELD"
+    ],
+    "formula": "SUM(PRODUCCION within Aug-Jul campaign) / SUM(COSECHA within Aug-Jul campaign)",
+    "observation_unit": "DISTRICT_CROP_AGRICULTURAL_CAMPAIGN_AUG_JUL",
+    "status": "COHERENT_DEFINED_NOT_BUILT_REQUIRES_TRANSIENT_OUTCOME_MASTER",
+    "unit": "TM_PER_HA",
+    "variable": "TRANSIENT_CAMPAIGN_YIELD_RAW"
+  },
+  "yield_area_mapping": {
+    "dimensional_multiplication_unit": "METRIC_TONNE",
+    "physical_production_mapping_authorized": false,
+    "reason": "SOWN_AREA_AND_HARVESTED_AREA_ARE_NOT_SEMANTICALLY_INTERCHANGEABLE",
+    "reference_area_object": "A_d,c,k_SIEMBRA_HA",
+    "status": "REQUIRES_SOWN_TO_HARVESTED_AREA_MAPPING_GATE",
+    "yield_object": "Y_d,c,s_TM_PER_HARVESTED_HA"
+  }
+}

@@ -1,0 +1,18 @@
+COMPONENT,CURRENT_STATUS,AUTHORIZED_NEXT_PHASE,REQUIRES_FUTURE_GATE,FORBIDDEN,RATIONALE
+Rice climate-yield model,DESIGN_AUTHORIZED_ESTIMATION_BLOCKED,TRUE,TRANSIENT_OUTCOME_MASTER;PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_SELECTION,FALSE,Campaign outcome is defined but not built; primary exposure is not selected.
+MAD climate-yield model,DESIGN_AUTHORIZED_ESTIMATION_BLOCKED,TRUE,TRANSIENT_OUTCOME_MASTER;PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_SELECTION,FALSE,Campaign outcome is defined but not built; primary exposure is not selected.
+Mango climate-yield model,AUTHORIZED_FOR_ECONOMETRIC_DESIGN,TRUE,ECONOMETRIC_DESIGN_FREEZE_BEFORE_ESTIMATION,FALSE,Annual yield and current-year May-Jun exposure keys match.
+Lemon climate-yield model,AUTHORIZED_FOR_ECONOMETRIC_DESIGN,TRUE,ECONOMETRIC_DESIGN_FREEZE_BEFORE_ESTIMATION,FALSE,Annual yield and t/t-1 full-year exposure keys match.
+Banana climate-yield model,AUTHORIZED_FOR_ECONOMETRIC_DESIGN,TRUE,ECONOMETRIC_DESIGN_FREEZE_BEFORE_ESTIMATION,FALSE,Annual yield and t/t-1 full-year exposure keys match.
+A1/A2 transient area master,FROZEN_READY_SOWN_AREA,TRUE,SOWN_TO_HARVESTED_AREA_MAPPING_BEFORE_PRODUCTION,FALSE,Reference areas are empirically realized SIEMBRA hectares.
+alternative-specific timing,FROZEN_READY,TRUE,DISTRICT_CROP_ALTERNATIVE_SCENARIO_EXPOSURE_BUILD,FALSE,Use frozen A1/A2 timing; generic T3 and pooling remain forbidden.
+five-crop combined portfolio,NOT_YET_AUTHORIZED,FALSE,FORMALLY_VERSIONED_AGGREGATION_ARCHITECTURE,TRUE,Layer 1 crop characterization is not a portfolio definition.
+A1/A2 five-crop aggregation,NOT_AUTHORIZED,FALSE,FORMAL_C0B6_SCOPE_REOPEN,TRUE,A1/A2 contain Rice and MAD only.
+A1/A2 transient economic aggregation,STRUCTURAL_SCOPE_COHERENT_NUMERICAL_BLOCKED,FALSE,YIELD_AREA_MAPPING;PRICE_MAPPING;COMMON_SCENARIO_AND_HORIZON,FALSE,Aggregation structure exists but numeric inputs are not authorized.
+price mapping,REQUIRES_PRICE_MAPPING_GATE,FALSE,TEMPORAL_AND_MONETARY_PRICE_SPECIFICATION,FALSE,"No annual, harvest-month, campaign, deflation, or future-price rule is frozen."
+GVP construction,DIMENSIONALLY_AUTHORIZED_NOT_BUILT,FALSE,QUANTITY_AND_PRICE_MAPPING,FALSE,Quantity times price is structural only.
+VaR,NOT_AUTHORIZED,FALSE,POST_ESTIMATION_RISK_SPECIFICATION,TRUE,No loss distribution or risk horizon is defined.
+CVaR,NOT_AUTHORIZED_TRANSIENT_BLOCK_ONLY_IF_LATER_OPENED,FALSE,POST_ESTIMATION_RISK_SPECIFICATION,TRUE,Common perennial cancellation is explicitly false.
+ENSO scenario prediction,NOT_AUTHORIZED,FALSE,MODEL_FREEZE;DIAGNOSTICS;EMPIRICAL_SUPPORT_ENVELOPE;SCENARIO_FREEZE,TRUE,Scenario tuning cannot influence econometric specification.
+continuous optimization,NOT_AUTHORIZED,FALSE,FORMAL_ARCHITECTURE_REOPEN,TRUE,"No objective, bounds, or continuous decision domain is authorized."
+water-constrained model,NOT_AUTHORIZED,FALSE,FORMAL_HYDRAULIC_EVIDENCE_AND_ARCHITECTURE,TRUE,"No water capacity, entitlement, or service fraction is identified."
