@@ -1,0 +1,356 @@
+{
+  "schema_version": "C0B6_REFERENCE_CONFIGURATION_DATA_MASTER_V1",
+  "phase": "C0B6B_TRANSIENT_REFERENCE_CONFIGURATION_DATA_MASTER_REBUILD",
+  "frozen_parent": {
+    "c0b5_freeze": "b6df2fbf4d0ec948afc544cf2da134cc44314aef",
+    "selected_architecture": "ROUTE_B_FINITE_PRESPECIFIED_EMPIRICALLY_REALIZED_REFERENCE_CONFIGURATION_ANALYSIS",
+    "short_analytical_label": "RISK_AWARE_FINITE_REFERENCE_CONFIGURATION_ANALYSIS",
+    "c0b5_artifact_sha256": {
+      "outputs/decision_feasibility/C0B5_DECISION_DOMAIN_EVIDENCE_REGISTRY.csv": "bf1a06620a9c7ad2e66f64f8ea719819f3cb26deab90fc9909841c78112f6870",
+      "outputs/decision_feasibility/C0B5_ROUTE_ADJUDICATION.csv": "71d2ca62e0983c24a8b632764f69dc1fc69b69a54099a486794a1dca7ee8d23f",
+      "outputs/decision_feasibility/C0B5_FINITE_PORTFOLIO_AUDIT.csv": "b1d521863a8353fda7438830e5405c6295926ad2cb139b87f156d1cbc5027dfe",
+      "outputs/decision_feasibility/C0B5_DECISION_DOMAIN_REPORT.md": "ea4f301790e47ee7f81709854602427cfffb0f70da028836a103bdf75af23ce6",
+      "config/decision_ontology/decision_domain_adjudication_v1.json": "67b238b90aaa7727458ec6190b89b89df2a5f5b0db21fc696cc23fad8d18e58b",
+      "scripts/c0b5_decision_domain_preflight.py": "90d729c7d297d1de61eabaa1f7996cf6fac72783b7060991e68dc59d47febb0b",
+      "tests/test_c0b5_decision_domain.py": "9a88f25017f9b4acc22de443bc43f5578cb5fc0ff4da48a5bd29febb886b28e3"
+    }
+  },
+  "source_provenance": {
+    "raw_path": "data/raw/Formato_dataset_productos_dra__ (2).csv",
+    "raw_sha256": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489",
+    "c0b3_config_sha256": "35d752b94b2aaf29e3b7f1512fa817ca18af8c817455a60467a1cc31cab2e86e"
+  },
+  "selected_scope_architecture": "S1_TRANSIENT_REFERENCE_CONFIGURATION_STRESS_TEST_WITH_PERENNIAL_RISK_ANALYZED_SEPARATELY",
+  "dual_analytical_layers": {
+    "status": "SUPPORTED_WITH_STRICT_NONAGGREGATION_FIREWALL",
+    "layer_1": {
+      "name": "FIVE_CROP_CLIMATE_ECONOMIC_RISK_CHARACTERIZATION",
+      "crop_codes": [
+        "14010020000",
+        "14010070000",
+        "13010210000",
+        "13010170102",
+        "15010040000"
+      ],
+      "materialized_in_c0b6": false,
+      "status": "PENDING_LATER_CROP_SPECIFIC_AND_DOWNSTREAM_GATES"
+    },
+    "layer_2": {
+      "name": "RICE_MAD_FINITE_REFERENCE_CONFIGURATION_STRESS_TEST",
+      "crop_codes": [
+        "14010020000",
+        "14010070000"
+      ],
+      "materialized_in_c0b6": true,
+      "common_support_districts_n": 13
+    },
+    "layer_1_aggregation_into_layer_2_authorized": false
+  },
+  "reference_configurations": [
+    {
+      "alternative_id": "C0B5-A2020-2021",
+      "source_campaign": "2020/2021",
+      "transient_block": "TRANSIENT_BLOCK_A1",
+      "comparator_crop_scope": "RICE_MAD_TRANSIENT_ONLY"
+    },
+    {
+      "alternative_id": "C0B5-A2023-2024",
+      "source_campaign": "2023/2024",
+      "transient_block": "TRANSIENT_BLOCK_A2",
+      "comparator_crop_scope": "RICE_MAD_TRANSIENT_ONLY"
+    }
+  ],
+  "common_support_districts_n": 13,
+  "common_support_districts": [
+    {
+      "ubigeo": "200101",
+      "district_name": "PIURA"
+    },
+    {
+      "ubigeo": "200105",
+      "district_name": "CATACAOS"
+    },
+    {
+      "ubigeo": "200108",
+      "district_name": "EL TALLAN"
+    },
+    {
+      "ubigeo": "200111",
+      "district_name": "LAS LOMAS"
+    },
+    {
+      "ubigeo": "200114",
+      "district_name": "TAMBO GRANDE"
+    },
+    {
+      "ubigeo": "200201",
+      "district_name": "AYABACA"
+    },
+    {
+      "ubigeo": "200205",
+      "district_name": "MONTERO"
+    },
+    {
+      "ubigeo": "200304",
+      "district_name": "HUARMACA"
+    },
+    {
+      "ubigeo": "200802",
+      "district_name": "BELLAVISTA DE LA UNION"
+    },
+    {
+      "ubigeo": "200803",
+      "district_name": "BERNAL"
+    },
+    {
+      "ubigeo": "200804",
+      "district_name": "CRISTO NOS VALGA"
+    },
+    {
+      "ubigeo": "200805",
+      "district_name": "VICE"
+    },
+    {
+      "ubigeo": "200806",
+      "district_name": "RINCONADA LLICUAR"
+    }
+  ],
+  "reference_configuration_crop_scope": "RICE_MAD_TRANSIENT_ONLY",
+  "transient_comparator_crop_codes": [
+    "14010020000",
+    "14010070000"
+  ],
+  "perennial_broader_analysis_crop_codes": [
+    "13010210000",
+    "13010170102",
+    "15010040000"
+  ],
+  "broader_analysis_crop_codes": [
+    "14010020000",
+    "14010070000",
+    "13010210000",
+    "13010170102",
+    "15010040000"
+  ],
+  "transient_master": {
+    "expected_monthly_rows": 624,
+    "observed_monthly_rows": 624,
+    "expected_district_crop_alternative_cells": 52,
+    "observed_complete_district_crop_alternative_cells": 52,
+    "missing_district_crop_alternative_cells": 0,
+    "silent_missing_to_zero_used": false,
+    "timing_profiles_complete": {
+      "C0B5-A2020-2021": 26,
+      "C0B5-A2023-2024": 26
+    },
+    "timing_profiles_normalized": {
+      "C0B5-A2020-2021": 26,
+      "C0B5-A2023-2024": 26
+    },
+    "observed_zero_months": {
+      "C0B5-A2020-2021": 197,
+      "C0B5-A2023-2024": 166
+    },
+    "aggregate_totals_ha": {
+      "C0B5-A2020-2021": {
+        "ARROZ": 15213,
+        "MAIZ AMARILLO DURO": 5704
+      },
+      "C0B5-A2023-2024": {
+        "ARROZ": 22592,
+        "MAIZ AMARILLO DURO": 5937
+      }
+    },
+    "generic_t3_rule_authorized": false,
+    "observed_alternative_timing_profile_status": "SUPPORTED_ALTERNATIVE_SPECIFIC_ONLY_NO_GENERIC_T3_RULE",
+    "pooled_timing_shares_created": false,
+    "district_mix_and_match_detected": false,
+    "crop_year_mixing_detected": false,
+    "timing_profile_mixing_detected": false,
+    "reference_configuration_role": "EMPIRICALLY_REALIZED_TRANSIENT_REFERENCE_CONFIGURATION"
+  },
+  "perennial_scope_adjudication": {
+    "selection_rule": "LATEST_SOURCE_MONTH_WITH_COMPLETE_COMMON_SUPPORT_VERDE_ACTUAL_COVERAGE",
+    "common_complete_perennial_month_exists": false,
+    "max_complete_perennial_cells_any_month": 38,
+    "perennial_expected_common_cells": 39,
+    "best_perennial_coverage_months": [
+      202303,
+      202407
+    ],
+    "best_month_missing_cells": [
+      {
+        "year_month": 202303,
+        "ubigeo": "200108",
+        "district_name": "EL TALLAN",
+        "crop_code": "15010040000",
+        "crop_std": "PLATANOS Y BANANAS"
+      },
+      {
+        "year_month": 202407,
+        "ubigeo": "200804",
+        "district_name": "CRISTO NOS VALGA",
+        "crop_code": "15010040000",
+        "crop_std": "PLATANOS Y BANANAS"
+      }
+    ],
+    "candidate_months_audited_n": 113,
+    "source_first_month": 201508,
+    "source_last_month": 202412,
+    "crop_coverage": {
+      "13010210000": {
+        "crop_std": "MANGO",
+        "any_13_of_13_month": true,
+        "best_complete_districts_n": 13,
+        "best_months": [
+          202208,
+          202209,
+          202210,
+          202211,
+          202212,
+          202301,
+          202302,
+          202303,
+          202304,
+          202305,
+          202306,
+          202307,
+          202308,
+          202309,
+          202310,
+          202311,
+          202312,
+          202401,
+          202402,
+          202403,
+          202404,
+          202405,
+          202406,
+          202407,
+          202408,
+          202409,
+          202410,
+          202411,
+          202412
+        ]
+      },
+      "13010170102": {
+        "crop_std": "LIMON SUTIL",
+        "any_13_of_13_month": true,
+        "best_complete_districts_n": 13,
+        "best_months": [
+          202303,
+          202304,
+          202305,
+          202306,
+          202307,
+          202308,
+          202309,
+          202310,
+          202311,
+          202312,
+          202401,
+          202402,
+          202403,
+          202404,
+          202405,
+          202406,
+          202407,
+          202408,
+          202409,
+          202410,
+          202411,
+          202412
+        ]
+      },
+      "15010040000": {
+        "crop_std": "PLATANOS Y BANANAS",
+        "any_13_of_13_month": false,
+        "best_complete_districts_n": 12,
+        "best_months": [
+          202207,
+          202208,
+          202209,
+          202210,
+          202211,
+          202212,
+          202301,
+          202302,
+          202303,
+          202407
+        ]
+      }
+    },
+    "perennial_source_missingness_typology": [
+      "INTERMITTENT_REPORTING_MISSINGNESS",
+      "ASYNCHRONOUS_CROP_REPORTING"
+    ],
+    "externally_certifiable_perennial_completion_cells_n": 0,
+    "missing_reinterpreted_as_zero": false,
+    "common_perennial_block_materialized": false,
+    "perennials_in_a1_a2_reference_configurations": false,
+    "perennials_remain_in_broader_analysis": true,
+    "perennial_comparator_role": "NONE",
+    "perennial_risk_analysis_status": "SEPARATE_DOWNSTREAM_ANALYTICAL_LAYER_PENDING_LATER_GATES"
+  },
+  "scope_adjudication": {
+    "s1_status": "SCIENTIFICALLY_ADMISSIBLE_AND_SELECTED",
+    "s2_status": "REJECTED_SCOPE_REDUCTION_NOT_SCIENTIFICALLY_JUSTIFIED",
+    "s3_status": "REJECTED_S1_IS_SCIENTIFICALLY_COHERENT",
+    "c0b5_reopen_required": false,
+    "preserves_13_districts": true
+  },
+  "reference_configuration_manifest": {
+    "alternative_1": [
+      "TRANSIENT_BLOCK_A1"
+    ],
+    "alternative_2": [
+      "TRANSIENT_BLOCK_A2"
+    ],
+    "status": "READY_TRANSIENT_REFERENCE_CONFIGURATIONS",
+    "components_are_physical_total_land_occupancy": false,
+    "components_are_regional_capacity": false,
+    "components_are_reallocable_land": false
+  },
+  "aggregation_firewalls": {
+    "five_crop_a1_a2_aggregation_status": "NOT_AUTHORIZED",
+    "common_perennial_random_component_can_be_assumed_to_cancel_in_cvar": false,
+    "later_a1_a2_risk_metrics_scope": "TRANSIENT_BLOCK_ONLY",
+    "forbidden_outputs": [
+      "A1_FIVE_CROP_TOTAL_PORTFOLIO_VALUE",
+      "A2_FIVE_CROP_TOTAL_PORTFOLIO_VALUE",
+      "A1_FIVE_CROP_VAR",
+      "A2_FIVE_CROP_VAR",
+      "A1_FIVE_CROP_CVAR",
+      "A2_FIVE_CROP_CVAR",
+      "FIVE_CROP_A1_VS_A2_AGGREGATE_LOSS_DISTRIBUTION"
+    ]
+  },
+  "frozen_architecture_firewalls": {
+    "decision_architecture": "ARCH_F_TRANSIENT_ENDOGENOUS_PERENNIAL_EXOGENOUS",
+    "perennial_resolution": "P3_FIXED_STOCK_NEAR_TERM_HORIZON",
+    "area_ha_status": "PHYSICAL_AGRICULTURAL_FOOTPRINT_ONLY",
+    "model_authorized_land_parameters_n": 0,
+    "model_authorized_adjustment_bounds_n": 0
+  },
+  "firewalls": {
+    "historical_realization_status": "CERTIFIED_BY_SOURCE_OBSERVATION",
+    "prospective_physical_feasibility_status": "NOT_CERTIFIED",
+    "prospective_institutional_feasibility_status": "NOT_CERTIFIED",
+    "land_hard_cap_status": "NOT_AUTHORIZED",
+    "reallocable_transient_land_status": "NOT_OBSERVED",
+    "area_ha_feasibility_test_used": false,
+    "water_model_status": "NOT_AUTHORIZED",
+    "outcome_leakage_used": false,
+    "continuous_optimization_status": "NOT_AUTHORIZED",
+    "economic_or_climate_output_created": false,
+    "configuration_ranking_executed": false
+  },
+  "artifact_sha256": {
+    "data/processed/decision/reference_configurations_transient_long.csv": "749dae0e8d5d84fee0a09e1661a91097ef1a2feea7f52bd70fbc8cf36fa36a16",
+    "outputs/decision_feasibility/C0B6_SCOPE_ADJUDICATION.csv": "303a76b21bc32f33fb1a08e8103f3fb5f8050ec2d2c491fa06972ac2114c1cc3",
+    "outputs/decision_feasibility/C0B6_ALTERNATIVE_DATA_AUDIT.csv": "0df2353ff65f917f2fe1c30332d9260e97ff3a10939dba8e58ecd6be3e41cb32"
+  },
+  "next_gate": "INDEPENDENT_C0B6_REBUILD_AUDIT_BEFORE_C0B6_FREEZE",
+  "final_status": "PASS_FOR_INDEPENDENT_C0B6_REBUILD_AUDIT"
+}

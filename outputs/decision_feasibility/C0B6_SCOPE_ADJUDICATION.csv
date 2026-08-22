@@ -1,0 +1,17 @@
+CHECK_ID,DOMAIN,QUESTION,EVIDENCE_STATUS,ADJUDICATION,MODEL_CONSEQUENCE,FROZEN_STATUS,NOTES
+C0B6S-001,C0B6A_FORENSICS,Did extraction cause the perennial failure?,IMPLEMENTATION_DEFECT_FOUND=FALSE,SOURCE_INCOMPLETENESS_CONFIRMED,NO_EXTRACTION_PATCH,PASS_FROZEN,"Zero, numeric, UBIGEO, crop and month filters passed."
+C0B6S-002,PERENNIAL_COVERAGE,Does one common 39/39 month exist?,FALSE,NO_COMMON_FIXED_PERENNIAL_BASELINE,NO_PERENNIAL_COMPARATOR_BLOCK,PASS_FROZEN,No missing value is reinterpreted as zero.
+C0B6S-003,PERENNIAL_COVERAGE,Which months maximize coverage?,202303;202407,BEST_MONTHS_RETAINED_AS_EVIDENCE_FACT,NO_BASELINE_SELECTED,PASS_FROZEN,Each best month remains 38/39.
+C0B6S-004,PERENNIAL_COVERAGE,What is maximum common completeness?,38/39,INSUFFICIENT_FOR_FROZEN_RULE,NO_NUMERIC_PERENNIAL_BLOCK,PASS_FROZEN,The 39-cell requirement is unchanged.
+C0B6S-005,PERENNIAL_COVERAGE,Which crop blocks 13/13?,BANANA_ANY_13_OF_13_MONTH=FALSE,BANANA_BOTTLENECK_DOCUMENTED,NO_CROP_REMOVAL_OR_SCOPE_REDUCTION,PASS_FROZEN,Mango and lemon each attain 13/13 separately.
+C0B6S-006,EXTERNAL_EVIDENCE,Can official evidence complete a best month?,0_ADMISSIBLE_CELLS,NO_EXTERNAL_COMPLETION,NO_EVIDENCE_SUBSTITUTION,PASS_FROZEN,Same-concept and same-date requirements remain binding.
+C0B6S-007,ROUTE_SELECTION,Is S1 scientifically coherent?,YES,S1_SELECTED,TRANSIENT_REFERENCE_CONFIGURATION_DATA_MASTER,PASS_FROZEN,Rice/MAD comparator remains identifiable.
+C0B6S-008,ROUTE_SELECTION,Should C0B5 be reopened for 12 districts?,NO,S2_REJECTED,PRESERVE_13_DISTRICTS,PASS_FROZEN,Scope reduction would discard complete transient evidence to force a table.
+C0B6S-009,ROUTE_SELECTION,Should the comparator be removed?,NO,S3_REJECTED,PRESERVE_ROUTE_B_TRANSIENT_COMPARATOR,PASS_FROZEN,S1 is coherent.
+C0B6S-010,SPATIAL_SCOPE,Are all frozen districts retained?,13/13,PRESERVE_EXACT_SUPPORT,NO_SCOPE_REDUCTION,PASS_FROZEN,C0B5 common support is unchanged.
+C0B6S-011,FROZEN_ARCHITECTURE,Does S1 require reopening C0B5?,FALSE,C0B5_REOPEN_NOT_REQUIRED,A1_A2_IDENTITIES_UNCHANGED,PASS_FROZEN,C0B5 did not import historical perennial stocks into alternatives.
+C0B6S-012,BROADER_ANALYSIS,Do perennials remain scientifically eligible?,TRUE,RETAIN_ALL_THREE_PERENNIALS,SEPARATE_DOWNSTREAM_LAYER,PASS_FROZEN,Later crop-specific gates remain required.
+C0B6S-013,COMPARATOR_SCOPE,Are perennials components of A1/A2?,FALSE,EXCLUDE_FROM_REFERENCE_CONFIGURATIONS,TRANSIENT_BLOCK_ONLY,PASS_FROZEN,Perennials are not converted to endogenous variables.
+C0B6S-014,AGGREGATION_FIREWALL,May A1/A2 be aggregated as five-crop portfolios?,NO,NOT_AUTHORIZED,FORBID_FIVE_CROP_A1_A2_OUTPUTS,PASS_FROZEN,Only transient-block aggregate metrics may be constructed later.
+C0B6S-015,TAIL_RISK_FIREWALL,Can a common perennial random component be assumed to cancel in CVaR?,FALSE,CANCELLATION_ARGUMENT_REJECTED,DEFINE_ANY_LATER_A1_A2_CVAR_ON_TRANSIENT_BLOCK,PASS_FROZEN,Nonlinear tail risk need not preserve relative relationships.
+C0B6S-016,FINAL_SCOPE,Is the transient comparator authorized for independent audit?,YES,AUTHORIZED,C0B6_REBUILD_READY,PASS_FROZEN,"No outcomes, land, water or optimization enter the decision."
