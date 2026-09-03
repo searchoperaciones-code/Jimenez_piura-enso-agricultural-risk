@@ -1,0 +1,565 @@
+{
+  "artifact_sha256": {
+    "data/processed/outcomes/transient_campaign_outcomes_master.csv": "9cae62fb1417fa41274f6d504515571abd428b71fecaa0d138d3b786aa538760",
+    "outputs/outcome/D0_TRANSIENT_OUTCOME_AUDIT.csv": "7c6d5b0bbae359bf38cf1113adb507d7eeca2d09de03bd9f232806bef5ce2597",
+    "outputs/outcome/D0_TRANSIENT_OUTCOME_EXCLUSION_LEDGER.csv": "6f7efe29c49b6a1edfaf47743f0b10639a9f56995f742e7513046aff63e814d8"
+  },
+  "authorized_d0_parent_sha": "a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5",
+  "campaign_calendar": {
+    "campaign_id_format": "YYYY/YYYY",
+    "campaigns": [
+      "2016/2017",
+      "2017/2018",
+      "2018/2019",
+      "2019/2020",
+      "2020/2021",
+      "2021/2022",
+      "2022/2023"
+    ],
+    "expected_months_n": 12,
+    "first_calendar_year_months": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "second_calendar_year_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "time_basis": "AGRICULTURAL_CAMPAIGN_AUG_JUL"
+  },
+  "crop_contracts": {
+    "14010020000": {
+      "crop_std": "ARROZ",
+      "district_universe": [
+        {
+          "district_name": "PIURA",
+          "ubigeo": "200101"
+        },
+        {
+          "district_name": "CASTILLA",
+          "ubigeo": "200104"
+        },
+        {
+          "district_name": "CATACAOS",
+          "ubigeo": "200105"
+        },
+        {
+          "district_name": "CURA MORI",
+          "ubigeo": "200107"
+        },
+        {
+          "district_name": "EL TALLAN",
+          "ubigeo": "200108"
+        },
+        {
+          "district_name": "LA ARENA",
+          "ubigeo": "200109"
+        },
+        {
+          "district_name": "LA UNION",
+          "ubigeo": "200110"
+        },
+        {
+          "district_name": "LAS LOMAS",
+          "ubigeo": "200111"
+        },
+        {
+          "district_name": "TAMBO GRANDE",
+          "ubigeo": "200114"
+        },
+        {
+          "district_name": "AYABACA",
+          "ubigeo": "200201"
+        },
+        {
+          "district_name": "JILILI",
+          "ubigeo": "200203"
+        },
+        {
+          "district_name": "LAGUNAS",
+          "ubigeo": "200204"
+        },
+        {
+          "district_name": "MONTERO",
+          "ubigeo": "200205"
+        },
+        {
+          "district_name": "PACAIPAMPA",
+          "ubigeo": "200206"
+        },
+        {
+          "district_name": "PAIMAS",
+          "ubigeo": "200207"
+        },
+        {
+          "district_name": "SAPILLICA",
+          "ubigeo": "200208"
+        },
+        {
+          "district_name": "SICCHEZ",
+          "ubigeo": "200209"
+        },
+        {
+          "district_name": "SUYO",
+          "ubigeo": "200210"
+        },
+        {
+          "district_name": "CANCHAQUE",
+          "ubigeo": "200302"
+        },
+        {
+          "district_name": "HUARMACA",
+          "ubigeo": "200304"
+        },
+        {
+          "district_name": "LALAQUIZ",
+          "ubigeo": "200305"
+        },
+        {
+          "district_name": "SAN MIGUEL DE EL FAIQUE",
+          "ubigeo": "200306"
+        },
+        {
+          "district_name": "CHULUCANAS",
+          "ubigeo": "200401"
+        },
+        {
+          "district_name": "BUENOS AIRES",
+          "ubigeo": "200402"
+        },
+        {
+          "district_name": "MORROPON",
+          "ubigeo": "200405"
+        },
+        {
+          "district_name": "SALITRAL",
+          "ubigeo": "200406"
+        },
+        {
+          "district_name": "SAN JUAN DE BIGOTE",
+          "ubigeo": "200407"
+        },
+        {
+          "district_name": "SANTA CATALINA DE MOSSA",
+          "ubigeo": "200408"
+        },
+        {
+          "district_name": "SANTO DOMINGO",
+          "ubigeo": "200409"
+        },
+        {
+          "district_name": "YAMANGO",
+          "ubigeo": "200410"
+        },
+        {
+          "district_name": "AMOTAPE",
+          "ubigeo": "200502"
+        },
+        {
+          "district_name": "ARENAL",
+          "ubigeo": "200503"
+        },
+        {
+          "district_name": "COLAN",
+          "ubigeo": "200504"
+        },
+        {
+          "district_name": "LA HUACA",
+          "ubigeo": "200505"
+        },
+        {
+          "district_name": "TAMARINDO",
+          "ubigeo": "200506"
+        },
+        {
+          "district_name": "SULLANA",
+          "ubigeo": "200601"
+        },
+        {
+          "district_name": "IGNACIO ESCUDERO",
+          "ubigeo": "200603"
+        },
+        {
+          "district_name": "MARCAVELICA",
+          "ubigeo": "200605"
+        },
+        {
+          "district_name": "QUERECOTILLO",
+          "ubigeo": "200607"
+        },
+        {
+          "district_name": "SALITRAL",
+          "ubigeo": "200608"
+        },
+        {
+          "district_name": "SECHURA",
+          "ubigeo": "200801"
+        },
+        {
+          "district_name": "BELLAVISTA DE LA UNION",
+          "ubigeo": "200802"
+        },
+        {
+          "district_name": "BERNAL",
+          "ubigeo": "200803"
+        },
+        {
+          "district_name": "CRISTO NOS VALGA",
+          "ubigeo": "200804"
+        },
+        {
+          "district_name": "VICE",
+          "ubigeo": "200805"
+        },
+        {
+          "district_name": "RINCONADA LLICUAR",
+          "ubigeo": "200806"
+        }
+      ],
+      "districts_n": 46,
+      "expected_exclusion_reasons": {
+        "INCOMPLETE_CAMPAIGN_NO_SOURCE_ROWS": 20,
+        "ZERO_DENOMINATOR": 8
+      },
+      "expected_invalid_rows": 28,
+      "expected_potential_rows": 322,
+      "expected_valid_rows": 294
+    },
+    "14010070000": {
+      "crop_std": "MAIZ AMARILLO DURO",
+      "district_universe": [
+        {
+          "district_name": "PIURA",
+          "ubigeo": "200101"
+        },
+        {
+          "district_name": "CASTILLA",
+          "ubigeo": "200104"
+        },
+        {
+          "district_name": "CATACAOS",
+          "ubigeo": "200105"
+        },
+        {
+          "district_name": "CURA MORI",
+          "ubigeo": "200107"
+        },
+        {
+          "district_name": "EL TALLAN",
+          "ubigeo": "200108"
+        },
+        {
+          "district_name": "LA ARENA",
+          "ubigeo": "200109"
+        },
+        {
+          "district_name": "LA UNION",
+          "ubigeo": "200110"
+        },
+        {
+          "district_name": "LAS LOMAS",
+          "ubigeo": "200111"
+        },
+        {
+          "district_name": "TAMBO GRANDE",
+          "ubigeo": "200114"
+        },
+        {
+          "district_name": "AYABACA",
+          "ubigeo": "200201"
+        },
+        {
+          "district_name": "FRIAS",
+          "ubigeo": "200202"
+        },
+        {
+          "district_name": "JILILI",
+          "ubigeo": "200203"
+        },
+        {
+          "district_name": "LAGUNAS",
+          "ubigeo": "200204"
+        },
+        {
+          "district_name": "MONTERO",
+          "ubigeo": "200205"
+        },
+        {
+          "district_name": "PACAIPAMPA",
+          "ubigeo": "200206"
+        },
+        {
+          "district_name": "PAIMAS",
+          "ubigeo": "200207"
+        },
+        {
+          "district_name": "SAPILLICA",
+          "ubigeo": "200208"
+        },
+        {
+          "district_name": "SICCHEZ",
+          "ubigeo": "200209"
+        },
+        {
+          "district_name": "SUYO",
+          "ubigeo": "200210"
+        },
+        {
+          "district_name": "HUANCABAMBA",
+          "ubigeo": "200301"
+        },
+        {
+          "district_name": "CANCHAQUE",
+          "ubigeo": "200302"
+        },
+        {
+          "district_name": "EL CARMEN DE LA FRONTERA",
+          "ubigeo": "200303"
+        },
+        {
+          "district_name": "HUARMACA",
+          "ubigeo": "200304"
+        },
+        {
+          "district_name": "LALAQUIZ",
+          "ubigeo": "200305"
+        },
+        {
+          "district_name": "SAN MIGUEL DE EL FAIQUE",
+          "ubigeo": "200306"
+        },
+        {
+          "district_name": "SONDOR",
+          "ubigeo": "200307"
+        },
+        {
+          "district_name": "SONDORILLO",
+          "ubigeo": "200308"
+        },
+        {
+          "district_name": "CHULUCANAS",
+          "ubigeo": "200401"
+        },
+        {
+          "district_name": "BUENOS AIRES",
+          "ubigeo": "200402"
+        },
+        {
+          "district_name": "CHALACO",
+          "ubigeo": "200403"
+        },
+        {
+          "district_name": "LA MATANZA",
+          "ubigeo": "200404"
+        },
+        {
+          "district_name": "MORROPON",
+          "ubigeo": "200405"
+        },
+        {
+          "district_name": "SALITRAL",
+          "ubigeo": "200406"
+        },
+        {
+          "district_name": "SAN JUAN DE BIGOTE",
+          "ubigeo": "200407"
+        },
+        {
+          "district_name": "SANTA CATALINA DE MOSSA",
+          "ubigeo": "200408"
+        },
+        {
+          "district_name": "SANTO DOMINGO",
+          "ubigeo": "200409"
+        },
+        {
+          "district_name": "YAMANGO",
+          "ubigeo": "200410"
+        },
+        {
+          "district_name": "AMOTAPE",
+          "ubigeo": "200502"
+        },
+        {
+          "district_name": "ARENAL",
+          "ubigeo": "200503"
+        },
+        {
+          "district_name": "COLAN",
+          "ubigeo": "200504"
+        },
+        {
+          "district_name": "LA HUACA",
+          "ubigeo": "200505"
+        },
+        {
+          "district_name": "TAMARINDO",
+          "ubigeo": "200506"
+        },
+        {
+          "district_name": "VICHAYAL",
+          "ubigeo": "200507"
+        },
+        {
+          "district_name": "SULLANA",
+          "ubigeo": "200601"
+        },
+        {
+          "district_name": "IGNACIO ESCUDERO",
+          "ubigeo": "200603"
+        },
+        {
+          "district_name": "MARCAVELICA",
+          "ubigeo": "200605"
+        },
+        {
+          "district_name": "MIGUEL CHECA",
+          "ubigeo": "200606"
+        },
+        {
+          "district_name": "QUERECOTILLO",
+          "ubigeo": "200607"
+        },
+        {
+          "district_name": "SALITRAL",
+          "ubigeo": "200608"
+        },
+        {
+          "district_name": "SECHURA",
+          "ubigeo": "200801"
+        },
+        {
+          "district_name": "BELLAVISTA DE LA UNION",
+          "ubigeo": "200802"
+        },
+        {
+          "district_name": "BERNAL",
+          "ubigeo": "200803"
+        },
+        {
+          "district_name": "CRISTO NOS VALGA",
+          "ubigeo": "200804"
+        },
+        {
+          "district_name": "VICE",
+          "ubigeo": "200805"
+        },
+        {
+          "district_name": "RINCONADA LLICUAR",
+          "ubigeo": "200806"
+        }
+      ],
+      "districts_n": 55,
+      "expected_exclusion_reasons": {
+        "INCOMPLETE_CAMPAIGN_NO_SOURCE_ROWS": 22,
+        "ZERO_DENOMINATOR": 11
+      },
+      "expected_invalid_rows": 33,
+      "expected_potential_rows": 385,
+      "expected_valid_rows": 352
+    }
+  },
+  "d0_lineage_contract_version": "R0H_COMPAT_V1",
+  "d0_scientific_contract_version": "v1",
+  "decimal_arithmetic": {
+    "precision_significant_digits": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "serialization": "PLAIN_DECIMAL_TRAILING_FRACTIONAL_ZEROS_REMOVED"
+  },
+  "exclusion_taxonomy": [
+    "ZERO_DENOMINATOR",
+    "INCOMPLETE_CAMPAIGN_NO_SOURCE_ROWS",
+    "MISSING_NUMERATOR",
+    "MISSING_DENOMINATOR",
+    "OTHER"
+  ],
+  "expected_counts": {
+    "invalid_rows": 61,
+    "potential_rows": 707,
+    "valid_rows": 646
+  },
+  "firewalls": {
+    "a1_a2_filtering_used": false,
+    "climate_exposure_linkage_used": false,
+    "continuous_optimization_status": "NOT_AUTHORIZED",
+    "extreme_2017_removed": false,
+    "extreme_2023_removed": false,
+    "model_fitting_executed": false,
+    "monthly_yield_averaging_used": false,
+    "price_or_monetary_linkage_used": false,
+    "primary_transient_econometric_exposure": "NOT_YET_SELECTED",
+    "produccion_divided_by_siembra_used": false,
+    "silent_missing_to_zero_used": false,
+    "sown_to_harvested_mapping_executed": false,
+    "water_model_status": "NOT_AUTHORIZED"
+  },
+  "joint_c0": {
+    "frozen_file_sha256": {
+      "config/joint_c0/outcome_decision_integration_v1.json": "53158bdb19d29de772f5061c0b110079500ff7a6d0b86e42b403879ed65b9899",
+      "outputs/joint_c0/C0_JOINT_AUTHORIZATION_MATRIX.csv": "d33a24497625a5a2e9abd4991f5a67a3428fac5a7d269c849dc636a6b0d9abe3",
+      "outputs/joint_c0/C0_JOINT_COMPATIBILITY_MATRIX.csv": "7bde825794ee80c111e45cc40715a3118295c09cdd876b34fc36c4c3afa98e4b",
+      "outputs/joint_c0/C0_JOINT_EVIDENCE_REGISTRY.csv": "ea9694aee2ac65f70b168b0893e091623b5b6bdb76cf4087f41ba44374d8a4a0",
+      "outputs/joint_c0/C0_JOINT_REPORT.md": "92e4902b0f5ee4cc8a4ef4411ef741efe79399a7a83398cbe177c7b4fa1ad582",
+      "scripts/c0_joint_integration_preflight.py": "769af295d8df4fae353cfd62f0ed7c608fa8ba9c4924d5cad68e6f6ce80ecff9",
+      "tests/test_c0_joint_integration.py": "ce0316d19e667985351b86a011ffaca35023108699d51c85d638b7d99381ef80"
+    },
+    "relationship_to_r0h": "SOLE_DIRECT_PARENT_AND_SCIENTIFIC_BASE",
+    "scientific_base_sha": "fca5d6e519cdff764d1ca53791ae1829ef29aa00"
+  },
+  "joint_c0_scientific_base_sha": "fca5d6e519cdff764d1ca53791ae1829ef29aa00",
+  "lineage_contract": {
+    "current_head_requirement": "EXACT_AUTHORIZED_D0_PARENT_ONLY",
+    "r0h_direct_parent_sha": "fca5d6e519cdff764d1ca53791ae1829ef29aa00",
+    "r0h_expected_diff_paths": [
+      "scripts/audit_phenology_stage_a.py",
+      "scripts/phenology_stage_a.py",
+      "tests/test_phenology_json_serialization.py"
+    ],
+    "r0h_scientific_content_change": false
+  },
+  "next_gate": "INDEPENDENT_D0_OUTCOME_MASTER_AUDIT_BEFORE_FREEZE",
+  "outcome_contract": {
+    "contract_id": "JOINT_C0_TRANSIENT_CAMPAIGN_YIELD_RAW_V1",
+    "denominator": "SUM(COSECHA within Aug-Jul campaign)",
+    "denominator_semantics": "HA_MONTHLY_HARVEST_FLOW",
+    "forbidden_replacements": [
+      "MEAN_MONTHLY_YIELD",
+      "SUM_MONTHLY_YIELD",
+      "MEDIAN_MONTHLY_YIELD",
+      "CALENDAR_YEAR_YIELD",
+      "MAX_MONTHLY_YIELD",
+      "PRODUCCION_DIVIDED_BY_SIEMBRA"
+    ],
+    "formula": "SUM(PRODUCCION within Aug-Jul campaign) / SUM(COSECHA within Aug-Jul campaign)",
+    "numerator": "SUM(PRODUCCION within Aug-Jul campaign)",
+    "observation_unit": "DISTRICT_CROP_AGRICULTURAL_CAMPAIGN",
+    "outcome_unit": "TM_PER_HA",
+    "variable": "TRANSIENT_CAMPAIGN_YIELD_RAW"
+  },
+  "phase": "D0_TRANSIENT_CAMPAIGN_OUTCOME_MASTER",
+  "r0h_hardening_sha": "a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5",
+  "raw_source": {
+    "path": "data/raw/Formato_dataset_productos_dra__ (2).csv",
+    "sha256": "7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489"
+  },
+  "schema_version": "1.0.0",
+  "validity_rule": {
+    "all_potential_rows_preserved": true,
+    "missing_denominator": "INVALID_PRESERVE_ROW_DO_NOT_IMPUTE",
+    "missing_numerator": "INVALID_PRESERVE_ROW_DO_NOT_IMPUTE",
+    "no_source_row": "INVALID_PRESERVE_ROW_NUMERIC_AGGREGATES_MISSING",
+    "numeric_zero_is_observed": true,
+    "production_zero_with_positive_harvest_may_be_valid": true,
+    "source_presence": "AT_LEAST_ONE_SOURCE_ROW_AND_AGGREGATE_NUMERATOR_AND_DENOMINATOR_OBSERVED",
+    "valid": "SOURCE_PRESENCE_RULE_PASSES_AND_CAMPAIGN_COSECHA_HA_STRICTLY_POSITIVE",
+    "zero_denominator": "INVALID_PRESERVE_ROW_NO_DIVISION_NO_EPSILON"
+  }
+}

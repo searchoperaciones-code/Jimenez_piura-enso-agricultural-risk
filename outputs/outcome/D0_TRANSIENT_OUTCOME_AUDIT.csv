@@ -1,0 +1,46 @@
+CHECK_ID,DOMAIN,EXPECTED,OBSERVED,STATUS,CRITICALITY,NOTES
+D0-L001,JOINT_C0_SCIENTIFIC_BASE,fca5d6e519cdff764d1ca53791ae1829ef29aa00,fca5d6e519cdff764d1ca53791ae1829ef29aa00,PASS,CRITICAL,Frozen scientific base.
+D0-L002,R0H_AUTHORIZED_PARENT,a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5,a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5,PASS,CRITICAL,Authorized reproducibility hardening is the exact D0 execution base.
+D0-L003,R0H_DIRECT_PARENT_RELATION,"[""fca5d6e519cdff764d1ca53791ae1829ef29aa00""]","[""fca5d6e519cdff764d1ca53791ae1829ef29aa00""]",PASS,CRITICAL,Joint C0 is the sole direct parent of R0H.
+D0-L004,R0H_DIFF_SCOPE,"[""scripts/audit_phenology_stage_a.py"",""scripts/phenology_stage_a.py"",""tests/test_phenology_json_serialization.py""]","[""scripts/audit_phenology_stage_a.py"",""scripts/phenology_stage_a.py"",""tests/test_phenology_json_serialization.py""]",PASS,CRITICAL,R0H contains only the authorized cross-platform hardening paths.
+D0-L005,CURRENT_HEAD_EXACT,a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5,a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5,PASS,CRITICAL,Exact authorized execution base; descendants are rejected.
+D0-L006,R0H_SCIENTIFIC_CONTENT_CHANGE,FALSE,FALSE,PASS,CRITICAL,"No scientific data, output, or configuration path changed."
+D0-002,RAW_SOURCE_PATH,data/raw/Formato_dataset_productos_dra__ (2).csv,data/raw/Formato_dataset_productos_dra__ (2).csv,PASS,CRITICAL,Authorized local raw source.
+D0-003,RAW_SOURCE_SHA256,7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489,7953e95f532b97f3db1ad42dfb517dc0b5f6e98a80b1f1b0954fc1b52419c489,PASS,CRITICAL,Raw bytes are immutable.
+D0-004,CROP_CODES,"[""14010020000"",""14010070000""]","[""14010020000"",""14010070000""]",PASS,CRITICAL,Rice and MAD only.
+D0-005,CAMPAIGN_SET,"[""2016/2017"",""2017/2018"",""2018/2019"",""2019/2020"",""2020/2021"",""2021/2022"",""2022/2023""]","[""2016/2017"",""2017/2018"",""2018/2019"",""2019/2020"",""2020/2021"",""2021/2022"",""2022/2023""]",PASS,CRITICAL,Seven Aug-Jul campaigns.
+D0-006,RICE_DISTRICTS,46,46,PASS,CRITICAL,Frozen universe.
+D0-007,MAD_DISTRICTS,55,55,PASS,CRITICAL,Frozen universe.
+D0-008,TOTAL_POTENTIAL_ROWS,707,707,PASS,CRITICAL,Invalid rows are retained.
+D0-009,RICE_POTENTIAL_ROWS,322,322,PASS,CRITICAL,46 x 7.
+D0-010,MAD_POTENTIAL_ROWS,385,385,PASS,CRITICAL,55 x 7.
+D0-011,RICE_VALID_ROWS,294,294,PASS,CRITICAL,Pre-complete-case outcomes.
+D0-012,MAD_VALID_ROWS,352,352,PASS,CRITICAL,Pre-complete-case outcomes.
+D0-013,TOTAL_VALID_ROWS,646,646,PASS,CRITICAL,No outcome-based redesign.
+D0-014,RICE_INVALID_ROWS,28,28,PASS,CRITICAL,Rows preserved.
+D0-015,MAD_INVALID_ROWS,33,33,PASS,CRITICAL,Rows preserved.
+D0-016,TOTAL_INVALID_ROWS,61,61,PASS,CRITICAL,Ledger reconciliation.
+D0-017,RICE_ZERO_DENOMINATOR,8,8,PASS,CRITICAL,No division by zero.
+D0-018,RICE_NO_SOURCE,20,20,PASS,CRITICAL,Absence remains missing.
+D0-019,MAD_ZERO_DENOMINATOR,11,11,PASS,CRITICAL,No division by zero.
+D0-020,MAD_NO_SOURCE,22,22,PASS,CRITICAL,Absence remains missing.
+D0-021,MISSING_NUMERATOR,0,0,PASS,CRITICAL,Explicitly supported without imputation.
+D0-022,MISSING_DENOMINATOR,0,0,PASS,CRITICAL,Explicitly supported without imputation.
+D0-023,OTHER_INVALIDITY,0,0,PASS,CRITICAL,No unexplained exclusion.
+D0-024,OUTCOME_UNIT,TM_PER_HA,"[""TM_PER_HA""]",PASS,CRITICAL,Metric tonnes per harvested hectare.
+D0-025,OUTCOME_FORMULA,SUM(PRODUCCION within Aug-Jul campaign) / SUM(COSECHA within Aug-Jul campaign),SUM(PRODUCCION within Aug-Jul campaign) / SUM(COSECHA within Aug-Jul campaign),PASS,CRITICAL,Ratio of campaign sums.
+D0-026,MONTHLY_YIELD_AVERAGING,FALSE,FALSE,PASS,CRITICAL,No monthly yield is constructed.
+D0-027,SILENT_MISSING_TO_ZERO,FALSE,FALSE,PASS,CRITICAL,No-source aggregates are blank.
+D0-028,CLIMATE_EXPOSURE_FIELDS,[],[],PASS,CRITICAL,Outcome-only master.
+D0-029,PRICE_FIELDS,[],[],PASS,CRITICAL,Physical outcome only.
+D0-030,A1_A2_FIELDS,[],[],PASS,CRITICAL,No reference-configuration filtering.
+D0-031,EXTREME_2017_RETAINED,TRUE,TRUE,PASS,CRITICAL,Campaign ending 2017 retained.
+D0-032,EXTREME_2023_RETAINED,TRUE,TRUE,PASS,CRITICAL,Campaign ending 2023 retained.
+D0-033,NO_MODEL_FITTING,TRUE,TRUE,PASS,CRITICAL,No model or fitted result is produced.
+D0-034,NO_WATER_MODEL,TRUE,TRUE,PASS,CRITICAL,No hydraulic variable is used.
+D0-035,NO_OPTIMIZATION,TRUE,TRUE,PASS,CRITICAL,No objective or optimizer is used.
+D0-036,UNIQUE_KEYS,0,0,PASS,CRITICAL,Unique crop-district-campaign rows.
+D0-037,EXCLUSION_LEDGER_ROWS,61,61,PASS,CRITICAL,Every invalid row appears once.
+D0-038,INVALID_YIELD_NONBLANK,0,0,PASS,CRITICAL,Invalid yield is missing.
+D0-039,VALID_NONPOSITIVE_DENOMINATOR,0,0,PASS,CRITICAL,Every valid denominator is positive.
+D0-040,EXPECTED_MONTHS,12,"[""12""]",PASS,CRITICAL,Calendar expectation is fixed independently of source presence.
