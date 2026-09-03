@@ -1,0 +1,463 @@
+{
+  "architectural_turning_points": [
+    {
+      "blocking_evidence": "No model-admissible continuous Rice-MAD land-adjustment domain, hard land cap, adjustment bound, or district water constraint was identified.",
+      "current_status": "ABANDONED",
+      "gate": "C0B4",
+      "original_element": "Continuous district-level crop-area adjustment and optimization",
+      "required_rewording": "Replace continuous reallocation with a finite comparison of prespecified historically observed configurations."
+    },
+    {
+      "blocking_evidence": "Only two complete, outcome-independent, empirically realized Rice-MAD configurations on 13 common districts passed the evidence rules.",
+      "current_status": "AUTHORIZED_AS_FINITE_REFERENCE_ARCHITECTURE",
+      "gate": "C0B5",
+      "original_element": "Optimization over a continuous crop-allocation set",
+      "required_rewording": "Describe C0B5-A2020-2021 and C0B5-A2023-2024 as fixed historical comparators, not feasible future solutions or recommendations."
+    },
+    {
+      "blocking_evidence": "Common perennial initialization failed and nonlinear tail-risk cancellation of a shared perennial component is not valid.",
+      "current_status": "FIVE_CROP_A1_A2_AGGREGATION_NOT_AUTHORIZED",
+      "gate": "C0B6",
+      "original_element": "One five-crop A1/A2 portfolio and common Mean-CVaR comparison",
+      "required_rewording": "Keep five-crop characterization in Layer 1 and restrict the finite A1/A2 stress test to the Rice-MAD transient block in Layer 2."
+    },
+    {
+      "blocking_evidence": "Crop outcome contracts have different temporal structures and the maximum current econometric interpretation is empirical association only.",
+      "current_status": "TWO_LINKED_NONMERGED_ANALYTICAL_LAYERS",
+      "gate": "JOINT_C0",
+      "original_element": "One homogeneous five-crop climate-yield and allocation model",
+      "required_rewording": "Use crop-specific temporal models and keep characterization separate from the finite reference stress test."
+    },
+    {
+      "blocking_evidence": "The frozen D0 master provides seven Aug-Jul campaigns for Rice and MAD, with 646 usable outcomes and 61 preserved invalid rows.",
+      "current_status": "TRANSIENT_OUTCOME_CONTRACT_FROZEN",
+      "gate": "D0",
+      "original_element": "Unspecified district-level yield outcome",
+      "required_rewording": "State the Rice-MAD outcome as district by crop by Aug-Jul campaign and retain crop-specific calendar-year contracts for perennials."
+    }
+  ],
+  "claim_statuses": [
+    "AUTHORIZED_NOW",
+    "AUTHORIZED_IF_FUTURE_GATE_PASSES",
+    "NOT_AUTHORIZED",
+    "ABANDONED"
+  ],
+  "contribution_architecture": [
+    {
+      "contribution_id": "C1",
+      "domain": "DATA_AND_REPRODUCIBILITY",
+      "distinctive_component": "A frozen, provenance-audited district-crop evidence chain linking agricultural outcomes, climate support, phenology, decision feasibility, and transient campaign outcomes.",
+      "established_method_not_novel": "Version control, checksums, deterministic builds, and data-provenance reporting are established reproducibility practices.",
+      "novelty_limit": "Do not claim a new reproducibility method or the first agricultural data pipeline."
+    },
+    {
+      "contribution_id": "C2",
+      "domain": "PHENOLOGY_INFORMED_CLIMATE_EXPOSURE",
+      "distinctive_component": "Crop-specific frozen windows and temporal attribution align climate measurement with Rice, MAD, Mango, Lemon, and Banana phenology in Piura.",
+      "established_method_not_novel": "Phenology-aligned exposure construction is established scientific practice.",
+      "novelty_limit": "Do not claim invention of phenological exposure methods."
+    },
+    {
+      "contribution_id": "C3",
+      "domain": "CROP_SPECIFIC_EMPIRICAL_RESPONSE",
+      "distinctive_component": "A prespecified dual temporal architecture permits heterogeneous crop-specific climate-yield associations without forcing all five crops into one model.",
+      "established_method_not_novel": "Associational panel and time-series response models are established methods.",
+      "novelty_limit": "Do not claim causal effects or globally invariant response functions."
+    },
+    {
+      "contribution_id": "C4",
+      "domain": "ENSO_SCENARIO_AND_RISK_PROPAGATION",
+      "distinctive_component": "If future gates pass, one auditable chain will separate historical estimation, prospective ENSO scenario construction, prediction, economic translation, and risk measurement.",
+      "established_method_not_novel": "Scenario simulation and downstream risk propagation are established methods.",
+      "novelty_limit": "Do not claim that scenarios or risk estimates currently exist or that scenario tuning validates the historical model."
+    },
+    {
+      "contribution_id": "C5",
+      "domain": "FINITE_REFERENCE_CONFIGURATION_DECISION_RELEVANCE",
+      "distinctive_component": "Two prespecified historically observed Rice-MAD configurations can receive the same prospective scenario bank on 13 common districts.",
+      "established_method_not_novel": "Stress testing fixed alternatives is established decision-analysis practice.",
+      "novelty_limit": "Do not call either reference optimal, recommended, continuously feasible, or representative of a five-crop portfolio."
+    }
+  ],
+  "current_authorized_identity": {
+    "final_publication_title_status": "PENDING_POST_RESULTS",
+    "general_objective": "To characterize crop-specific associations between phenology-aligned climate exposures and district-level yields in Piura and, after separately frozen empirical-model and scenario designs, propagate those relationships through prospective ENSO 2026–2027 climate scenarios to characterize yield risk and compare two historically observed Rice–MAD reference configurations under a common scenario bank, with gross-production-value analysis retained only as a conditional extension subject to price-mapping and monetary-treatment gates.",
+    "primary_research_question": "How are phenology-aligned climate exposures associated with district-level yields across five focal crops in Piura, and what prospective ENSO 2026–2027 yield risks do these associations imply for crop-specific outcomes and for two historically observed Rice–MAD reference configurations evaluated under a common scenario bank?",
+    "problem_statement": "District-level agricultural climate-risk assessment in Piura requires a prespecified and reproducible design that respects crop-specific phenology and temporal outcome contracts while linking historical climate–yield associations to prospective ENSO 2026–2027 yield risk, a conditional secondary economic extension, and a common-scenario stress test of two historically observed Rice–MAD configurations. The current evidence identifies neither a continuous land-reallocation domain nor a five-crop portfolio, water-allocation model, or optimal future crop allocation.",
+    "specific_objectives": [
+      {
+        "objective_id": "SO1",
+        "text": "Characterize the crop-specific associations between prespecified phenology-aligned precipitation and temperature exposures and district-level yield outcomes within each frozen temporal contract."
+      },
+      {
+        "objective_id": "SO2",
+        "text": "Assess heterogeneity in crop-specific empirical climate–yield patterns and uncertainty using prespecified comparison rules that respect differences in estimand, scale, sample support, climate channel, phenological window, and temporal architecture."
+      },
+      {
+        "objective_id": "SO3",
+        "text": "Characterize prospective ENSO 2026–2027 yield-risk distributions and, only if the price-mapping and monetary-treatment gates pass, extend the authorized physical outcomes to corresponding gross-production-value risk."
+      },
+      {
+        "objective_id": "SO4",
+        "text": "Compare the prospective yield and conditionally authorized economic-risk profiles of C0B5-A2020-2021 and C0B5-A2023-2024 for Rice and MAD on their 13 common districts under an identical scenario bank and prespecified risk criteria."
+      }
+    ],
+    "subquestions": [
+      {
+        "layer": "LAYER_1",
+        "rq_id": "SRQ1",
+        "text": "What crop-specific associations link prespecified phenology-aligned precipitation and temperature exposures to district-level yield outcomes within each frozen temporal contract?"
+      },
+      {
+        "layer": "LAYER_1",
+        "rq_id": "SRQ2",
+        "text": "How do crop-specific empirical climate–yield patterns and their uncertainty vary under prespecified comparison rules that respect differences in estimand, scale, sample support, climate channel, phenological window, and temporal architecture?"
+      },
+      {
+        "layer": "LAYER_1",
+        "rq_id": "SRQ3",
+        "text": "What prospective ENSO 2026–2027 yield-risk distributions arise from the separately specified scenario bank, and, if the price-mapping and monetary-treatment gates pass, what corresponding gross-production-value risk can be constructed?"
+      },
+      {
+        "layer": "LAYER_2",
+        "rq_id": "SRQ4",
+        "text": "How do the two historically observed Rice-MAD reference configurations compare on 13 common districts when evaluated with the same prospective scenario bank and prespecified risk criteria?"
+      }
+    ],
+    "working_title_v2": "Phenology-Aligned Climate–Yield Associations and Prospective ENSO Risk in Piura, Peru: Five-Crop Evidence and Rice–Maize Reference Stress Tests"
+  },
+  "economic_dimension": {
+    "gross_production_value_status": "NOT_YET_BUILT_REQUIRES_PRICE_MAPPING_AND_MONETARY_TREATMENT_GATE",
+    "gvp_role": "CONDITIONAL_SECONDARY_EXTENSION_NOT_CORE_PRIMARY_RQ",
+    "monetary_dimensional_identity": "TM_PER_HA_X_HA_X_1000_KG_PER_TM_X_S_PER_KG_EQUALS_S",
+    "price_temporal_mapping_status": "NOT_YET_FROZEN",
+    "profit_status": "NOT_AUTHORIZED_NO_COST_OR_MARGIN_EVIDENCE",
+    "source_units": {
+      "PRECIO_CHACRA": "S_PER_KG",
+      "PRODUCCION": "METRIC_TONNE",
+      "YIELD": "TM_PER_HA"
+    }
+  },
+  "enso_role": {
+    "A_historical_estimation": "Estimate climate-yield associations using prespecified phenology-aligned climate exposures; ICEN is not automatically a direct district-yield regressor.",
+    "B_state_and_context": "Use ENSO indices and official state classifications to define and interpret large-scale climate context under a separately frozen design.",
+    "C_prospective_2026_2027_scenarios": "Construct prospective climate scenarios only after scenario-generator authorization; this is a prospective scenario stress context, the future realization is unknown, and no scenario currently exists.",
+    "D_downstream_risk_propagation": "After estimation and diagnostics, propagate the same authorized scenario bank through crop response, gated economic translation, and separately prespecified risk metrics."
+  },
+  "failure_modes": [
+    {
+      "failure_mode": "ONLY_SEVEN_TRANSIENT_CAMPAIGNS",
+      "preventive_design_rule": "Freeze parsimonious Rice-MAD specifications, report effective degrees of freedom and small-sample uncertainty, and make no long-panel claim."
+    },
+    {
+      "failure_mode": "ONLY_EIGHT_PERENNIAL_YEARS",
+      "preventive_design_rule": "Use crop-specific low-dimensional specifications, disclose weak temporal depth, and avoid asymptotic overconfidence."
+    },
+    {
+      "failure_mode": "OVERPARAMETERIZED_ECONOMETRICS",
+      "preventive_design_rule": "Freeze a strict complexity budget before estimation and prohibit specification search based on fit or coefficient significance."
+    },
+    {
+      "failure_mode": "ARBITRARY_PRIMARY_EXPOSURE",
+      "preventive_design_rule": "Use the next outcome-blind adjudication gate based on phenology, completeness, support, interpretability, and measurement quality."
+    },
+    {
+      "failure_mode": "UNSUPPORTED_SCENARIO_EXTRAPOLATION",
+      "preventive_design_rule": "Quantify historical support, flag out-of-support scenario cells, and label projections as stress tests rather than forecasts when appropriate."
+    },
+    {
+      "failure_mode": "WEAK_ENSO_LINKAGE",
+      "preventive_design_rule": "Freeze the scientific bridge from ENSO state to local precipitation and temperature scenarios before scenario generation."
+    },
+    {
+      "failure_mode": "SHALLOW_ECONOMIC_TRANSLATION",
+      "preventive_design_rule": "Freeze price timing, nominal treatment, and aggregation rules; call the result gross production value, never profit."
+    },
+    {
+      "failure_mode": "ONLY_TWO_REFERENCE_CONFIGURATIONS",
+      "preventive_design_rule": "Describe A1 and A2 as two fixed historical comparators and prohibit optimality, broad representativeness, interpolation, or recommendation claims."
+    },
+    {
+      "failure_mode": "EXCESSIVE_NOVELTY_CLAIMS",
+      "preventive_design_rule": "Enforce the claim matrix and attribute novelty only to the integrated, reproducible application architecture."
+    },
+    {
+      "failure_mode": "UNCLEAR_LAYER_RELATIONSHIP",
+      "preventive_design_rule": "Report Layer 1 and Layer 2 with separate estimands, samples, tables, and scope statements; never aggregate Layer 1 into A1/A2."
+    }
+  ],
+  "firewalls": {
+    "a1_a2_results_used": false,
+    "causal_claim_authorized": false,
+    "continuous_optimization_authorized": false,
+    "cvar_result_used": false,
+    "econometric_estimation_executed": false,
+    "enso_scenario_result_used": false,
+    "exposure_performance_used": false,
+    "five_crop_a1_a2_authorized": false,
+    "gvp_built": false,
+    "model_fit_used": false,
+    "primary_transient_exposure_selected": false,
+    "profit_authorized": false,
+    "recommended_allocation_authorized": false,
+    "water_constraint_authorized": false
+  },
+  "freeze_authorized": false,
+  "historical_working_identity": {
+    "evidence_classification": "TITLE_VERBATIM_OTHER_ELEMENTS_RECONSTRUCTED_NOT_VERBATIM",
+    "general_objective_reconstructed": "Integrate district-level climate-yield estimation, El Niño 2026-2027 scenarios, economic valuation, and spatial Mean-CVaR to identify a crop allocation that maximizes expected agricultural value subject to downside risk.",
+    "intended_crop_allocation_interpretation_reconstructed": "A normative continuous district-level allocation across the target crops, interpreted as an optimized future allocation.",
+    "intended_decision_architecture_reconstructed": "A single five-crop spatial portfolio with continuous crop-area decision variables.",
+    "intended_enso_role_reconstructed": "El Niño 2026-2027 provides the prospective climate-risk scenario context propagated into yield, economic value, and allocation decisions.",
+    "intended_mean_cvar_role_reconstructed": "Mean-CVaR is the central optimization criterion balancing expected agricultural economic value and lower-tail risk.",
+    "problem_statement_reconstructed": "Agricultural planning in Piura requires an allocation that protects economic value from district-level climate-yield losses under El Niño 2026-2027 risk.",
+    "research_question_reconstructed": "How can district-level climate-yield relationships and El Niño 2026-2027 risk be integrated in a spatial Mean-CVaR model to optimize agricultural economic value and crop allocation in Piura?",
+    "source_commit": "e4710b1429ed54c557e6c0a88212a24a6fdd7d47",
+    "source_path": "README.md",
+    "specific_objectives_reconstructed": [
+      "Estimate district-level climate-yield relationships for the target crops.",
+      "Generate prospective El Niño 2026-2027 climate and yield scenarios.",
+      "Translate crop outcomes into agricultural economic value.",
+      "Measure expected value and downside risk using Mean-CVaR.",
+      "Optimize spatial crop allocation across Piura districts."
+    ],
+    "title_verbatim": "Optimizing Agricultural Economic Value under El Niño 2026–2027 Risk in Piura, Peru: District-Level Climate-Yield Estimation and Spatial Mean-CVaR Crop Allocation"
+  },
+  "hypothesis_policy": {
+    "architecture": "CROP_SPECIFIC_MECHANISM_INFORMED_EXPECTATIONS",
+    "empirical_sign_policy": "COEFFICIENT_SIGNS_ARE_EMPIRICAL_RESULTS_NOT_PREDECLARED_UNIVERSAL_TRUTHS",
+    "formal_universal_directional_hypothesis": false,
+    "prespecification_rule": "Any directional expectation must name crop, phenological stage, climate channel, functional form, and supporting frozen evidence."
+  },
+  "identification_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+  "next_authorized_gate": "PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_ADJUDICATION_V1",
+  "novelty_firewall": [
+    "FIRST_MEAN_CVAR_AGRICULTURAL_MODEL",
+    "NEW_CVAR_METHODOLOGY",
+    "OPTIMAL_CROP_ALLOCATION",
+    "FIRST_CLIMATE_YIELD_MODEL",
+    "CAUSAL_EFFECTS_OF_EL_NINO",
+    "GLOBALLY_GENERALIZABLE_CROP_RESPONSES"
+  ],
+  "phase": "S1_SCIENTIFIC_IDENTITY_REFRAMING_MASTER_V1",
+  "pre_estimation_commitment": [
+    "NO COEFFICIENTS OBSERVED FOR THIS DECISION",
+    "NO MODEL FIT USED",
+    "NO EXPOSURE PERFORMANCE USED",
+    "NO ENSO SCENARIO RESULT USED",
+    "NO A1/A2 RESULT USED",
+    "NO CVAR RESULT USED"
+  ],
+  "q1_positioning": {
+    "architectural_q1_potential": 8.3,
+    "current_empirical_q1_readiness": 5.8,
+    "scores": {
+      "climate_exposure_design": 9.0,
+      "data_contribution": 8.5,
+      "decision_relevance": 7.5,
+      "econometric_potential": 7.0,
+      "enso_risk_relevance": 8.5,
+      "methodological_novelty": 6.5,
+      "overall_q1_potential": 8.3,
+      "phenology_integration": 9.0,
+      "reproducibility": 9.5,
+      "research_relevance": 9.0
+    },
+    "score_interpretation": "These scores are internal design heuristics, not manuscript claims. Architecture potential is strong; empirical readiness remains conditional on exposure, econometric, scenario, price, and risk gates."
+  },
+  "repository_lineage": {
+    "c0a_sha": "5e2b32edba2e4b3eee471c669f427ef9a70fe4b6",
+    "c0b6_sha": "cf99e30f2f6cfe686f760b2dd608d933e3918bc0",
+    "dataset_climate_sha": "38e957e3c01fbffef242c386099b0a219d83ca70",
+    "d0_freeze_sha": "1598a09c9a871d81834164d7ee4383e25988d8a5",
+    "d0_freeze_tag": "d0-transient-outcome-v1-freeze",
+    "expected_branch": "phase/d0-transient-campaign-outcome-master-v1",
+    "joint_c0_sha": "fca5d6e519cdff764d1ca53791ae1829ef29aa00",
+    "phenology_sha": "ba2eab1e5ab04da88b86cc1b7b36594e9ab9e17c",
+    "r0h_sha": "a50702dbf6a2dc0037e28e0b5ae4ddd8a9c182e5"
+  },
+  "research_question_candidates": [
+    {
+      "adjudication": "REJECT_TOO_BROAD_ON_ECONOMIC_SCOPE",
+      "candidate_id": "RQ-C1",
+      "text": "How do phenology-aligned climate exposures shape agricultural and conditional economic risk across focal crops in Piura under prospective ENSO 2026–2027 scenarios?"
+    },
+    {
+      "adjudication": "REJECT_LAYER_2_NOT_EXPLICIT",
+      "candidate_id": "RQ-C2",
+      "text": "How are phenology-aligned climate exposures associated with yields of five focal crops in Piura under historical and prospective ENSO-related conditions?"
+    },
+    {
+      "adjudication": "REJECT_LAYER_1_TOO_NARROW",
+      "candidate_id": "RQ-C3",
+      "text": "How do two historically observed Rice–MAD configurations compare under prospective ENSO 2026–2027 yield and conditionally authorized economic risk?"
+    },
+    {
+      "adjudication": "RECOMMENDED_CAUSALLY_NEUTRAL_TESTABLE_AND_TWO_LAYER_COMPATIBLE",
+      "candidate_id": "RQ-C4",
+      "text": "How are phenology-aligned climate exposures associated with district-level yields across five focal crops in Piura, and what prospective ENSO 2026–2027 yield risks do these associations imply for crop-specific outcomes and for two historically observed Rice–MAD reference configurations evaluated under a common scenario bank?"
+    }
+  ],
+  "risk_dimension": {
+    "continuous_mean_cvar_optimization_status": "ABANDONED_NOT_AUTHORIZED",
+    "cvar_current_status": "NOT_AUTHORIZED_YET",
+    "future_cvar_scope_if_authorized": "RICE_MAD_TRANSIENT_REFERENCE_CONFIGURATION_COMPARISON",
+    "future_risk_outputs_require": "POST_ESTIMATION_RISK_SPECIFICATION_GATE",
+    "mean_cvar_methodological_novelty_claim": false
+  },
+  "schema_version": "1.0.0",
+  "scope_boundaries": {
+    "is": [
+      "DISTRICT_LEVEL_CLIMATE_YIELD_ASSOCIATION_STUDY",
+      "CROP_SPECIFIC_PHENOLOGY_ALIGNED_EXPOSURE_ARCHITECTURE",
+      "PROSPECTIVE_ENSO_RISK_STUDY_IF_FUTURE_GATES_PASS",
+      "FINITE_HISTORICAL_RICE_MAD_REFERENCE_CONFIGURATION_COMPARISON"
+    ],
+    "is_not": [
+      "CONTINUOUS_LAND_ALLOCATION_OPTIMIZER",
+      "WATER_ALLOCATION_MODEL",
+      "CAUSAL_POLICY_EVALUATION",
+      "PROFIT_MAXIMIZATION_MODEL",
+      "FIVE_CROP_PORTFOLIO_OPTIMIZATION",
+      "BIOLOGICAL_CROP_SIMULATION_MODEL"
+    ]
+  },
+  "scientific_architecture": {
+    "cross_layer_rule": "LINKED_BUT_NOT_MERGED_NO_FIVE_CROP_A1_A2_AGGREGATION",
+    "layer_1": {
+      "crop_codes": [
+        "14010020000",
+        "14010070000",
+        "13010210000",
+        "13010170102",
+        "15010040000"
+      ],
+      "crop_names": [
+        "Rice",
+        "Maíz Amarillo Duro",
+        "Mango",
+        "Limón Sutil",
+        "Plátanos y Bananas"
+      ],
+      "name": "FIVE_CROP_CLIMATE_YIELD_AND_CONDITIONAL_ECONOMIC_RISK_CHARACTERIZATION",
+      "portfolio_interpretation_authorized": false
+    },
+    "layer_2": {
+      "common_districts_n": 13,
+      "crop_codes": [
+        "14010020000",
+        "14010070000"
+      ],
+      "name": "RICE_MAD_FINITE_REFERENCE_CONFIGURATION_STRESS_TEST",
+      "reference_configuration_ids": [
+        "C0B5-A2020-2021",
+        "C0B5-A2023-2024"
+      ],
+      "reference_configuration_interpretation": "HISTORICALLY_OBSERVED_REFERENCE_CONFIGURATIONS_NOT_OPTIMAL_NOT_RECOMMENDED_NOT_FUTURE_FEASIBILITY_CLAIMS"
+    },
+    "name": "TWO_LAYER_FIVE_CROP_CHARACTERIZATION_PLUS_RICE_MAD_REFERENCE_STRESS_TEST"
+  },
+  "s1r_governance": {
+    "CROSS_CROP_COMPARABILITY_STATUS": "REQUIRES_ECONOMETRIC_DESIGN_GATE",
+    "ENSO_2026_2027_INTERPRETATION": "PROSPECTIVE_SCENARIO_STRESS_CONTEXT_NOT_REALIZED_FORECAST",
+    "GVP_ROLE": "CONDITIONAL_SECONDARY_EXTENSION_NOT_CORE_PRIMARY_RQ",
+    "LITERATURE_GAP_CLAIM_STATUS": "NOT_YET_ADJUDICATED",
+    "Q1_POSITIONING_SCORE_STATUS": "INTERNAL_DESIGN_HEURISTIC_NOT_MANUSCRIPT_CLAIM",
+    "RAW_COEFFICIENT_MAGNITUDE_COMPARISON_WITHOUT_COMMON_ESTIMAND_OR_SCALE": "NOT_AUTHORIZED",
+    "TARGET_CROP_IMPORTANCE_RANKING_STATUS": "NOT_ESTABLISHED_NOT_REQUIRED_FOR_DESIGN"
+  },
+  "status": "PASS_REFINED_CANDIDATE_FOR_DIRECTOR_FREEZE_DECISION",
+  "temporal_outcome_architecture": {
+    "perennial": {
+      "crop_codes": [
+        "13010210000",
+        "13010170102",
+        "15010040000"
+      ],
+      "time_basis": "FROZEN_CROP_SPECIFIC_CALENDAR_YEAR_CONTRACTS"
+    },
+    "transient": {
+      "campaigns": [
+        "2016/2017",
+        "2017/2018",
+        "2018/2019",
+        "2019/2020",
+        "2020/2021",
+        "2021/2022",
+        "2022/2023"
+      ],
+      "mad_districts_n": 55,
+      "mad_usable_outcomes_n": 352,
+      "observation_unit": "DISTRICT_X_CROP_X_AUG_JUL_AGRICULTURAL_CAMPAIGN",
+      "rice_districts_n": 46,
+      "rice_usable_outcomes_n": 294
+    }
+  },
+  "title_candidates": [
+    {
+      "candidate_id": "T1",
+      "scores": {
+        "future_compatibility": 9.5,
+        "methodological_specificity": 9.5,
+        "overclaim_risk": 0.5,
+        "q1_positioning": 9.5,
+        "readability": 8.5,
+        "scientific_accuracy": 10.0
+      },
+      "selection_status": "WORKING_TITLE_V2_FOR_DESIGN",
+      "text": "Phenology-Aligned Climate–Yield Associations and Prospective ENSO Risk in Piura, Peru: Five-Crop Evidence and Rice–Maize Reference Stress Tests"
+    },
+    {
+      "candidate_id": "T2",
+      "scores": {
+        "future_compatibility": 9.0,
+        "methodological_specificity": 7.5,
+        "overclaim_risk": 1.5,
+        "q1_positioning": 8.5,
+        "readability": 9.5,
+        "scientific_accuracy": 9.0
+      },
+      "selection_status": "ALTERNATE",
+      "text": "Climate–Yield Associations and Prospective El Niño Risk across Focal Crops in Piura, Peru"
+    },
+    {
+      "candidate_id": "T3",
+      "scores": {
+        "future_compatibility": 8.5,
+        "methodological_specificity": 9.5,
+        "overclaim_risk": 1.0,
+        "q1_positioning": 8.5,
+        "readability": 7.5,
+        "scientific_accuracy": 9.0
+      },
+      "selection_status": "ALTERNATE",
+      "text": "From Crop Phenology to Prospective ENSO Risk: District-Level Climate–Yield Associations and Rice–Maize Reference Configurations in Piura"
+    },
+    {
+      "candidate_id": "T4",
+      "scores": {
+        "future_compatibility": 8.0,
+        "methodological_specificity": 8.5,
+        "overclaim_risk": 2.5,
+        "q1_positioning": 8.0,
+        "readability": 8.0,
+        "scientific_accuracy": 8.5
+      },
+      "selection_status": "ALTERNATE",
+      "text": "Heterogeneous Climate–Yield Associations and Historical Configuration Stress Tests under Prospective ENSO Risk in Piura"
+    },
+    {
+      "candidate_id": "T5",
+      "scores": {
+        "future_compatibility": 8.5,
+        "methodological_specificity": 8.5,
+        "overclaim_risk": 1.0,
+        "q1_positioning": 8.0,
+        "readability": 9.0,
+        "scientific_accuracy": 9.0
+      },
+      "selection_status": "ALTERNATE",
+      "text": "District-Level Agricultural Climate Risk in Piura, Peru: Crop-Specific Associations and Finite Rice–Maize Comparisons"
+    }
+  ]
+}
