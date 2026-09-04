@@ -1,0 +1,1393 @@
+{
+  "b3_econometric_sensitivity": {
+    "mad": "B3_ECONOMETRIC_SENSITIVITY_NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+    "may_weaken_primary_design": false,
+    "overall_role": "CROP_SPECIFIC_RICE_ESTIMABLE_WITH_SEVERE_SUPPORT_LIMITATION_MAD_NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+    "rice": "ESTIMABLE_WITH_SEVERE_SUPPORT_LIMITATION_31_OBSERVATIONS_12_DISTRICTS_7_PERIODS",
+    "same_outcome_scale_family_form_and_fe": true
+  },
+  "climate_family_roles": {
+    "PERENNIAL_LEVEL": "FE_EQUIVALENT_DIAGNOSTIC_NOT_DISTINCT_ROBUSTNESS",
+    "PRIMARY": "PHYSICAL_ANOMALY",
+    "SECONDARY_COMPARABILITY": "STANDARDIZED_ANOMALY",
+    "TRANSIENT_ROBUSTNESS": "LEVEL_DISTINCT_CLIMATE_FAMILY_ROBUSTNESS",
+    "selection_uses_outcomes": false
+  },
+  "critical_findings": 0,
+  "crop_model_contracts": [
+    {
+      "CLIMATE_COEFFICIENT_COUNT": 3,
+      "CROP": "RICE",
+      "CROP_CODE": "14010020000",
+      "DISTRICTS": 44,
+      "DISTRICT_FE": "REQUIRED",
+      "DISTRICT_TRENDS": "PROHIBITED",
+      "FUNCTIONAL_FORM": "LINEAR_ADDITIVE",
+      "IDENTIFICATION_CEILING": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+      "INDEX_KEYS": "UBIGEO|CAMPAIGN_ID",
+      "JOINT_TEST": "CR2_APPROXIMATE_HOTELLING_T_SQUARED",
+      "MODEL_ID": "ED1-RICE",
+      "OBSERVATIONS": 281,
+      "OUTCOME_SCALE": "YIELD_LEVEL_TM_PER_HA",
+      "PERIODS": 7,
+      "PERIOD_FE": "REQUIRED",
+      "PRIMARY_CLIMATE_FAMILY": "PHYSICAL_ANOMALY",
+      "PRIMARY_INFERENCE": "DISTRICT_CLUSTERED_CR2_BRL_SATTERTHWAITE",
+      "PRIMARY_REGRESSORS": "RAIN_ANOM_MM|TMAX_ANOM_C|TMIN_ANOM_C",
+      "PRIMARY_WEIGHTING": "UNWEIGHTED_PRIMARY_ESTIMATION",
+      "STATUS": "PASS",
+      "TEMPORAL_REGIME": "DISTRICT_X_AUG_JUL_AGRICULTURAL_CAMPAIGN",
+      "WINDOW_ARCHITECTURE": "SINGLE_FROZEN_WINDOW_LINEAR",
+      "WINDOW_IDS": "RICE_FLOWERING_95_110_DAS"
+    },
+    {
+      "CLIMATE_COEFFICIENT_COUNT": 3,
+      "CROP": "MAIZ_AMARILLO_DURO",
+      "CROP_CODE": "14010070000",
+      "DISTRICTS": 54,
+      "DISTRICT_FE": "REQUIRED",
+      "DISTRICT_TRENDS": "PROHIBITED",
+      "FUNCTIONAL_FORM": "LINEAR_ADDITIVE",
+      "IDENTIFICATION_CEILING": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+      "INDEX_KEYS": "UBIGEO|CAMPAIGN_ID",
+      "JOINT_TEST": "CR2_APPROXIMATE_HOTELLING_T_SQUARED",
+      "MODEL_ID": "ED1-MAD",
+      "OBSERVATIONS": 318,
+      "OUTCOME_SCALE": "YIELD_LEVEL_TM_PER_HA",
+      "PERIODS": 7,
+      "PERIOD_FE": "REQUIRED",
+      "PRIMARY_CLIMATE_FAMILY": "PHYSICAL_ANOMALY",
+      "PRIMARY_INFERENCE": "DISTRICT_CLUSTERED_CR2_BRL_SATTERTHWAITE",
+      "PRIMARY_REGRESSORS": "RAIN_ANOM_MM|TMAX_ANOM_C|TMIN_ANOM_C",
+      "PRIMARY_WEIGHTING": "UNWEIGHTED_PRIMARY_ESTIMATION",
+      "STATUS": "PASS",
+      "TEMPORAL_REGIME": "DISTRICT_X_AUG_JUL_AGRICULTURAL_CAMPAIGN",
+      "WINDOW_ARCHITECTURE": "SINGLE_FROZEN_WINDOW_LINEAR",
+      "WINDOW_IDS": "MAD_MPLUS1_MPLUS3"
+    },
+    {
+      "CLIMATE_COEFFICIENT_COUNT": 3,
+      "CROP": "MANGO",
+      "CROP_CODE": "13010210000",
+      "DISTRICTS": 36,
+      "DISTRICT_FE": "REQUIRED",
+      "DISTRICT_TRENDS": "PROHIBITED",
+      "FUNCTIONAL_FORM": "LINEAR_ADDITIVE",
+      "IDENTIFICATION_CEILING": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+      "INDEX_KEYS": "UBIGEO|REFERENCE_PERIOD_ID",
+      "JOINT_TEST": "CR2_APPROXIMATE_HOTELLING_T_SQUARED",
+      "MODEL_ID": "ED1-MANGO",
+      "OBSERVATIONS": 255,
+      "OUTCOME_SCALE": "YIELD_LEVEL_TM_PER_HA",
+      "PERIODS": 8,
+      "PERIOD_FE": "REQUIRED",
+      "PRIMARY_CLIMATE_FAMILY": "PHYSICAL_ANOMALY",
+      "PRIMARY_INFERENCE": "DISTRICT_CLUSTERED_CR2_BRL_SATTERTHWAITE",
+      "PRIMARY_REGRESSORS": "RAIN_ANOM_MM|TMAX_ANOM_C|TMIN_ANOM_C",
+      "PRIMARY_WEIGHTING": "UNWEIGHTED_PRIMARY_ESTIMATION",
+      "STATUS": "PASS",
+      "TEMPORAL_REGIME": "DISTRICT_X_CALENDAR_YEAR",
+      "WINDOW_ARCHITECTURE": "SINGLE_FROZEN_WINDOW_LINEAR",
+      "WINDOW_IDS": "MANGO_MAY_JUN_CURRENT_YEAR"
+    },
+    {
+      "CLIMATE_COEFFICIENT_COUNT": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "DISTRICTS": 44,
+      "DISTRICT_FE": "REQUIRED",
+      "DISTRICT_TRENDS": "PROHIBITED",
+      "FUNCTIONAL_FORM": "LINEAR_ADDITIVE",
+      "IDENTIFICATION_CEILING": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+      "INDEX_KEYS": "UBIGEO|REFERENCE_PERIOD_ID",
+      "JOINT_TEST": "CR2_APPROXIMATE_HOTELLING_T_SQUARED",
+      "MODEL_ID": "ED1-LEMON",
+      "OBSERVATIONS": 311,
+      "OUTCOME_SCALE": "YIELD_LEVEL_TM_PER_HA",
+      "PERIODS": 8,
+      "PERIOD_FE": "REQUIRED",
+      "PRIMARY_CLIMATE_FAMILY": "PHYSICAL_ANOMALY",
+      "PRIMARY_INFERENCE": "DISTRICT_CLUSTERED_CR2_BRL_SATTERTHWAITE",
+      "PRIMARY_REGRESSORS": "RAIN_ANOM_MM__T|TMAX_ANOM_C__T|TMIN_ANOM_C__T|RAIN_ANOM_MM__T_MINUS_1|TMAX_ANOM_C__T_MINUS_1|TMIN_ANOM_C__T_MINUS_1",
+      "PRIMARY_WEIGHTING": "UNWEIGHTED_PRIMARY_ESTIMATION",
+      "STATUS": "PASS",
+      "TEMPORAL_REGIME": "DISTRICT_X_CALENDAR_YEAR",
+      "WINDOW_ARCHITECTURE": "P1_JOINT_T_AND_T_MINUS_1_LINEAR",
+      "WINDOW_IDS": "LEMON_FULL_YEAR_T|LEMON_FULL_YEAR_T_MINUS_1"
+    },
+    {
+      "CLIMATE_COEFFICIENT_COUNT": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "DISTRICTS": 54,
+      "DISTRICT_FE": "REQUIRED",
+      "DISTRICT_TRENDS": "PROHIBITED",
+      "FUNCTIONAL_FORM": "LINEAR_ADDITIVE",
+      "IDENTIFICATION_CEILING": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+      "INDEX_KEYS": "UBIGEO|REFERENCE_PERIOD_ID",
+      "JOINT_TEST": "CR2_APPROXIMATE_HOTELLING_T_SQUARED",
+      "MODEL_ID": "ED1-BANANA",
+      "OBSERVATIONS": 390,
+      "OUTCOME_SCALE": "YIELD_LEVEL_TM_PER_HA",
+      "PERIODS": 8,
+      "PERIOD_FE": "REQUIRED",
+      "PRIMARY_CLIMATE_FAMILY": "PHYSICAL_ANOMALY",
+      "PRIMARY_INFERENCE": "DISTRICT_CLUSTERED_CR2_BRL_SATTERTHWAITE",
+      "PRIMARY_REGRESSORS": "RAIN_ANOM_MM__T|TMAX_ANOM_C__T|TMIN_ANOM_C__T|RAIN_ANOM_MM__T_MINUS_1|TMAX_ANOM_C__T_MINUS_1|TMIN_ANOM_C__T_MINUS_1",
+      "PRIMARY_WEIGHTING": "UNWEIGHTED_PRIMARY_ESTIMATION",
+      "STATUS": "PASS",
+      "TEMPORAL_REGIME": "DISTRICT_X_CALENDAR_YEAR",
+      "WINDOW_ARCHITECTURE": "P1_JOINT_T_AND_T_MINUS_1_LINEAR",
+      "WINDOW_IDS": "BANANA_FULL_YEAR_T|BANANA_FULL_YEAR_T_MINUS_1"
+    }
+  ],
+  "cross_crop_comparability": {
+    "allowed_comparisons": [
+      "SIGN_DIRECTION",
+      "UNCERTAINTY",
+      "QUALITATIVE_PATTERN",
+      "CONSISTENCY_ACROSS_CLIMATE_CHANNELS",
+      "NATIVE_YIELD_RESPONSE_TO_LOCAL_ONE_SD_CLIMATE_PERTURBATION"
+    ],
+    "channel": "STANDARDIZED_ANOMALY_SECONDARY_MODELS",
+    "coefficient_magnitude_ranking": "NOT_AUTHORIZED",
+    "fully_standardized_effect_size": "NOT_CLAIMED_OUTCOME_REMAINS_NATIVE_YIELD_LEVEL_TM_PER_HA",
+    "raw_physical_coefficient_magnitude_comparison": "NOT_AUTHORIZED",
+    "shared_coefficients": "NOT_AUTHORIZED",
+    "standardized_x_interpretation": "ONE_LOCAL_CLIMATE_SD_CHANGE_IN_NATIVE_CROP_YIELD_UNITS"
+  },
+  "ed1_freeze_authorized": false,
+  "ed1_substantive_verdict_preserved": "ED1_PASS_ECONOMETRIC_DESIGN_READY_FOR_DIRECTOR_FREEZE_DECISION",
+  "ed1h_freeze_authorized": false,
+  "extreme_year_policy": {
+    "influence_exercise": "LEAVE_ONE_PERIOD_OUT_ALL_PERIODS",
+    "mandatory_named_reporting": [
+      "LEAVE_2017_OUT",
+      "LEAVE_2023_OUT"
+    ],
+    "primary_replacement": "PROHIBITED",
+    "retain_2017": true,
+    "retain_2023": true,
+    "trimming": "PROHIBITED",
+    "winsorization": "PROHIBITED"
+  },
+  "final_verdict": "ED1H_PASS_HARDENED_DESIGN_READY_FOR_DIRECTOR_FREEZE_DECISION",
+  "firewalls": {
+    "coefficient_estimation": "PROHIBITED_NOT_EXECUTED",
+    "future_scenarios": "PROHIBITED_NOT_BUILT",
+    "gvp": "PROHIBITED_NOT_BUILT",
+    "model_fit_selection": "PROHIBITED",
+    "optimization": "PROHIBITED_NOT_EXECUTED",
+    "outcome_based_window_selection": "PROHIBITED",
+    "outcome_numerical_read": "PROHIBITED_NOT_EXECUTED",
+    "pooled_five_crop_coefficients": "PROHIBITED",
+    "significance_selection": "PROHIBITED",
+    "synthetic_engine_coefficients": "PERMITTED_IMPLEMENTATION_TEST_ONLY_NOT_SCIENTIFIC_RESULTS",
+    "var_cvar": "PROHIBITED_NOT_BUILT"
+  },
+  "fixed_effects": {
+    "district": "REQUIRED",
+    "identification_interpretation": "WITHIN_DISTRICT_CLIMATE_VARIATION_CONDITIONAL_ON_REGION_WIDE_PERIOD_SHOCKS",
+    "perennial_period": "CALENDAR_YEAR",
+    "period": "REQUIRED",
+    "period_fe_forecastability": "NOT_FORECASTABLE_NOT_PROPAGATED_AS_FUTURE_QUANTITY",
+    "transient_period": "AUG_JUL_AGRICULTURAL_CAMPAIGN"
+  },
+  "freeze_authorized": false,
+  "functional_form": {
+    "district_specific_trends": "PROHIBITED",
+    "dynamic_dependent_variable": "PROHIBITED",
+    "interactions": "NOT_AUTHORIZED",
+    "maximum_coefficients_joint_window": 6,
+    "maximum_coefficients_single_window": 3,
+    "nonlinearities": "NOT_AUTHORIZED_REQUIRES_SEPARATE_PRESPECIFIED_GATE",
+    "primary": "LINEAR_ADDITIVE_THREE_CLIMATE_REGRESSORS_PER_WINDOW"
+  },
+  "future_scenario_covenant": {
+    "authorization": "REQUIRES_LATER_SCENARIO_GATE",
+    "components_to_separate": [
+      "CLIMATE_RESPONSE_COMPONENT",
+      "DISTRICT_HISTORICAL_BASELINE",
+      "CLIMATE_SCENARIO_UNCERTAINTY",
+      "COEFFICIENT_AND_INFERENCE_UNCERTAINTY",
+      "RESIDUAL_AND_PROCESS_UNCERTAINTY"
+    ],
+    "future_period_fe": "MUST_NOT_BE_INVENTED_OR_PROPAGATED",
+    "scenarios_built_during_ed1": false
+  },
+  "gate": "ED1H_TARGETED_PRE_FREEZE_ECONOMETRIC_DESIGN_HARDENING",
+  "gate_id": "ED1H",
+  "geometry_gate": {
+    "geometry_rows": 29,
+    "near_singular_diagnostic_thresholds": {
+      "condition_number": 30.0,
+      "max_vif": 10.0
+    },
+    "rank_required": "FULL_AFTER_DISTRICT_AND_PERIOD_FE",
+    "threshold_role": "PRE_ESTIMATION_BLOCK_DIAGNOSTIC_NOT_MODEL_RANKING",
+    "within_variation_required": "STRICTLY_POSITIVE_FOR_EACH_REGRESSOR"
+  },
+  "governing_state": {
+    "continuous_optimization": "ABANDONED_NOT_AUTHORIZED",
+    "d0_freeze_sha": "1598a09c9a871d81834164d7ee4383e25988d8a5",
+    "e1_freeze_sha": "cdeb14bdda8bdebf33afdebcf0e135179bd2f485",
+    "e1_status": "PASS_FROZEN",
+    "e1_tag": "e1-primary-transient-exposure-v1-freeze",
+    "identification_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+    "s1_freeze_sha": "2e5823e6aaf842dfd60da968e7423471d6b32f1d"
+  },
+  "identified_weight": {
+    "outcome_derived_cutoff": "PROHIBITED",
+    "prespecified_exposure_quality_sensitivity": "B3_STRICT_SENSITIVITY_ONLY",
+    "retain_all_e1_valid_primary_observations": true,
+    "usage": "DIAGNOSTIC_ONLY_NOT_REGRESSION_WEIGHT_NOT_PRIMARY_FILTER"
+  },
+  "inference": {
+    "driscoll_kraay": "NOT_AUTHORIZED_T_7_OR_8",
+    "joint_tests": "CR2_APPROXIMATE_HOTELLING_T_SQUARED",
+    "primary": "DISTRICT_CLUSTERED_CR2_BIAS_REDUCED_LINEARIZATION_WITH_SATTERTHWAITE_DF",
+    "spatial_hac": "ROBUSTNESS_ONLY_CONLEY_TYPE_BARTLETT_50_100_150_KM_SAME_PERIOD",
+    "two_way_clustering": "NOT_AUTHORIZED_FEW_PERIOD_CLUSTERS",
+    "wild_cluster_bootstrap": "MANDATORY_RESTRICTED_NULL_IMPOSED_WCR_BOOTSTRAP_T_DISTRICT_CLUSTERED_RADEMACHER_9999_SEED_20260903"
+  },
+  "inference_engine_feasibility": {
+    "conley_engine_validation": "PASS_ALL_FIVE_CROPS_ALL_THREE_BANDWIDTHS",
+    "crop_diagnostics": {
+      "13010170102": {
+        "aht_denominator_df": 23.648451534646,
+        "aht_numerator_df": 6,
+        "cluster_leverage": {
+          "maximum": 0.426712836457,
+          "median": 0.13080753449,
+          "minimum": 0.0,
+          "q10": 0.061476429211,
+          "q90": 0.196389410217
+        },
+        "coefficient_specific_satterthwaite_df_maximum": 29.81409391343,
+        "coefficient_specific_satterthwaite_df_minimum": 21.074213238521,
+        "conley_covariance": {
+          "100": {
+            "finite": true,
+            "maximum_absolute_entry": 0.00511122312,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "150": {
+            "finite": true,
+            "maximum_absolute_entry": 0.004876859257,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "50": {
+            "finite": true,
+            "maximum_absolute_entry": 0.007206899574,
+            "symmetric_max_abs_difference": 0.0
+          }
+        },
+        "cr2_adjustment_singularities": 0,
+        "cr2_adjustment_status": "PASS_NO_EXTRA_SINGULARITY_BEYOND_CLUSTER_FE_NULLSPACE",
+        "cr2_covariance_minimum_eigenvalue": 1.6371e-08,
+        "crop": "LIMON_SUTIL",
+        "effective_contributing_clusters": 43,
+        "effective_contribution_tolerance": 2.031e-08,
+        "minimum_cr2_adjustment_block_eigenvalue": -0.0,
+        "nominal_clusters": 44,
+        "nonfinite_quantities": 0,
+        "singleton_clusters": 1,
+        "zero_effective_clusters": 1
+      },
+      "13010210000": {
+        "aht_denominator_df": 17.886323560203,
+        "aht_numerator_df": 3,
+        "cluster_leverage": {
+          "maximum": 0.281459134967,
+          "median": 0.065347385835,
+          "minimum": 0.0,
+          "q10": 0.028635494376,
+          "q90": 0.135976406113
+        },
+        "coefficient_specific_satterthwaite_df_maximum": 20.485841446325,
+        "coefficient_specific_satterthwaite_df_minimum": 11.297143280447,
+        "conley_covariance": {
+          "100": {
+            "finite": true,
+            "maximum_absolute_entry": 0.00276990646,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "150": {
+            "finite": true,
+            "maximum_absolute_entry": 0.002363606785,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "50": {
+            "finite": true,
+            "maximum_absolute_entry": 0.003233210955,
+            "symmetric_max_abs_difference": 0.0
+          }
+        },
+        "cr2_adjustment_singularities": 0,
+        "cr2_adjustment_status": "PASS_NO_EXTRA_SINGULARITY_BEYOND_CLUSTER_FE_NULLSPACE",
+        "cr2_covariance_minimum_eigenvalue": 1.452594e-06,
+        "crop": "MANGO",
+        "effective_contributing_clusters": 35,
+        "effective_contribution_tolerance": 1.406e-09,
+        "minimum_cr2_adjustment_block_eigenvalue": -0.0,
+        "nominal_clusters": 36,
+        "nonfinite_quantities": 0,
+        "singleton_clusters": 1,
+        "zero_effective_clusters": 1
+      },
+      "14010020000": {
+        "aht_denominator_df": 13.669073909695,
+        "aht_numerator_df": 3,
+        "cluster_leverage": {
+          "maximum": 0.366298711323,
+          "median": 0.05101437093,
+          "minimum": 0.0,
+          "q10": 0.027514349731,
+          "q90": 0.10975012641
+        },
+        "coefficient_specific_satterthwaite_df_maximum": 20.757481078568,
+        "coefficient_specific_satterthwaite_df_minimum": 4.919993824254,
+        "conley_covariance": {
+          "100": {
+            "finite": true,
+            "maximum_absolute_entry": 0.001280717604,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "150": {
+            "finite": true,
+            "maximum_absolute_entry": 0.001082099913,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "50": {
+            "finite": true,
+            "maximum_absolute_entry": 0.001477592946,
+            "symmetric_max_abs_difference": 0.0
+          }
+        },
+        "cr2_adjustment_singularities": 0,
+        "cr2_adjustment_status": "PASS_NO_EXTRA_SINGULARITY_BEYOND_CLUSTER_FE_NULLSPACE",
+        "cr2_covariance_minimum_eigenvalue": 1.61649e-07,
+        "crop": "RICE",
+        "effective_contributing_clusters": 43,
+        "effective_contribution_tolerance": 5.896e-09,
+        "minimum_cr2_adjustment_block_eigenvalue": -0.0,
+        "nominal_clusters": 44,
+        "nonfinite_quantities": 0,
+        "singleton_clusters": 1,
+        "zero_effective_clusters": 1
+      },
+      "14010070000": {
+        "aht_denominator_df": 27.897829152252,
+        "aht_numerator_df": 3,
+        "cluster_leverage": {
+          "maximum": 0.147050868368,
+          "median": 0.046055428175,
+          "minimum": 0.0,
+          "q10": 0.014892772562,
+          "q90": 0.11845805776
+        },
+        "coefficient_specific_satterthwaite_df_maximum": 33.668899333873,
+        "coefficient_specific_satterthwaite_df_minimum": 25.033294856014,
+        "conley_covariance": {
+          "100": {
+            "finite": true,
+            "maximum_absolute_entry": 0.002661222994,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "150": {
+            "finite": true,
+            "maximum_absolute_entry": 0.002527177896,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "50": {
+            "finite": true,
+            "maximum_absolute_entry": 0.003324516762,
+            "symmetric_max_abs_difference": 0.0
+          }
+        },
+        "cr2_adjustment_singularities": 0,
+        "cr2_adjustment_status": "PASS_NO_EXTRA_SINGULARITY_BEYOND_CLUSTER_FE_NULLSPACE",
+        "cr2_covariance_minimum_eigenvalue": 1.0685e-08,
+        "crop": "MAIZ_AMARILLO_DURO",
+        "effective_contributing_clusters": 52,
+        "effective_contribution_tolerance": 2.5563e-08,
+        "minimum_cr2_adjustment_block_eigenvalue": -0.0,
+        "nominal_clusters": 54,
+        "nonfinite_quantities": 0,
+        "singleton_clusters": 2,
+        "zero_effective_clusters": 2
+      },
+      "15010040000": {
+        "aht_denominator_df": 29.959140522382,
+        "aht_numerator_df": 6,
+        "cluster_leverage": {
+          "maximum": 0.35952770247,
+          "median": 0.109359513393,
+          "minimum": 0.0,
+          "q10": 0.053430468956,
+          "q90": 0.168303398506
+        },
+        "coefficient_specific_satterthwaite_df_maximum": 33.098150195914,
+        "coefficient_specific_satterthwaite_df_minimum": 28.151260680063,
+        "conley_covariance": {
+          "100": {
+            "finite": true,
+            "maximum_absolute_entry": 0.005275419083,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "150": {
+            "finite": true,
+            "maximum_absolute_entry": 0.005042182248,
+            "symmetric_max_abs_difference": 0.0
+          },
+          "50": {
+            "finite": true,
+            "maximum_absolute_entry": 0.005475563035,
+            "symmetric_max_abs_difference": 0.0
+          }
+        },
+        "cr2_adjustment_singularities": 0,
+        "cr2_adjustment_status": "PASS_NO_EXTRA_SINGULARITY_BEYOND_CLUSTER_FE_NULLSPACE",
+        "cr2_covariance_minimum_eigenvalue": 1.0224e-08,
+        "crop": "PLATANOS_Y_BANANAS",
+        "effective_contributing_clusters": 50,
+        "effective_contribution_tolerance": 2.976e-08,
+        "minimum_cr2_adjustment_block_eigenvalue": -0.0,
+        "nominal_clusters": 54,
+        "nonfinite_quantities": 0,
+        "singleton_clusters": 4,
+        "zero_effective_clusters": 4
+      }
+    },
+    "engine": {
+      "aht_api": "_aht_htz CLUBSANDWICH_HTZ_FORMULA",
+      "conley_api": "conley_covariance",
+      "cr2_api": "fit_two_way_fe_cr2 PROJECT_LOCAL_CR2_IDENTITY_TARGET",
+      "external_libraries": "NUMPY_SCIPY_PANDAS_PYARROW_PYPROJ_SHAPELY",
+      "language": "Python",
+      "numerical_conventions": "FLOAT64;SVD_LSTSQ_FE_ABSORPTION;MOORE_PENROSE_RCOND_1E-12;SYMMETRIC_EIGEN_PSEUDOINVERSE_ROOT;CR2_IDENTITY_WORKING_TARGET;DISTRICT_CLUSTER;BARTLETT_DISTANCE_KERNEL_SAME_PERIOD",
+      "runtime_versions": {
+        "numpy": "2.3.5",
+        "pandas": "3.0.2",
+        "pyarrow": "25.0.1",
+        "pyproj": "3.7.2",
+        "python": "3.11.7",
+        "scipy": "1.16.3",
+        "shapely": "2.1.2"
+      },
+      "satterthwaite_api": "fit_two_way_fe_cr2 COEFFICIENT_SPECIFIC_P_MATRIX_MOMENT_MATCHING",
+      "two_way_fe_api": "fit_two_way_fe_cr2 + absorb_fixed_effects",
+      "wild_cluster_api": "restricted_wild_cluster_bootstrap_t"
+    },
+    "independent_reference_validation": {
+      "differences": {
+        "aht_denominator_df_max_abs_difference": 0.0,
+        "aht_f_max_abs_difference": 0.0,
+        "coefficient_max_abs_difference": 0.0,
+        "cr2_covariance_max_abs_difference": 0.0,
+        "satterthwaite_df_max_abs_difference": 0.0
+      },
+      "fixture": "BALANCED_8_DISTRICT_X_5_PERIOD_SYNTHETIC_PANEL_STRUCTURAL_KEY_Y_ONLY",
+      "production_aht_denominator_df": 3.533485017245,
+      "production_aht_f": 0.551836203899,
+      "production_synthetic_beta": [
+        0.042131032825,
+        0.084633837098,
+        0.021084166168
+      ],
+      "reference_aht_denominator_df": 3.533485017245,
+      "reference_aht_f": 0.551836203899,
+      "reference_path": "INDEPENDENT_FULL_DESIGN_SVD_CALCULATION",
+      "reference_synthetic_beta": [
+        0.042131032825,
+        0.084633837098,
+        0.021084166168
+      ],
+      "status": "PASS",
+      "tolerance": 1e-09
+    },
+    "published_formula_reference": {
+      "aht_htz_url": "https://github.com/jepusto/clubSandwich/blob/main/R/Wald_test.R",
+      "cr2_url": "https://github.com/jepusto/clubSandwich/blob/main/R/CR-adjustments.R",
+      "implementation": "clubSandwich R source",
+      "satterthwaite_url": "https://github.com/jepusto/clubSandwich/blob/main/R/coef_test.R"
+    },
+    "real_outcome_values_read": false,
+    "status": "PASS",
+    "synthetic_response_source": "SHA256_OF_STRUCTURAL_DISTRICT_AND_PERIOD_KEYS_ONLY",
+    "total_cr2_adjustment_singularities": 0,
+    "wild_cluster_bootstrap_validation": {
+      "deterministic": true,
+      "fixture": "BALANCED_8_DISTRICT_X_5_PERIOD_SYNTHETIC_PANEL_STRUCTURAL_KEY_Y_ONLY",
+      "future_contract_replications": 9999,
+      "joint_run_one": {
+        "bootstrap_t_sha256": "b38de51dcef23e2dee2006da760984e797be750fdbd95ea7ebf9371d58177b27",
+        "finite_replication_correction": "(1+EXCEEDANCES)/(B+1)",
+        "invalid_replications": 0,
+        "null_imposed": true,
+        "replications": 9999,
+        "restricted": true,
+        "restriction_kind": "ALL_CLIMATE_COEFFICIENTS",
+        "seed": 20260903,
+        "statistic_kind": "BOOTSTRAP_WALD_F",
+        "synthetic_p_value": 0.625,
+        "weight_distribution": "RADEMACHER"
+      },
+      "joint_run_two_sha256": "b38de51dcef23e2dee2006da760984e797be750fdbd95ea7ebf9371d58177b27",
+      "run_one": {
+        "bootstrap_t_sha256": "bb9e44414892945054b45d5d046b4251a59ea51f49db453ee5162a0d8aded4a5",
+        "finite_replication_correction": "(1+EXCEEDANCES)/(B+1)",
+        "invalid_replications": 0,
+        "null_imposed": true,
+        "replications": 9999,
+        "restricted": true,
+        "restriction_kind": "FIRST_CLIMATE_COEFFICIENT",
+        "seed": 20260903,
+        "statistic_kind": "ABSOLUTE_BOOTSTRAP_T",
+        "synthetic_p_value": 0.6806,
+        "weight_distribution": "RADEMACHER"
+      },
+      "run_two_sha256": "bb9e44414892945054b45d5d046b4251a59ea51f49db453ee5162a0d8aded4a5",
+      "smoke_test_replications": 9999,
+      "status": "PASS"
+    }
+  },
+  "level_physical_anomaly_fe_equivalence": {
+    "13010170102": {
+      "column_space_equivalent": true,
+      "combined_within_rank": 6,
+      "crop": "LIMON_SUTIL",
+      "elementwise_equal_within_tolerance": true,
+      "expected_coefficient_and_fitted_value_status": "FE_EQUIVALENT",
+      "level_role": "FE_EQUIVALENT_DIAGNOSTIC_NOT_DISTINCT_ROBUSTNESS",
+      "level_within_rank": 6,
+      "maximum_absolute_transformed_x_discrepancy": 4e-12,
+      "pairwise_slopes": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physical_anomaly_within_rank": 6,
+      "proportional_within_tolerance": true,
+      "tolerance": 1e-09,
+      "variable_pairing": [
+        [
+          "RAIN_MM__T",
+          "RAIN_ANOM_MM__T"
+        ],
+        [
+          "TMAX_C__T",
+          "TMAX_ANOM_C__T"
+        ],
+        [
+          "TMIN_C__T",
+          "TMIN_ANOM_C__T"
+        ],
+        [
+          "RAIN_MM__T_MINUS_1",
+          "RAIN_ANOM_MM__T_MINUS_1"
+        ],
+        [
+          "TMAX_C__T_MINUS_1",
+          "TMAX_ANOM_C__T_MINUS_1"
+        ],
+        [
+          "TMIN_C__T_MINUS_1",
+          "TMIN_ANOM_C__T_MINUS_1"
+        ]
+      ]
+    },
+    "13010210000": {
+      "column_space_equivalent": true,
+      "combined_within_rank": 3,
+      "crop": "MANGO",
+      "elementwise_equal_within_tolerance": true,
+      "expected_coefficient_and_fitted_value_status": "FE_EQUIVALENT",
+      "level_role": "FE_EQUIVALENT_DIAGNOSTIC_NOT_DISTINCT_ROBUSTNESS",
+      "level_within_rank": 3,
+      "maximum_absolute_transformed_x_discrepancy": 0.0,
+      "pairwise_slopes": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physical_anomaly_within_rank": 3,
+      "proportional_within_tolerance": true,
+      "tolerance": 1e-09,
+      "variable_pairing": [
+        [
+          "RAIN_MM",
+          "RAIN_ANOM_MM"
+        ],
+        [
+          "TMAX_C",
+          "TMAX_ANOM_C"
+        ],
+        [
+          "TMIN_C",
+          "TMIN_ANOM_C"
+        ]
+      ]
+    },
+    "14010020000": {
+      "column_space_equivalent": false,
+      "combined_within_rank": 6,
+      "crop": "RICE",
+      "elementwise_equal_within_tolerance": false,
+      "expected_coefficient_and_fitted_value_status": "DISTINCT_TRANSFORMED_DESIGN",
+      "level_role": "DISTINCT_CLIMATE_FAMILY_ROBUSTNESS",
+      "level_within_rank": 3,
+      "maximum_absolute_transformed_x_discrepancy": 72.840084175532,
+      "pairwise_slopes": [
+        0.825166207373,
+        0.703060855767,
+        0.724375595793
+      ],
+      "physical_anomaly_within_rank": 3,
+      "proportional_within_tolerance": false,
+      "tolerance": 1e-09,
+      "variable_pairing": [
+        [
+          "RAIN_MM",
+          "RAIN_ANOM_MM"
+        ],
+        [
+          "TMAX_C",
+          "TMAX_ANOM_C"
+        ],
+        [
+          "TMIN_C",
+          "TMIN_ANOM_C"
+        ]
+      ]
+    },
+    "14010070000": {
+      "column_space_equivalent": false,
+      "combined_within_rank": 6,
+      "crop": "MAIZ_AMARILLO_DURO",
+      "elementwise_equal_within_tolerance": false,
+      "expected_coefficient_and_fitted_value_status": "DISTINCT_TRANSFORMED_DESIGN",
+      "level_role": "DISTINCT_CLIMATE_FAMILY_ROBUSTNESS",
+      "level_within_rank": 3,
+      "maximum_absolute_transformed_x_discrepancy": 502.377875073874,
+      "pairwise_slopes": [
+        0.73499513811,
+        0.144566199846,
+        0.122583645203
+      ],
+      "physical_anomaly_within_rank": 3,
+      "proportional_within_tolerance": false,
+      "tolerance": 1e-09,
+      "variable_pairing": [
+        [
+          "RAIN_MM",
+          "RAIN_ANOM_MM"
+        ],
+        [
+          "TMAX_C",
+          "TMAX_ANOM_C"
+        ],
+        [
+          "TMIN_C",
+          "TMIN_ANOM_C"
+        ]
+      ]
+    },
+    "15010040000": {
+      "column_space_equivalent": true,
+      "combined_within_rank": 6,
+      "crop": "PLATANOS_Y_BANANAS",
+      "elementwise_equal_within_tolerance": true,
+      "expected_coefficient_and_fitted_value_status": "FE_EQUIVALENT",
+      "level_role": "FE_EQUIVALENT_DIAGNOSTIC_NOT_DISTINCT_ROBUSTNESS",
+      "level_within_rank": 6,
+      "maximum_absolute_transformed_x_discrepancy": 6e-12,
+      "pairwise_slopes": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physical_anomaly_within_rank": 6,
+      "proportional_within_tolerance": true,
+      "tolerance": 1e-09,
+      "variable_pairing": [
+        [
+          "RAIN_MM__T",
+          "RAIN_ANOM_MM__T"
+        ],
+        [
+          "TMAX_C__T",
+          "TMAX_ANOM_C__T"
+        ],
+        [
+          "TMIN_C__T",
+          "TMIN_ANOM_C__T"
+        ],
+        [
+          "RAIN_MM__T_MINUS_1",
+          "RAIN_ANOM_MM__T_MINUS_1"
+        ],
+        [
+          "TMAX_C__T_MINUS_1",
+          "TMAX_ANOM_C__T_MINUS_1"
+        ],
+        [
+          "TMIN_C__T_MINUS_1",
+          "TMIN_ANOM_C__T_MINUS_1"
+        ]
+      ]
+    }
+  },
+  "major_findings": 0,
+  "method_literature_anchors": [
+    {
+      "authors": "MacKinnon, Nielsen and Webb",
+      "design_role": "Cluster choice, finite-sample disclosure, and restricted wild cluster bootstrap robustness.",
+      "doi": "10.1016/j.jeconom.2022.04.001",
+      "journal": "Journal of Econometrics",
+      "title": "Cluster-robust inference: A guide to empirical practice",
+      "verification": "VERIFIED_PUBLISHER_METADATA_AND_ABSTRACT",
+      "verified_url": "https://doi.org/10.1016/j.jeconom.2022.04.001",
+      "year": 2023
+    },
+    {
+      "authors": "Pustejovsky and Tipton",
+      "design_role": "CR2 bias-reduced linearization and Satterthwaite tests after fixed-effect absorption.",
+      "doi": "10.1080/07350015.2016.1247004",
+      "journal": "Journal of Business & Economic Statistics",
+      "title": "Small-Sample Methods for Cluster-Robust Variance Estimation and Hypothesis Testing in Fixed Effects Models",
+      "verification": "VERIFIED_PUBLISHER_METADATA_AND_ABSTRACT",
+      "verified_url": "https://doi.org/10.1080/07350015.2016.1247004",
+      "year": 2018
+    },
+    {
+      "authors": "Driscoll and Kraay",
+      "design_role": "Large-time-dimension requirement supports non-authorization at T=7/8.",
+      "doi": "10.1162/003465398557825",
+      "journal": "Review of Economics and Statistics",
+      "title": "Consistent Covariance Matrix Estimation with Spatially Dependent Panel Data",
+      "verification": "VERIFIED_PUBLISHER_METADATA_AND_ABSTRACT",
+      "verified_url": "https://doi.org/10.1162/003465398557825",
+      "year": 1998
+    },
+    {
+      "authors": "Conley",
+      "design_role": "Distance-based covariance robustness defined from geography before estimation.",
+      "doi": "10.1016/S0304-4076(98)00084-0",
+      "journal": "Journal of Econometrics",
+      "title": "GMM estimation with cross sectional dependence",
+      "verification": "VERIFIED_PUBLISHER_METADATA_AND_ABSTRACT",
+      "verified_url": "https://doi.org/10.1016/S0304-4076(98)00084-0",
+      "year": 1999
+    }
+  ],
+  "multiplicity": {
+    "adjustment": "HOLM_STEP_DOWN_WITHIN_CROP_PRIMARY_CLIMATE_COEFFICIENTS",
+    "all_prespecified_coefficients_reported": true,
+    "coefficient_family": "WITHIN_CROP_PRIMARY_CLIMATE_COEFFICIENTS",
+    "cross_crop_significance_ranking": "PROHIBITED",
+    "future_global_family": "REQUIRES_SEPARATELY_PRESPECIFIED_GATE",
+    "global_five_crop_familywise_error_control": "NOT_CLAIMED",
+    "omnibus_test": "ONE_PRESPECIFIED_JOINT_CLIMATE_CHANNEL_TEST_PER_CROP_REPORTED_SEPARATELY",
+    "star_count_conclusions": "PROHIBITED",
+    "unadjusted_results_also_reported": true,
+    "variable_removal_by_p_value": "PROHIBITED"
+  },
+  "next_action": "RETURN_TO_SCIENTIFIC_DIRECTOR_FOR_ED1_FREEZE_DECISION_IF_PASS",
+  "outcome_blindness": {
+    "coefficients_estimated": false,
+    "model_fit_read": false,
+    "outcome_value_columns_read": [],
+    "outcome_values_read_during_ed1": false,
+    "permitted_outcome_information": "FROZEN_VALIDITY_FLAGS_AND_STRUCTURAL_SAMPLE_MEMBERSHIP_ONLY",
+    "real_outcome_values_read": false,
+    "real_regressions": 0,
+    "residuals_computed": false
+  },
+  "outcome_scale": {
+    "adjudication": "SELECTED_OUTCOME_BLIND",
+    "basis": "FROZEN_METADATA_CERTIFIES_TM_PER_HA_BUT_NOT_STRICT_POSITIVITY;LEVEL_PRESERVES_ADDITIVE_PHYSICAL_AND_SCENARIO_INTERPRETATION_WITHOUT_LOG_RETRANSFORMATION",
+    "log_yield": "NOT_AUTHORIZED_IN_ED1_V1_WITHOUT_SEPARATE_PRE_ESTIMATION_POSITIVITY_AND_RETRANSFORMATION_GATE",
+    "primary": "YIELD_LEVEL_TM_PER_HA",
+    "winsorization": "PROHIBITED"
+  },
+  "parent_gate": "ECONOMETRIC_DESIGN_MASTER_V1",
+  "perennial_window_adjudication": {
+    "banana": "P1_JOINT_T_AND_T_MINUS_1_LINEAR",
+    "basis": "X_ONLY_FULL_RANK_NON_NEAR_SINGULAR_GEOMETRY_AFTER_REQUIRED_FE",
+    "lemon": "P1_JOINT_T_AND_T_MINUS_1_LINEAR",
+    "outcome_based_window_winner": "PROHIBITED"
+  },
+  "pre_ed1h_sha256": {
+    "config/econometrics/econometric_design_master_v1.json": "a8ff4d220f84a9dd34613c991035ce5445eb04c5a14d84d2037eb70c7441720b",
+    "outputs/econometrics/ED1_ECONOMETRIC_DESIGN_REPORT.md": "2fed424ea7b373c6e1a8a743babfeb2f0f4e09b0dff403aa41e011bef305c781",
+    "outputs/econometrics/ED1_INFERENCE_MATRIX.csv": "1ab0c99d1602d563b32edca1a3c2a15447e17d1f57fb0a718d2a66e9c9d0efd5",
+    "outputs/econometrics/ED1_MODEL_CONTRACTS.csv": "7dcd316c7b47b3a2e15939ed25dea8e034f1ca7c5076013c7640ef11da74cbcf",
+    "outputs/econometrics/ED1_ROBUSTNESS_HIERARCHY.csv": "b42c741b19bdcf9f5c46b1e0e7d3e622e55d50bdd46767170a0b9bf501a0cb7c",
+    "outputs/econometrics/ED1_X_GEOMETRY.csv": "08d569170ebc5bc3a5a4a35cdc702807be46a34df371e9363af510d7d0cca962",
+    "scripts/econometric_design_master_v1.py": "2066222c47bff20178245d829eea02032fc1d1bdcd99f4be81ada025edcc6d37",
+    "tests/test_econometric_design_master_v1.py": "aeac3a5749e3b0849d5a89e8907730c048209476ab96c7a2e41da5def97f5977"
+  },
+  "preflight": {
+    "changed_frozen_paths": [],
+    "frozen_input_hashes": {
+      "config/exposure_adjudication/primary_transient_exposure_v1.json": "283d57a21ba23c30c43f63e4c5327496ab59d760d8ca44a609b365151222a285",
+      "data/processed/climate/district_boundaries_piura.geojson": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+      "data/processed/phenology/perennial_exposures_long.parquet": "3fde5c7fc7a00f4c6600a18f60935bad213408ffa2ba3bac5828603e46984714",
+      "data/processed/phenology/phenology_windows_frozen.csv": "ea25d949be9834a9e35352d970bb1b2172cac7d49db7eabb101ddfde9cfb657d",
+      "data/processed/phenology/transient_campaign_exposures_strict.parquet": "349413312568d0d423675bf58320ade41d2d9e700f138e7fbec55fc580bc1fb5",
+      "data/processed/phenology/transient_econometric_exposures_v1.parquet": "ed90c70a7538318234a0390176b468a66f8a24a99fa59717efe5e8974cf09a67",
+      "outputs/exposure_adjudication/E1_CANDIDATE_MATRIX.csv": "09bca9fb778759fc0b66656e6057d0f99daf0c9265be1f2b2eb1eb688e226e73",
+      "outputs/exposure_adjudication/E1_PRIMARY_TRANSIENT_EXPOSURE_REPORT.md": "085c5efb0f8abbd9f7f9443f28ed6d4d26fe5af3289a94a27219937b12883b91",
+      "outputs/exposure_adjudication/E1_SUPPORT_OVERLAY.csv": "b59894c59485b6c4c92de8be0424f1f6c6211b333ea7609696874b457ac567a8",
+      "outputs/joint_c0/C0_JOINT_REPORT.md": "92e4902b0f5ee4cc8a4ef4411ef741efe79399a7a83398cbe177c7b4fa1ad582",
+      "outputs/qa/panel_support.csv": "b57fde70640d112c410f48164a27bf6e80ca310ae4dfdf2c3a93296f767564c6",
+      "scripts/primary_transient_exposure_v1.py": "e53677b3284dd4d8c564838fd868d094e675705fc5d7baf56748ec38dc7dc3a8",
+      "tests/test_primary_transient_exposure_v1.py": "867150d91d094e05939a7f68a1710787325e2eb5962cca3beeef20e42a11e522"
+    },
+    "identity": {
+      "branch": "phase/e1-primary-transient-exposure-v1",
+      "e1_tag_target": "cdeb14bdda8bdebf33afdebcf0e135179bd2f485",
+      "head": "cdeb14bdda8bdebf33afdebcf0e135179bd2f485",
+      "remote_e1": "cdeb14bdda8bdebf33afdebcf0e135179bd2f485"
+    },
+    "status": "PASS"
+  },
+  "previous_full_suite": {
+    "category_counts": {
+      "ENVIRONMENTAL_BLOCKER": 0,
+      "EXPECTED_ACTIVE_PHASE_FIREWALL": 6,
+      "EXPECTED_HISTORICAL_LIFECYCLE_STATE": 45,
+      "REAL_REGRESSION": 0,
+      "UNRESOLVED": 0
+    },
+    "environmental_blockers_affecting_ed1": 0,
+    "errors": 1,
+    "failures": 50,
+    "nonpass_adjudication": [
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "Joint C0 test requires its historical branch and head.",
+        "result": "FAIL",
+        "test": "test_c0_joint_integration.JointC0IntegrationTests.test_01_exact_joint_branch_and_c0b6_head"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "Joint C0 test requires its historical untracked candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0_joint_integration.JointC0IntegrationTests.test_09_exact_seven_file_joint_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "Joint C0 preflight rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_c0_joint_integration.JointC0IntegrationTests.test_51_preflight_passes_all_material_gates"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "Joint C0 CLI preflight rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_c0_joint_integration.JointC0IntegrationTests.test_52_default_cli_is_read_only"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B1 test requires its historical branch checkpoint.",
+        "result": "FAIL",
+        "test": "test_c0b1_decision_ontology.C0B1DecisionOntologyTests.test_01_branch_ancestry_checkpoint"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B1 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b1_decision_ontology.C0B1DecisionOntologyTests.test_03_exact_five_new_c0b1_files"
+      },
+      {
+        "category": "EXPECTED_ACTIVE_PHASE_FIREWALL",
+        "reason": "C0B1 absence firewall encounters authorized later-phase artifacts.",
+        "result": "FAIL",
+        "test": "test_c0b1_decision_ontology.C0B1DecisionOntologyTests.test_13_no_optimizer_cvar_objective_or_scenario_artifacts"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B1 preflight combines historical branch and scope gates.",
+        "result": "FAIL",
+        "test": "test_c0b1_decision_ontology.C0B1DecisionOntologyTests.test_21_c0b1_preflight_passes"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B2 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_c0b2_spatial_hydraulic.C0B2SpatialHydraulicTests.test_01_exact_c0b1_freeze_ancestor"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B2 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b2_spatial_hydraulic.C0B2SpatialHydraulicTests.test_03_exact_seven_file_c0b2_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B2 preflight combines historical branch and scope gates.",
+        "result": "FAIL",
+        "test": "test_c0b2_spatial_hydraulic.C0B2SpatialHydraulicTests.test_25_c0b2_preflight_passes"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B3 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_c0b3_perennial.C0B3PerennialTests.test_01_exact_c0b2_freeze_ancestry"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B3 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b3_perennial.C0B3PerennialTests.test_03_exact_seven_file_c0b3_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B3 preflight sees the later ED1 candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b3_perennial.C0B3PerennialTests.test_21_preflight_passes"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B4 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_c0b4_land_adjustment.C0B4LandAdjustmentTests.test_01_exact_c0b3_freeze_identity"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B4 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b4_land_adjustment.C0B4LandAdjustmentTests.test_03_exact_seven_file_c0b4_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B4 preflight sees the later ED1 candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b4_land_adjustment.C0B4LandAdjustmentTests.test_32_preflight_passes"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B5 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_c0b5_decision_domain.C0B5DecisionDomainTests.test_01_exact_c0b4_freeze_ancestry"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B5 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b5_decision_domain.C0B5DecisionDomainTests.test_04_exact_seven_file_c0b5_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B5 preflight rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_c0b5_decision_domain.C0B5DecisionDomainTests.test_50_preflight_passes"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B6 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_c0b6_alternative_data_master.C0B6AlternativeDataMasterTests.test_01_exact_c0b5_freeze_ancestry"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B6 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b6_alternative_data_master.C0B6AlternativeDataMasterTests.test_03_exact_seven_file_c0b6_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B6 preflight rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_c0b6_alternative_data_master.C0B6AlternativeDataMasterTests.test_44_preflight_reports_rebuild_pass"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B6 CLI preflight rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_c0b6_alternative_data_master.C0B6AlternativeDataMasterTests.test_45_default_and_check_only_modes_are_read_only"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B.0 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_c0b_decision_feasibility_preflight.C0BDecisionFeasibilityPreflightTests.test_01_exact_branch"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B.0 test requires its historical base commit.",
+        "result": "FAIL",
+        "test": "test_c0b_decision_feasibility_preflight.C0BDecisionFeasibilityPreflightTests.test_02_exact_frozen_base"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B.0 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_c0b_decision_feasibility_preflight.C0BDecisionFeasibilityPreflightTests.test_03_exact_five_file_scope"
+      },
+      {
+        "category": "EXPECTED_ACTIVE_PHASE_FIREWALL",
+        "reason": "C0B.0 absence firewall encounters authorized later-phase model-design artifacts.",
+        "result": "FAIL",
+        "test": "test_c0b_decision_feasibility_preflight.C0BDecisionFeasibilityPreflightTests.test_11_no_optimizer_model_file_exists"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "C0B.0 preflight combines historical identity and active-phase absence gates.",
+        "result": "FAIL",
+        "test": "test_c0b_decision_feasibility_preflight.C0BDecisionFeasibilityPreflightTests.test_21_preflight_script_passes"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "Climate B0 test requires its historical build branch and base.",
+        "result": "FAIL",
+        "test": "test_climate_exposure_b0_preflight.ClimateExposureB0PreflightTests.test_02_base_commit_and_tag"
+      },
+      {
+        "category": "EXPECTED_ACTIVE_PHASE_FIREWALL",
+        "reason": "Climate B0 absence firewall encounters frozen later exposure outputs.",
+        "result": "FAIL",
+        "test": "test_climate_exposure_b0_preflight.ClimateExposureB0PreflightTests.test_03_no_forbidden_exposure_output_exists"
+      },
+      {
+        "category": "EXPECTED_ACTIVE_PHASE_FIREWALL",
+        "reason": "Climate B0 expects the later Stage B parquet to be absent.",
+        "result": "FAIL",
+        "test": "test_climate_exposure_b0_preflight.ClimateExposureB0PreflightTests.test_16_no_stage_b_parquet_output_has_been_built"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 test requires its historical execution branch.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_01_exact_authorized_d0_parent_identity"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 negative fixture reaches the later-branch guard before its intended parent guard.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_02a_old_joint_c0_head_is_rejected"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 negative fixture reaches the later-branch guard before its intended parent guard.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_02b_arbitrary_joint_c0_child_identity_is_rejected"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 negative fixture reaches the later-branch guard before its intended parent guard.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_02c_arbitrary_r0h_child_identity_is_rejected"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 negative fixture reaches the later-branch guard before its intended parent guard.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_02d_unrelated_commit_identity_is_rejected"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 test requires its historical candidate scope.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_04_exact_seven_file_d0_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 expected reconstruction embeds the current later HEAD while the frozen artifact preserves D0 execution identity.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_36_config_is_exact_and_complete"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 in-memory reconstruction embeds the later HEAD rather than frozen D0 identity.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_40_outputs_reproduce_in_memory_byte_for_byte"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 rebuild correctly rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_41_default_rebuild_is_deterministic"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 rebuild correctly rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_41a_default_rebuild_does_not_rewrite_scientific_artifacts"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 check-only mode correctly rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_42_check_only_is_strictly_read_only"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "D0 preflight correctly rejects the later E1 branch.",
+        "result": "FAIL",
+        "test": "test_d0_transient_campaign_outcome_master.D0TransientCampaignOutcomeMasterTests.test_44_preflight_passes_all_material_gates"
+      },
+      {
+        "category": "EXPECTED_ACTIVE_PHASE_FIREWALL",
+        "reason": "Perennial Stage B absence firewall encounters authorized later econometric artifacts.",
+        "result": "FAIL",
+        "test": "test_perennial_exposures.PerennialExposureTests.test_12_forbidden_artifacts_absent"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "E1 authoring test requires the S1 parent branch before E1 freeze.",
+        "result": "FAIL",
+        "test": "test_primary_transient_exposure_v1.PrimaryTransientExposureV1Tests.test_01_s1_freeze_identity_is_exact"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "E1 authoring test requires its historical untracked candidate scope.",
+        "result": "FAIL",
+        "test": "test_primary_transient_exposure_v1.PrimaryTransientExposureV1Tests.test_02_exact_seven_file_candidate_scope"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "S1 authoring test requires its D0 parent branch.",
+        "result": "FAIL",
+        "test": "test_scientific_identity_v1.ScientificIdentityV1Tests.test_01_d0_freeze_identity_and_ancestry_are_exact"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "S1 authoring test requires its historical untracked candidate scope.",
+        "result": "FAIL",
+        "test": "test_scientific_identity_v1.ScientificIdentityV1Tests.test_02_exact_five_file_candidate_scope"
+      },
+      {
+        "category": "EXPECTED_ACTIVE_PHASE_FIREWALL",
+        "reason": "Transient Stage B1 absence firewall encounters authorized later econometric artifacts.",
+        "result": "FAIL",
+        "test": "test_transient_cohort_exposures.TransientCohortExposureTests.test_16_forbidden_artifacts_absent"
+      },
+      {
+        "category": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+        "reason": "E1 rebuild preflight requires S1 HEAD but the active frozen state is E1 HEAD.",
+        "result": "ERROR",
+        "test": "test_primary_transient_exposure_v1.PrimaryTransientExposureV1Tests.test_28_two_independent_builds_are_byte_identical"
+      }
+    ],
+    "real_regressions": 0,
+    "tests_passed": 642,
+    "tests_run": 693,
+    "unresolved": 0
+  },
+  "previous_full_suite_error": {
+    "classification": "EXPECTED_HISTORICAL_LIFECYCLE_STATE",
+    "exception_class": "RuntimeError",
+    "historical_reproduction": {
+      "branch": "phase/s1-scientific-identity-master-v1",
+      "candidate_scope_count": 7,
+      "checkout_byte_policy": "core.autocrlf=false_FOR_TEMPORARY_WORKTREE_TO_PRESERVE_FROZEN_OBJECT_BYTES",
+      "head": "2e5823e6aaf842dfd60da968e7423471d6b32f1d",
+      "status": "PASS",
+      "temporary_worktree_removed": true,
+      "test_result": "RAN_1_OK"
+    },
+    "reason": "E1 authoring rebuild guard intentionally requires the S1 parent state; ED1 executes after E1 freeze.",
+    "test_method": "PrimaryTransientExposureV1Tests.test_28_two_independent_builds_are_byte_identical",
+    "test_path": "tests/test_primary_transient_exposure_v1.py",
+    "traceback": "Traceback (most recent call last):\n  File tests/test_primary_transient_exposure_v1.py, line 293, in test_28_two_independent_builds_are_byte_identical\n    stage_a_sha = e1.run_stage_a(root)\n  File scripts/primary_transient_exposure_v1.py, line 687, in run_stage_a\n    preflight_result = preflight()\n  File scripts/primary_transient_exposure_v1.py, line 273, in preflight\n    raise RuntimeError(f\"S1 identity mismatch: {identity}\")\nRuntimeError: S1 identity mismatch: {'head': 'cdeb14bdda8bdebf33afdebcf0e135179bd2f485', 'remote_s1': '2e5823e6aaf842dfd60da968e7423471d6b32f1d', 's1_tag_target': '2e5823e6aaf842dfd60da968e7423471d6b32f1d'}",
+    "triggering_repository_state": "ACTIVE_HEAD_E1_FREEZE_cdeb14b_WHILE_HISTORICAL_E1_REBUILD_PREFLIGHT_REQUIRES_S1_HEAD_2e5823e"
+  },
+  "primary_analytical_support": {
+    "13010170102": {
+      "districts": 44,
+      "effective_contributing_clusters": 43,
+      "geometry_verdict": "PASS",
+      "implied_residual_df": 254,
+      "nominal_clusters": 44,
+      "observations": 311,
+      "periods": 8,
+      "regressors": 6,
+      "within_rank": 6
+    },
+    "13010210000": {
+      "districts": 36,
+      "effective_contributing_clusters": 35,
+      "geometry_verdict": "PASS",
+      "implied_residual_df": 209,
+      "nominal_clusters": 36,
+      "observations": 255,
+      "periods": 8,
+      "regressors": 3,
+      "within_rank": 3
+    },
+    "14010020000": {
+      "districts": 44,
+      "effective_contributing_clusters": 43,
+      "geometry_verdict": "PASS",
+      "implied_residual_df": 228,
+      "nominal_clusters": 44,
+      "observations": 281,
+      "periods": 7,
+      "regressors": 3,
+      "within_rank": 3
+    },
+    "14010070000": {
+      "districts": 54,
+      "effective_contributing_clusters": 52,
+      "geometry_verdict": "PASS",
+      "implied_residual_df": 255,
+      "nominal_clusters": 54,
+      "observations": 318,
+      "periods": 7,
+      "regressors": 3,
+      "within_rank": 3
+    },
+    "15010040000": {
+      "districts": 54,
+      "effective_contributing_clusters": 50,
+      "geometry_verdict": "PASS",
+      "implied_residual_df": 323,
+      "nominal_clusters": 54,
+      "observations": 390,
+      "periods": 8,
+      "regressors": 6,
+      "within_rank": 6
+    }
+  },
+  "primary_model_architecture": "FIVE_CROP_SPECIFIC_MODELS_NO_POOLED_COEFFICIENTS",
+  "primary_transient_sample": {
+    "additional_outcome_or_influence_restrictions": "PROHIBITED",
+    "mad": 318,
+    "observations": 599,
+    "rice": 281,
+    "rule": "D0_VALID_OUTCOME_AND_E1_VALID_EXPOSURE_FROZEN_INTERSECTION"
+  },
+  "project": "ENSO_EL_NINO_2026_2027_AGRICULTURE_PIURA",
+  "real_regressions": 0,
+  "regression_weighting": {
+    "outcome_component_weights": "PROHIBITED",
+    "price_weights": "PROHIBITED",
+    "primary": "UNWEIGHTED_PRIMARY_ESTIMATION"
+  },
+  "robustness_hierarchy": [
+    {
+      "CHANGE_FROM_PRIMARY": "NONE",
+      "FIXED_COMPONENTS": "CROP_SAMPLE|OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "PHYSICAL_ANOMALY_WITH_DISTRICT_CR2_SATTERTHWAITE",
+      "NO_WINNER_RULE": "PRIMARY_BY_PRESPECIFICATION_NOT_RESULT",
+      "ORDER": 0,
+      "STATUS": "REQUIRED",
+      "TIER": "PRIMARY"
+    },
+    {
+      "CHANGE_FROM_PRIMARY": "LEVEL_REPLACES_PHYSICAL_ANOMALY",
+      "FIXED_COMPONENTS": "CROP_SAMPLE|OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "RICE_MAD_DISTINCT_ROBUSTNESS;MANGO_LEMON_BANANA_FE_EQUIVALENT_DIAGNOSTIC_NOT_DISTINCT_ROBUSTNESS",
+      "NO_WINNER_RULE": "CANNOT_REPLACE_PRIMARY_BY_FIT_OR_SIGNIFICANCE",
+      "ORDER": 1,
+      "STATUS": "CROP_SPECIFIC_ROLE",
+      "TIER": "R1_LEVEL_CLIMATE_FAMILY"
+    },
+    {
+      "CHANGE_FROM_PRIMARY": "STANDARDIZED_ANOMALY_REPLACES_PHYSICAL_ANOMALY",
+      "FIXED_COMPONENTS": "CROP_SAMPLE|OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "ONE_LOCAL_CLIMATE_SD_CHANGE_IN_NATIVE_CROP_YIELD_UNITS",
+      "NO_WINNER_RULE": "CROSS_CROP_COEFFICIENT_MAGNITUDE_RANKING_NOT_AUTHORIZED",
+      "ORDER": 2,
+      "STATUS": "REQUIRED_SECONDARY",
+      "TIER": "R2_STANDARDIZED_ANOMALY_COMPARABILITY"
+    },
+    {
+      "CHANGE_FROM_PRIMARY": "INFERENCE_ONLY",
+      "FIXED_COMPONENTS": "CROP_SAMPLE|OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "FINITE_CLUSTER_INFERENCE_ROBUSTNESS",
+      "NO_WINNER_RULE": "DISAGREEMENT_WITH_CR2_REPORTED_NOT_RESOLVED_BY_SELECTION",
+      "ORDER": 3,
+      "STATUS": "MANDATORY_WHERE_VALID",
+      "TIER": "R3_RESTRICTED_WILD_CLUSTER_BOOTSTRAP"
+    },
+    {
+      "CHANGE_FROM_PRIMARY": "INFERENCE_ONLY_AT_50_100_150_KM",
+      "FIXED_COMPONENTS": "CROP_SAMPLE|OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "CROSS_DISTRICT_SPATIAL_COVARIANCE_SENSITIVITY",
+      "NO_WINNER_RULE": "REPORT_ALL_BANDWIDTHS_NO_BEST_BANDWIDTH",
+      "ORDER": 4,
+      "STATUS": "REQUIRED_ROBUSTNESS",
+      "TIER": "R4_SPATIAL_HAC"
+    },
+    {
+      "CHANGE_FROM_PRIMARY": "OMIT_EACH_PERIOD_ONCE",
+      "FIXED_COMPONENTS": "OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "PERIOD_INFLUENCE_WITH_EXPLICIT_2017_AND_2023_REPORTING",
+      "NO_WINNER_RULE": "NO_OMISSION_RESULT_BECOMES_PRIMARY",
+      "ORDER": 5,
+      "STATUS": "REQUIRED_INFLUENCE_ROBUSTNESS",
+      "TIER": "R5_LEAVE_ONE_PERIOD_OUT_ALL_PERIODS"
+    },
+    {
+      "CHANGE_FROM_PRIMARY": "STRICT_TRANSIENT_EXPOSURE_SAMPLE_AND_VALUES",
+      "FIXED_COMPONENTS": "OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+      "INTERPRETATION": "ATTRIBUTION_QUALITY_SENSITIVITY_RICE_ONLY",
+      "NO_WINNER_RULE": "B3_CANNOT_REPLACE_PRIMARY_OR_WEAKEN_FE",
+      "ORDER": 6,
+      "STATUS": "RICE_ESTIMABLE_SEVERE_SUPPORT_LIMITATION_MAD_NOT_ESTIMABLE",
+      "TIER": "R6_B3_STRICT_EXPOSURE"
+    }
+  ],
+  "schema_version": "1.1.0",
+  "spatial_diagnostics": {
+    "bandwidth_support": {
+      "100": {
+        "neighbors_max": 52,
+        "neighbors_median": 31.0,
+        "neighbors_min": 15
+      },
+      "150": {
+        "neighbors_max": 54,
+        "neighbors_median": 52.0,
+        "neighbors_min": 37
+      },
+      "50": {
+        "neighbors_max": 20,
+        "neighbors_median": 12.0,
+        "neighbors_min": 2
+      }
+    },
+    "boundary_sha256": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+    "boundary_source": "data/processed/climate/district_boundaries_piura.geojson",
+    "centroid_count": 55,
+    "distance_crs": "EPSG:32717",
+    "distance_unit": "KM",
+    "nearest_neighbor_quantiles_km": {
+      "0.0": 4.898823933005,
+      "0.1": 6.242307489997,
+      "0.25": 9.983286710259,
+      "0.5": 12.740233467567,
+      "0.75": 17.549097021546,
+      "0.9": 24.872147727082,
+      "1.0": 42.172594959246
+    },
+    "pairwise_distance_quantiles_km": {
+      "0.0": 4.898823933005,
+      "0.1": 29.160741986196,
+      "0.25": 51.6940602533,
+      "0.5": 83.764801344012,
+      "0.75": 120.584889124142,
+      "0.9": 145.098946626397,
+      "1.0": 203.254338844726
+    },
+    "prespecified_bandwidths_km": [
+      50,
+      100,
+      150
+    ],
+    "selection_rule": "GEOGRAPHY_ONLY_ROUND_BANDWIDTH_GRID_SPANNING_LOCAL_TO_REGION_SCALE_NO_RESIDUAL_OR_OUTCOME_INPUT",
+    "source_crs": "EPSG:4326"
+  },
+  "status": "ED1H_PASS_HARDENED_DESIGN_READY_FOR_DIRECTOR_FREEZE_DECISION",
+  "unresolved_failures": 0
+}
