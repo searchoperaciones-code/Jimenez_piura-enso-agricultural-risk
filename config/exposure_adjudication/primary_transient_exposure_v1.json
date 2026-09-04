@@ -1,0 +1,423 @@
+{
+  "adjudication_domains": [
+    "BIOLOGICAL_ALIGNMENT",
+    "CAMPAIGN_ATTRIBUTION_IDENTIFICATION",
+    "MEASUREMENT_INTERPRETABILITY",
+    "SIEMBRA_WEIGHT_INTEGRITY",
+    "CLIMATE_WINDOW_COMPLETENESS",
+    "TEMPORAL_BOUNDARY_INTEGRITY",
+    "DISTRICT_CAMPAIGN_SUPPORT",
+    "SUSCEPTIBILITY_TO_SELECTION",
+    "FUTURE_SCENARIO_COMPATIBILITY",
+    "REPRODUCIBILITY"
+  ],
+  "ambiguity_rule": "EXCLUDE_FROM_POINT_EXPOSURE_PRESERVE_WEIGHT_AND_COUNTS_NO_ASSIGNMENT",
+  "b3_role": "STRICT_SENSITIVITY",
+  "b3_stage_a_support": {
+    "b3_absent_structural_rows": 57,
+    "b3_matched_structural_rows": 650,
+    "strict_valid_by_crop": {
+      "14010020000": 31,
+      "14010070000": 7
+    },
+    "strict_valid_rows": 38,
+    "structural_grid_rows": 707
+  },
+  "candidate_count": 4,
+  "candidate_inventory": [
+    {
+      "architecture": "EXISTING_B3_STRICT_CAMPAIGN_WEIGHTED_EXPOSURE",
+      "candidate_id": "E1-C1",
+      "overall_status": "REJECT_PRIMARY_RETAIN_STRICT_SENSITIVITY",
+      "reason": "Identification is strict, but validity depends on complete expected SIEMBRA observation and zero ambiguous weight, producing sparse and selectively supported keys."
+    },
+    {
+      "architecture": "UNAMBIGUOUS_ASSIGNED_COHORT_CONDITIONAL_SIEMBRA_WEIGHTED_EXPOSURE",
+      "candidate_id": "E1-C2",
+      "overall_status": "SELECTED_PRIMARY_WITH_LIMITATIONS",
+      "reason": "It produces an identified point exposure from already assigned cohorts while preserving unresolved and missing weight diagnostics and making no full-campaign exposure claim."
+    },
+    {
+      "architecture": "AMBIGUITY_PRESERVING_PARTIAL_IDENTIFICATION_WITHOUT_ASSIGNMENT",
+      "candidate_id": "E1-C3",
+      "overall_status": "REJECT_AS_POINT_PRIMARY_NOT_IDENTIFIED",
+      "reason": "Frozen evidence supports preserving ambiguous mass but not allocating it to one campaign or converting it into one point exposure."
+    },
+    {
+      "architecture": "NO_ADDITIONAL_FROZEN_ARCHITECTURE",
+      "candidate_id": "E1-C4",
+      "overall_status": "NOT_AVAILABLE",
+      "reason": "No other point architecture is authorized by frozen evidence without inventing assignment, splitting, imputation, or interpolation."
+    }
+  ],
+  "climate_family_role_selection": "DEFERRED_TO_ECONOMETRIC_DESIGN_MASTER",
+  "climate_variables_preserved": [
+    "RAIN_MM",
+    "TMAX_C",
+    "TMIN_C",
+    "RAIN_ANOM_MM",
+    "TMAX_ANOM_C",
+    "TMIN_ANOM_C",
+    "RAIN_Z",
+    "TMAX_Z",
+    "TMIN_Z"
+  ],
+  "decision_changed_after_d0_overlay": false,
+  "firewalls": {
+    "a1_a2_outcomes_read": false,
+    "econometric_estimation": "PROHIBITED_NOT_EXECUTED",
+    "equal_or_fractional_splitting": "PROHIBITED",
+    "nearest_or_midpoint_assignment": "PROHIBITED",
+    "outcome_based_assignment": "PROHIBITED",
+    "probability_allocation": "PROHIBITED",
+    "random_assignment": "PROHIBITED",
+    "sample_size_maximization": "PROHIBITED",
+    "siembra_imputation": "PROHIBITED",
+    "silent_interpolation": "PROHIBITED",
+    "silent_renormalization": "PROHIBITED",
+    "uniform_weighting": "PROHIBITED"
+  },
+  "freeze_authorized": false,
+  "future_scenario_compatibility": {
+    "common_scenario_propagation": "COMPATIBLE",
+    "future_calendar_assumption": "REQUIRES_FUTURE_SCENARIO_GATE",
+    "historical_weights": "FIXED_OBSERVED_CAMPAIGN_SPECIFIC_WEIGHTS",
+    "reference_configuration_privilege": "NONE",
+    "status": "PASS_WITH_LIMITATION"
+  },
+  "gate": "PRIMARY_TRANSIENT_ECONOMETRIC_EXPOSURE_ADJUDICATION_V1",
+  "gate_id": "E1",
+  "governing_state": {
+    "d0_freeze_sha": "1598a09c9a871d81834164d7ee4383e25988d8a5",
+    "identification_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+    "s1_freeze_sha": "2e5823e6aaf842dfd60da968e7423471d6b32f1d",
+    "s1_status": "PASS_FROZEN"
+  },
+  "measurement_error_assessment": [
+    {
+      "classification": "AGGREGATION_AND_RECORDING_ERROR_DIRECTION_NOT_QUANTIFIED",
+      "mechanism": "MONTHLY_SIEMBRA_COHORT_WEIGHTS",
+      "treatment": "Preserve observed, assigned, ambiguous, and missingness diagnostics by key."
+    },
+    {
+      "classification": "ANCHOR_TIMING_PROXY_ERROR_DIRECTION_NOT_QUANTIFIED",
+      "mechanism": "RICE_TRANSPLANT_ESTABLISHMENT_PROXY",
+      "treatment": "Retain the frozen operational semantics and do not reinterpret SIEMBRA as a precise biological date."
+    },
+    {
+      "classification": "CAMPAIGN_CLASSIFICATION_UNCERTAINTY",
+      "mechanism": "BROAD_ATTRIBUTION_LAG_INTERVAL",
+      "treatment": "Only frozen unambiguous assignments enter the point exposure."
+    },
+    {
+      "classification": "UNRESOLVED_ATTRIBUTION_MASS",
+      "mechanism": "CROSS_CAMPAIGN_AMBIGUITY",
+      "treatment": "Exclude it from the point numerator and denominator while preserving its mass and counts as QA."
+    },
+    {
+      "classification": "WITHIN_DISTRICT_SPATIAL_SMOOTHING_DIRECTION_NOT_QUANTIFIED",
+      "mechanism": "DISTRICT_LEVEL_CLIMATE_AGGREGATION",
+      "treatment": "Retain the frozen whole-district climate geography."
+    },
+    {
+      "classification": "WITHIN_MONTH_TIMING_COARSENING_DIRECTION_NOT_QUANTIFIED",
+      "mechanism": "MONTHLY_PHENOLOGICAL_EXPOSURE",
+      "treatment": "Retain the frozen monthly windows; no daily or threshold transformation is introduced."
+    }
+  ],
+  "missing_siembra_rule": "ABSENT_EXPECTED_COHORT_WEIGHT_IS_NOT_IDENTIFIED_NOT_ZERO_NOT_IMPUTED",
+  "next_action": "RETURN_TO_SCIENTIFIC_DIRECTOR_FOR_E1_FREEZE_DECISION_OR_REDESIGN",
+  "outcome_blindness": {
+    "d0_stage_a_columns": [
+      "CROP_CODE",
+      "CROP_STD",
+      "UBIGEO",
+      "CAMPAIGN",
+      "CAMPAIGN_START_YEAR",
+      "CAMPAIGN_END_YEAR"
+    ],
+    "d0_stage_a_use": "STRUCTURAL_GRID_ONLY",
+    "outcome_validity_read_before_decision": false,
+    "outcome_values_read_during_stage_a": false,
+    "selection_uses_model_fit": false,
+    "selection_uses_outcome_support": false
+  },
+  "output_columns": [
+    "UBIGEO",
+    "COD_CULTIVO",
+    "CROP_STD",
+    "CAMPAIGN_ID",
+    "WINDOW_ID",
+    "EXPECTED_COHORT_COUNT",
+    "OBSERVED_COHORT_COUNT",
+    "UNAMBIGUOUS_COHORT_COUNT",
+    "AMBIGUOUS_COHORT_COUNT",
+    "POSITIVE_UNAMBIGUOUS_COHORT_COUNT",
+    "POSITIVE_AMBIGUOUS_COHORT_COUNT",
+    "MISSING_EXPECTED_COHORT_COUNT",
+    "OBSERVED_SIEMBRA_TOTAL",
+    "ASSIGNED_UNAMBIGUOUS_SIEMBRA",
+    "UNRESOLVED_AMBIGUOUS_SIEMBRA",
+    "MISSING_SIEMBRA_WEIGHT",
+    "CLIMATE_SUPPORTED_SIEMBRA",
+    "IDENTIFIED_OBSERVED_WEIGHT_FRACTION",
+    "EXPOSURE_WEIGHT_DENOMINATOR",
+    "EXPOSURE_WEIGHT_SUM",
+    "RAIN_MM",
+    "TMAX_C",
+    "TMIN_C",
+    "RAIN_ANOM_MM",
+    "TMAX_ANOM_C",
+    "TMIN_ANOM_C",
+    "RAIN_Z",
+    "TMAX_Z",
+    "TMIN_Z",
+    "LEFT_BOUNDARY_FLAG",
+    "RIGHT_BOUNDARY_FLAG",
+    "UNRESOLVED_AMBIGUOUS_WEIGHT_PRESERVED",
+    "SIEMBRA_MISSINGNESS_STATUS",
+    "NORMALIZATION_SCOPE",
+    "EXPOSURE_VALID",
+    "FAILURE_REASON"
+  ],
+  "parquet_writer": {
+    "compression": "zstd",
+    "data_page_version": "2.0",
+    "use_dictionary": false,
+    "version": "2.6",
+    "write_statistics": true
+  },
+  "phenology_contract": {
+    "14010020000": {
+      "anchor_semantics": "TRANSPLANT_ESTABLISHMENT_PROXY",
+      "operational_window": "m+3:m+4",
+      "window_id": "RICE_FLOWERING_95_110_DAS"
+    },
+    "14010070000": {
+      "anchor_semantics": "SOWING_MONTH",
+      "operational_window": "m+1:m+3",
+      "window_id": "MAD_MPLUS1_MPLUS3"
+    }
+  },
+  "post_decision_overlay_role": "POST_DECISION_DIAGNOSTIC_NOT_SELECTION_EVIDENCE",
+  "preflight": {
+    "actual_hashes": {
+      "config/scientific_identity/scientific_identity_v1.json": "a5cf4f73eb242528b5dcdbfa87e9adccf8fd43978821cf0c744a96f63042804c",
+      "data/processed/outcomes/transient_campaign_outcomes_master.csv": "9cae62fb1417fa41274f6d504515571abd428b71fecaa0d138d3b786aa538760",
+      "data/processed/phenology/phenology_windows_frozen.csv": "ea25d949be9834a9e35352d970bb1b2172cac7d49db7eabb101ddfde9cfb657d",
+      "data/processed/phenology/transient_campaign_exposures_strict.parquet": "349413312568d0d423675bf58320ade41d2d9e700f138e7fbec55fc580bc1fb5",
+      "data/processed/phenology/transient_cohort_exposures.parquet": "e4ce7922f00a516643a5de832cc38377e20b3755ac46152cfb79900441564b39",
+      "outputs/outcome/D0_TRANSIENT_OUTCOME_EXCLUSION_LEDGER.csv": "6f7efe29c49b6a1edfaf47743f0b10639a9f56995f742e7513046aff63e814d8"
+    },
+    "identity": {
+      "head": "2e5823e6aaf842dfd60da968e7423471d6b32f1d",
+      "remote_s1": "2e5823e6aaf842dfd60da968e7423471d6b32f1d",
+      "s1_tag_target": "2e5823e6aaf842dfd60da968e7423471d6b32f1d"
+    },
+    "status": "PASS"
+  },
+  "schema_version": "1.0.0",
+  "scope": {
+    "campaigns": [
+      "2016/2017",
+      "2017/2018",
+      "2018/2019",
+      "2019/2020",
+      "2020/2021",
+      "2021/2022",
+      "2022/2023"
+    ],
+    "crop_codes": [
+      "14010020000",
+      "14010070000"
+    ],
+    "excluded_campaign": "2015/2016_STRUCTURAL_LEFT_BOUNDARY_NOT_D0_ESTIMATION_CAMPAIGN",
+    "time_basis": "AGRICULTURAL_CAMPAIGN_AUG_JUL"
+  },
+  "selected_architecture": {
+    "candidate_id": "E1-C2",
+    "full_campaign_exposure_claim": false,
+    "interpretation": "SIEMBRA_WEIGHTED_MEAN_CLIMATE_AMONG_POSITIVE_OBSERVED_COHORTS_ALREADY_UNAMBIGUOUSLY_ASSIGNED_TO_THE_CAMPAIGN",
+    "name": "UNAMBIGUOUS_ASSIGNED_COHORT_CONDITIONAL_SIEMBRA_WEIGHTED_EXPOSURE",
+    "selection_basis": "INDISPENSABLE_DOMAIN_ADJUDICATION_NOT_NUMERICAL_SCORE_OR_OUTCOME_SUPPORT"
+  },
+  "siembra_weight_rule": "NORMALIZE_ONLY_OVER_POSITIVE_OBSERVED_UNAMBIGUOUS_ASSIGNED_SIEMBRA_AS_EXPLICIT_CONDITIONAL_ESTIMAND_NO_FULL_CAMPAIGN_CLAIM",
+  "stage_a_lock": {
+    "hash_scope": "config/exposure_adjudication/primary_transient_exposure_v1.json",
+    "record_name": "E1_STAGE_A_DECISION_RECORD",
+    "sequence": "WRITE_AND_HASH_THIS_RECORD_BEFORE_ANY_D0_VALIDITY_READ",
+    "stage_b_may_modify_record": false
+  },
+  "stage_a_metrics": {
+    "by_crop_campaign": [
+      {
+        "campaign_id": "2016/2017",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 44,
+        "median_identified_observed_weight_fraction": 0.644975490196,
+        "missing_expected_cohort_rows": 25,
+        "positive_ambiguous_weight_rows": 31,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2017/2018",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 42,
+        "median_identified_observed_weight_fraction": 0.712614978398,
+        "missing_expected_cohort_rows": 23,
+        "positive_ambiguous_weight_rows": 34,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2018/2019",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 39,
+        "median_identified_observed_weight_fraction": 0.716946778711,
+        "missing_expected_cohort_rows": 29,
+        "positive_ambiguous_weight_rows": 32,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2019/2020",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 41,
+        "median_identified_observed_weight_fraction": 0.603506915577,
+        "missing_expected_cohort_rows": 25,
+        "positive_ambiguous_weight_rows": 33,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2020/2021",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 41,
+        "median_identified_observed_weight_fraction": 0.714285714286,
+        "missing_expected_cohort_rows": 19,
+        "positive_ambiguous_weight_rows": 30,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2021/2022",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 37,
+        "median_identified_observed_weight_fraction": 0.739665687825,
+        "missing_expected_cohort_rows": 30,
+        "positive_ambiguous_weight_rows": 31,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2022/2023",
+        "crop_code": "14010020000",
+        "exposure_valid_rows": 41,
+        "median_identified_observed_weight_fraction": 0.596774193548,
+        "missing_expected_cohort_rows": 31,
+        "positive_ambiguous_weight_rows": 33,
+        "structural_rows": 46
+      },
+      {
+        "campaign_id": "2016/2017",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 49,
+        "median_identified_observed_weight_fraction": 0.645161290323,
+        "missing_expected_cohort_rows": 41,
+        "positive_ambiguous_weight_rows": 45,
+        "structural_rows": 55
+      },
+      {
+        "campaign_id": "2017/2018",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 47,
+        "median_identified_observed_weight_fraction": 0.609775641026,
+        "missing_expected_cohort_rows": 32,
+        "positive_ambiguous_weight_rows": 44,
+        "structural_rows": 55
+      },
+      {
+        "campaign_id": "2018/2019",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 39,
+        "median_identified_observed_weight_fraction": 0.375863151287,
+        "missing_expected_cohort_rows": 36,
+        "positive_ambiguous_weight_rows": 46,
+        "structural_rows": 55
+      },
+      {
+        "campaign_id": "2019/2020",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 44,
+        "median_identified_observed_weight_fraction": 0.459830866808,
+        "missing_expected_cohort_rows": 32,
+        "positive_ambiguous_weight_rows": 47,
+        "structural_rows": 55
+      },
+      {
+        "campaign_id": "2020/2021",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 47,
+        "median_identified_observed_weight_fraction": 0.469312165595,
+        "missing_expected_cohort_rows": 28,
+        "positive_ambiguous_weight_rows": 46,
+        "structural_rows": 55
+      },
+      {
+        "campaign_id": "2021/2022",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 48,
+        "median_identified_observed_weight_fraction": 0.460385438972,
+        "missing_expected_cohort_rows": 19,
+        "positive_ambiguous_weight_rows": 53,
+        "structural_rows": 55
+      },
+      {
+        "campaign_id": "2022/2023",
+        "crop_code": "14010070000",
+        "exposure_valid_rows": 49,
+        "median_identified_observed_weight_fraction": 0.4,
+        "missing_expected_cohort_rows": 22,
+        "positive_ambiguous_weight_rows": 53,
+        "structural_rows": 55
+      }
+    ],
+    "duplicate_keys": 0,
+    "exposure_valid_by_crop": {
+      "14010020000": 285,
+      "14010070000": 323
+    },
+    "exposure_valid_rows": 608,
+    "identified_fraction_quantiles_positive_observed_weight": {
+      "0.0": 0.0,
+      "0.1": 0.017429467085,
+      "0.25": 0.314359990097,
+      "0.5": 0.571428571429,
+      "0.75": 0.825557809331,
+      "0.9": 1.0,
+      "1.0": 1.0
+    },
+    "identified_fraction_quantiles_valid_exposure": {
+      "0.0": 0.003174603175,
+      "0.1": 0.17673453997,
+      "0.25": 0.397899895325,
+      "0.5": 0.605654761905,
+      "0.75": 0.866666666667,
+      "0.9": 1.0,
+      "1.0": 1.0
+    },
+    "missing_expected_cohort_rows": 392,
+    "positive_ambiguous_weight_rows": 558,
+    "structural_grid_rows": 707,
+    "structural_rows_by_crop": {
+      "14010020000": 322,
+      "14010070000": 385
+    },
+    "valid_campaign_count_by_district_crop_distribution": {
+      "0": 1,
+      "1": 5,
+      "3": 5,
+      "4": 3,
+      "5": 8,
+      "6": 17,
+      "7": 62
+    },
+    "zero_observed_weight_rows": 44
+  },
+  "status": "PRIMARY_TRANSIENT_EXPOSURE_SELECTED"
+}
