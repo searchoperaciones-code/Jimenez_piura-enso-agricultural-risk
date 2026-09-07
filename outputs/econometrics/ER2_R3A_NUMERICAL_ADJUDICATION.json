@@ -1,0 +1,5483 @@
+{
+  "A_B_EXACT_EQUIVALENCE": "PASS",
+  "DRAW_MATRIX_IDENTITY": "PASS",
+  "EXCEEDANCE_COUNT_IDENTITY": "PASS",
+  "FINITE_CORRECTION_IDENTITY": "PASS",
+  "INVALID_SYNTHETIC_REPLICATIONS": 0,
+  "JOINT_WCR_NONINTERFERENCE": "PASS",
+  "MAX_A_C_T_ABS_DIFF": 6.039613253960852e-14,
+  "MAX_B_C_T_ABS_DIFF": 6.039613253960852e-14,
+  "NEXT_TIER_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+  "PRESPECIFIED_CONTINUOUS_TOLERANCE": 1e-10,
+  "R3A_ADAPTER_VALIDATED": true,
+  "R3A_CONTINUOUS_FLOAT64_ADJUDICATION": "PASS",
+  "R3A_INITIAL_EXACT_CONTINUOUS_CHECK": "HOLD",
+  "R3A_SYNTHETIC_BATCH_SIZE": 1000,
+  "R3A_SYNTHETIC_DATA_SEED": 2026090501,
+  "R3A_SYNTHETIC_WCR_REPLICATIONS": 2001,
+  "R4": "NOT_EXECUTED",
+  "R5": "NOT_EXECUTED",
+  "R6": "NOT_EXECUTED",
+  "REAL_BOOTSTRAP_REPLICATIONS_EXECUTED": 0,
+  "REAL_OUTCOME_VALUES_READ": false,
+  "REAL_R3_EXECUTED": false,
+  "TOLERANCE_CHANGED_AFTER_RESULTS": false,
+  "ULP_DIAGNOSTIC_ONLY": true,
+  "final_verdict": "ER2_R3A1_PASS_FLOAT64_CONTINUOUS_EQUIVALENCE_ADJUDICATED_READY_FOR_R3A_FREEZE_DECISION",
+  "gate": "ER2_R3A1_NAMED_WCR_ADAPTER_EQUIVALENCE_ADJUDICATION_V1",
+  "implementation_sha256": "cd8d71e9695db5a35ce021522738f505f21d367b7cd67db5c23ea3b94d1acb27",
+  "joint_cases": {
+    "3": {
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 3.454883541649856e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 7.66053886991358e-15,
+            "pass": true,
+            "relative_l2_error": 2.4987247053013027e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-15,
+            "pass": true,
+            "relative_l2_error": 2.491523151586899e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 4.618527782440651e-14,
+            "pass": true,
+            "relative_l2_error": 2.5044671561959754e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-15,
+            "pass": true,
+            "relative_l2_error": 2.2222088697698716e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 1.3988810110276972e-14,
+            "pass": true,
+            "relative_l2_error": 3.2688786149949164e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 5.995204332975845e-15,
+            "pass": true,
+            "relative_l2_error": 3.595055821209264e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 3.4555691641458e-14,
+            "pass": true,
+            "relative_l2_error": 1.3649154636479424e-13
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 8.215650382226158e-15,
+            "pass": true,
+            "relative_l2_error": 2.9139285842185235e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 6.608047442568932e-13,
+            "pass": true,
+            "relative_l2_error": 3.583314546557199e-14
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 8.215650382226158e-15,
+            "pass": true,
+            "relative_l2_error": 2.6045754594029102e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 2.1316282072803006e-14,
+            "pass": true,
+            "relative_l2_error": 5.358961758682984e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "before_after_same_routine_exact": true,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 0,
+          "B": 0,
+          "BEFORE": 0,
+          "C": 0
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "BEFORE": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "BEFORE": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 1
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.0004995005,
+          "B": 0.0004995005,
+          "BEFORE": 0.0004995005
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.0004995004995004995,
+          "B": 0.0004995004995004995,
+          "BEFORE": 0.0004995004995004995,
+          "C": 0.0004995004995004995
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "BEFORE": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "observed_wald_f": {
+        "A": 18.44115931412618,
+        "B": 18.441159314126793,
+        "BEFORE": 18.44115931412618,
+        "C": 18.441159314126132
+      }
+    },
+    "6": {
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 3.84486216038909e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 6.952771691715043e-15,
+            "pass": true,
+            "relative_l2_error": 6.839701119083687e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 1.7204468376385423e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.7763568394002505e-13,
+            "pass": true,
+            "relative_l2_error": 2.9666666182731945e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 2.335696229741584e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 1.9095836023552692e-14,
+            "pass": true,
+            "relative_l2_error": 4.544452652236634e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 3.931988611813337e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 7.41073868937292e-15,
+            "pass": true,
+            "relative_l2_error": 6.8329429993097e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 1.0325074129013956e-14,
+            "pass": true,
+            "relative_l2_error": 1.9562365760818255e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 2.1316282072803006e-14,
+            "pass": true,
+            "relative_l2_error": 3.559999941927844e-16
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 1.021405182655144e-14,
+            "pass": true,
+            "relative_l2_error": 2.659843729832575e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 2.980948821118545e-14,
+            "pass": true,
+            "relative_l2_error": 4.866958427101773e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "before_after_same_routine_exact": true,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 1,
+          "B": 1,
+          "BEFORE": 1,
+          "C": 1
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "BEFORE": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 2
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 2
+          },
+          "BEFORE": {
+            "denominator": 2002,
+            "numerator": 2
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 2
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.000999000999,
+          "B": 0.000999000999,
+          "BEFORE": 0.000999000999
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.000999000999000999,
+          "B": 0.000999000999000999,
+          "BEFORE": 0.000999000999000999,
+          "C": 0.000999000999000999
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "BEFORE": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "observed_wald_f": {
+        "A": 59.87719781045749,
+        "B": 59.87719781045729,
+        "BEFORE": 59.87719781045749,
+        "C": 59.87719781045731
+      }
+    }
+  },
+  "maximum_t_difference_cases": [
+    {
+      "architecture": 3,
+      "position": 2
+    }
+  ],
+  "positional_cases": [
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 3.454883541649856e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 7.66053886991358e-15,
+            "pass": true,
+            "relative_l2_error": 2.4987247053013027e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-15,
+            "pass": true,
+            "relative_l2_error": 2.491523151586899e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 5.6553662703769005e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-15,
+            "pass": true,
+            "relative_l2_error": 2.2222088697698716e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 6.217248937900877e-15,
+            "pass": true,
+            "relative_l2_error": 2.2963527205221516e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 3.454883541649856e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 7.66053886991358e-15,
+            "pass": true,
+            "relative_l2_error": 2.4987247053013027e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-15,
+            "pass": true,
+            "relative_l2_error": 2.491523151586899e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 5.6553662703769005e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-15,
+            "pass": true,
+            "relative_l2_error": 2.2222088697698716e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 6.217248937900877e-15,
+            "pass": true,
+            "relative_l2_error": 2.2963527205221516e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 3,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 930,
+          "B": 930,
+          "C": 930
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 931
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 931
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 931
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.465034965035,
+          "B": 0.465034965035
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.46503496503496505,
+          "B": 0.46503496503496505,
+          "C": 0.46503496503496505
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        0,
+        1,
+        2
+      ],
+      "original_order_one_hot_null": [
+        1,
+        0,
+        0
+      ],
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 4.218847493575595e-15,
+        "abs_B_C": 4.218847493575595e-15,
+        "architecture": 3,
+        "relative_A_B": 0.0,
+        "relative_A_C": 5.6553662703769005e-15,
+        "relative_B_C": 5.6553662703769005e-15,
+        "t_A": 0.7459901431449474,
+        "t_B": 0.7459901431449474,
+        "t_C": 0.7459901431449516,
+        "target_position": 0,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 38,
+        "ulp_B_C": 38
+      },
+      "target": "RAIN_ANOM_MM",
+      "target_null_definition_agreement": true,
+      "target_position": 0
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 2.9340483921700135e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 3.93574062229618e-14,
+            "pass": true,
+            "relative_l2_error": 1.4568492345696642e-13
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.774758283725532e-15,
+            "pass": true,
+            "relative_l2_error": 1.5487833861688926e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 2.6645352591003757e-15,
+            "pass": true,
+            "relative_l2_error": 1.5598056168530897e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.774758283725532e-15,
+            "pass": true,
+            "relative_l2_error": 1.3880131556795187e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 3.9968028886505635e-15,
+            "pass": true,
+            "relative_l2_error": 1.4244802917974598e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 4.218847493575595e-15,
+            "pass": true,
+            "relative_l2_error": 2.9340483921700135e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 3.93574062229618e-14,
+            "pass": true,
+            "relative_l2_error": 1.4568492345696642e-13
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.774758283725532e-15,
+            "pass": true,
+            "relative_l2_error": 1.5487833861688926e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 2.6645352591003757e-15,
+            "pass": true,
+            "relative_l2_error": 1.5598056168530897e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.774758283725532e-15,
+            "pass": true,
+            "relative_l2_error": 1.3880131556795187e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 3.9968028886505635e-15,
+            "pass": true,
+            "relative_l2_error": 1.4244802917974598e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 3,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 165,
+          "B": 165,
+          "C": 165
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 166
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 166
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 166
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.082917082917,
+          "B": 0.082917082917
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.08291708291708291,
+          "B": 0.08291708291708291,
+          "C": 0.08291708291708291
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        0,
+        2
+      ],
+      "original_order_one_hot_null": [
+        0,
+        1,
+        0
+      ],
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 2.6645352591003757e-15,
+        "abs_B_C": 2.6645352591003757e-15,
+        "architecture": 3,
+        "relative_A_B": 0.0,
+        "relative_A_C": 1.5598056168530897e-15,
+        "relative_B_C": 1.5598056168530897e-15,
+        "t_A": 1.7082482780617727,
+        "t_B": 1.7082482780617727,
+        "t_C": 1.7082482780617754,
+        "target_position": 1,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 12,
+        "ulp_B_C": 12
+      },
+      "target": "TMAX_ANOM_C",
+      "target_null_definition_agreement": true,
+      "target_position": 1
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 3.6637359812630166e-15,
+            "pass": true,
+            "relative_l2_error": 2.8386782339346182e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 1.2542050731312315e-14,
+            "pass": true,
+            "relative_l2_error": 4.3375744278634863e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 4.440892098500626e-15,
+            "pass": true,
+            "relative_l2_error": 1.649921017985366e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 6.039613253960852e-14,
+            "pass": true,
+            "relative_l2_error": 8.566582008734319e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 4.440892098500626e-15,
+            "pass": true,
+            "relative_l2_error": 1.476289150125535e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 2.2426505097428162e-14,
+            "pass": true,
+            "relative_l2_error": 4.561629571434199e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 3.6637359812630166e-15,
+            "pass": true,
+            "relative_l2_error": 2.8386782339346182e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 1.2542050731312315e-14,
+            "pass": true,
+            "relative_l2_error": 4.3375744278634863e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 4.440892098500626e-15,
+            "pass": true,
+            "relative_l2_error": 1.649921017985366e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 6.039613253960852e-14,
+            "pass": true,
+            "relative_l2_error": 8.566582008734319e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 4.440892098500626e-15,
+            "pass": true,
+            "relative_l2_error": 1.476289150125535e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 2.2426505097428162e-14,
+            "pass": true,
+            "relative_l2_error": 4.561629571434199e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 3,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 1
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.0004995005,
+          "B": 0.0004995005
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.0004995004995004995,
+          "B": 0.0004995004995004995,
+          "C": 0.0004995004995004995
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        2,
+        0
+      ],
+      "original_order_one_hot_null": [
+        0,
+        0,
+        1
+      ],
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 6.039613253960852e-14,
+        "abs_B_C": 6.039613253960852e-14,
+        "architecture": 3,
+        "relative_A_B": 0.0,
+        "relative_A_C": 8.566582008734319e-15,
+        "relative_B_C": 8.566582008734319e-15,
+        "t_A": 7.050201874916952,
+        "t_B": 7.050201874916952,
+        "t_C": 7.050201874916891,
+        "target_position": 2,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 68,
+        "ulp_B_C": 68
+      },
+      "target": "TMIN_ANOM_C",
+      "target_null_definition_agreement": true,
+      "target_position": 2
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 3.84486216038909e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 6.952771691715043e-15,
+            "pass": true,
+            "relative_l2_error": 6.839701119083687e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 1.7204468376385423e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.5543122344752192e-15,
+            "pass": true,
+            "relative_l2_error": 8.486960759920351e-16
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 2.335696229741584e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 6.994405055138486e-15,
+            "pass": true,
+            "relative_l2_error": 2.614601253742828e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 3.84486216038909e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 6.952771691715043e-15,
+            "pass": true,
+            "relative_l2_error": 6.839701119083687e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 1.7204468376385423e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.5543122344752192e-15,
+            "pass": true,
+            "relative_l2_error": 8.486960759920351e-16
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 6.661338147750939e-15,
+            "pass": true,
+            "relative_l2_error": 2.335696229741584e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 6.994405055138486e-15,
+            "pass": true,
+            "relative_l2_error": 2.614601253742828e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 6,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 144,
+          "B": 144,
+          "C": 144
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 145
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 145
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 145
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.072427572428,
+          "B": 0.072427572428
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.07242757242757243,
+          "B": 0.07242757242757243,
+          "C": 0.07242757242757243
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "original_order_one_hot_null": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 1.5543122344752192e-15,
+        "abs_B_C": 1.5543122344752192e-15,
+        "architecture": 6,
+        "relative_A_B": 0.0,
+        "relative_A_C": 8.486960759920351e-16,
+        "relative_B_C": 8.486960759920351e-16,
+        "t_A": 1.831412066632209,
+        "t_B": 1.831412066632209,
+        "t_C": 1.8314120666322073,
+        "target_position": 0,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 7,
+        "ulp_B_C": 7
+      },
+      "target": "RAIN_ANOM_MM__T",
+      "target_null_definition_agreement": true,
+      "target_position": 0
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.217248937900877e-15,
+            "pass": true,
+            "relative_l2_error": 3.696836603634836e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 5.10702591327572e-15,
+            "pass": true,
+            "relative_l2_error": 3.236150174384032e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 4.884981308350689e-15,
+            "pass": true,
+            "relative_l2_error": 1.5735344338147185e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 3.1086244689504383e-15,
+            "pass": true,
+            "relative_l2_error": 2.130791533005333e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 4.884981308350689e-15,
+            "pass": true,
+            "relative_l2_error": 2.137878937543961e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 5.329070518200751e-15,
+            "pass": true,
+            "relative_l2_error": 2.0070334610240223e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.217248937900877e-15,
+            "pass": true,
+            "relative_l2_error": 3.696836603634836e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 5.10702591327572e-15,
+            "pass": true,
+            "relative_l2_error": 3.236150174384032e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 4.884981308350689e-15,
+            "pass": true,
+            "relative_l2_error": 1.5735344338147185e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 3.1086244689504383e-15,
+            "pass": true,
+            "relative_l2_error": 2.130791533005333e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 4.884981308350689e-15,
+            "pass": true,
+            "relative_l2_error": 2.137878937543961e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 5.329070518200751e-15,
+            "pass": true,
+            "relative_l2_error": 2.0070334610240223e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 6,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 328,
+          "B": 328,
+          "C": 328
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 329
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 329
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 329
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.164335664336,
+          "B": 0.164335664336
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.16433566433566432,
+          "B": 0.16433566433566432,
+          "C": 0.16433566433566432
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "original_order_one_hot_null": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "permutation": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 3.1086244689504383e-15,
+        "abs_B_C": 3.1086244689504383e-15,
+        "architecture": 6,
+        "relative_A_B": 0.0,
+        "relative_A_C": 2.130791533005333e-15,
+        "relative_B_C": 2.130791533005333e-15,
+        "t_A": 1.4589059609064337,
+        "t_B": 1.4589059609064337,
+        "t_C": 1.4589059609064305,
+        "target_position": 1,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 14,
+        "ulp_B_C": 14
+      },
+      "target": "TMAX_ANOM_C__T",
+      "target_null_definition_agreement": true,
+      "target_position": 1
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 7.438494264988549e-15,
+            "pass": true,
+            "relative_l2_error": 3.898204674166044e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 2.4980018054066022e-15,
+            "pass": true,
+            "relative_l2_error": 1.6189261706155304e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 7.430435126168785e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 5.684341886080802e-14,
+            "pass": true,
+            "relative_l2_error": 1.963240455831422e-14
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 1.0085155446082527e-14
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 2.930988785010413e-14,
+            "pass": true,
+            "relative_l2_error": 8.586171998369044e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 7.438494264988549e-15,
+            "pass": true,
+            "relative_l2_error": 3.898204674166044e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 2.4980018054066022e-15,
+            "pass": true,
+            "relative_l2_error": 1.6189261706155304e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 7.430435126168785e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 5.684341886080802e-14,
+            "pass": true,
+            "relative_l2_error": 1.963240455831422e-14
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 1.0085155446082527e-14
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 2.930988785010413e-14,
+            "pass": true,
+            "relative_l2_error": 8.586171998369044e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 6,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 29,
+          "B": 29,
+          "C": 29
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 30
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 30
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 30
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.014985014985,
+          "B": 0.014985014985
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.014985014985014986,
+          "B": 0.014985014985014986,
+          "C": 0.014985014985014986
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        5
+      ],
+      "original_order_one_hot_null": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "permutation": [
+        2,
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 5.684341886080802e-14,
+        "abs_B_C": 5.684341886080802e-14,
+        "architecture": 6,
+        "relative_A_B": 0.0,
+        "relative_A_C": 1.963240455831422e-14,
+        "relative_B_C": 1.963240455831422e-14,
+        "t_A": 2.8953875054868923,
+        "t_B": 2.8953875054868923,
+        "t_C": 2.895387505486949,
+        "target_position": 2,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 128,
+        "ulp_B_C": 128
+      },
+      "target": "TMIN_ANOM_C__T",
+      "target_null_definition_agreement": true,
+      "target_position": 2
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 8.271161533457416e-15,
+            "pass": true,
+            "relative_l2_error": 4.542009974231844e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 8.534839501805891e-15,
+            "pass": true,
+            "relative_l2_error": 7.80269980246007e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 8.079008715034266e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.5987211554602254e-14,
+            "pass": true,
+            "relative_l2_error": 3.680162458787023e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 1.0973599610364531e-14
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 3.375077994860476e-14,
+            "pass": true,
+            "relative_l2_error": 1.0346010771672257e-14
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 8.271161533457416e-15,
+            "pass": true,
+            "relative_l2_error": 4.542009974231844e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 8.534839501805891e-15,
+            "pass": true,
+            "relative_l2_error": 7.80269980246007e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 8.079008715034266e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.5987211554602254e-14,
+            "pass": true,
+            "relative_l2_error": 3.680162458787023e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.708144902248023e-14,
+            "pass": true,
+            "relative_l2_error": 1.0973599610364531e-14
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 3.375077994860476e-14,
+            "pass": true,
+            "relative_l2_error": 1.0346010771672257e-14
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 6,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 2,
+          "B": 2,
+          "C": 2
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 3
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 3
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 3
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.001498501499,
+          "B": 0.001498501499
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.0014985014985014985,
+          "B": 0.0014985014985014985,
+          "C": 0.0014985014985014985
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        2,
+        3,
+        0,
+        4,
+        5
+      ],
+      "original_order_one_hot_null": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "permutation": [
+        3,
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 1.5987211554602254e-14,
+        "abs_B_C": 1.5987211554602254e-14,
+        "architecture": 6,
+        "relative_A_B": 0.0,
+        "relative_A_C": 3.680162458787023e-15,
+        "relative_B_C": 3.680162458787023e-15,
+        "t_A": 4.3441591868940534,
+        "t_B": 4.3441591868940534,
+        "t_C": 4.3441591868940375,
+        "target_position": 3,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 18,
+        "ulp_B_C": 18
+      },
+      "target": "RAIN_ANOM_MM__T_MINUS_1",
+      "target_null_definition_agreement": true,
+      "target_position": 3
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 7.216449660063518e-15,
+            "pass": true,
+            "relative_l2_error": 3.586091600325936e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 4.7253867485608225e-15,
+            "pass": true,
+            "relative_l2_error": 5.3980889664741024e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.4638958368304884e-14,
+            "pass": true,
+            "relative_l2_error": 7.771406505535362e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 2.6645352591003757e-14,
+            "pass": true,
+            "relative_l2_error": 2.8624657868988333e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.4638958368304884e-14,
+            "pass": true,
+            "relative_l2_error": 1.0555497372837805e-14
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 3.2862601528904634e-14,
+            "pass": true,
+            "relative_l2_error": 7.558225441659306e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 7.216449660063518e-15,
+            "pass": true,
+            "relative_l2_error": 3.586091600325936e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 4.7253867485608225e-15,
+            "pass": true,
+            "relative_l2_error": 5.3980889664741024e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 3.4638958368304884e-14,
+            "pass": true,
+            "relative_l2_error": 7.771406505535362e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 2.6645352591003757e-14,
+            "pass": true,
+            "relative_l2_error": 2.8624657868988333e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 3.4638958368304884e-14,
+            "pass": true,
+            "relative_l2_error": 1.0555497372837805e-14
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 3.2862601528904634e-14,
+            "pass": true,
+            "relative_l2_error": 7.558225441659306e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 6,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 1
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 1
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.0004995005,
+          "B": 0.0004995005
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.0004995004995004995,
+          "B": 0.0004995004995004995,
+          "C": 0.0004995004995004995
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        2,
+        3,
+        4,
+        0,
+        5
+      ],
+      "original_order_one_hot_null": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "permutation": [
+        4,
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 2.6645352591003757e-14,
+        "abs_B_C": 2.6645352591003757e-14,
+        "architecture": 6,
+        "relative_A_B": 0.0,
+        "relative_A_C": 2.8624657868988333e-15,
+        "relative_B_C": 2.8624657868988333e-15,
+        "t_A": 9.308531376324671,
+        "t_B": 9.308531376324671,
+        "t_C": 9.308531376324698,
+        "target_position": 4,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 15,
+        "ulp_B_C": 15
+      },
+      "target": "TMAX_ANOM_C__T_MINUS_1",
+      "target_null_definition_agreement": true,
+      "target_position": 4
+    },
+    {
+      "A_B_EXACT": true,
+      "A_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.38378239159465e-15,
+            "pass": true,
+            "relative_l2_error": 3.0362380447298914e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 3.3306690738754696e-15,
+            "pass": true,
+            "relative_l2_error": 2.393064176649614e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 9.769962616701378e-15,
+            "pass": true,
+            "relative_l2_error": 2.2899600885018678e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.4210854715202004e-14,
+            "pass": true,
+            "relative_l2_error": 1.4723195788229106e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 9.769962616701378e-15,
+            "pass": true,
+            "relative_l2_error": 3.1093498222032948e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-14,
+            "pass": true,
+            "relative_l2_error": 9.332179966412335e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "B_C": {
+        "cluster_assignment_agreement": true,
+        "cluster_order_agreement": true,
+        "metrics": {
+          "beta": {
+            "exact": false,
+            "max_abs_difference": 6.38378239159465e-15,
+            "pass": true,
+            "relative_l2_error": 3.0362380447298914e-15
+          },
+          "covariance": {
+            "exact": false,
+            "max_abs_difference": 3.3306690738754696e-15,
+            "pass": true,
+            "relative_l2_error": 2.393064176649614e-14
+          },
+          "fitted": {
+            "exact": false,
+            "max_abs_difference": 9.769962616701378e-15,
+            "pass": true,
+            "relative_l2_error": 2.2899600885018678e-15
+          },
+          "observed": {
+            "exact": false,
+            "max_abs_difference": 1.4210854715202004e-14,
+            "pass": true,
+            "relative_l2_error": 1.4723195788229106e-15
+          },
+          "residual": {
+            "exact": false,
+            "max_abs_difference": 9.769962616701378e-15,
+            "pass": true,
+            "relative_l2_error": 3.1093498222032948e-15
+          },
+          "restricted_residual": {
+            "exact": false,
+            "max_abs_difference": 5.218048215738236e-14,
+            "pass": true,
+            "relative_l2_error": 9.332179966412335e-15
+          }
+        },
+        "rank_agreement": true,
+        "same_full_design": true,
+        "sign_agreement": true,
+        "status": "PASS"
+      },
+      "architecture": 6,
+      "discrete": {
+        "EXCEEDANCES": {
+          "A": 1,
+          "B": 1,
+          "C": 1
+        },
+        "INVALID": {
+          "A": 0,
+          "B": 0,
+          "C": 0
+        },
+        "P_EXACT_RATIONAL": {
+          "A": {
+            "denominator": 2002,
+            "numerator": 2
+          },
+          "B": {
+            "denominator": 2002,
+            "numerator": 2
+          },
+          "C": {
+            "denominator": 2002,
+            "numerator": 2
+          }
+        },
+        "P_FROZEN_API_RETURNED": {
+          "A": 0.000999000999,
+          "B": 0.000999000999
+        },
+        "P_UNROUNDED_FROM_COUNTS": {
+          "A": 0.000999000999000999,
+          "B": 0.000999000999000999,
+          "C": 0.000999000999000999
+        },
+        "draw_identity": true,
+        "draws": {
+          "A": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "B": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          },
+          "C": {
+            "batch_draw_sha256": [
+              "a57af8b8e6ce8f1144718e8d458dc64cb813c5d54300b13fe3efceeea2eb7005",
+              "080c101bbffb4e6ae7230f575caeb6a3cab0c86809a769888b8ecf554fa1baf7",
+              "58dc782a8938b14473d380f4c604eef36d05c32b3adafc51383bdd3ebd121d0a"
+            ],
+            "batch_sizes": [
+              1000,
+              1000,
+              1
+            ],
+            "cluster_order": [
+              "SYNTHETIC_000",
+              "SYNTHETIC_001",
+              "SYNTHETIC_002",
+              "SYNTHETIC_003",
+              "SYNTHETIC_004",
+              "SYNTHETIC_005",
+              "SYNTHETIC_006",
+              "SYNTHETIC_007",
+              "SYNTHETIC_008",
+              "SYNTHETIC_009",
+              "SYNTHETIC_010",
+              "SYNTHETIC_011",
+              "SYNTHETIC_012",
+              "SYNTHETIC_013",
+              "SYNTHETIC_014",
+              "SYNTHETIC_015"
+            ],
+            "complete_matrix_sha256": "722f107073fb5b1f4ee1a7fb74a29cc034e38bc2d9396feec326eb3feba4fec2",
+            "initial_pcg64_state": {
+              "bit_generator": "PCG64",
+              "has_uint32": 0,
+              "state": {
+                "inc": 227236598979991748391826561120639973581,
+                "state": 49906887107577768368531566331181249430
+              },
+              "uinteger": 0
+            },
+            "matrix_dtype": "INT8_ROW_MAJOR_N_CLUSTERS_BY_B",
+            "matrix_shape": [
+              16,
+              2001
+            ],
+            "pcg64_states": [
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 157788218781438973971640888741173165190
+                },
+                "uinteger": 2798474540
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 169014153005566709691088912165902137718
+                },
+                "uinteger": 1669517851
+              },
+              {
+                "bit_generator": "PCG64",
+                "has_uint32": 0,
+                "state": {
+                  "inc": 227236598979991748391826561120639973581,
+                  "state": 331786285868459947020888516494534381972
+                },
+                "uinteger": 2403778650
+              }
+            ]
+          }
+        },
+        "exceedance_identity": true,
+        "finite_correction_identity": true,
+        "invalid_zero": true
+      },
+      "full_model_preserved": true,
+      "inverse_permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "original_order_one_hot_null": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "permutation": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t_difference": {
+        "abs_A_B": 0.0,
+        "abs_A_C": 1.4210854715202004e-14,
+        "abs_B_C": 1.4210854715202004e-14,
+        "architecture": 6,
+        "relative_A_B": 0.0,
+        "relative_A_C": 1.4723195788229106e-15,
+        "relative_B_C": 1.4723195788229106e-15,
+        "t_A": 9.652017754571526,
+        "t_B": 9.652017754571526,
+        "t_C": 9.652017754571512,
+        "target_position": 5,
+        "tolerance_status": "PASS",
+        "ulp_A_C": 8,
+        "ulp_B_C": 8
+      },
+      "target": "TMIN_ANOM_C__T_MINUS_1",
+      "target_null_definition_agreement": true,
+      "target_position": 5
+    }
+  ],
+  "project": "ENSO_EL_NINO_2026_2027_AGRICULTURE_PIURA",
+  "protected_full_suite": {
+    "categories": {
+      "EXPECTED_ACTIVE_CANDIDATE_SCOPE": 2,
+      "EXPECTED_ACTIVE_OUTCOME_FIREWALL": 65,
+      "EXPECTED_HISTORICAL_LIFECYCLE_STATE": 7
+    },
+    "counts": {
+      "discovered": 1072,
+      "error": 69,
+      "fail": 5,
+      "pass": 106,
+      "run": 158,
+      "skip": 0
+    },
+    "coverage_limitation": "REAL_DATA_DEPENDENT_FIXTURES_BLOCKED_AND_NOT_CERTIFIED_AS_PASS",
+    "external_ledger_sha256": "48d445147a1ad37b6afa32aa15a9e76aaa063a852eee58f4a4b4e4585d6391c8",
+    "new_identifiers_explained": true,
+    "new_specific_tests": {
+      "error": 0,
+      "fail": 0,
+      "pass": 34,
+      "run": 34
+    },
+    "original_strengthened_tests": {
+      "context": "ORIGINAL_FIVE_FILE_AUTHORING_STATE_BEFORE_R3A1_FILES",
+      "error": 0,
+      "fail": 0,
+      "pass": 48,
+      "run": 48,
+      "test_sha256": "bf4403ffd5d22a6180f23343bdbadcd1136cd0d615defbc22cb73bab823ea66e"
+    },
+    "outcome_read_firewall_active": true,
+    "unrelated_real_regressions": 0,
+    "unresolved": 0
+  },
+  "provenance": {
+    "ED1_IMPLEMENTATION_SHA256": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195",
+    "ER2P_FREEZE_SHA": "3fd1f657e79d7e0ae93903239fd3690dcade56a4",
+    "INTERRUPTED_STRENGTHENED_TEST_SHA256": "000f44fcc26828b6c54ca00a152e41174e57b4f2cab4db43fc456d73be28f860",
+    "ORIGINAL_HOLD_TERMINALLY_CERTIFIED": false,
+    "PROVISIONAL_LOCK_RECORDED_TEST_SHA256": "b5e1a3a47f35c9a666881db93fee40a2341440dd78fef2527f479b4c70312b74",
+    "PROVISIONAL_LOCK_TEST_IDENTITY_CURRENT": false,
+    "R2_FREEZE_SHA": "611c91255d5a367127df57dd69855e2df83ac0cb",
+    "R2_REPORTING_CERTIFIED_LOCK_SHA": "a37ba8ee9fdebe400b638404200d1109fa3045c59ec2b1f6c76b35c3cc3284a4",
+    "R3A_INITIAL_HOLD_LOCK_SHA256": "2fb507407b73dc84f91d21cc8bc1e4eb32581b83eed7086662c4e7785f862d7c",
+    "R3_TIER_CONTRACT_SHA": "a70eb6398e9073053fd619fc985e9f8e3348be42bc0212f42d99dde475fa0864",
+    "STRENGTHENED_TEST_CURRENT_SHA256": "bf4403ffd5d22a6180f23343bdbadcd1136cd0d615defbc22cb73bab823ea66e",
+    "TEST_EXPECTATION_FIX": "CANONICAL_JSON_ROUNDTRIP_BEFORE_EXPECTED_RENDER_ONLY",
+    "future_real_contract": {
+      "claim_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+      "cluster": "DISTRICT",
+      "coefficient_statistic": "ABSOLUTE_BOOTSTRAP_T",
+      "coefficient_tests": 21,
+      "coefficients": "EXACT_ER1_PRIMARY_UNCHANGED",
+      "determinism": {
+        "batch_size": 1000,
+        "cluster_order": "SORTED_UBIGEO",
+        "coefficient_order": "FROZEN_ED1_REGRESSOR_ORDER",
+        "crop_order": [
+          "14010020000",
+          "14010070000",
+          "13010210000",
+          "13010170102",
+          "15010040000"
+        ],
+        "exceedance": "GREATER_THAN_OR_EQUAL_TO_OBSERVED_STATISTIC",
+        "rng": "NUMPY_GENERATOR_PCG64",
+        "row_order": "SORTED_UBIGEO_THEN_FROZEN_PERIOD",
+        "seed_reset": "EACH_CROP_CONTRAST_AND_JOINT_TEST",
+        "weight_draw_layout": "N_CLUSTERS_BY_BATCH_INT8_ZERO_ONE_MAPPED_TO_MINUS_PLUS_ONE"
+      },
+      "district_fe": "REQUIRED",
+      "er1_numerical_results_identity": "40e0f58269dda309e83a1fa3da17ef4d5dc5523efc72a666f734d0ebacb76b24",
+      "execution_authorized": false,
+      "family": "PHYSICAL_ANOMALY",
+      "finite_replication_correction": "(1 + exceedances)/(B + 1)",
+      "functional_form": "LINEAR_ADDITIVE",
+      "global_five_crop_fwer": "NOT_CLAIMED",
+      "implementation_requirement": "Frozen ED1 API targets FIRST_CLIMATE_COEFFICIENT or ALL_CLIMATE_COEFFICIENTS only. Future coefficient-target adapter must cover each named coefficient without changing the full model and must validate contrast/permutation equivalence on synthetic data before real R3 execution. No adapter or bootstrap is executed during ER2P.",
+      "invalid_replications": "REQUIRE_ZERO_OTHERWISE_HOLD_NO_DROPPING_OR_REDRAWING_OR_DENOMINATOR_CHANGE",
+      "joint_null": "ALL_PRIMARY_CLIMATE_COEFFICIENTS_EQUAL_ZERO_WITHIN_CROP",
+      "joint_null_matches_aht": true,
+      "joint_statistic": "BOOTSTRAP_WALD_F",
+      "joint_tests": 5,
+      "mixed_cr2_wcr_holm_family": "PROHIBITED",
+      "multiplicity": "WITHIN_CROP_WCR_COEFFICIENT_P_VALUES",
+      "multiplicity_adjusted_confidence_intervals": "NOT_CONSTRUCTED_NOT_CLAIMED",
+      "next_tier": "R4",
+      "null_imposed": true,
+      "order": 3,
+      "outcome_scale": "YIELD_LEVEL_TM_PER_HA",
+      "period_fe": "REQUIRED",
+      "previous_tier": "R2",
+      "primary_replacement": "PROHIBITED",
+      "replications": 9999,
+      "reported_fields": [
+        "ER1_BETA_REFERENCE",
+        "ER1_CR2_P_REFERENCE",
+        "WCR_P",
+        "WITHIN_CROP_HOLM_WCR_P"
+      ],
+      "restricted": true,
+      "role": "INFERENCE_ONLY",
+      "same_primary_sample": true,
+      "seed": 20260903,
+      "status": "NOT_EXECUTED",
+      "tier": "R3",
+      "tier_id": "R3_RESTRICTED_WILD_CLUSTER_BOOTSTRAP",
+      "weighting": "UNWEIGHTED_PRIMARY_ESTIMATION",
+      "weights": "RADEMACHER",
+      "windows": "EXACT_ED1_FROZEN"
+    },
+    "original_candidate_sha256": {
+      "outputs/econometrics/ER2_R3A_ADAPTER_LOCK.json": "2fb507407b73dc84f91d21cc8bc1e4eb32581b83eed7086662c4e7785f862d7c",
+      "outputs/econometrics/ER2_R3A_ADAPTER_VALIDATION.csv": "440b461a2a8953a6012fe6f1bdba83f54e6830250234ce260eafc6d88b25be8c",
+      "outputs/econometrics/ER2_R3A_ADAPTER_VALIDATION_REPORT.md": "f47ecf9a05e3af3c7d7494ff9bd43805dafc9b29c1f879a55d1e8751f0da02f5",
+      "scripts/er2_r3_named_wcr_adapter_v1.py": "b0368dfcf93f2675c4b4fdcaff63e905540ff0914808319e53a4ee106eb365a2",
+      "tests/test_er2_r3_named_wcr_adapter_v1.py": "bf4403ffd5d22a6180f23343bdbadcd1136cd0d615defbc22cb73bab823ea66e"
+    }
+  },
+  "reproducibility": {
+    "all_three_outputs_byte_identical": true,
+    "independent_processes": 2,
+    "run1_sha256": "a34e223e81a1ccdf85936941b03785e9489619d2b2f3348dd7711feb20b34735",
+    "run2_sha256": "a34e223e81a1ccdf85936941b03785e9489619d2b2f3348dd7711feb20b34735",
+    "status": "PASS"
+  },
+  "schema_version": "1.0.0",
+  "source_audit": {
+    "ONE_HOT_REFERENCE_INDEPENDENT": true,
+    "RESULT_SPECIFIC_ADAPTER_BRANCHES": 0,
+    "call_graph": {
+      "A": [
+        "ValueError",
+        "frame.sort_values",
+        "frame[['UBIGEO', period_column]].duplicated",
+        "frame[['UBIGEO', period_column]].duplicated().any",
+        "frame[['UBIGEO', period_column]].equals",
+        "frame[list(x_columns)].to_numpy",
+        "frozen_wcr_audit",
+        "isinstance",
+        "len",
+        "list",
+        "np.asarray",
+        "np.isfinite",
+        "np.isfinite(frame[list(x_columns)].to_numpy()).all",
+        "np.isfinite(np.asarray(response)).all",
+        "permutation",
+        "tier_status"
+      ],
+      "B": [
+        "RuntimeError",
+        "batches.append",
+        "captured.pop",
+        "captured.update",
+        "enumerate",
+        "finite_p",
+        "function",
+        "inspect.getsourcelines",
+        "int",
+        "line.strip",
+        "next",
+        "state['cluster_weights'].copy",
+        "state['statistics'].copy",
+        "sum",
+        "sys.gettrace",
+        "sys.settrace"
+      ],
+      "C": [
+        "(labels == v).astype",
+        "(periods == v).astype",
+        "(~valid).sum",
+        "ValueError",
+        "abs",
+        "adjustments.append",
+        "batches.append",
+        "enumerate",
+        "finite_p",
+        "float",
+        "frame['UBIGEO'].astype",
+        "frame['UBIGEO'].astype(str).to_numpy",
+        "frame[columns].to_numpy",
+        "frame[period].astype",
+        "frame[period].astype(str).to_numpy",
+        "int",
+        "len",
+        "max",
+        "min",
+        "np.abs",
+        "np.block",
+        "np.column_stack",
+        "np.empty",
+        "np.eye",
+        "np.finfo",
+        "np.flatnonzero",
+        "np.full",
+        "np.isfinite",
+        "np.ix_",
+        "np.linalg.eigh",
+        "np.linalg.inv",
+        "np.linalg.matrix_rank",
+        "np.linalg.solve",
+        "np.max",
+        "np.ones",
+        "np.outer",
+        "np.random.Generator",
+        "np.random.PCG64",
+        "np.sqrt",
+        "np.sum",
+        "np.zeros",
+        "positive.sum",
+        "range",
+        "rng.integers",
+        "rng.integers(0, 2, size=(len(groups), count), dtype=np.int8).astype",
+        "scores.append",
+        "set",
+        "sorted",
+        "sum",
+        "values.min",
+        "zip"
+      ],
+      "C_JOINT": [
+        "(~valid).sum",
+        "adjustments.append",
+        "batches.append",
+        "enumerate",
+        "float",
+        "int",
+        "len",
+        "max",
+        "min",
+        "np.abs",
+        "np.block",
+        "np.empty",
+        "np.eye",
+        "np.finfo",
+        "np.full",
+        "np.isfinite",
+        "np.ix_",
+        "np.linalg.eigh",
+        "np.linalg.inv",
+        "np.linalg.solve",
+        "np.max",
+        "np.random.Generator",
+        "np.random.PCG64",
+        "np.sqrt",
+        "np.sum",
+        "np.zeros",
+        "positive.sum",
+        "range",
+        "require",
+        "rng.integers",
+        "rng.integers(0, 2, size=(len(fit['cluster_indices']), count), dtype=np.int8).astype",
+        "values.min",
+        "zip"
+      ]
+    },
+    "import_preserves_frozen_joint_function": true,
+    "joint_function_identity_unchanged": true,
+    "numpy_legacy_rng_unchanged": true,
+    "python_trace_restored": true,
+    "shared_primitives": "NUMPY_LINEAR_ALGEBRA_AND_PCG64_ONLY; C_JOINT_REUSES_C_INDEPENDENT_FIT; NO_A_B_NUMERICAL_HELPER",
+    "source_body_sha256": {
+      "A": "ed3841310884e24da8843613b3d8bde6fdba6e2489d03f9fa15861459d6e925c",
+      "B": "89320449b62a6ee618c5817891207b1ee4236803f450960383ff05c8b289bc87",
+      "C": "6f8debc78153ad62baaf94a0e6f701a4871af55d396c0fbc3861e17d83860bce",
+      "C_JOINT": "ab34cb678a87ee223a01db5085a197fc265707d5b34796e36a1b6779945251e3"
+    }
+  },
+  "synthetic_data_sha256": {
+    "3": {
+      "keys_sha256": "dd73149d69063e475053791f47bc71c417f6244aabbb830e8360126425e856ea",
+      "x_sha256": "fab33ca34f8212b6eb7ac8d50044c0221822cd8e379206f62d97b1b5cdd333b1",
+      "y_sha256": "f0ccb5cb8d66e5f8bda643f667a7602597682eb90f85fd8b6c34d807b139e043"
+    },
+    "6": {
+      "keys_sha256": "dd73149d69063e475053791f47bc71c417f6244aabbb830e8360126425e856ea",
+      "x_sha256": "310f719096f06b17d2215ffc2879a1eac8d5aba1b69072bf7415bdf68cd40fd0",
+      "y_sha256": "eef1104250c42ea4d7d28d37d33145181694bcf0f7b136d6277de1ef70611bad"
+    }
+  },
+  "synthetic_specification_sha256": "1f2d1457deb942045e2f59287274a195c86a9da54feddd42c4e3012b92183479",
+  "target_map": [
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "RICE",
+      "CROP_CODE": "14010020000",
+      "FROZEN_POSITION": 0,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "RICE_FLOWERING_95_110_DAS"
+      ],
+      "INVERSE_PERMUTATION": [
+        0,
+        1,
+        2
+      ],
+      "PERMUTATION": [
+        0,
+        1,
+        2
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "RICE",
+      "CROP_CODE": "14010020000",
+      "FROZEN_POSITION": 1,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "RICE_FLOWERING_95_110_DAS"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        0,
+        2
+      ],
+      "PERMUTATION": [
+        1,
+        0,
+        2
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "RICE",
+      "CROP_CODE": "14010020000",
+      "FROZEN_POSITION": 2,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "RICE_FLOWERING_95_110_DAS"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        0
+      ],
+      "PERMUTATION": [
+        2,
+        0,
+        1
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "MAIZ_AMARILLO_DURO",
+      "CROP_CODE": "14010070000",
+      "FROZEN_POSITION": 0,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "MAD_MPLUS1_MPLUS3"
+      ],
+      "INVERSE_PERMUTATION": [
+        0,
+        1,
+        2
+      ],
+      "PERMUTATION": [
+        0,
+        1,
+        2
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "MAIZ_AMARILLO_DURO",
+      "CROP_CODE": "14010070000",
+      "FROZEN_POSITION": 1,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "MAD_MPLUS1_MPLUS3"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        0,
+        2
+      ],
+      "PERMUTATION": [
+        1,
+        0,
+        2
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "MAIZ_AMARILLO_DURO",
+      "CROP_CODE": "14010070000",
+      "FROZEN_POSITION": 2,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "MAD_MPLUS1_MPLUS3"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        0
+      ],
+      "PERMUTATION": [
+        2,
+        0,
+        1
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "MANGO",
+      "CROP_CODE": "13010210000",
+      "FROZEN_POSITION": 0,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "MANGO_MAY_JUN_CURRENT_YEAR"
+      ],
+      "INVERSE_PERMUTATION": [
+        0,
+        1,
+        2
+      ],
+      "PERMUTATION": [
+        0,
+        1,
+        2
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "MANGO",
+      "CROP_CODE": "13010210000",
+      "FROZEN_POSITION": 1,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "MANGO_MAY_JUN_CURRENT_YEAR"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        0,
+        2
+      ],
+      "PERMUTATION": [
+        1,
+        0,
+        2
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C"
+    },
+    {
+      "ARCHITECTURE": 3,
+      "CROP": "MANGO",
+      "CROP_CODE": "13010210000",
+      "FROZEN_POSITION": 2,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "FROZEN_WINDOWS": [
+        "MANGO_MAY_JUN_CURRENT_YEAR"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        0
+      ],
+      "PERMUTATION": [
+        2,
+        0,
+        1
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "FROZEN_POSITION": 0,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM__T"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "FROZEN_POSITION": 1,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C__T"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "FROZEN_POSITION": 2,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        2,
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C__T"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "FROZEN_POSITION": 3,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        3,
+        0,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        3,
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM__T_MINUS_1"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "FROZEN_POSITION": 4,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        3,
+        4,
+        0,
+        5
+      ],
+      "PERMUTATION": [
+        4,
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C__T_MINUS_1"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "LIMON_SUTIL",
+      "CROP_CODE": "13010170102",
+      "FROZEN_POSITION": 5,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "LEMON_FULL_YEAR_T",
+        "LEMON_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "PERMUTATION": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C__T_MINUS_1"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "FROZEN_POSITION": 0,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM__T"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "FROZEN_POSITION": 1,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C__T"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "FROZEN_POSITION": 2,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        2,
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C__T"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "FROZEN_POSITION": 3,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        3,
+        0,
+        4,
+        5
+      ],
+      "PERMUTATION": [
+        3,
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "RAIN_ANOM_MM__T_MINUS_1"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "FROZEN_POSITION": 4,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        3,
+        4,
+        0,
+        5
+      ],
+      "PERMUTATION": [
+        4,
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMAX_ANOM_C__T_MINUS_1"
+    },
+    {
+      "ARCHITECTURE": 6,
+      "CROP": "PLATANOS_Y_BANANAS",
+      "CROP_CODE": "15010040000",
+      "FROZEN_POSITION": 5,
+      "FROZEN_REGRESSORS": [
+        "RAIN_ANOM_MM__T",
+        "TMAX_ANOM_C__T",
+        "TMIN_ANOM_C__T",
+        "RAIN_ANOM_MM__T_MINUS_1",
+        "TMAX_ANOM_C__T_MINUS_1",
+        "TMIN_ANOM_C__T_MINUS_1"
+      ],
+      "FROZEN_WINDOWS": [
+        "BANANA_FULL_YEAR_T",
+        "BANANA_FULL_YEAR_T_MINUS_1"
+      ],
+      "INVERSE_PERMUTATION": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "PERMUTATION": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "REAL_OUTCOME_EXECUTION_STATUS": "NOT_EXECUTED",
+      "VARIABLE": "TMIN_ANOM_C__T_MINUS_1"
+    }
+  ],
+  "test_sha256": "f7613971d6527325cee68f36161b3c8795722cd824f8956fa6885f11c92baa95"
+}
