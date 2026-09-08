@@ -1,0 +1,393 @@
+{
+  "artifact_sha256": {
+    "outputs/econometrics/ER2_R4P_COEFFICIENT_MAP.csv": "c1a14dbe99ba899a4862d0626796d7950bfcc106bc326483ab44f199abc2527d",
+    "outputs/econometrics/ER2_R4P_GEOMETRY_AUDIT.csv": "154bfa6c22e628cd356926b00096c3fccbf4d747d667d90864a9abd49cec178b",
+    "outputs/econometrics/ER2_R4P_PREFLIGHT_REPORT.md": "b5522ca32ad2d1743164d56e9d6a0fed723f25d674ab0b5d2ed1d07095c6443c",
+    "outputs/econometrics/ER2_R4P_SYNTHETIC_TEST_PLAN_LOCK.json": "c25f7b5cf3074425735ce82e2483007d45ede254435dce63b618ffbc4e233f50",
+    "outputs/econometrics/ER2_R4P_SYNTHETIC_VALIDATION.csv": "11cde7e65ffba6699e9a0764e7a77899c451b3b22ab6e2c32962033d3c6e9837",
+    "scripts/er2_r4p_spatial_hac_preflight_v1.py": "6e53c7f281fc4b27d93f3974d752664892bdf64fb085a596029c70f9452de564",
+    "tests/test_er2_r4p_spatial_hac_preflight_v1.py": "d4e1b05ac04ff1ef485e4a823287790c812a64005d4a9f4b1aa46280b8d064cd"
+  },
+  "bandwidth_contract": {
+    "bandwidths_km": [
+      50,
+      100,
+      150
+    ],
+    "best_bandwidth_selection": "PROHIBITED",
+    "expected_real_rows": 63,
+    "real_rows_created": 0,
+    "selection": "PRESPECIFIED_50_100_150_KM"
+  },
+  "coefficient_mapping": {
+    "all_21_targets_covered": true,
+    "bandwidth_rows_future": 63,
+    "crop_dimensions": {
+      "13010170102": 6,
+      "13010210000": 3,
+      "14010020000": 3,
+      "14010070000": 3,
+      "15010040000": 6
+    },
+    "rows": 21,
+    "status": "PASS"
+  },
+  "conley_api": {
+    "bandwidth_units": "KILOMETRES",
+    "bread": "PINV_XTX_RCOND_1E_12_HERMITIAN_TRUE_ON_BOTH_SIDES",
+    "coordinate_units": "PROJECTED_METRES_DIVIDED_BY_1000",
+    "diagonal": "DISTANCE_ZERO_WEIGHT_ONE_INCLUDED",
+    "explicit_output_symmetrization": "NONE_MATHEMATICALLY_SYMMETRIC",
+    "file": "scripts/econometric_design_master_v1.py",
+    "file_sha256": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195",
+    "finite_sample_scaling": "NONE",
+    "function_body_sha256": "71c27363a0bb95e15f6be07a9f57793cbcfded898ef7b9ccd2c1e72c6f987e2d",
+    "function_lines": [
+      977,
+      999
+    ],
+    "function_source_sha256": "9a67e58fbcb636273baa6a74ef1e4b74deb94ccb3588121545d7e599513dfc77",
+    "meat": "SUM_PERIOD_SCORE_TRANSPOSE_KERNEL_SCORE",
+    "pair_symmetry": "FULL_ORDERED_SYMMETRIC_KERNEL_MATRIX",
+    "period_handling": "SORTED_UNIQUE_PERIOD_BLOCKS_CROSS_PERIOD_PAIRS_EXACT_ZERO",
+    "rank_assumption": "PSEUDOINVERSE_DEFINED_FULL_FROZEN_ER1_WITHIN_RANK_REQUIRED",
+    "required_inputs": [
+      "frame",
+      "x_within",
+      "synthetic_residual",
+      "period_column",
+      "bandwidth_km",
+      "centroids"
+    ],
+    "residual_handling": "SUPPLIED_RESIDUAL_VECTOR_MULTIPLIES_EACH_X_WITHIN_ROW",
+    "returned_object": "K_BY_K_FLOAT64_COVARIANCE_MATRIX",
+    "signature": "conley_covariance(frame, x_within, synthetic_residual, period_column, bandwidth_km, centroids) -> numpy.ndarray",
+    "within_district_handling": "SAME_COORDINATE_BARTLETT_LOGIC_WITHIN_PERIOD_CROSS_PERIOD_EXCLUDED"
+  },
+  "execution_firewall": {
+    "R5_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+    "R6_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+    "REAL_OUTCOME_VALUES_READ": false,
+    "REAL_R4_CONFIDENCE_INTERVALS_COMPUTED": false,
+    "REAL_R4_COVARIANCES_COMPUTED": false,
+    "REAL_R4_EXECUTED": false,
+    "REAL_R4_STANDARD_ERRORS_COMPUTED": false,
+    "REAL_R4_ZERO_INCLUSION_RESULTS_KNOWN": false
+  },
+  "executor_architecture_note": "REUSE_FROZEN_NUMERICAL_FUNCTION_WITH_DETERMINISTIC_NAMED_MAPPING_AND_FAIL_CLOSED_ORCHESTRATION_NO_NUMERICAL_ADAPTER",
+  "final_verdict": "ER2_R4P_PASS_SPATIAL_HAC_PREEXECUTION_CERTIFIED_READY_FOR_DIRECTOR_EXECUTION_DECISION",
+  "frozen_input_sha256": {
+    "config/econometrics/econometric_design_master_v1.json": "feaddf35700a84592ba024ae1fb9e4c9419e00672828fdb7cb29f2775d933c6d",
+    "config/econometrics/er2_robustness_protocol_v1.json": "13519fb5c86fdf690d233c54dd45c3242ba348f3c7f66587238e6965ed1c49ff",
+    "data/processed/climate/district_boundaries_piura.geojson": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+    "outputs/econometrics/ED1_ECONOMETRIC_DESIGN_REPORT.md": "49d2d5bdd2d0871c8f868902be197fda6228423a4f1577b83f47eea34ecc8b34",
+    "outputs/econometrics/ER1_PRIMARY_COEFFICIENTS.csv": "37fa03a2e860f86277510a5ff3b66ca475fc02d277ea1dd6e18156f719c23480",
+    "outputs/econometrics/ER2P_TIER_CONTRACTS.csv": "2ff57eadb872ca6aa10cb84aa4fdf9b7250715df5ca77d2f3e9d22621e7d762a",
+    "outputs/econometrics/ER2_R3_RESULTS_LOCK.json": "931bb70ecece35b5b5751d031b7d34204252de9e4f5106b420ac9572b3eea6b7",
+    "outputs/econometrics/ER2_R3_SAMPLE_AUDIT.csv": "6252b0ec924a14ff6b1ea3d3470c4aa2eaa588d91acc5362d9b6d1874a796193",
+    "scripts/econometric_design_master_v1.py": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195"
+  },
+  "future_real_r4_output_schema": [
+    "CROP",
+    "CROP_CODE",
+    "MODEL_ID",
+    "VARIABLE",
+    "BANDWIDTH_KM",
+    "ER1_BETA_REFERENCE",
+    "CONLEY_VARIANCE",
+    "CONLEY_SE",
+    "Z",
+    "TWO_SIDED_ASYMPTOTIC_P",
+    "NORMAL_CRITICAL_VALUE",
+    "CI95_LOWER",
+    "CI95_UPPER",
+    "CI_ZERO_INCLUDED",
+    "SAMPLE_N",
+    "NOMINAL_DISTRICTS",
+    "PERIODS",
+    "CRS",
+    "KERNEL",
+    "SAME_PERIOD_ONLY",
+    "STATUS"
+  ],
+  "gate": "ER2_R4P_SPATIAL_HAC_CONLEY_PREEXECUTION_CERTIFICATION_V1",
+  "geometry": {
+    "all_distances_finite_nonnegative": true,
+    "centroid_count": 55,
+    "coordinate_construction": "PROJECT_FROZEN_DISTRICT_GEOMETRY_THEN_CENTROID_AS_ED1",
+    "coverage_reason": "EXACT_ROW_LEVEL_SAMPLE_DISTRICT_KEYS_ARE_NOT_AVAILABLE_FROM_OUTCOME_BLIND_FROZEN_AUDIT_ARTIFACTS",
+    "distance_diagonal_exact_zero": true,
+    "distance_matrix_shape": [
+      55,
+      55
+    ],
+    "distance_rule": "EUCLIDEAN_PROJECTED_METRES_DIVIDED_BY_1000",
+    "distance_symmetry_exact": true,
+    "duplicate_coordinate_pairs_distinct_ubigeo": 0,
+    "duplicate_ubigeo_count": 0,
+    "finite_centroid_count": 55,
+    "maximum_distance_km": 203.25433884472582,
+    "sample_aggregate_identity": "PASS_ALL_FIVE_CROPS",
+    "sample_geometry_coverage": "SAMPLE_GEOMETRY_COVERAGE_REQUIRES_REAL_R4_EXECUTION_PREFLIGHT",
+    "source_crs": "EPSG:4326",
+    "source_git_blob_at_r3_parent": "9b961fb2175ff0d6f79e3f486a2ce40bd8f0b143",
+    "source_path": "data/processed/climate/district_boundaries_piura.geojson",
+    "source_sha256": "d966d2a38e80d6575490be32bde2e39b7db66a3c6e99b240e9c21458766d099b",
+    "status": "PASS_STRUCTURAL_GEOMETRY",
+    "target_crs": "EPSG:32717",
+    "unique_ubigeo_count": 55
+  },
+  "governing_state": {
+    "r3_freeze_sha": "ac99e5adb1077cf0d8a545d0077e6b980b4d8a6d",
+    "r3_parent_sha": "c285ccc97fca384663ef98d730cd6cd325c71000",
+    "r3_results_lock_sha256": "931bb70ecece35b5b5751d031b7d34204252de9e4f5106b420ac9572b3eea6b7",
+    "r3_status": "PASS_FROZEN_REMOTE_VERIFIED"
+  },
+  "historical_engine_validation": {
+    "classification": "HISTORICAL_SYNTHETIC_ENGINE_VALIDATION_NOT_REAL_R4_EVIDENCE",
+    "design_artifact_unchanged": true,
+    "status": "PASS_ALL_FIVE_CROPS_ALL_THREE_BANDWIDTHS"
+  },
+  "interval_contract": {
+    "critical_value": 1.959963984540054,
+    "distribution": "ASYMPTOTIC_STANDARD_NORMAL",
+    "interval": "ER1_BETA_PLUS_MINUS_1.959963984540054_TIMES_CONLEY_SE",
+    "multiplicity_adjusted": false,
+    "satterthwaite_df": "NOT_USED"
+  },
+  "joint_conley_tests": "NOT_AUTHORIZED",
+  "multiplicity_firewall": {
+    "GLOBAL_FIVE_CROP_FWER": "NOT_CLAIMED",
+    "HOLM_R4_CI": "NOT_AUTHORIZED",
+    "MULTIPLICITY_ADJUSTED_CONFIDENCE_INTERVALS": "NOT_CONSTRUCTED_NOT_CLAIMED",
+    "VOTE_COUNTING": "PROHIBITED"
+  },
+  "next_action": "RETURN_TO_SCIENTIFIC_DIRECTOR_FOR_REAL_R4_EXECUTION_DECISION",
+  "project": "ENSO_EL_NINO_2026_2027_AGRICULTURE_PIURA",
+  "r4_executor_architecture": "R4_EXECUTOR_CAN_REUSE_FROZEN_ED1_CONLEY_DIRECTLY",
+  "r4_scientific_role": {
+    "beta": "EXACT_ER1_PRIMARY_UNCHANGED",
+    "claim_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+    "district_fe": "REQUIRED",
+    "family": "PHYSICAL_ANOMALY",
+    "functional_form": "LINEAR_ADDITIVE",
+    "interpretation": "CROSS_DISTRICT_SPATIAL_COVARIANCE_SENSITIVITY",
+    "outcome": "YIELD_LEVEL_TM_PER_HA",
+    "period_fe": "REQUIRED",
+    "sample": "EXACT_ER1_R3_UNCHANGED",
+    "weighting": "UNWEIGHTED_PRIMARY_ESTIMATION",
+    "windows": "EXACT_ED1_FROZEN_UNCHANGED"
+  },
+  "r4_tier_contract": {
+    "bandwidth_selection": "PROHIBITED",
+    "bandwidths_km": [
+      50,
+      100,
+      150
+    ],
+    "claim_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+    "coefficient_bandwidth_rows": 63,
+    "coefficients": "EXACT_ER1_PRIMARY_UNCHANGED",
+    "coordinate_construction": "PROJECT_FROZEN_DISTRICT_GEOMETRY_THEN_CENTROID_AS_ED1",
+    "coordinates": "EPSG:32717_DISTRICT_CENTROIDS",
+    "distance": "EUCLIDEAN_PROJECTED_METRES_DIVIDED_BY_1000",
+    "district_fe": "REQUIRED",
+    "er1_numerical_results_identity": "40e0f58269dda309e83a1fa3da17ef4d5dc5523efc72a666f734d0ebacb76b24",
+    "execution_authorized": false,
+    "family": "PHYSICAL_ANOMALY",
+    "functional_form": "LINEAR_ADDITIVE",
+    "global_five_crop_fwer": "NOT_CLAIMED",
+    "interval": "ER1_BETA_PLUS_MINUS_1.959963984540054_TIMES_CONLEY_SE",
+    "kernel": "BARTLETT",
+    "multiplicity": "DIAGNOSTIC_ROBUSTNESS_NO_NEW_CONFIRMATORY_FWER_CLAIM",
+    "multiplicity_adjusted_confidence_intervals": "NOT_CONSTRUCTED_NOT_CLAIMED",
+    "next_tier": "R5",
+    "nonpositive_or_nonfinite_variance": "HOLD_NO_CLIPPING_OR_COVARIANCE_SUBSTITUTION",
+    "normal_critical_value": 1.959963984540054,
+    "order": 4,
+    "outcome_scale": "YIELD_LEVEL_TM_PER_HA",
+    "p_value": "2_TIMES_STANDARD_NORMAL_SURVIVAL_ABS_Z",
+    "p_values": "RAW_ALL_THREE_BANDWIDTHS_NO_SEPARATE_HOLM_FAMILIES",
+    "pairing": "SAME_PERIOD_ONLY",
+    "period_fe": "REQUIRED",
+    "previous_tier": "R3",
+    "primary_replacement": "PROHIBITED",
+    "replaces_primary_cr2": false,
+    "reported_fields": [
+      "ER1_BETA_REFERENCE",
+      "CONLEY_SE",
+      "Z",
+      "TWO_SIDED_ASYMPTOTIC_P",
+      "NORMAL_CI95_LOWER",
+      "NORMAL_CI95_UPPER"
+    ],
+    "residual_specification": "EXACT_ER1_PRIMARY",
+    "role": "ASYMPTOTIC_SPATIAL_HAC_ROBUSTNESS_DIAGNOSTIC",
+    "same_primary_sample": true,
+    "satterthwaite_df": "NOT_CLAIMED",
+    "status": "NOT_EXECUTED",
+    "tier": "R4",
+    "tier_id": "R4_SPATIAL_HAC",
+    "weighting": "UNWEIGHTED_PRIMARY_ESTIMATION",
+    "windows": "EXACT_ED1_FROZEN"
+  },
+  "r4_tier_contract_sha256": "02b1ac12ec85231877f539eadb9f288432012cda0bce5ec0ab917b1e6118ab6b",
+  "r4p_two_run_reproducibility": "PASS",
+  "raw_object_reproducibility_rule": "DIRECT_GIT_OBJECT_EXTRACTION_NO_CANONICALIZATION_WHEN_BYTE_IDENTITY_MATTERS",
+  "schema_version": "1.0.0",
+  "source_audit": {
+    "independent_reference_calls_production": false,
+    "offending_conditions": [],
+    "real_outcome_source_references": [],
+    "real_outcome_values_read": false,
+    "real_r4_confidence_intervals_computed": false,
+    "real_r4_covariances_computed": false,
+    "real_r4_standard_errors_computed": false,
+    "real_r4_zero_inclusion_results_known": false,
+    "result_specific_r4_branches": 0
+  },
+  "status": "PASS_PREEXECUTION_CERTIFIED_PENDING_DIRECTOR_REVIEW",
+  "synthetic_test_plan": {
+    "absolute_tolerance": 1e-10,
+    "bandwidths_km": [
+      50,
+      100,
+      150
+    ],
+    "coordinate_crs": "SYNTHETIC_PROJECTED_METRES",
+    "coordinates_metres": {
+      "D0": [
+        0.0,
+        0.0
+      ],
+      "D1": [
+        25000.0,
+        0.0
+      ],
+      "D2": [
+        50000.0,
+        0.0
+      ],
+      "D3": [
+        75000.0,
+        0.0
+      ],
+      "D4": [
+        150000.0,
+        0.0
+      ],
+      "D5": [
+        0.0,
+        0.0
+      ]
+    },
+    "criteria": [
+      "PRODUCTION_REFERENCE_MAX_ABS_DIFFERENCE_LE_1E_10",
+      "ROW_ORDER_INVARIANCE_LE_1E_10",
+      "DISTRICT_LABEL_INVARIANCE_LE_1E_10",
+      "COORDINATE_TRANSLATION_INVARIANCE_LE_1E_10",
+      "COEFFICIENT_COLUMN_MAPPING_INVARIANCE_LE_1E_10",
+      "FAIL_CLOSED_NONPOSITIVE_NONFINITE_VARIANCE"
+    ],
+    "districts": 6,
+    "edge_cases": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P"
+    ],
+    "equivalence": "FLOAT64_CONTINUOUS_EQUIVALENCE_WITHIN_PRESPECIFIED_TOLERANCE",
+    "observations": 18,
+    "period_key": "SYNTHETIC_PERIOD",
+    "periods": 3,
+    "real_outcome_values_read": false,
+    "regressors": 4,
+    "rng": "NUMPY_GENERATOR_PCG64",
+    "schema_version": "1.0.0",
+    "se_monotonicity_across_bandwidths": "NOT_REQUIRED",
+    "seed": 20260904,
+    "status": "LOCKED_BEFORE_SYNTHETIC_EXECUTION"
+  },
+  "synthetic_validation": {
+    "absolute_tolerance": 1e-10,
+    "checks": 24,
+    "checks_passed": 24,
+    "equivalence": "FLOAT64_CONTINUOUS_EQUIVALENCE_WITHIN_PRESPECIFIED_TOLERANCE",
+    "isolated_two_observation_production_covariances": {
+      "A": 1.0,
+      "B": 0.75,
+      "C": 0.5,
+      "D": 0.5,
+      "E": 0.5,
+      "F": 0.5,
+      "J": 1.0
+    },
+    "nonpositive_nonfinite_variance_policy": "PASS_FAIL_CLOSED_NO_CLIPPING_OR_SUBSTITUTION",
+    "pair_audit": {
+      "100": {
+        "bandwidth_km": 100,
+        "exact_boundary_distance_weight": 0.0,
+        "maximum_off_diagonal_weight": 1.0,
+        "minimum_positive_weight": 0.25,
+        "positive_weight_ordered_pairs": 84,
+        "same_period_ordered_pairs_including_diagonal": 108,
+        "same_period_unordered_pairs_including_diagonal": 63,
+        "zero_weight_ordered_pairs": 24
+      },
+      "150": {
+        "bandwidth_km": 150,
+        "exact_boundary_distance_weight": 0.0,
+        "maximum_off_diagonal_weight": 1.0,
+        "minimum_positive_weight": 0.16666666666666663,
+        "positive_weight_ordered_pairs": 96,
+        "same_period_ordered_pairs_including_diagonal": 108,
+        "same_period_unordered_pairs_including_diagonal": 63,
+        "zero_weight_ordered_pairs": 12
+      },
+      "50": {
+        "bandwidth_km": 50,
+        "exact_boundary_distance_weight": 0.0,
+        "maximum_off_diagonal_weight": 1.0,
+        "minimum_positive_weight": 0.5,
+        "positive_weight_ordered_pairs": 48,
+        "same_period_ordered_pairs_including_diagonal": 108,
+        "same_period_unordered_pairs_including_diagonal": 63,
+        "zero_weight_ordered_pairs": 60
+      }
+    },
+    "production_reference_exact_byte_identity_by_bandwidth": {
+      "100": false,
+      "150": false,
+      "50": false
+    },
+    "production_reference_max_abs_difference": 8.326672684688674e-17,
+    "real_outcome_values_read": false,
+    "se_monotonicity_across_bandwidths": "NOT_REQUIRED",
+    "seed": 20260904,
+    "status": "PASS",
+    "support_nesting": "PASS",
+    "test_plan_lock_sha256": "c25f7b5cf3074425735ce82e2483007d45ede254435dce63b618ffbc4e233f50",
+    "test_plan_lock_written_before_validation": true
+  },
+  "temporal_governance": {
+    "PRIMARY_RESULTS_KNOWN": true,
+    "R1_RESULTS_KNOWN": true,
+    "R2_RESULTS_KNOWN": true,
+    "R3_RESULTS_KNOWN": true,
+    "REAL_R4_RESULTS_KNOWN_BEFORE_THIS_GATE": false,
+    "RESULT_DEPENDENT_DESIGN": "PROHIBITED"
+  },
+  "variance_policy": "HOLD_NO_CLIPPING_OR_COVARIANCE_SUBSTITUTION"
+}

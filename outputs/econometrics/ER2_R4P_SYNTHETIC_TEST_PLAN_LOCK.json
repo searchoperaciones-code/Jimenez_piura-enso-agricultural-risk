@@ -1,0 +1,73 @@
+{
+  "absolute_tolerance": 1e-10,
+  "bandwidths_km": [
+    50,
+    100,
+    150
+  ],
+  "coordinate_crs": "SYNTHETIC_PROJECTED_METRES",
+  "coordinates_metres": {
+    "D0": [
+      0.0,
+      0.0
+    ],
+    "D1": [
+      25000.0,
+      0.0
+    ],
+    "D2": [
+      50000.0,
+      0.0
+    ],
+    "D3": [
+      75000.0,
+      0.0
+    ],
+    "D4": [
+      150000.0,
+      0.0
+    ],
+    "D5": [
+      0.0,
+      0.0
+    ]
+  },
+  "criteria": [
+    "PRODUCTION_REFERENCE_MAX_ABS_DIFFERENCE_LE_1E_10",
+    "ROW_ORDER_INVARIANCE_LE_1E_10",
+    "DISTRICT_LABEL_INVARIANCE_LE_1E_10",
+    "COORDINATE_TRANSLATION_INVARIANCE_LE_1E_10",
+    "COEFFICIENT_COLUMN_MAPPING_INVARIANCE_LE_1E_10",
+    "FAIL_CLOSED_NONPOSITIVE_NONFINITE_VARIANCE"
+  ],
+  "districts": 6,
+  "edge_cases": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P"
+  ],
+  "equivalence": "FLOAT64_CONTINUOUS_EQUIVALENCE_WITHIN_PRESPECIFIED_TOLERANCE",
+  "observations": 18,
+  "period_key": "SYNTHETIC_PERIOD",
+  "periods": 3,
+  "real_outcome_values_read": false,
+  "regressors": 4,
+  "rng": "NUMPY_GENERATOR_PCG64",
+  "schema_version": "1.0.0",
+  "se_monotonicity_across_bandwidths": "NOT_REQUIRED",
+  "seed": 20260904,
+  "status": "LOCKED_BEFORE_SYNTHETIC_EXECUTION"
+}
