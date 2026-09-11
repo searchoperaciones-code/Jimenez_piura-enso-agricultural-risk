@@ -1,0 +1,530 @@
+{
+  "FROZEN_INPUT_BYTE_SOURCE": "RAW_GIT_OBJECT",
+  "NEXT_TIER_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+  "PREVIOUS_DEDICATED_TESTS": "32_RUN_30_PASS_0_FAIL_2_ERROR",
+  "PREVIOUS_FAILED_VERDICT": "ER2_R5P_FAIL_R4_PREDECESSOR_IDENTITY",
+  "PREVIOUS_FAILURE_ROOT_CAUSE": "WINDOWS_CHECKOUT_EOL_MATERIALIZATION_IN_BYTE_VERIFIER",
+  "PREVIOUS_HOLD_VERDICT": "ER2_R5P_HOLD_INTERRUPTED_LOCAL_STATE_REQUIRES_ADJUDICATION",
+  "R4_PREDECESSOR_SCIENTIFIC_IDENTITY": "PASS",
+  "REMEDIATION_GATE": "ER2_R5P1_RAW_GIT_PREDECESSOR_BYTE_HARDENING_AND_RESUME",
+  "SUPERSEDED_R5P_LOCK_SHA": "8024092d5b85179046462cac3b7e5ad02f22492ef8eb170c55e9252291b0c683",
+  "SUPERSEDED_R5P_LOCK_STATUS": "SUPERSEDED_PRE_REMEDIATION_CANDIDATE_LOCK",
+  "WORKTREE_BYTES_ARE_AUTHORITATIVE": false,
+  "artifact_sha256": {
+    "outputs/econometrics/ER2_R5P_COEFFICIENT_OMISSION_MAP.csv": "7aa322eed652102811974e139458b4470bd6f459753e12f3585b369c8f416bd5",
+    "outputs/econometrics/ER2_R5P_OMISSION_PLAN.csv": "55f1409a4b2e40fe98f7cbf69e7ebcb00654640b7c52371cb88aa9ac1f9928e9",
+    "outputs/econometrics/ER2_R5P_PREFLIGHT_REPORT.md": "94adf7161b02e8c052d947443a69534b7c9e738769a1b861e0709c3df042bbf9",
+    "outputs/econometrics/ER2_R5P_SYNTHETIC_TEST_PLAN_LOCK.json": "a68afb62fbf733943a2e459bff1c565457527b4e179513ffe8c0ab5a422324ed",
+    "outputs/econometrics/ER2_R5P_SYNTHETIC_VALIDATION.csv": "af82df4b5eb8b3fa122299ed47dd264eac28adb79a0a676188f1fbaa3805dca3",
+    "scripts/er2_r5p_leave_one_period_out_preflight_v1.py": "c907b5bf15d7a8de83abbd66bf916be879c5098ec2cf1d214f2e84b7bc0b0387",
+    "tests/test_er2_r5p_leave_one_period_out_preflight_v1.py": "7e922dd96b36d7592b66470c8fdf084e35f3b0f7871082d7178af0095f0daf82"
+  },
+  "coefficient_omission_map": {
+    "coefficient_dimensions": {
+      "13010170102": 6,
+      "13010210000": 3,
+      "14010020000": 3,
+      "14010070000": 3,
+      "15010040000": 6
+    },
+    "real_detail_rows_current": 0,
+    "real_summary_rows_current": 0,
+    "rows": 162,
+    "status": "PASS",
+    "summary_rows_future": 21
+  },
+  "estimation_api": {
+    "adapter_role": "FAIL_CLOSED_ONE_PERIOD_FILTER_AND_NAMED_COEFFICIENT_EXTRACTION_ONLY",
+    "coefficient_order": "EXACT_FROZEN_ED1_REGRESSOR_ORDER",
+    "coefficient_solver": "FROZEN_ED1_FULL_DESIGN_NUMPY_LSTSQ_RCOND_NONE",
+    "executor_architecture": "R5_EXECUTOR_CAN_REUSE_FROZEN_PRIMARY_ESTIMATION_DIRECTLY",
+    "fe_absorption": "FROZEN_ED1_DISTRICT_AND_REMAINING_PERIOD_FE",
+    "file": "scripts/econometric_design_master_v1.py",
+    "file_sha256": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195",
+    "functions": {
+      "absorb_fixed_effects": {
+        "body_sha256": "d9f1f2aab8742c4d298f25d490894df63c8859dba85895d3af489e41e27dbab3",
+        "function": "absorb_fixed_effects",
+        "lines": [
+          509,
+          511
+        ],
+        "signature": "(values: 'np.ndarray', fixed_effects: 'np.ndarray') -> 'np.ndarray'",
+        "source_sha256": "4ae0489a781fc68b1e86299e6387a62cca06542a85f5f108c4be19684d2c248b"
+      },
+      "fe_matrix": {
+        "body_sha256": "b3ad4590b2e814b6b6f4296429e45feed038347cc8f4f9dfe480cfe54821025f",
+        "function": "fe_matrix",
+        "lines": [
+          461,
+          467
+        ],
+        "signature": "(frame: 'pd.DataFrame', period_column: 'str') -> 'np.ndarray'",
+        "source_sha256": "7d9ba3fffaecc95ebc9089a56db3a4b14dd3239d2a5a002cd83e77b5319cc7c5"
+      },
+      "fit_two_way_fe_cr2": {
+        "body_sha256": "63c2e6c02aa9dbddda39224e76eed2afe4dcee8d2e08c4845debfa0e32d158ec",
+        "function": "fit_two_way_fe_cr2",
+        "lines": [
+          579,
+          665
+        ],
+        "signature": "(frame: 'pd.DataFrame', x_columns: 'list[str]', period_column: 'str', response: 'np.ndarray') -> 'dict[str, Any]'",
+        "source_sha256": "fc518afb1a72d7d5a8b61e1792448e34b5f3963475979ee19632a147d2010442"
+      }
+    },
+    "inference_outputs": "NOT_AUTHORIZED",
+    "rank_check": "FULL_DESIGN_AND_WITHIN_CLIMATE_BLOCK_FULL_COLUMN_RANK_REQUIRED",
+    "row_order": "UBIGEO_THEN_PERIOD_STABLE_MERGESORT"
+  },
+  "execution_firewall": {
+    "A1_A2": "NOT_EXECUTED",
+    "B3_STRICT_RESULTS_READ": false,
+    "ENSO_SCENARIOS": "NOT_EXECUTED",
+    "GVP": "NOT_EXECUTED",
+    "OPTIMIZATION": "NOT_EXECUTED",
+    "R6_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+    "R6_EXECUTED": false,
+    "REAL_R5_EXECUTION_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+    "VAR_CVAR": "NOT_EXECUTED"
+  },
+  "final_verdict": "ER2_R5P_PASS_RAW_GIT_PREDECESSOR_HARDENED_PREEXECUTION_CERTIFIED_READY_FOR_DIRECTOR_FREEZE_DECISION",
+  "fixed_model_components": {
+    "climate_family": "PHYSICAL_ANOMALY",
+    "district_deletion": "PROHIBITED",
+    "district_fe": "REQUIRED",
+    "functional_form": "LINEAR_ADDITIVE",
+    "outcome": "YIELD_LEVEL_TM_PER_HA",
+    "regressors": "EXACT_ER1_REGRESSORS",
+    "remaining_period_fe": "REQUIRED",
+    "sample_change": "ONE_ENTIRE_PERIOD_OMITTED_PER_MODEL_ONLY",
+    "second_period_omission": "PROHIBITED",
+    "weighting": "UNWEIGHTED_PRIMARY_ESTIMATION",
+    "windows": "EXACT_ED1_FROZEN"
+  },
+  "frozen_input_sha256": {
+    "config/econometrics/er2_robustness_protocol_v1.json": "13519fb5c86fdf690d233c54dd45c3242ba348f3c7f66587238e6965ed1c49ff",
+    "outputs/econometrics/ER2P_TIER_CONTRACTS.csv": "2ff57eadb872ca6aa10cb84aa4fdf9b7250715df5ca77d2f3e9d22621e7d762a",
+    "outputs/econometrics/ER2_R2_RESULTS_LOCK.json": "117a3fe5da88f44d31b176495409f6e84189148f1020417f046b0df3dd4c5f6b",
+    "outputs/econometrics/ER2_R4P_COEFFICIENT_MAP.csv": "c1a14dbe99ba899a4862d0626796d7950bfcc106bc326483ab44f199abc2527d",
+    "outputs/econometrics/ER2_R4_CONCORDANCE.csv": "61a5cca23a649e79baadf7ea88de678a53934aba9ccbb49ec165674973953c79",
+    "outputs/econometrics/ER2_R4_CONLEY_RESULTS.csv": "69e00db9bb70fa3f6aa87a6357568a8f1692ec112d79c090c3915f5d238afba6",
+    "outputs/econometrics/ER2_R4_COVARIANCE_AUDIT.csv": "769c0b5df8cd87b8f1d44de34f2f6c8709527622ecb0b73dc8d52b6c37f5ec73",
+    "outputs/econometrics/ER2_R4_REPORT.md": "ba6408154964669bd3dbb395eb982bdeffd18e5eb7c94b8eff22ddbd0b18b511",
+    "outputs/econometrics/ER2_R4_RESULTS_LOCK.json": "1741a7beca4b63362dc736450b5077d1f5d6e076580178eec054253abeb93fe7",
+    "outputs/econometrics/ER2_R4_SAMPLE_GEOMETRY_COVERAGE.csv": "e4a8d66f6ac462a062a813ab5105f004067a962e9145d07ab0fe764016caf530",
+    "scripts/econometric_design_master_v1.py": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195",
+    "scripts/er2_r4_spatial_hac_real_v1.py": "cdc6f2b68bf4834fd2ea982ac75604f975d777380d9e477e53597c25efc9a9d8",
+    "tests/test_er2_r4_spatial_hac_real_v1.py": "6ab996efc51885d5025f44845800d53ddb25c4d46adc874b9dbe2a1134ef37b0"
+  },
+  "future_real_r5_detail_schema": [
+    "CROP",
+    "CROP_CODE",
+    "MODEL_ID",
+    "VARIABLE",
+    "OMITTED_PERIOD_ID",
+    "OMITTED_PERIOD_ORDER",
+    "MANDATORY_NAMED_CASE",
+    "PRIMARY_BETA_REFERENCE",
+    "LOO_BETA",
+    "BETA_DIFFERENCE",
+    "ABS_BETA_DEVIATION",
+    "PRIMARY_SIGN",
+    "LOO_SIGN",
+    "SIGN_REVERSAL",
+    "RETAINED_N",
+    "RETAINED_PERIODS",
+    "MODEL_VALID",
+    "STATUS"
+  ],
+  "future_real_r5_summary_schema": [
+    "CROP",
+    "CROP_CODE",
+    "MODEL_ID",
+    "VARIABLE",
+    "PRIMARY_BETA_REFERENCE",
+    "MIN_LOO_BETA",
+    "MAX_LOO_BETA",
+    "BETA_RANGE",
+    "MEDIAN_LOO_BETA",
+    "POSITIVE_COUNT",
+    "NEGATIVE_COUNT",
+    "ZERO_COUNT",
+    "SIGN_REVERSAL_COUNT",
+    "MAX_ABSOLUTE_BETA_DEVIATION",
+    "PERIODS_CAUSING_MAX_ABSOLUTE_DEVIATION",
+    "LEAVE_2017_OUT_BETA",
+    "LEAVE_2023_OUT_BETA",
+    "STATUS"
+  ],
+  "gate": "ER2_R5P_LEAVE_ONE_PERIOD_OUT_PREEXECUTION_CERTIFICATION_V1",
+  "governing_state": {
+    "r4_branch": "phase/er2-r4-spatial-hac-v1",
+    "r4_freeze_sha": "26912f99b7e6cfbbfcf2b8cfc72fe9b2b9c379ee",
+    "r4_parent_sha": "652d846f7f13f2557cb830dde390a16bbca9fa2d",
+    "r4_results_lock_sha256": "1741a7beca4b63362dc736450b5077d1f5d6e076580178eec054253abeb93fe7",
+    "r4_status": "PASS_FROZEN_REMOTE_VERIFIED",
+    "r4_tag": "er2-r4-spatial-hac-v1-freeze",
+    "r4_tag_object": "f08d90cc4b2ce57edf405e081783691c979090e2"
+  },
+  "mandatory_named_reporting": {
+    "estimator_effect": "NONE_REPORTING_LABELS_ONLY",
+    "frozen_pre_result": true,
+    "perennial": {
+      "LEAVE_2017_OUT": "2017",
+      "LEAVE_2023_OUT": "2023"
+    },
+    "transient": {
+      "LEAVE_2017_OUT": "2016/2017",
+      "LEAVE_2023_OUT": "2022/2023"
+    }
+  },
+  "next_action": "RETURN_TO_SCIENTIFIC_DIRECTOR_FOR_R5P_FREEZE_DECISION_IF_PASS",
+  "omission_plan": {
+    "baseline_refits_counted": 0,
+    "district_omissions": 0,
+    "models_by_crop": {
+      "13010170102": 8,
+      "13010210000": 8,
+      "14010020000": 7,
+      "14010070000": 7,
+      "15010040000": 8
+    },
+    "refit_models": 38,
+    "report_all_periods": true,
+    "rows": 38,
+    "second_period_omissions": 0,
+    "status": "PASS"
+  },
+  "period_id_architecture": {
+    "crop_audit": {
+      "13010170102": {
+        "crop": "LIMON_SUTIL",
+        "model_id": "ED1-LEMON",
+        "ordered_key_sha256": "33b7bd8de1439e45c3103b6fbed1896859f6d95fdc51f8538342c8e83d74573b",
+        "period_count": 8,
+        "period_id_column": "REFERENCE_PERIOD_ID",
+        "periods": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "real_climate_regressor_numerical_values_read": false,
+        "real_outcome_numerical_values_read": false,
+        "real_period_labels_read": true,
+        "real_sample_keys_read": true,
+        "sample_n": 311,
+        "source": "ER2_R2_RESULTS_LOCK.sample_identity.er1_ordered_keys",
+        "source_rule": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE"
+      },
+      "13010210000": {
+        "crop": "MANGO",
+        "model_id": "ED1-MANGO",
+        "ordered_key_sha256": "7efb038fd53e1b3c9451f34fbf49bf3784a21cdc74d4fd6a047db4af4b08f315",
+        "period_count": 8,
+        "period_id_column": "REFERENCE_PERIOD_ID",
+        "periods": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "real_climate_regressor_numerical_values_read": false,
+        "real_outcome_numerical_values_read": false,
+        "real_period_labels_read": true,
+        "real_sample_keys_read": true,
+        "sample_n": 255,
+        "source": "ER2_R2_RESULTS_LOCK.sample_identity.er1_ordered_keys",
+        "source_rule": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE"
+      },
+      "14010020000": {
+        "crop": "RICE",
+        "model_id": "ED1-RICE",
+        "ordered_key_sha256": "01d266a011af198d93470fb68ace409f6842115199cdfa8473583b82e0ee79da",
+        "period_count": 7,
+        "period_id_column": "CAMPAIGN_ID",
+        "periods": [
+          "2016/2017",
+          "2017/2018",
+          "2018/2019",
+          "2019/2020",
+          "2020/2021",
+          "2021/2022",
+          "2022/2023"
+        ],
+        "real_climate_regressor_numerical_values_read": false,
+        "real_outcome_numerical_values_read": false,
+        "real_period_labels_read": true,
+        "real_sample_keys_read": true,
+        "sample_n": 281,
+        "source": "ER2_R2_RESULTS_LOCK.sample_identity.er1_ordered_keys",
+        "source_rule": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE"
+      },
+      "14010070000": {
+        "crop": "MAIZ_AMARILLO_DURO",
+        "model_id": "ED1-MAD",
+        "ordered_key_sha256": "0421d3e0b3387f3efe549c25722da085454d15ea00ca1ce73fe46e03fd179013",
+        "period_count": 7,
+        "period_id_column": "CAMPAIGN_ID",
+        "periods": [
+          "2016/2017",
+          "2017/2018",
+          "2018/2019",
+          "2019/2020",
+          "2020/2021",
+          "2021/2022",
+          "2022/2023"
+        ],
+        "real_climate_regressor_numerical_values_read": false,
+        "real_outcome_numerical_values_read": false,
+        "real_period_labels_read": true,
+        "real_sample_keys_read": true,
+        "sample_n": 318,
+        "source": "ER2_R2_RESULTS_LOCK.sample_identity.er1_ordered_keys",
+        "source_rule": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE"
+      },
+      "15010040000": {
+        "crop": "PLATANOS_Y_BANANAS",
+        "model_id": "ED1-BANANA",
+        "ordered_key_sha256": "27cf0c52704bd4be3221e2fefed30a9ae08d9ed395373c50e4bff2ede837d6c2",
+        "period_count": 8,
+        "period_id_column": "REFERENCE_PERIOD_ID",
+        "periods": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "real_climate_regressor_numerical_values_read": false,
+        "real_outcome_numerical_values_read": false,
+        "real_period_labels_read": true,
+        "real_sample_keys_read": true,
+        "sample_n": 390,
+        "source": "ER2_R2_RESULTS_LOCK.sample_identity.er1_ordered_keys",
+        "source_rule": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE"
+      }
+    },
+    "perennial": "REFERENCE_PERIOD_ID",
+    "source_rule": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE",
+    "transient": "CAMPAIGN_ID"
+  },
+  "project": "ENSO_EL_NINO_2026_2027_AGRICULTURE_PIURA",
+  "r5_concordance_contract": {
+    "cross_tier_aggregation": "PROHIBITED",
+    "fields": [
+      "PRIMARY_BETA_REFERENCE",
+      "R5_SIGN_REVERSAL_COUNT",
+      "R5_BETA_RANGE"
+    ],
+    "robustness_score": "PROHIBITED"
+  },
+  "r5_loo_inference_outputs": "NOT_AUTHORIZED",
+  "r5_tier_contract": {
+    "claim_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+    "crop_aht_range": "NOT_REQUESTED_OPTIONAL_EXTENSION_NOT_EXECUTED",
+    "district_fe": "REQUIRED",
+    "er1_numerical_results_identity": "40e0f58269dda309e83a1fa3da17ef4d5dc5523efc72a666f734d0ebacb76b24",
+    "execution_authorized": false,
+    "expected_models": 38,
+    "expected_models_by_crop": {
+      "13010170102": 8,
+      "13010210000": 8,
+      "14010020000": 7,
+      "14010070000": 7,
+      "15010040000": 8
+    },
+    "failed_omission": "RETAIN_STATUS_ROW_HOLD_FOR_ADJUDICATION_NO_REPLACEMENT_OR_PARTIAL_DISTRIBUTION_CLAIM",
+    "family": "PHYSICAL_ANOMALY",
+    "functional_form": "LINEAR_ADDITIVE",
+    "global_five_crop_fwer": "NOT_CLAIMED",
+    "influential_district_deletion": "PROHIBITED",
+    "mandatory_named_reporting": [
+      "LEAVE_2017_OUT",
+      "LEAVE_2023_OUT"
+    ],
+    "max_deviation_tie_rule": "REPORT_ALL_TIED_PERIOD_IDS_SORTED_NO_POST_RESULT_TIE_SELECTION",
+    "multiplicity": "DESCRIPTIVE_COEFFICIENT_DISTRIBUTIONS_NO_SIGNIFICANCE_VOTE_COUNTING",
+    "multiplicity_adjusted_confidence_intervals": "NOT_CONSTRUCTED_NOT_CLAIMED",
+    "named_perennial_mapping": {
+      "LEAVE_2017_OUT": "2017",
+      "LEAVE_2023_OUT": "2023"
+    },
+    "named_transient_mapping": {
+      "LEAVE_2017_OUT": "2016/2017",
+      "LEAVE_2023_OUT": "2022/2023"
+    },
+    "next_tier": "R6",
+    "order": 5,
+    "outcome_scale": "YIELD_LEVEL_TM_PER_HA",
+    "period_fe": "REQUIRED",
+    "period_id_by_regime": {
+      "perennial": "REFERENCE_PERIOD_ID",
+      "transient": "CAMPAIGN_ID"
+    },
+    "period_source": "SORTED_UNIQUE_PERIODS_OF_EACH_EXACT_ER1_ANALYTICAL_SAMPLE",
+    "positive_negative_rule": "STRICTLY_GREATER_LESS_THAN_ZERO_REPORT_EXACT_ZERO_COUNT_SEPARATELY",
+    "previous_tier": "R4",
+    "primary_replacement": "PROHIBITED",
+    "remaining_period_fe": "REQUIRED",
+    "report_all_periods": true,
+    "role": "ALL_PERIOD_INFLUENCE_DESCRIPTION",
+    "same_regressors": true,
+    "sample_change": "ONE_ENTIRE_PERIOD_OMITTED_PER_MODEL_ONLY",
+    "second_period_omission": "PROHIBITED",
+    "sign_reversal_rule": "PRODUCT_OF_LOO_AND_PRIMARY_BETA_STRICTLY_NEGATIVE",
+    "stability_classification": "DESCRIPTIVE_NO_ARBITRARY_PASS_FAIL_THRESHOLD",
+    "status": "NOT_EXECUTED",
+    "summary_metrics": [
+      "PRIMARY_BETA_REFERENCE",
+      "MIN_LOO_BETA",
+      "MAX_LOO_BETA",
+      "MEDIAN_LOO_BETA",
+      "POSITIVE_COUNT",
+      "NEGATIVE_COUNT",
+      "SIGN_REVERSALS_RELATIVE_TO_PRIMARY",
+      "MAX_ABSOLUTE_BETA_DEVIATION",
+      "PERIOD_CAUSING_MAX_ABSOLUTE_DEVIATION"
+    ],
+    "tier": "R5",
+    "tier_id": "R5_LEAVE_ONE_PERIOD_OUT_ALL_PERIODS",
+    "weighting": "UNWEIGHTED_PRIMARY_ESTIMATION",
+    "windows": "EXACT_ED1_FROZEN",
+    "zero_primary_sign_rule": "REVERSAL_COUNT_NULL_WITH_NOT_DEFINED_PRIMARY_ZERO_STATUS"
+  },
+  "r5_tier_contract_sha256": "0bb92a0f19cd8f476eab4844dd49d9de1a9a217cd887aeb4e80839bfb09ed91b",
+  "r5p_two_run_reproducibility": {
+    "absolute_local_paths": "ABSENT",
+    "bom": "ABSENT",
+    "byte_identical_generated_artifacts": true,
+    "encoding": "UTF-8",
+    "final_lf": "EXACTLY_ONE",
+    "independent_renderings": 2,
+    "line_endings": "LF",
+    "status": "PASS",
+    "timestamps": "ABSENT"
+  },
+  "real_result_firewall": {
+    "R5_PRIMARY_MODEL_REPLACEMENTS": 0,
+    "REAL_CLIMATE_REGRESSOR_NUMERICAL_VALUES_READ": false,
+    "REAL_OUTCOME_NUMERICAL_VALUES_READ": false,
+    "REAL_PERIOD_LABELS_READ": true,
+    "REAL_R5_BETAS_COMPUTED": false,
+    "REAL_R5_BETA_RANGES_KNOWN": false,
+    "REAL_R5_MAX_DEVIATION_PERIODS_KNOWN": false,
+    "REAL_R5_P_VALUES_COMPUTED": false,
+    "REAL_R5_REFITS_EXECUTED": 0,
+    "REAL_R5_SIGN_REVERSALS_KNOWN": false,
+    "REAL_SAMPLE_KEYS_READ": true
+  },
+  "result_specific_r5_branches": 0,
+  "schema_version": "1.0.0",
+  "scientific_role": {
+    "family": "PHYSICAL_ANOMALY",
+    "no_omission_result_becomes_primary": true,
+    "primary_replacement": "PROHIBITED",
+    "question": "COEFFICIENT_CHANGE_WHEN_ONE_ENTIRE_OBSERVED_PERIOD_IS_REMOVED",
+    "role": "ALL_PERIOD_INFLUENCE_DESCRIPTION",
+    "significance_vote_counting": "PROHIBITED",
+    "stability_classification": "DESCRIPTIVE_NO_ARBITRARY_PASS_FAIL_THRESHOLD"
+  },
+  "sign_rules": {
+    "negative": "BETA_LESS_THAN_ZERO",
+    "positive": "BETA_GREATER_THAN_ZERO",
+    "sign_reversal": "PRODUCT_OF_LOO_AND_PRIMARY_BETA_STRICTLY_NEGATIVE",
+    "zero": "BETA_EXACTLY_ZERO_REPORTED_SEPARATELY",
+    "zero_reversal": "FALSE_IF_PRIMARY_OR_LOO_BETA_IS_ZERO"
+  },
+  "status": "PASS_PREEXECUTION_CERTIFIED_PENDING_DIRECTOR_REVIEW",
+  "summary_metric_contract": {
+    "absolute_deviation": "ABS_LOO_BETA_MINUS_PRIMARY_BETA_REFERENCE",
+    "beta_range": "MAX_LOO_BETA_MINUS_MIN_LOO_BETA",
+    "exact_zero_output_field": "ZERO_COUNT",
+    "max_deviation_period_output_field": "PERIODS_CAUSING_MAX_ABSOLUTE_DEVIATION",
+    "max_deviation_tie_rule": "REPORT_ALL_TIED_PERIOD_IDS_SORTED_NO_POST_RESULT_TIE_SELECTION",
+    "metrics": [
+      "PRIMARY_BETA_REFERENCE",
+      "MIN_LOO_BETA",
+      "MAX_LOO_BETA",
+      "MEDIAN_LOO_BETA",
+      "POSITIVE_COUNT",
+      "NEGATIVE_COUNT",
+      "EXACT_ZERO_COUNT",
+      "SIGN_REVERSALS_RELATIVE_TO_PRIMARY",
+      "MAX_ABSOLUTE_BETA_DEVIATION",
+      "PERIOD_CAUSING_MAX_ABSOLUTE_DEVIATION",
+      "BETA_RANGE",
+      "PERIODS_CAUSING_MAX_ABSOLUTE_DEVIATION",
+      "LEAVE_2017_OUT_BETA",
+      "LEAVE_2023_OUT_BETA"
+    ],
+    "sign_reversal_output_field": "SIGN_REVERSAL_COUNT",
+    "standardized_influence_score": "NOT_AUTHORIZED"
+  },
+  "synthetic_test_plan": {
+    "balanced_core": true,
+    "continuous_tolerance": 1e-10,
+    "controlled_unbalanced_cell": "DROP_D06_X_P05",
+    "districts": 6,
+    "frozen_before_first_synthetic_refit": true,
+    "gate": "ER2_R5P_LEAVE_ONE_PERIOD_OUT_PREEXECUTION_CERTIFICATION_V1",
+    "periods": 5,
+    "production_path": "FROZEN_ED1_FIT_TWO_WAY_FE_CR2_BETA_ONLY_VIA_FAIL_CLOSED_LOO_ADAPTER",
+    "real_sample_values": "NOT_READ",
+    "reference_path": "INDEPENDENT_FULL_DUMMY_MATRIX_NUMPY_LSTSQ_COEFFICIENT_ONLY",
+    "regressors": 3,
+    "required_edge_cases": [
+      "A_EVERY_PERIOD_OMITTED_EXACTLY_ONCE",
+      "B_OMITTED_PERIOD_HAS_ZERO_RETAINED_ROWS",
+      "C_ALL_OTHER_PERIODS_RETAINED_EXACTLY",
+      "D_REMAINING_PERIOD_FE_ACTIVE",
+      "E_DISTRICT_FE_ACTIVE",
+      "F_EXACT_SAME_REGRESSORS",
+      "G_NO_SECOND_OMISSION",
+      "H_ROW_ORDER_PERMUTATION_INVARIANCE",
+      "I_PERIOD_ORDER_PERMUTATION_INVARIANCE",
+      "J_COEFFICIENT_COLUMN_MAPPING_INVARIANCE",
+      "K_STRICT_POSITIVE_CLASSIFICATION",
+      "L_STRICT_NEGATIVE_CLASSIFICATION",
+      "M_EXACT_ZERO_CLASSIFICATION",
+      "N_STRICT_SIGN_REVERSAL_RULE",
+      "O_NO_REVERSAL_WITH_PRIMARY_OR_LOO_ZERO",
+      "P_MINIMUM_MAXIMUM_MEDIAN_SUMMARIES",
+      "Q_BETA_RANGE",
+      "R_MAXIMUM_ABSOLUTE_DEVIATION",
+      "S_ALL_TIED_PERIODS_SORTED",
+      "T_2017_2023_LABELS_DO_NOT_ALTER_ESTIMATION",
+      "U_RANK_DEFICIENT_REFIT_FAILS_CLOSED",
+      "V_EMPTY_REMAINING_PERIOD_FAILS_CLOSED",
+      "W_MISSING_PERIOD_ID_FAILS_CLOSED",
+      "X_DUPLICATE_TARGET_MAPPING_FAILS_CLOSED"
+    ],
+    "rng": "NUMPY_GENERATOR_PCG64",
+    "schema_version": "1.0.0",
+    "seed": 20260905
+  },
+  "synthetic_validation": {
+    "continuous_tolerance": 1e-10,
+    "edge_cases_passed": 24,
+    "edge_cases_required": 24,
+    "maximum_absolute_beta_difference": 0.0,
+    "plan_lock_sha256": "a68afb62fbf733943a2e459bff1c565457527b4e179513ffe8c0ab5a422324ed",
+    "production_path": "FROZEN_ED1_FIT_TWO_WAY_FE_CR2_BETA_ONLY_VIA_FAIL_CLOSED_LOO_ADAPTER",
+    "production_reference_omissions": 5,
+    "reference_path": "INDEPENDENT_FULL_DUMMY_MATRIX_NUMPY_LSTSQ_COEFFICIENT_ONLY",
+    "status": "PASS",
+    "validation_rows": 33
+  }
+}
