@@ -1,0 +1,79 @@
+{
+  "admissible_status": "R6_RICE_INFERENTIALLY_ADMISSIBLE",
+  "campaigns": 7,
+  "coefficient_reference": "INDEPENDENT_NUMPY_FULL_DUMMY_LEAST_SQUARES",
+  "districts": 12,
+  "domain": "SYNTHETIC_ONLY_NO_REAL_VALUES",
+  "extra_checks": [
+    "NONFINITE_BETA",
+    "MALFORMED_MAPPING",
+    "MULTIPLE_FAILED_GATES",
+    "NO_PARTIAL_PROMOTION",
+    "SYNTHETIC_NAMESPACE",
+    "NO_ESTIMATOR_RETRY"
+  ],
+  "fail_closed_cases": {
+    "A": "N_31",
+    "B": "DISTRICTS_12",
+    "C": "PERIODS_7",
+    "D": "WITHIN_RANK_3",
+    "E": "FULL_DESIGN_RANK",
+    "F": "CR2_ADJUSTMENTS",
+    "G": "POSITIVE_FINITE_SE",
+    "H": "POSITIVE_FINITE_SE",
+    "I": "POSITIVE_FINITE_DF",
+    "J": "VALID_FINITE_AHT",
+    "K": "REQUIRED_COLUMNS",
+    "L": "UNIQUE_KEYS",
+    "M": "VALID_B3_ONLY",
+    "N": "EXACT_INTERSECTION",
+    "O": "MAD_ESTIMATION_PROHIBITED",
+    "P": "PERENNIAL_ESTIMATION_PROHIBITED",
+    "Q": "FROZEN_MODEL",
+    "R": "FROZEN_MODEL"
+  },
+  "gate": "ER2_R6P_B3_STRICT_EXPOSURE_PREEXECUTION_CERTIFICATION_V1",
+  "gates": [
+    "N_31",
+    "DISTRICTS_12",
+    "PERIODS_7",
+    "FULL_DESIGN_RANK",
+    "WITHIN_RANK_3",
+    "CR2_ADJUSTMENTS",
+    "POSITIVE_FINITE_SE",
+    "POSITIVE_FINITE_DF",
+    "FINITE_COEFFICIENT_STATISTICS",
+    "VALID_FINITE_AHT"
+  ],
+  "graph": "FOR_DISTRICT_i_0_TO_11_USE_CAMPAIGNS_i_MOD_7_AND_i_PLUS_1_MOD_7_THEN_FOR_i_0_TO_6_ADD_i_PLUS_3_MOD_7",
+  "mapping_reference": "DIRECT_FROZEN_ARRAY_POSITIONS_AND_AHT_KEYS_PLUS_DISTINCT_SENTINEL_INJECTION",
+  "model": {
+    "campaign_fe": "REQUIRED",
+    "district_fe": "REQUIRED",
+    "district_trends": "PROHIBITED",
+    "estimator": "fit_two_way_fe_cr2",
+    "functional_form": "LINEAR_ADDITIVE",
+    "outcome": "YIELD_LEVEL_TM_PER_HA",
+    "regressors": [
+      "RAIN_ANOM_MM",
+      "TMAX_ANOM_C",
+      "TMIN_ANOM_C"
+    ],
+    "substitute_model": "PROHIBITED",
+    "weighting": "UNWEIGHTED",
+    "windows": "EXACT_ED1_FROZEN"
+  },
+  "n": 31,
+  "real_r6_execution_authorized": false,
+  "regressors": [
+    "RAIN_ANOM_MM",
+    "TMAX_ANOM_C",
+    "TMIN_ANOM_C"
+  ],
+  "rng": "NUMPY_GENERATOR_PCG64",
+  "row_order": "SORTED_DISTRICT_CAMPAIGN",
+  "seed": 20260906,
+  "tolerance": 1e-10,
+  "x": "PCG64_STANDARD_NORMAL_31_BY_3",
+  "y": "X_DOT_[0.4,-0.3,0.2]_PLUS_0.1_DISTRICT_INDEX_MINUS_0.2_CAMPAIGN_INDEX_PLUS_PCG64_NORMAL_NOISE"
+}

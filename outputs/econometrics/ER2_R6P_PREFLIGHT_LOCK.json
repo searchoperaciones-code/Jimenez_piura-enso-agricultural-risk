@@ -1,0 +1,1022 @@
+{
+  "admissibility_predicate": "FULL_WITHIN_RANK_VALID_CR2_ADJUSTMENTS_POSITIVE_FINITE_SE_AND_DF_VALID_FINITE_AHT",
+  "all_required_gates": [
+    "N_31",
+    "DISTRICTS_12",
+    "PERIODS_7",
+    "FULL_DESIGN_RANK",
+    "WITHIN_RANK_3",
+    "CR2_ADJUSTMENTS",
+    "POSITIVE_FINITE_SE",
+    "POSITIVE_FINITE_DF",
+    "FINITE_COEFFICIENT_STATISTICS",
+    "VALID_FINITE_AHT"
+  ],
+  "artifact_sha256_excluding_self": {
+    "outputs/econometrics/ER2_R6P_PREFLIGHT_REPORT.md": "1e66b3892016b276337a19b04251e12a95fd60c4f89f00c12c6e7c5424e4cfb0",
+    "outputs/econometrics/ER2_R6P_SUPPORT_AUDIT.csv": "037ef7393a87cfff673b4c70d3e169cca97c738278ebe0bb3f9720230e827441",
+    "outputs/econometrics/ER2_R6P_SYNTHETIC_TEST_PLAN_LOCK.json": "173e39911483b5d47710ce8b2aa05ecec90d47292a6499d4fd901536a2205b55",
+    "outputs/econometrics/ER2_R6P_SYNTHETIC_VALIDATION.csv": "bf868c4c13c8b83a8f1558f170324053125b980c868d11517b2ad8f8e84c0e64",
+    "scripts/er2_r6p_b3_strict_preflight_v1.py": "1b14f017dfba348ed4bd366786de247b059e8388619f6251248ae632b7cae85c",
+    "tests/test_er2_r6p_b3_strict_preflight_v1.py": "740f0a4c61b5823dc0f60ad3cfacd4a8b545d965b83252734a2abfee57e09dab"
+  },
+  "claim_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+  "disagreement_proves_correct_exposure": false,
+  "estimator_api": {
+    "byte_source": "RAW_GIT_OBJECT",
+    "functions": {
+      "_aht_htz": {
+        "signature": "(beta: 'np.ndarray', covariance: 'np.ndarray', contrast: 'np.ndarray', q_vectors: 'np.ndarray') -> 'dict[str, float]'",
+        "source_sha256": "fdda9de721c0ce8a343fdc2fad28ec12424cb50e2753ec7c3fae19625cbd47c9"
+      },
+      "absorb_fixed_effects": {
+        "signature": "(values: 'np.ndarray', fixed_effects: 'np.ndarray') -> 'np.ndarray'",
+        "source_sha256": "4ae0489a781fc68b1e86299e6387a62cca06542a85f5f108c4be19684d2c248b"
+      },
+      "fe_matrix": {
+        "signature": "(frame: 'pd.DataFrame', period_column: 'str') -> 'np.ndarray'",
+        "source_sha256": "7d9ba3fffaecc95ebc9089a56db3a4b14dd3239d2a5a002cd83e77b5319cc7c5"
+      },
+      "fit_two_way_fe_cr2": {
+        "signature": "(frame: 'pd.DataFrame', x_columns: 'list[str]', period_column: 'str', response: 'np.ndarray') -> 'dict[str, Any]'",
+        "source_sha256": "fc518afb1a72d7d5a8b61e1792448e34b5f3963475979ee19632a147d2010442"
+      }
+    },
+    "mathematical_alteration": false,
+    "scientific_sha256": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195"
+  },
+  "firewall": {
+    "DOWNSTREAM": "ENSO_SCENARIOS_GVP_VAR_CVAR_A1_A2_OPTIMIZATION_NOT_EXECUTED",
+    "R6P_FREEZE_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+    "R6_EXECUTED": false,
+    "REAL_R6_CLIMATE_NUMERICAL_VALUES_READ": false,
+    "REAL_R6_COEFFICIENTS_KNOWN": false,
+    "REAL_R6_ESTIMATION_EXECUTED": false,
+    "REAL_R6_EXECUTION_AUTHORIZATION_STATUS": "NOT_AUTHORIZED",
+    "REAL_R6_INFERENCE_KNOWN": false,
+    "REAL_R6_OUTCOME_NUMERICAL_VALUES_READ": false
+  },
+  "frozen_input_sha256": {
+    "config/econometrics/er2_robustness_protocol_v1.json": "13519fb5c86fdf690d233c54dd45c3242ba348f3c7f66587238e6965ed1c49ff",
+    "data/processed/outcomes/transient_campaign_outcomes_master.csv": "9cae62fb1417fa41274f6d504515571abd428b71fecaa0d138d3b786aa538760",
+    "data/processed/phenology/transient_campaign_exposures_strict.parquet": "349413312568d0d423675bf58320ade41d2d9e700f138e7fbec55fc580bc1fb5",
+    "outputs/econometrics/ED1_ROBUSTNESS_HIERARCHY.csv": "87959f394c3b6d486523e216dc61a0a7fca29a99d2e688ac5e80317162a4c3e1",
+    "outputs/econometrics/ER2P_TIER_CONTRACTS.csv": "2ff57eadb872ca6aa10cb84aa4fdf9b7250715df5ca77d2f3e9d22621e7d762a",
+    "outputs/econometrics/ER2_R5_RESULTS_LOCK.json": "d3395ea24d8f03a81f95f51ce0b49286729db6fe6f64204b4fa2a3bdd6dd28d2",
+    "scripts/econometric_design_master_v1.py": "69fb1b1f0a1d7c4ec7791fdfa2d3cfb20d62b4ed0f6348b155155523b6b48195"
+  },
+  "future_result_schema": {
+    "adjusted_ci": "NOT_CONSTRUCTED_NOT_CLAIMED",
+    "coefficient_fields": [
+      "CROP",
+      "CROP_CODE",
+      "VARIABLE",
+      "ER1_BETA_REFERENCE",
+      "R6_B3_BETA",
+      "CR2_SE",
+      "SATTERTHWAITE_DF",
+      "T_STATISTIC",
+      "RAW_P",
+      "CI_LOWER",
+      "CI_UPPER",
+      "SIGN",
+      "ADMISSIBILITY_STATUS"
+    ],
+    "concordance": [
+      {
+        "CROP": "RICE",
+        "CROP_CODE": "14010020000",
+        "R6_STATUS": "R6_RICE_RESULT_WHERE_ADMISSIBLE",
+        "VARIABLE": "RAIN_ANOM_MM"
+      },
+      {
+        "CROP": "RICE",
+        "CROP_CODE": "14010020000",
+        "R6_STATUS": "R6_RICE_RESULT_WHERE_ADMISSIBLE",
+        "VARIABLE": "TMAX_ANOM_C"
+      },
+      {
+        "CROP": "RICE",
+        "CROP_CODE": "14010020000",
+        "R6_STATUS": "R6_RICE_RESULT_WHERE_ADMISSIBLE",
+        "VARIABLE": "TMIN_ANOM_C"
+      },
+      {
+        "CROP": "MAIZ_AMARILLO_DURO",
+        "CROP_CODE": "14010070000",
+        "R6_STATUS": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+        "VARIABLE": "RAIN_ANOM_MM"
+      },
+      {
+        "CROP": "MAIZ_AMARILLO_DURO",
+        "CROP_CODE": "14010070000",
+        "R6_STATUS": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+        "VARIABLE": "TMAX_ANOM_C"
+      },
+      {
+        "CROP": "MAIZ_AMARILLO_DURO",
+        "CROP_CODE": "14010070000",
+        "R6_STATUS": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+        "VARIABLE": "TMIN_ANOM_C"
+      },
+      {
+        "CROP": "MANGO",
+        "CROP_CODE": "13010210000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "RAIN_ANOM_MM"
+      },
+      {
+        "CROP": "MANGO",
+        "CROP_CODE": "13010210000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMAX_ANOM_C"
+      },
+      {
+        "CROP": "MANGO",
+        "CROP_CODE": "13010210000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMIN_ANOM_C"
+      },
+      {
+        "CROP": "LIMON_SUTIL",
+        "CROP_CODE": "13010170102",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "RAIN_ANOM_MM__T"
+      },
+      {
+        "CROP": "LIMON_SUTIL",
+        "CROP_CODE": "13010170102",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMAX_ANOM_C__T"
+      },
+      {
+        "CROP": "LIMON_SUTIL",
+        "CROP_CODE": "13010170102",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMIN_ANOM_C__T"
+      },
+      {
+        "CROP": "LIMON_SUTIL",
+        "CROP_CODE": "13010170102",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "RAIN_ANOM_MM__T_MINUS_1"
+      },
+      {
+        "CROP": "LIMON_SUTIL",
+        "CROP_CODE": "13010170102",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMAX_ANOM_C__T_MINUS_1"
+      },
+      {
+        "CROP": "LIMON_SUTIL",
+        "CROP_CODE": "13010170102",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMIN_ANOM_C__T_MINUS_1"
+      },
+      {
+        "CROP": "PLATANOS_Y_BANANAS",
+        "CROP_CODE": "15010040000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "RAIN_ANOM_MM__T"
+      },
+      {
+        "CROP": "PLATANOS_Y_BANANAS",
+        "CROP_CODE": "15010040000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMAX_ANOM_C__T"
+      },
+      {
+        "CROP": "PLATANOS_Y_BANANAS",
+        "CROP_CODE": "15010040000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMIN_ANOM_C__T"
+      },
+      {
+        "CROP": "PLATANOS_Y_BANANAS",
+        "CROP_CODE": "15010040000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "RAIN_ANOM_MM__T_MINUS_1"
+      },
+      {
+        "CROP": "PLATANOS_Y_BANANAS",
+        "CROP_CODE": "15010040000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMAX_ANOM_C__T_MINUS_1"
+      },
+      {
+        "CROP": "PLATANOS_Y_BANANAS",
+        "CROP_CODE": "15010040000",
+        "R6_STATUS": "NOT_APPLICABLE",
+        "VARIABLE": "TMIN_ANOM_C__T_MINUS_1"
+      }
+    ],
+    "er1_beta_reference": "FUTURE_READ_ONLY_EXACT_ER1_REFERENCE_NOT_READ_DURING_R6P",
+    "global_five_crop_fwer": "NOT_CLAIMED",
+    "holm": "NOT_AUTHORIZED",
+    "inventory": {
+      "concordance_rows": 21,
+      "crop_status_rows": 5,
+      "rice_aht_if_admissible": 1,
+      "rice_coefficients_if_admissible": 3
+    },
+    "joint_fields": [
+      "CROP",
+      "CROP_CODE",
+      "JOINT_WALD_CHI_SQUARE",
+      "JOINT_F",
+      "NUMERATOR_DF",
+      "DENOMINATOR_DF",
+      "RAW_JOINT_P",
+      "HTZ_DELTA",
+      "ADMISSIBILITY_STATUS"
+    ],
+    "missing_result_encoding": "JSON_NULL_OR_EMPTY_CSV_FIELD_WITH_EXPLICIT_STATUS_NEVER_ZERO_OR_FALSE",
+    "nonadmissible_rice": "RETAIN_THREE_CONCORDANCE_DIMENSIONS_WITH_NULL_R6_NUMBERS_AND_EXACT_FAILED_GATES_NO_JOINT_PROMOTION",
+    "nonapplicability_is_failed_robustness": false,
+    "robustness_vote_fields": [],
+    "status_fields": [
+      "CROP",
+      "CROP_CODE",
+      "STATUS",
+      "FAILED_GATES",
+      "N",
+      "DISTRICTS",
+      "PERIODS"
+    ]
+  },
+  "gate": "ER2_R6P_B3_STRICT_EXPOSURE_PREEXECUTION_CERTIFICATION_V1",
+  "hierarchy": {
+    "CHANGE_FROM_PRIMARY": "STRICT_TRANSIENT_EXPOSURE_SAMPLE_AND_VALUES",
+    "FIXED_COMPONENTS": "OUTCOME_LEVEL|WINDOWS|LINEAR_FORM|DISTRICT_FE|PERIOD_FE|UNWEIGHTED",
+    "INTERPRETATION": "ATTRIBUTION_QUALITY_SENSITIVITY_RICE_ONLY",
+    "NO_WINNER_RULE": "B3_CANNOT_REPLACE_PRIMARY_OR_WEAKEN_FE",
+    "ORDER": "6",
+    "STATUS": "RICE_ESTIMABLE_SEVERE_SUPPORT_LIMITATION_MAD_NOT_ESTIMABLE",
+    "TIER": "R6_B3_STRICT_EXPOSURE"
+  },
+  "mad": {
+    "crop_code": "14010070000",
+    "estimate": false,
+    "status": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+    "substitute_model": "PROHIBITED"
+  },
+  "may_weaken_fe": false,
+  "metadata": {
+    "intersection_keys": {
+      "13010170102": [],
+      "13010210000": [],
+      "14010020000": [
+        [
+          "14010020000",
+          "200111",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200111",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200111",
+          "2021/2022"
+        ],
+        [
+          "14010020000",
+          "200201",
+          "2016/2017"
+        ],
+        [
+          "14010020000",
+          "200201",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200201",
+          "2019/2020"
+        ],
+        [
+          "14010020000",
+          "200201",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200201",
+          "2021/2022"
+        ],
+        [
+          "14010020000",
+          "200201",
+          "2022/2023"
+        ],
+        [
+          "14010020000",
+          "200203",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200203",
+          "2022/2023"
+        ],
+        [
+          "14010020000",
+          "200204",
+          "2019/2020"
+        ],
+        [
+          "14010020000",
+          "200204",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200204",
+          "2021/2022"
+        ],
+        [
+          "14010020000",
+          "200204",
+          "2022/2023"
+        ],
+        [
+          "14010020000",
+          "200205",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200205",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200206",
+          "2017/2018"
+        ],
+        [
+          "14010020000",
+          "200208",
+          "2019/2020"
+        ],
+        [
+          "14010020000",
+          "200208",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200209",
+          "2016/2017"
+        ],
+        [
+          "14010020000",
+          "200209",
+          "2017/2018"
+        ],
+        [
+          "14010020000",
+          "200209",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200209",
+          "2019/2020"
+        ],
+        [
+          "14010020000",
+          "200210",
+          "2016/2017"
+        ],
+        [
+          "14010020000",
+          "200210",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200210",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200304",
+          "2020/2021"
+        ],
+        [
+          "14010020000",
+          "200304",
+          "2021/2022"
+        ],
+        [
+          "14010020000",
+          "200607",
+          "2018/2019"
+        ],
+        [
+          "14010020000",
+          "200608",
+          "2018/2019"
+        ]
+      ],
+      "14010070000": [
+        [
+          "14010070000",
+          "200301",
+          "2017/2018"
+        ],
+        [
+          "14010070000",
+          "200301",
+          "2018/2019"
+        ],
+        [
+          "14010070000",
+          "200301",
+          "2019/2020"
+        ],
+        [
+          "14010070000",
+          "200303",
+          "2017/2018"
+        ],
+        [
+          "14010070000",
+          "200307",
+          "2017/2018"
+        ],
+        [
+          "14010070000",
+          "200307",
+          "2018/2019"
+        ],
+        [
+          "14010070000",
+          "200606",
+          "2022/2023"
+        ]
+      ],
+      "15010040000": []
+    },
+    "intersection_keys_sha256": "9c3fe9328b684e41dfcab4d2ed5e3004766ca5f2d82cc73f11897729401eab35",
+    "inventory": {
+      "invalid": 707,
+      "mad": 7,
+      "rice": 31,
+      "total": 745,
+      "valid": 38
+    },
+    "mapping": {
+      "b3_failure_reason_required": "NONE",
+      "b3_key": [
+        "COD_CULTIVO",
+        "UBIGEO",
+        "CAMPAIGN_ID"
+      ],
+      "b3_projected_columns": [
+        "COD_CULTIVO",
+        "UBIGEO",
+        "CAMPAIGN_ID",
+        "WINDOW_ID",
+        "CAMPAIGN_WEIGHTED_EXPOSURE_VALID",
+        "FAILURE_REASON"
+      ],
+      "b3_schema": [
+        {
+          "name": "UBIGEO",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "COD_CULTIVO",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "CROP_STD",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "CAMPAIGN_ID",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "CAMPAIGN_START_YEAR",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "CAMPAIGN_END_YEAR",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "WINDOW_ID",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "UNAMBIGUOUS_COHORT_COUNT",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "AMBIGUOUS_COHORT_COUNT",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "CAMPAIGN_SIEMBRA_DENOMINATOR",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "COHORT_WEIGHT_SUM",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "EXPECTED_WEIGHT",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "SUPPORTED_WEIGHT",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "MISSING_WEIGHT",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "RAIN_MM",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "TMAX_C",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "TMIN_C",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "RAIN_ANOM_MM",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "TMAX_ANOM_C",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "TMIN_ANOM_C",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "RAIN_Z",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "TMAX_Z",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "TMIN_Z",
+          "nullable": true,
+          "type": "double"
+        },
+        {
+          "name": "CAMPAIGN_WEIGHTED_EXPOSURE_VALID",
+          "nullable": false,
+          "type": "bool"
+        },
+        {
+          "name": "FAILURE_REASON",
+          "nullable": false,
+          "type": "string"
+        }
+      ],
+      "b3_validity": "CAMPAIGN_WEIGHTED_EXPOSURE_VALID",
+      "b3_validity_required": true,
+      "d0_key": [
+        "CROP_CODE",
+        "UBIGEO",
+        "CAMPAIGN"
+      ],
+      "d0_projected_columns": [
+        "CROP_CODE",
+        "UBIGEO",
+        "CAMPAIGN",
+        "OUTCOME_VALID_FLAG"
+      ],
+      "d0_schema": [
+        "CROP_CODE",
+        "CROP_STD",
+        "UBIGEO",
+        "DISTRICT_NAME",
+        "CAMPAIGN",
+        "CAMPAIGN_START_YEAR",
+        "CAMPAIGN_END_YEAR",
+        "CAMPAIGN_START_YEARMONTH",
+        "CAMPAIGN_END_YEARMONTH",
+        "EXPECTED_MONTHS_N",
+        "SOURCE_MONTHS_PRESENT_N",
+        "SOURCE_ROWS_N",
+        "CAMPAIGN_PRODUCCION_TM",
+        "CAMPAIGN_COSECHA_HA",
+        "TRANSIENT_CAMPAIGN_YIELD_RAW",
+        "OUTCOME_UNIT",
+        "OUTCOME_VALID_FLAG",
+        "EXCLUSION_REASON",
+        "ZERO_DENOMINATOR_FLAG",
+        "NO_SOURCE_ROWS_FLAG",
+        "MISSING_NUMERATOR_FLAG",
+        "MISSING_DENOMINATOR_FLAG",
+        "SILENT_MISSING_TO_ZERO_USED",
+        "OUTCOME_CONTRACT_ID"
+      ],
+      "d0_to_b3_key": {
+        "CAMPAIGN": "CAMPAIGN_ID",
+        "CROP_CODE": "COD_CULTIVO",
+        "UBIGEO": "UBIGEO"
+      },
+      "d0_validity": "OUTCOME_VALID_FLAG",
+      "d0_validity_required": "TRUE",
+      "future_period": "CAMPAIGN_ID",
+      "future_x": [
+        "RAIN_ANOM_MM",
+        "TMAX_ANOM_C",
+        "TMIN_ANOM_C"
+      ],
+      "future_x_mapping": {
+        "RAIN_ANOM_MM": "RAIN_ANOM_MM",
+        "TMAX_ANOM_C": "TMAX_ANOM_C",
+        "TMIN_ANOM_C": "TMIN_ANOM_C"
+      },
+      "future_y": "TRANSIENT_CAMPAIGN_YIELD_RAW",
+      "future_y_estimator_argument": "response"
+    },
+    "support": [
+      {
+        "B3_VALID_ROWS": 31,
+        "CROP": "RICE",
+        "CROP_CODE": "14010020000",
+        "DISTRICTS": 12,
+        "INTERSECTION_N": 31,
+        "PERIODS": 7,
+        "REAL_ESTIMATION_EXECUTED": false,
+        "STATUS": "ESTIMABLE_WITH_SEVERE_SUPPORT_LIMITATION"
+      },
+      {
+        "B3_VALID_ROWS": 7,
+        "CROP": "MAD",
+        "CROP_CODE": "14010070000",
+        "DISTRICTS": 4,
+        "INTERSECTION_N": 7,
+        "PERIODS": 4,
+        "REAL_ESTIMATION_EXECUTED": false,
+        "STATUS": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN"
+      },
+      {
+        "B3_VALID_ROWS": null,
+        "CROP": "MANGO",
+        "CROP_CODE": "13010210000",
+        "DISTRICTS": null,
+        "INTERSECTION_N": null,
+        "PERIODS": null,
+        "REAL_ESTIMATION_EXECUTED": false,
+        "STATUS": "NOT_APPLICABLE"
+      },
+      {
+        "B3_VALID_ROWS": null,
+        "CROP": "LEMON",
+        "CROP_CODE": "13010170102",
+        "DISTRICTS": null,
+        "INTERSECTION_N": null,
+        "PERIODS": null,
+        "REAL_ESTIMATION_EXECUTED": false,
+        "STATUS": "NOT_APPLICABLE"
+      },
+      {
+        "B3_VALID_ROWS": null,
+        "CROP": "BANANA",
+        "CROP_CODE": "15010040000",
+        "DISTRICTS": null,
+        "INTERSECTION_N": null,
+        "PERIODS": null,
+        "REAL_ESTIMATION_EXECUTED": false,
+        "STATUS": "NOT_APPLICABLE"
+      }
+    ]
+  },
+  "model": {
+    "campaign_fe": "REQUIRED",
+    "district_fe": "REQUIRED",
+    "district_trends": "PROHIBITED",
+    "estimator": "fit_two_way_fe_cr2",
+    "functional_form": "LINEAR_ADDITIVE",
+    "outcome": "YIELD_LEVEL_TM_PER_HA",
+    "regressors": [
+      "RAIN_ANOM_MM",
+      "TMAX_ANOM_C",
+      "TMIN_ANOM_C"
+    ],
+    "substitute_model": "PROHIBITED",
+    "weighting": "UNWEIGHTED",
+    "windows": "EXACT_ED1_FROZEN"
+  },
+  "no_partial_promotion": true,
+  "perennials": "NOT_APPLICABLE",
+  "predecessor": {
+    "branch": "phase/er2-r5-leave-one-period-out-v1",
+    "head": "fec889f71f97397c320c3f911306d10676439a5c",
+    "tag": "er2-r5-leave-one-period-out-v1-freeze",
+    "tag_object": "a121c66e6f365c9eb4f70ac1f2df1e4406b7b730"
+  },
+  "primary_replacement": "PROHIBITED",
+  "project": "ENSO_EL_NINO_2026_2027_AGRICULTURE_PIURA",
+  "r6_tier_contract_sha256": "f0b589050a7ec2ee198683e951e8e4ee049235540c686e996471f719a14d3c1c",
+  "result_specific_branch_audit": {
+    "conditions_inspected": 32,
+    "no_significance_threshold_or_result_driven_selection": true,
+    "policy": "ONLY_CROP_SCOPE_METADATA_STRUCTURE_FINITE_RANGE_AND_ADMISSIBILITY_BRANCHES",
+    "result_specific_r6_branches": 0,
+    "scope": [
+      "evaluate_frame",
+      "extract_inference",
+      "metadata_only",
+      "synthetic_adapter"
+    ],
+    "source_sha256": "1b14f017dfba348ed4bd366786de247b059e8388619f6251248ae632b7cae85c"
+  },
+  "rice_support": {
+    "coefficient_count": 3,
+    "districts": 12,
+    "n": 31,
+    "periods": 7,
+    "required_within_rank": 3
+  },
+  "sample_rule": "EXACT_D0_OUTCOME_AND_B3_VALID_EXPOSURE_INTERSECTION",
+  "status": "PASS_CANDIDATE",
+  "support_comparison": {
+    "er1_n": 281,
+    "qualification": "SEVERE_SUPPORT_LIMITATION",
+    "r6_n": 31,
+    "ratio_descriptive_only": 0.1103202846975089
+  },
+  "synthetic_plan_sha256": "173e39911483b5d47710ce8b2aa05ecec90d47292a6499d4fd901536a2205b55",
+  "synthetic_reference_max_abs_diff": 0.0,
+  "synthetic_support": {
+    "design_columns": 21,
+    "design_rank": 21,
+    "districts": 12,
+    "n": 31,
+    "periods": 7,
+    "within_rank": 3
+  },
+  "synthetic_validations": [
+    {
+      "CHECK_ID": "ADMISSIBLE_CORE",
+      "EXPECTED_GATE": "ALL_TEN",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FULL_DUMMY_REFERENCE",
+      "EXPECTED_GATE": "MAX_ABS_DIFF_LE_1E_MINUS_10",
+      "MAX_ABS_DIFFERENCE": 0.0,
+      "OBSERVED_STATUS": "VALIDATED",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_A",
+      "EXPECTED_GATE": "N_31",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_B",
+      "EXPECTED_GATE": "DISTRICTS_12",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_C",
+      "EXPECTED_GATE": "PERIODS_7",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_D",
+      "EXPECTED_GATE": "WITHIN_RANK_3",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_E",
+      "EXPECTED_GATE": "FULL_DESIGN_RANK",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_F",
+      "EXPECTED_GATE": "CR2_ADJUSTMENTS",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_G",
+      "EXPECTED_GATE": "POSITIVE_FINITE_SE",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_H",
+      "EXPECTED_GATE": "POSITIVE_FINITE_SE",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_I",
+      "EXPECTED_GATE": "POSITIVE_FINITE_DF",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_J",
+      "EXPECTED_GATE": "VALID_FINITE_AHT",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_K",
+      "EXPECTED_GATE": "REQUIRED_COLUMNS",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_L",
+      "EXPECTED_GATE": "UNIQUE_KEYS",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_M",
+      "EXPECTED_GATE": "VALID_B3_ONLY",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_N",
+      "EXPECTED_GATE": "EXACT_INTERSECTION",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_O",
+      "EXPECTED_GATE": "MAD_ESTIMATION_PROHIBITED",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_P",
+      "EXPECTED_GATE": "PERENNIAL_ESTIMATION_PROHIBITED",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "NOT_APPLICABLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_Q",
+      "EXPECTED_GATE": "FROZEN_MODEL",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "FAIL_CLOSED_R",
+      "EXPECTED_GATE": "FROZEN_MODEL",
+      "MAX_ABS_DIFFERENCE": null,
+      "OBSERVED_STATUS": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "CR2_SE_MAPPING",
+      "EXPECTED_GATE": "EXACT_NAMED_MAPPING",
+      "MAX_ABS_DIFFERENCE": 0.0,
+      "OBSERVED_STATUS": "VALIDATED",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "SATTERTHWAITE_DF_MAPPING",
+      "EXPECTED_GATE": "EXACT_NAMED_MAPPING",
+      "MAX_ABS_DIFFERENCE": 0.0,
+      "OBSERVED_STATUS": "VALIDATED",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "AHT_MAPPING",
+      "EXPECTED_GATE": "EXACT_NAMED_MAPPING",
+      "MAX_ABS_DIFFERENCE": 0.0,
+      "OBSERVED_STATUS": "VALIDATED",
+      "STATUS": "PASS"
+    },
+    {
+      "CHECK_ID": "DISTINCT_SENTINEL_MAPPING",
+      "EXPECTED_GATE": "EXACT_NAMED_MAPPING",
+      "MAX_ABS_DIFFERENCE": 0.0,
+      "OBSERVED_STATUS": "VALIDATED",
+      "STATUS": "PASS"
+    }
+  ],
+  "temporal": {
+    "PRIMARY_RESULTS_KNOWN": true,
+    "R1_RESULTS_KNOWN": true,
+    "R2_RESULTS_KNOWN": true,
+    "R3_RESULTS_KNOWN": true,
+    "R4_RESULTS_KNOWN": true,
+    "R5_RESULTS_KNOWN": true,
+    "R6_HIERARCHY_TIMING": "PRE_OUTCOME_FROZEN_IN_ED1",
+    "R6_OPERATIONALIZATION_TIMING": "POST_PRIMARY_RESULTS_PRE_ROBUSTNESS_RESULTS",
+    "R6_RESULTS_KNOWN": false
+  },
+  "terminal_rule": "MAD_STRUCTURAL_NONESTIMABILITY_AND_DECLARED_RICE_INADMISSIBILITY_ARE_REPORTED_NOT_SUBSTITUTED",
+  "tier": {
+    "claim_ceiling": "EMPIRICAL_ASSOCIATION_CLIMATE_RESPONSE_ONLY",
+    "disagreement_proves_correct_exposure": false,
+    "district_fe": "REQUIRED",
+    "er1_numerical_results_identity": "40e0f58269dda309e83a1fa3da17ef4d5dc5523efc72a666f734d0ebacb76b24",
+    "execution_authorized": false,
+    "family": "PHYSICAL_ANOMALY",
+    "functional_form": "LINEAR_ADDITIVE",
+    "global_five_crop_fwer": "NOT_CLAIMED",
+    "mad": {
+      "crop_code": "14010070000",
+      "estimate": false,
+      "status": "NOT_ESTIMABLE_UNDER_PRIMARY_DESIGN",
+      "substitute_model": "PROHIBITED"
+    },
+    "multiplicity": "DIAGNOSTIC_RAW_CR2_AND_AHT_NO_NEW_CONFIRMATORY_FWER_CLAIM",
+    "multiplicity_adjusted_confidence_intervals": "NOT_CONSTRUCTED_NOT_CLAIMED",
+    "next_tier": null,
+    "order": 6,
+    "outcome_scale": "YIELD_LEVEL_TM_PER_HA",
+    "perennials": "NOT_APPLICABLE",
+    "period_fe": "REQUIRED",
+    "previous_tier": "R5",
+    "primary_replacement": "PROHIBITED",
+    "prominent_support_comparison_to_er1": true,
+    "rice": {
+      "admissibility": "FULL_WITHIN_RANK_VALID_CR2_ADJUSTMENTS_POSITIVE_FINITE_SE_AND_DF_VALID_FINITE_AHT",
+      "campaign_fe": "REQUIRED",
+      "coefficient_count": 3,
+      "crop_code": "14010020000",
+      "expected_districts": 12,
+      "expected_observations": 31,
+      "expected_periods": 7,
+      "inference": "CR2_SATTERTHWAITE_AHT_ONLY_IF_NUMERICALLY_ADMISSIBLE",
+      "may_weaken_fe": false,
+      "on_inadmissibility": "R6_RICE_NOT_INFERENTIALLY_ADMISSIBLE",
+      "required_within_rank": 3,
+      "status": "ESTIMABLE_WITH_SEVERE_SUPPORT_LIMITATION"
+    },
+    "role": "STRICT_CAMPAIGN_ATTRIBUTION_SENSITIVITY_SEVERE_SUPPORT_LIMITATION",
+    "sample_change": "EXACT_D0_OUTCOME_AND_B3_VALID_EXPOSURE_INTERSECTION",
+    "status": "NOT_EXECUTED",
+    "tier": "R6",
+    "tier_id": "R6_B3_STRICT_EXPOSURE",
+    "weighting": "UNWEIGHTED_PRIMARY_ESTIMATION",
+    "windows": "EXACT_ED1_FROZEN"
+  },
+  "valid_b3_support_used_for_scope_decision_only": true
+}
